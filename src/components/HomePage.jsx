@@ -49,10 +49,10 @@ const HomePage = () => {
             Empowering businesses with cutting-edge digital solutions. From AI and automation to cybersecurity and web development, we innovate for a smarter tomorrow.
           </motion.p>
           <div className="mt-10 flex space-x-5">
-            <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="bg-orange-500 text-white px-7 py-3 rounded-lg text-lg font-semibold hover:bg-orange-600 transition">
+            <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="bg-orange-500 text-white px-7 py-3 squared-lg text-lg font-semibold hover:bg-orange-600 transition">
               Get Started 🚀
             </motion.button>
-            <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="border border-gray-500 text-gray-900 px-7 py-3 rounded-lg text-lg font-semibold hover:bg-gray-300 transition">
+            <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="border border-gray-500 text-gray-900 px-7 py-3 squared-lg text-lg font-semibold hover:bg-gray-300 transition">
               Learn More 📖
             </motion.button>
           </div>
@@ -60,7 +60,7 @@ const HomePage = () => {
 
        {/* Right Side: White Monitor with Sliding Content */}
       <div className="w-1/2 flex justify-center relative">
-        <div className="relative w-[600px] h-[350px] bg-white rounded-xl border-[6px] border-gray-400 overflow-hidden flex items-center justify-center">
+        <div className="relative w-[600px] h-[350px] bg-white squared-xl border-[6px] border-gray-400 overflow-hidden flex items-center justify-center">
           <motion.div
             key={currentIndex}
             initial={{ opacity: 0, x: 50 }}
@@ -100,7 +100,7 @@ const HomePage = () => {
       {[...techServices, ...techServices].map((service, index) => (
         <div
           key={index}
-          className="flex items-center px-6 py-3 border-2 border-grey-500 shadow-md bg-white w-70 h-25 rounded-lg"
+          className="flex items-center px-6 py-3 border-2 border-grey-500 shadow-md bg-white w-70 h-25 squared-lg"
         >
           {/* Icon Left with Hover Animation */}
           <motion.div

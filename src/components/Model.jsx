@@ -28,8 +28,8 @@ const Model = () => {
     <div className="bg-white min-h-screen p-16 font-sans flex flex-col items-center justify-center">
       
       {/* Tech Stack & Get a Quote Section */}
-      <div className="flex flex-col lg:flex-row items-start justify-center w-full space-x-28"> 
-        
+      <div className="flex flex-col lg:flex-row items-start justify-center w-full space-x-28 mb-20"> 
+    
         {/* Left Side - Programming Languages & Tech */}
         <div className="flex flex-col lg:w-1/2 text-left flex-shrink-0 mb-10 relative left-[-34px] mt-10">
           <h3 className="text-4xl font-semibold text-gray-900 mb-6 text-center">
@@ -52,7 +52,7 @@ const Model = () => {
 
         {/* Right Side - Get a Quote Form (Pop Animation on Hover) */}
         <div 
-          className="bg-white p-6 shadow-lg w-full max-w-sm border-2 border-orange-300 flex flex-col h-auto flex-shrink-0 rounded-none relative left-[-34px]
+          className="bg-white p-6 shadow-lg w-full max-w-sm border-2 border-orange-300 flex flex-col h-auto flex-shrink-0 rounded-none relative right-[-40px]
           transform transition-all duration-300 hover:scale-105"
         >  
           <h3 className="text-3xl font-semibold text-gray-900 text-center mb-4">Get a Free Quote</h3>
