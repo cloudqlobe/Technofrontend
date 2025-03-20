@@ -15,12 +15,12 @@ const iconData = [
   { Icon: FaMagento, bgColor: "bg-red-700" },     
   { Icon: FaAws, bgColor: "bg-yellow-500" },      
   { Icon: FaGoogle, bgColor: "bg-red-500" },      
-  { Icon: FaMicrosoft, bgColor: "bg-blue-700" },  
-  { Icon: SiKubernetes, bgColor: "bg-blue-500" }, 
-  { Icon: SiTensorflow, bgColor: "bg-orange-600" },
-  { Icon: SiGraphql, bgColor: "bg-pink-500" },    
-  { Icon: SiPostgresql, bgColor: "bg-blue-900" }, 
-  { Icon: SiRedis, bgColor: "bg-red-600" }        
+  // { Icon: FaMicrosoft, bgColor: "bg-blue-700" },  
+  // { Icon: SiKubernetes, bgColor: "bg-blue-500" }, 
+  // { Icon: SiTensorflow, bgColor: "bg-orange-600" },
+  // { Icon: SiGraphql, bgColor: "bg-pink-500" },    
+  // { Icon: SiPostgresql, bgColor: "bg-blue-900" }, 
+  // { Icon: SiRedis, bgColor: "bg-red-600" }        
 ];
 
 const Model = () => {
@@ -31,13 +31,13 @@ const Model = () => {
       <div className="flex flex-col lg:flex-row items-start justify-center w-full space-x-28"> 
         
         {/* Left Side - Programming Languages & Tech */}
-        <div className="flex flex-col lg:w-1/2 text-left flex-shrink-0 mb-10 relative left-[-34px]">
+        <div className="flex flex-col lg:w-1/2 text-left flex-shrink-0 mb-10 relative left-[-34px] mt-10">
           <h3 className="text-4xl font-semibold text-gray-900 mb-6 text-center">
             Code the Future: Build, Scale & Innovate  
-            <span className="text-orange-500 block text-center">Next-Gen Technologies</span>
+            <span className="text-orange-500 block text-center ">Next-Gen Technologies</span>
           </h3>
 
-          <div className="mt-12 grid grid-cols-6 gap-12 mt-16"> 
+          <div className="mt-12 grid grid-cols-6 gap-12 mt-28"> 
             {iconData.map(({ Icon, bgColor }, index) => (
               <div 
                 key={index} 
