@@ -1,45 +1,54 @@
-import { 
-  FaHeadset, FaMicrochip, FaShieldAlt, FaDollarSign, 
-  FaRocket, FaLightbulb, FaCogs, FaCloud, FaGlobe, FaServer 
-} from "react-icons/fa";
+import React from "react";
+import { FaServer, FaMobileAlt, FaSearch, FaCreditCard, FaTags, FaSmile, FaUsers, FaHeadset } from "react-icons/fa";
+import logo from "../assets/Image/11563094.jpg";
 
 const features = [
-  { icon: FaHeadset, title: "24/7 Support", desc: "Always available to assist you.", color: "text-blue-500", hoverColor: "hover:text-blue-700" },
-  { icon: FaMicrochip, title: "High-End Tech", desc: "Cutting-edge technology for top performance.", color: "text-green-500", hoverColor: "hover:text-green-700" },
-  { icon: FaShieldAlt, title: "Cybersecurity", desc: "Your security is our priority.", color: "text-red-500", hoverColor: "hover:text-red-700" },
-  { icon: FaDollarSign, title: "Affordable Rates", desc: "Quality services at competitive prices.", color: "text-yellow-500", hoverColor: "hover:text-yellow-700" },
-  { icon: FaRocket, title: "Fast Deployment", desc: "Quick and seamless integration.", color: "text-purple-500", hoverColor: "hover:text-purple-700" },
-  { icon: FaLightbulb, title: "Innovative Solutions", desc: "Creative and effective problem-solving.", color: "text-orange-500", hoverColor: "hover:text-orange-700" },
-  { icon: FaCogs, title: "Automation", desc: "Streamlined processes to boost efficiency.", color: "text-pink-500", hoverColor: "hover:text-pink-700" },
-  { icon: FaCloud, title: "Cloud Services", desc: "Scalable and secure cloud solutions.", color: "text-teal-500", hoverColor: "hover:text-teal-700" },
-  { icon: FaGlobe, title: "Global Reach", desc: "Serving clients worldwide with excellence.", color: "text-indigo-500", hoverColor: "hover:text-indigo-700" },
-  { icon: FaServer, title: "Advanced Servers", desc: "High-performance servers for better reliability.", color: "text-gray-500", hoverColor: "hover:text-gray-700" },
+  { icon: <FaServer />, title: "Domain & Hosting Services" },
+  { icon: <FaMobileAlt />, title: "100% Responsive Web Design" },
+  { icon: <FaSearch />, title: "SEO Friendly Website" },
+  { icon: <FaCreditCard />, title: "Payment Gateway Integration" },
+  { icon: <FaTags />, title: "Affordable & Lowest Pricing" },
+  { icon: <FaSmile />, title: "100% Satisfaction Guaranteed" },
+  { icon: <FaUsers />, title: "Professional Team" },
+  { icon: <FaHeadset />, title: "1 Year Free Support" }
 ];
 
-export default function Features() {
+const Dmodel = () => {
   return (
-    <section className="bg-white text-gray-900 py-24">
-      <div className="max-w-7xl mx-auto px-6 text-center">
-        <h2 className="text-5xl font-extrabold mb-8 drop-shadow-lg">Why Choose Us?</h2>
-        <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-16 leading-relaxed">
-          Experience excellence with our cutting-edge technology, secure infrastructure, and world-class support.
-        </p>
-        
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
+    <div className="bg-[#1E3A8A] text-white py-16 px-6 lg:px-32 flex flex-col items-center">
+      <div className="flex flex-col lg:flex-row items-center w-full gap-10">
+        {/* Left Content */}
+        <div className="lg:w-1/2 text-center lg:text-left">
+          <p className="text-orange-400 uppercase text-5sm font-default mb-2">WHY CHOOSE US?</p>
+          <h1 className="text-3xl font-bold mb-4 leading-snug">
+            Why Choose <span className="text-orange-500">TechnoMagic Solutions?</span>
+          </h1>
+          <p className="text-lg text-gray-300 mb-6">
+            We are a leading website development agency in India, committed to providing top-notch digital solutions. 
+            Our expert team creates customized, innovative, and high-performing websites that enhance user experience, 
+            improve engagement, and drive business success.
+          </p>
+        </div>
+
+        {/* Right Image */}
+        <div className="lg:w-1/2 flex justify-center ml-22">
+          <img src={logo} alt="Illustration" className="w-[350px] lg:w-[500px] object-contain" />
+        </div>
+      </div>
+      
+      {/* Features Section */}
+      <div className="w-full bg-[#2F4AA5] py-10 px-6 lg:px-32 rounded-lg shadow-lg mt-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
           {features.map((feature, index) => (
-            <div 
-              key={index} 
-              className="flex flex-col items-center p-8 bg-gray-200 text-gray-900 rounded-3xl shadow-2xl hover:shadow-3xl transition-transform transform hover:-translate-y-4"
-            >
-              <div className={`text-6xl ${feature.color} ${feature.hoverColor} mb-5 transition-colors duration-300`}>
-                <feature.icon />
-              </div>
-              <h3 className="text-2xl font-bold mb-3">{feature.title}</h3>
-              <p className="text-gray-700 text-base text-center px-4">{feature.desc}</p>
+            <div key={index} className="bg-[#1E3A8A] text-white flex flex-col items-center p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:bg-[#2F4AA5]">
+              <div className="text-3xl mb-3 text-orange-400">{feature.icon}</div>
+              <p className="text-center text-lg font-semibold">{feature.title}</p>
             </div>
           ))}
         </div>
       </div>
-    </section>
-  ) 
-}
+    </div>
+  );
+};
+
+export default Dmodel;

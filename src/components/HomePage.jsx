@@ -49,18 +49,19 @@ const HomePage = () => {
             Empowering businesses with cutting-edge digital solutions. From AI and automation to cybersecurity and web development, we innovate for a smarter tomorrow.
           </motion.p>
           <div className="mt-10 flex space-x-5">
-            <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="bg-orange-500 text-white px-7 py-3 squared-lg text-lg font-semibold hover:bg-orange-600 transition">
+            <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="bg-orange-500 text-white px-7 py-3 rounded-lg text-lg font-semibold hover:bg-orange-600 transition">
               Get Started 🚀
             </motion.button>
-            <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="border border-gray-500 text-gray-900 px-7 py-3 squared-lg text-lg font-semibold hover:bg-gray-300 transition">
+            <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="border border-gray-500 text-gray-900 px-7 py-3 rounded-lg text-lg font-semibold hover:bg-gray-300 transition">
               Learn More 📖
             </motion.button>
           </div>
         </div>
 
-       {/* Right Side: White Monitor with Sliding Content */}
+        {/* Right Side: White Monitor with Sliding Content */}
+        {/* Right Side: White Monitor with Sliding Content */}
       <div className="w-1/2 flex justify-center relative">
-        <div className="relative w-[600px] h-[350px] bg-white squared-xl border-[6px] border-gray-400 overflow-hidden flex items-center justify-center">
+        <div className="relative w-[600px] h-[350px] bg-white rounded-xl border-[6px] border-gray-400 overflow-hidden flex items-center justify-center">
           <motion.div
             key={currentIndex}
             initial={{ opacity: 0, x: 50 }}
@@ -82,13 +83,13 @@ const HomePage = () => {
         <div className="absolute -bottom-16 left-1/2 transform -translate-x-1/2 w-44 h-10 bg-gray-400 rounded-b-3xl"></div>
       </div>
     </div>
-      <div className="w-full bg-white py-10 mt-8">
-    
-  {/* Additional Headings */}
-  <h3 className="text-2xl font-semibold text-gray-800 text-center">
+
+      {/* ===== Scroller Section ===== */}
+      <div className="w-full py-10 mt-8 bg-[#EFEFEF]">
+  <h3 className="text-2xl font-semibold text-black text-center">
     Advanced IT & Networking Solutions
   </h3>
-  <p className="text-md text-gray-500 text-center mb-8">
+  <p className="text-md text-gray-600 text-center mb-8">
     From AI to cloud computing, we cover all your tech needs.
   </p>
   <div className="overflow-hidden">
@@ -100,7 +101,7 @@ const HomePage = () => {
       {[...techServices, ...techServices].map((service, index) => (
         <div
           key={index}
-          className="flex items-center px-6 py-3 border-2 border-grey-500 shadow-md bg-white w-70 h-25 squared-lg"
+          className="flex items-center px-6 py-3 border-2 border-gray-300 shadow-md bg-white w-70 h-25 rounded-lg"
         >
           {/* Icon Left with Hover Animation */}
           <motion.div
@@ -112,13 +113,14 @@ const HomePage = () => {
           </motion.div>
 
           {/* Text Right */}
-          <span className="text-gray-900 text-lg font-default ml-5">{service.name}</span>
+          <span className="text-gray-800 text-lg font-default ml-5">
+            {service.name}
+          </span>
         </div>
       ))}
     </motion.div>
   </div>
 </div>
-
 
     </div>
   );
