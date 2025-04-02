@@ -1,7 +1,7 @@
 import React from "react";
 import image1 from "../assets/Image/build-robots.jpg";
-import image2 from "../assets/Image/smart-phone.jpg";
-import image3 from "../assets/Image/4583162.png";
+import image2 from "../assets/Image/10233603.jpg";
+import image3 from "../assets/Image/12643942_5024145.svg";
 
 const ContentPage = () => {
   return (
@@ -16,7 +16,7 @@ const ContentPage = () => {
           <img
             src={image2}
             alt="IT Solutions"
-            className="w-[90%] h-[550px] object-cover rounded-lg mb-2"
+            className="w-[80%] h-[450px] object-cover rounded-lg mb-2"
           />
         </div>
         <div className="flex flex-col justify-center w-full">
@@ -45,22 +45,22 @@ const ContentPage = () => {
           <img
             src={image1}
             alt="Chatbot Solutions"
-            className="w-[95%] h-[500px] object-cover rounded-lg"
+            className="w-[85%] h-[450px] object-cover rounded-lg"
           />
         </div>
       </div>
 
       {/* Custom Software Solutions Section */}
-      <div className="grid md:grid-cols-2 items-center gap-24 mb-8 max-w-7xl mx-auto">
+      <div className="grid md:grid-cols-2 items-center gap-24 mb-8 max-w-7xl mx-auto mt-8">
         <div className="relative flex justify-center items-center w-full p-2">
           <img
             src={image3}
             alt="Custom Software Solutions"
-            className="w-[95%] h-[500px] object-cover rounded-lg"
+            className="w-[90%] h-[500px] object-cover mt-24"
           />
         </div>
         <div className="flex flex-col justify-center w-full">
-          <h2 className="text-4xl font-default text-grey-200 mb-2 ml-2">Custom <span className="text-orange-500">Software Solutions</span></h2>
+          <h2 className="text-4xl font-default text-grey-200 mb-2 ml-2 mt-16">Custom <span className="text-orange-500">Software Solutions</span></h2>
           <p className="text-gray-600 leading-relaxed text-lg ml-4 mt-4">
             We develop customized software to enhance efficiency and scalability. Our team creates tailored solutions, from mobile apps to web platforms, that seamlessly integrate with your existing systems, ensuring a smooth user experience. By working closely with you, we ensure the software aligns with your goals.
           </p>
