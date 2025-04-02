@@ -6,17 +6,8 @@ export default function Footer() {
   return (
     <footer className="bg-[#1E3A8A] text-white py-16">
       <div className="container mx-auto px-8 md:px-20">
-        {/* Become a Reseller Section */}
-        <div className="text-center bg-[#253F99] p-12 rounded-lg mb-16 border-4 border-orange-200">
-          <h2 className="text-4xl font-default text-orange-400">Become a Reseller Today!</h2>
-          <p className="mt-6 text-white text-lg">
-            Expand your service offerings and multiply your profits.
-          </p>
-          <button className="mt-8 bg-white text-[#1E3A8A] hover:bg-gray-200 px-8 py-4 squared-lg font-semibold text-lg">
-            Get More Information
-          </button>
-        </div>
         
+       
         {/* Free Consultation Section */}
         <div className="flex flex-col md:flex-row items-start justify-between mt-16">
           <div className="grid md:grid-cols-1 gap-14 w-full md:w-2/2">

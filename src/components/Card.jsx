@@ -1,93 +1,56 @@
-import { motion } from 'framer-motion';
-import logo from "../assets/Image/chatbot.png";
-import { CheckCircle, MessageCircle } from 'lucide-react';
+import { FaHeadset, FaUserTie, FaShieldAlt, FaUsers } from "react-icons/fa";
+import business from "../assets/Image/business1.png";
 
-export function Card({ children, className }) {
-  return <div className={`bg-white p-6 rounded-lg shadow-md ${className}`}>{children}</div>;
-}
-
-export function CardContent({ children }) {
-  return <div className="mt-4">{children}</div>;
-}
-
-export function Button({ children, className, ...props }) {
+export default function ResellerSection() {
   return (
-    <button
-      className={`bg-blue-500 hover:bg-blue-600 px-6 py-3 rounded-lg text-lg ${className}`}
-      {...props}
-    >
-      {children}
-    </button>
-  );
-}
-
-export default function ChatbotProductPage() {
-  return (
-    <div className="min-h-screen bg-white text-gray-900 p-8">
-      <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-        <img src={logo} alt="Chatbot Demo" className="rounded-xl shadow-xl" />
-        <motion.div 
-          initial={{ opacity: 0, x: 50 }} 
-          animate={{ opacity: 1, x: 0 }} 
-          transition={{ delay: 0.5, duration: 0.8 }}
-          className="space-y-6"
-        >
-          <h2 className="text-3xl font-semibold text-blue-500">Why Choose Our Chatbot?</h2>
-          <ul className="space-y-4">
-            <li className="flex items-center gap-3">
-              <CheckCircle className="text-green-500" />
-              24/7 Automated Customer Support
-            </li>
-            <li className="flex items-center gap-3">
-              <CheckCircle className="text-green-500" />
-              Multilingual AI-Powered Responses
-            </li>
-            <li className="flex items-center gap-3">
-              <CheckCircle className="text-green-500" />
-              Seamless Integration with CRM & Websites
-            </li>
-            <li className="flex items-center gap-3">
-              <CheckCircle className="text-green-500" />
-              Advanced NLP for Human-like Conversations
-            </li>
-          </ul>
-          <Button>
-            Get Started
-          </Button>
-        </motion.div>
-      </div>
+    <div className="bg-white text-black p-12 h-screen flex flex-col items-center">
       
-      <motion.div 
-        initial={{ opacity: 0, y: 50 }} 
-        animate={{ opacity: 1, y: 0 }} 
-        transition={{ delay: 0.8, duration: 0.8 }}
-        className="mt-16 text-center"
-      >
-        <h2 className="text-4xl font-bold text-blue-600">Benefits</h2>
-        <div className="grid md:grid-cols-3 gap-8 mt-8 max-w-5xl mx-auto">
-          <Card className="p-6 text-center">
-            <CardContent>
-              <MessageCircle className="text-blue-500 text-4xl mx-auto" />
-              <h3 className="text-xl font-semibold mt-4">Improved Customer Experience</h3>
-              <p className="text-gray-600 mt-2">Quick, personalized responses for every user.</p>
-            </CardContent>
-          </Card>
-          <Card className="p-6 text-center">
-            <CardContent>
-              <MessageCircle className="text-blue-500 text-4xl mx-auto" />
-              <h3 className="text-xl font-semibold mt-4">Increased Sales</h3>
-              <p className="text-gray-600 mt-2">Guide users towards purchases effortlessly.</p>
-            </CardContent>
-          </Card>
-          <Card className="p-6 text-center">
-            <CardContent>
-              <MessageCircle className="text-blue-500 text-4xl mx-auto" />
-              <h3 className="text-xl font-semibold mt-4">Cost-Effective Support</h3>
-              <p className="text-gray-600 mt-2">Reduce human effort with automation.</p>
-            </CardContent>
-          </Card>
+      {/* Main Heading */}
+      <h2 className="text-4xl font-semibold text-center mb-10 text-grey-600 mt-8">
+        Become a Reseller & <span className="text-orange-500">Grow with Us!</span>
+      </h2>
+
+      <div className="flex items-center justify-between w-full mt-8">
+        {/* Image on Left */}
+        <div className="w-1/2 h-full flex items-center mt-4 mr-6">
+          <img 
+            src={business}
+            alt="Business Illustration" 
+            className="w-[110%] h-[85%] object-contain" 
+          />
         </div>
-      </motion.div>
+
+        {/* Features on Right */}
+        <div className="w-[50%] flex flex-col items-start h-full justify-center pl-6 mt-8">
+          <div className="grid grid-cols-2 gap-6 mb-8 w-full">
+            <div className="bg-blue-100 p-5 h-20 w-full flex items-center border border-blue-400 shadow-md rounded-md transition-transform duration-300 hover:scale-105">
+              <FaHeadset className="text-blue-500 text-3xl mr-4" />
+              <span className="text-lg font-semibold">24/7 Support</span>
+            </div>
+            <div className="bg-green-100 p-5 h-20 w-full flex items-center border border-green-400 shadow-md rounded-md transition-transform duration-300 hover:scale-105">
+              <FaUserTie className="text-green-500 text-3xl mr-4" />
+              <span className="text-lg font-semibold">Dedicated Account Manager</span>
+            </div>
+            <div className="bg-yellow-100 p-5 h-20 w-full flex items-center border border-yellow-400 shadow-md rounded-md transition-transform duration-300 hover:scale-105">
+              <FaShieldAlt className="text-yellow-500 text-3xl mr-4" />
+              <span className="text-lg font-semibold">Secure Transactions</span>
+            </div>
+            <div className="bg-purple-100 p-5 h-20 w-full flex items-center border border-purple-400 shadow-md rounded-md transition-transform duration-300 hover:scale-105">
+              <FaUsers className="text-purple-500 text-3xl mr-4" />
+              <span className="text-lg font-semibold">Exclusive Partner Benefits</span>
+            </div>
+          </div>
+
+          {/* Reseller Section */}
+          <div className="bg-white p-10 border border-gray-400 text-center w-full shadow-lg rounded-md">
+            <h3 className="text-2xl font-bold mb-4">Become a Reseller</h3>
+            <p className="text-md mb-5 text-gray-700">Join our reseller program and start earning by offering our services to your clients.</p>
+            <button className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-8 text-lg rounded-md">
+              Register Now
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

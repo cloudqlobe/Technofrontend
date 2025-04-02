@@ -8,6 +8,8 @@ import Model from "./components/Model";
 import Dmodel from "./components/Dmodel";
 import Card from "./components/Card";
 import Footer from "./components/Footer";
+import Count from "./components/Count";
+import Content from "./components/Content";
 
 const App = () => {
   return (
@@ -19,7 +21,11 @@ const App = () => {
  
       <Model />
       <Dmodel />
+      
+      <Content/>
+      <Count/>
       <Card />
+   
       <Footer/>
       
      
