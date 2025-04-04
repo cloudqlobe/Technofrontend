@@ -1,4 +1,14 @@
-import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
+import {
+  FaPhoneAlt,
+  FaEnvelope,
+  FaFacebookF,
+  FaTwitter,
+  FaInstagram,
+  FaLinkedinIn,
+  FaYoutube,
+  FaPinterestP,
+  FaGithub
+} from "react-icons/fa";
 import { MdOutlineArrowForward } from "react-icons/md";
 import logo from "../assets/Image/logo-removebg-.png";
 
@@ -6,8 +16,8 @@ export default function Footer() {
   return (
     <footer className="bg-[#1E3A8A] text-white py-20">
       <div className="container mx-auto px-8 md:px-20">
-        
-        {/* Free Consultation Section */}
+
+        {/* Main Content */}
         <div className="flex flex-col md:flex-row items-start justify-between mt-16">
           <div className="grid md:grid-cols-1 gap-14 w-full md:w-2/2">
             <div className="grid grid-cols-2 md:grid-cols-3 gap-12 text-gray-300">
@@ -44,23 +54,57 @@ export default function Footer() {
                 </ul>
               </div>
             </div>
+
+            {/* Contact + Social Icons */}
             <div className="text-gray-300 mt-8 md:mt-0">
               <h3 className="text-xl font-default text-white">CONTACT</h3>
-              <p className="flex items-center mt-6 text-lg"><FaPhoneAlt className="mr-3" /> +1(646)-808-0229</p>
-              <p className="flex items-center mt-6 text-lg"><FaEnvelope className="mr-3" /> sales@example.com</p>
+              <p className="flex items-center mt-6 text-lg">
+                <FaPhoneAlt className="mr-3" /> +1(646)-808-0229
+              </p>
+              <p className="flex items-center mt-4 text-lg">
+                <FaEnvelope className="mr-3" /> sales@example.com
+              </p>
+
+              {/* Social Icons - Left and Just Below */}
+              {/* Left-Aligned Social Icons Below Line with More Spacing */}
+<div className="flex space-x-5 mt-16 ml-2">
+  <a href="#" className="bg-[#3b5998] p-3 text-xl font-bold text-white hover:scale-110 transition mt-8">
+    <FaFacebookF />
+  </a>
+  <a href="#" className="bg-[#00acee] p-3 text-xl font-bold text-white hover:scale-110 transition mt-8">
+    <FaTwitter />
+  </a>
+  <a href="#" className="bg-[#C13584] p-3 text-xl font-bold text-white hover:scale-110 transition mt-8">
+    <FaInstagram />
+  </a>
+  <a href="#" className="bg-[#0A66C2] p-3 text-xl font-bold text-white hover:scale-110 transition mt-8">
+    <FaLinkedinIn />
+  </a>
+  <a href="#" className="bg-[#FF0000] p-3 text-xl font-bold text-white hover:scale-110 transition mt-8">
+    <FaYoutube />
+  </a>
+  <a href="#" className="bg-[#E60023] p-3 text-xl font-bold text-white hover:scale-110 transition mt-8">
+    <FaPinterestP />
+  </a>
+  <a href="#" className="bg-[#333] p-3 text-xl font-bold text-white hover:scale-110 transition mt-8">
+    <FaGithub />
+  </a>
+</div>
+
+
             </div>
           </div>
 
-          {/* Right Section: Logo & Consultation */}
+          {/* Right Section: Logo + CTA */}
           <div className="w-full md:w-2/2 text-center md:ml-16 mt-16 md:mt-0">
-            <div className="flex justify-center md:justify-center mb-6 bg-white p-4 shadow-lg border-2 border-orange-400">
-              <img 
-                src={logo} 
-                alt="Company Logo" 
+            <div className="flex justify-center mb-6 bg-white p-4 shadow-lg border-2 border-orange-400">
+              <img
+                src={logo}
+                alt="Company Logo"
                 className="h-[150px] w-[500px] object-contain"
               />
             </div>
-            <div className="bg-[#253F99] p-12  shadow-lg  border-2 border-yellow-400">
+            <div className="bg-[#253F99] p-12 shadow-lg border-2 border-yellow-400">
               <h3 className="text-2xl font-bold text-yellow-400">
                 GRAB YOUR FREE TECH CONSULTATION
               </h3>
@@ -74,8 +118,8 @@ export default function Footer() {
           </div>
         </div>
 
-         {/* Footer Bottom */}
-         <div className="mt-16 pt-8 border-t border-gray-500 py-6 text-center">
+        {/* Footer Bottom */}
+        <div className="mt-6 pt-8 border-t border-gray-500 py-6 text-center">
           <p className="text-gray-300 text-lg mt-4">
             &copy; {new Date().getFullYear()} Your Company Name. All Rights Reserved.
           </p>
@@ -94,4 +138,3 @@ export default function Footer() {
     </footer>
   );
 }
-  
