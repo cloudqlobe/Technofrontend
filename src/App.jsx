@@ -11,12 +11,16 @@ import Footer from "./components/Footer";
 import Count from "./components/Count";
 import Content from "./components/Content";
 
+
 const App = () => {
   return (
     <Router>
       <Navbar />
+   
+
       <Routes>
         <Route path="/" element={<HomePage />} />
+
       </Routes>
  
       <Model />

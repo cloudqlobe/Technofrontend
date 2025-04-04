@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { FiSearch } from "react-icons/fi";
 import { FaFacebookF, FaLinkedinIn, FaInstagram, FaTwitter } from "react-icons/fa";
 import { BsMicrosoftTeams } from "react-icons/bs";
@@ -34,7 +35,7 @@ const Navbar = () => {
         animate={{ y: 0 }}
         transition={{ type: "spring", stiffness: 120 }}
       >
-        {/* ✅ Logo & Social Media Icons */}
+        {/* Logo & Social Icons */}
         <div 
           className="relative flex flex-col items-center"
           onMouseEnter={() => setShowIcons(true)}
@@ -67,13 +68,12 @@ const Navbar = () => {
           </AnimatePresence>
         </div>
 
-        {/* ✅ Navigation Menu with Clickable Dropdowns */}
+        {/* Navigation */}
         <ul className="flex space-x-4 text-gray-800 text-base font-semibold">
           <li className="px-3 cursor-pointer">
-            <span className="hover:text-[#F76D37]">Home</span>
+            <Link to="/" className="hover:text-[#F76D37]">Home</Link>
           </li>
 
-          {/* Services Dropdown */}
           <li className="relative px-3 cursor-pointer" onClick={() => toggleDropdown("services")}>
             <span className="hover:text-[#F76D37]">Services</span>
             {dropdown === "services" && (
@@ -83,24 +83,33 @@ const Navbar = () => {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -10 }}
               >
-                {["Website Development", "Mobile Apps", "SEO", "Design", "Content Marketing"].map((item, index) => (
-                  <li key={index} className="px-4 py-2 text-gray-600 hover:bg-gray-100 cursor-pointer">
-                    {item}
-                  </li>
-                ))}
+                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                  <Link to="/services/website-development" className="text-gray-600">Website Development</Link>
+                </li>
+                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                  <Link to="/services/mobile-apps" className="text-gray-600">Mobile Apps</Link>
+                </li>
+                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                  <Link to="/services/seo" className="text-gray-600">SEO</Link>
+                </li>
+                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                  <Link to="/services/design" className="text-gray-600">Design</Link>
+                </li>
+                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                  <Link to="/services/content-marketing" className="text-gray-600">Content Marketing</Link>
+                </li>
               </motion.ul>
             )}
           </li>
 
           <li className="px-3 cursor-pointer">
-            <span className="hover:text-[#F76D37]">About Us</span>
+            <Link to="/about-us" className="hover:text-[#F76D37]">About Us</Link>
           </li>
 
           <li className="px-3 cursor-pointer">
-            <span className="hover:text-[#F76D37]">Our Works</span>
+            <Link to="/our-works" className="hover:text-[#F76D37]">Our Works</Link>
           </li>
 
-          {/* Softwares Dropdown */}
           <li className="relative px-3 cursor-pointer" onClick={() => toggleDropdown("softwares")}>
             <span className="hover:text-[#F76D37]">Softwares</span>
             {dropdown === "softwares" && (
@@ -110,23 +119,32 @@ const Navbar = () => {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -10 }}
               >
-                {["CRM", "ERP", "Project Management", "Billing Software", "HRM"].map((item, index) => (
-                  <li key={index} className="px-4 py-2 text-gray-600 hover:bg-gray-100 cursor-pointer">
-                    {item}
-                  </li>
-                ))}
+                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                  <Link to="/softwares/crm" className="text-gray-600">CRM</Link>
+                </li>
+                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                  <Link to="/softwares/erp" className="text-gray-600">ERP</Link>
+                </li>
+                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                  <Link to="/softwares/project-management" className="text-gray-600">Project Management</Link>
+                </li>
+                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                  <Link to="/softwares/billing-software" className="text-gray-600">Billing Software</Link>
+                </li>
+                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                  <Link to="/softwares/hrm" className="text-gray-600">HRM</Link>
+                </li>
               </motion.ul>
             )}
           </li>
 
           <li className="px-3 cursor-pointer">
-            <span className="hover:text-[#F76D37]">Careers</span>
+            <Link to="/careers" className="hover:text-[#F76D37]">Careers</Link>
           </li>
         </ul>
 
-        {/* ✅ Search Bar & Contact Button */}
+        {/* Search Bar & Contact Button */}
         <div className="flex items-center space-x-10">
-          {/* Search Bar */}
           <div className="relative w-80">
             <input 
               type="text" 
@@ -136,7 +154,6 @@ const Navbar = () => {
             <FiSearch className="absolute right-4 top-2.5 text-gray-500 text-xl cursor-pointer hover:text-[#F76D37] transition duration-300" />
           </div>
 
-          {/* Contact Button */}
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}

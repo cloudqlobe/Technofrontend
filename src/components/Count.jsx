@@ -1,88 +1,107 @@
-import { motion, useInView } from "framer-motion";
-import { useRef, useState, useEffect } from "react";
-import Confetti from "react-confetti";
-import { FaCheckCircle, FaUsers, FaGlobe } from "react-icons/fa";
-import { MdOutlineVerified } from "react-icons/md";
-import robot from "../assets/Image/robot.jpg";
+import React from "react";
+import logo from "../assets/Image/364520726658572289-1-vmake-unscreen.gif";
+import { motion } from "framer-motion";
 
-const achievements = [
-  { title: "Completed Projects", value: "150+", description: "Successful client projects delivered worldwide.", icon: <FaCheckCircle className="text-green-500 text-3xl" /> },
-  { title: "Client Satisfaction", value: "98%", description: "High customer satisfaction and trust.", icon: <FaUsers className="text-blue-500 text-3xl" /> },
-  { title: "Data Accuracy", value: "99.5%", description: "Precise and reliable project execution.", icon: <MdOutlineVerified className="text-purple-500 text-3xl" /> },
-  { title: "Global Expansion", value: "50+ Regions", description: "Providing solutions across multiple regions.", icon: <FaGlobe className="text-yellow-500 text-3xl" /> },
-];
 
-export default function Achievements() {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
-  const [celebrate, setCelebrate] = useState(false);
-  const [hoverConfetti, setHoverConfetti] = useState(false);
-  const [imageConfetti, setImageConfetti] = useState(false);
-
-  useEffect(() => {
-    if (isInView) {
-      setCelebrate(true);
-      setTimeout(() => setCelebrate(false), 3000);
-    }
-  }, [isInView]);
-
+export default function StatsSection() {
   return (
-    <div ref={ref} className="w-full min-h-screen flex flex-col items-center justify-center bg-gradient-to-r from-blue-700 to-blue-900 text-white px-6 relative">
-      {/* Global Confetti when section appears */}
-      {(celebrate || imageConfetti) && <Confetti numberOfPieces={300} gravity={0.2} />}
-
-      {/* Full Width Heading */}
-      <motion.h1 
-        className="text-4xl md:text-5xl font-semibold text-yellow-400 drop-shadow-lg tracking-wide text-center w-full mb-10 mt-10"
-        initial={{ opacity: 0, y: -50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-      >
-        Milestones of Excellence
-        <p className="text-lg text-gray-300 mt-2">Delivering excellence with precision and dedication.</p>
-      </motion.h1>
-
-      <motion.div 
-        className="w-[95%] max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-20 items-center"
-        initial={{ opacity: 0, y: 50 }} 
-        animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : 50 }} 
-        transition={{ duration: 1 }}
-      >
-        {/* Left Side: Image */}
-        <div className="text-center md:text-left">
-          <motion.img 
-            src={robot}
-            alt="Achievements"
-            className="w-[480px] h-auto ml-[-40px]"
-            onMouseEnter={() => setImageConfetti(true)}
-            onMouseLeave={() => setImageConfetti(false)}
-          />
-        </div>
-
-        {/* Right Side: Achievements List */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-4 relative">
-          {achievements.map((item, index) => (
-            <motion.div 
-              key={index} 
-              className="bg-white text-blue-900 p-5 rounded-lg shadow-md flex flex-col items-center space-y-2 border-2 border-orange-500 relative"
-              whileHover={{ scale: 1.05, boxShadow: "0px 6px 20px rgba(255, 165, 0, 0.4)" }}
-              initial={{ opacity: 0, scale: 0.8 }} 
-              animate={{ opacity: isInView ? 1 : 0, scale: isInView ? 1 : 0.8 }} 
-              transition={{ duration: 0.5, delay: index * 0.2 }}
-              onMouseEnter={() => setHoverConfetti(true)}
-              onMouseLeave={() => setHoverConfetti(false)}
-            >
-              {item.icon}
-              <h2 className="text-2xl font-bold">{item.value}</h2>
-              <p className="text-md font-semibold">{item.title}</p>
-              <p className="text-gray-600 text-sm text-center">{item.description}</p>
-
-              {/* Confetti when hovering over a tab */}
-              {hoverConfetti && <Confetti numberOfPieces={50} gravity={0.3} />}
-            </motion.div>
-          ))}
-        </div>
-      </motion.div>
+    <div className="flex items-center justify-between bg-gradient-to-r from-blue-600 to-blue-800 min-h-[100vh] relative px-10">
+      
+    {/* Left Section: Heading & Text */}
+    <div className="flex flex-col items-start text-white max-w-xl mt-[-400px] ml-[80px] space-y-4">
+      <h1 className="text-2xl font-semibold leading-snug mr-[50px]">
+        Celebrating Milestones, <span className="text-yellow-400">Driving Excellence</span>
+      </h1>
+      <p className="text-base font-medium text-white">
+        With over <span className="text-yellow-300">150+ completed projects</span> and a <span className="text-pink-400">98% client satisfaction rate</span>, 
+        we continue to set new benchmarks in the tech industry. Our solutions are trusted globally for their reliability and performance.
+      </p>
     </div>
+
+  
+{/* Image & Shadow Container */}
+<div className="absolute bottom-0 left-[150px] flex flex-col items-center">
+  {/* Robot Image (Bottom) */}
+  <img
+    src={logo}
+    alt="Illustration"
+    className="w-[250px] md:w-[350px] lg:w-[400px] object-contain z-10"
+  />
+
+
+
+  {/* Standing Ground Effect */}
+  <div className="w-[250px] md:w-[300px] lg:w-[350px] h-[35px] bg-gradient-to-t from-white via-gray-200 to-transparent rounded-full blur-[50px] opacity-80 mt-[-15px] z-0"></div>
+</div>
+
+
+
+  
+
+      {/* Right Side: Stats Section */}
+      <div className="flex flex-col items-end space-y-3 mb[-20px]">
+        {/* Top Row */}
+        <div className="flex justify-center mt-[70px]">
+          <div className="flex flex-col items-center">
+            <div className="text-yellow-500 text-6xl mb-[20px]">🏆</div>
+            <div className="bg-white p-6 shadow-md border border-orange-500 w-60 h-36 flex flex-col items-center justify-center mb-[-70px]">
+              <div className="text-purple-500 text-4xl mt-2">🏆</div>
+              <h2 className="text-xl font-bold text-gray-800">50+</h2>
+              <p className="text-gray-600">Cutting-Edge Tech</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Second Row */}
+        <div className="flex justify-center space-x-4 items-start">
+          <div className="flex flex-col items-center">
+            <div className="text-yellow-500 text-6xl mb-4 ml-[150px]">🏆</div>
+            <div className="bg-white p-6 shadow-md border border-orange-500 w-60 h-36 flex flex-col items-center justify-center rounded-none ml-[160px]">
+              <div className="text-green-500 text-4xl">✅</div>
+              <h2 className="text-xl font-bold text-gray-800">150+</h2>
+              <p className="text-gray-600">Completed Projects</p>
+            </div>
+          </div>
+
+          <div className="flex flex-col items-center mt-[50px]">
+            <div className="bg-white p-6 shadow-md border border-orange-500 w-60 h-36 flex flex-col items-center justify-center rounded-none mt-[25px]">
+              <div className="text-blue-500 text-4xl">👥</div>
+              <h2 className="text-xl font-bold text-gray-800">98%</h2>
+              <p className="text-gray-600">Client Satisfaction</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Bottom Row */}
+        <div className="flex justify-center space-x-4">
+          <div className="flex flex-col items-center mt-[-75px]">
+            <div className="text-yellow-500 text-6xl mb-4">🏆</div>
+            <div className="bg-white p-6 shadow-md border border-orange-500 w-60 h-36 flex flex-col items-center justify-center rounded-none">
+              <div className="text-yellow-500 text-4xl">🌍</div>
+              <h2 className="text-xl font-bold text-gray-800">120+</h2>
+              <p className="text-gray-600">Innovative Solutions</p>
+            </div>
+          </div>
+
+          <div className="flex flex-col items-center">
+            <div className="bg-white p-6 shadow-md border border-orange-500 w-60 h-36 flex flex-col items-center justify-center rounded-none">
+              <div className="text-purple-500 text-4xl">✔️</div>
+              <h2 className="text-xl font-bold text-gray-800">99.5%</h2>
+              <p className="text-gray-600">Data Accuracy</p>
+            </div>
+          </div>
+
+          <div className="flex flex-col items-center">
+            <div className="bg-white p-6 shadow-md border border-orange-500 w-60 h-36 flex flex-col items-center justify-center rounded-none">
+              <div className="text-yellow-500 text-4xl">🌍</div>
+              <h2 className="text-xl font-bold text-gray-800">50+ Regions</h2>
+              <p className="text-gray-600">Global Expansion</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Image on the Left Side */}
+      </div>
   );
 }
