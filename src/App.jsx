@@ -12,6 +12,7 @@ import Count from "./components/Count";
 import Content from "./components/Content";
 
 
+
 const App = () => {
   return (
     <Router>
@@ -20,6 +21,7 @@ const App = () => {
 
       <Routes>
         <Route path="/" element={<HomePage />} />
+       
 
       </Routes>
  

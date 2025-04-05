@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import { FiSearch } from "react-icons/fi";
-import { FaFacebookF, FaLinkedinIn, FaInstagram, FaTwitter } from "react-icons/fa";
+import { FaFacebookF, FaLinkedinIn, FaInstagram, FaTwitter, FaLaptopCode, FaMobileAlt, FaChartLine, FaPencilRuler, FaFileAlt, FaBriefcase, FaCogs, FaUsers, FaClipboardList, FaMoneyBill } from "react-icons/fa";
 import { BsMicrosoftTeams } from "react-icons/bs";
 import { motion, AnimatePresence } from "framer-motion";
 import logo from "../assets/Image/logo.png";
@@ -14,27 +13,35 @@ const socialIcons = [
   { id: 5, icon: <BsMicrosoftTeams size={14} className="text-white" />, bgColor: "bg-purple-400" },
 ];
 
+const dropdownItems = {
+  services: [
+    { icon: <FaLaptopCode />, label: "Website Development" },
+    { icon: <FaMobileAlt />, label: "Mobile Apps" },
+    { icon: <FaChartLine />, label: "SEO" },
+    { icon: <FaPencilRuler />, label: "Design" },
+    { icon: <FaFileAlt />, label: "Content Marketing" },
+  ],
+  softwares: [
+    { icon: <FaBriefcase />, label: "CRM" },
+    { icon: <FaCogs />, label: "ERP" },
+    { icon: <FaClipboardList />, label: "Project Management" },
+    { icon: <FaMoneyBill />, label: "Billing Software" },
+    { icon: <FaUsers />, label: "HRM" },
+  ],
+};
+
 const Navbar = () => {
   const [showIcons, setShowIcons] = useState(false);
   const [dropdown, setDropdown] = useState("");
 
   const toggleDropdown = (menu) => {
     setDropdown(dropdown === menu ? "" : menu);
+    setTimeout(() => setDropdown(""), 3000); // Auto-close after 3 sec
   };
 
   return (
-    <motion.div 
-      className="w-full bg-white fixed top-0 left-0 z-50"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.5 }}
-    >
-      <motion.nav 
-        className="px-6 py-2 flex items-center justify-between h-20"
-        initial={{ y: -50 }}
-        animate={{ y: 0 }}
-        transition={{ type: "spring", stiffness: 120 }}
-      >
+    <motion.div className="w-full bg-white fixed top-0 left-0 z-50">
+      <motion.nav className="px-6 py-2 flex items-center justify-between h-20">
         {/* Logo & Social Icons */}
         <div 
           className="relative flex flex-col items-center"
@@ -44,22 +51,9 @@ const Navbar = () => {
           <img src={logo} alt="Logo" className="w-[250px] h-[80px] object-contain" />
           <AnimatePresence>
             {showIcons && (
-              <motion.div 
-                className="absolute top-24 flex space-x-6"
-                initial={{ opacity: 0, y: -10 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: 10 }}
-              >
+              <motion.div className="absolute top-24 flex space-x-6">
                 {socialIcons.map((item, index) => (
-                  <motion.div
-                    key={item.id}
-                    initial={{ opacity: 0, y: -10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -10 }}
-                    transition={{ duration: 0.5, ease: "easeOut", delay: index * 0.2 }}
-                    className={`p-2 ${item.bgColor} rounded-lg shadow-lg`}
-                    whileHover={{ scale: 1.2 }}
-                  >
+                  <motion.div key={item.id} className={`p-2 ${item.bgColor} rounded-lg shadow-lg`}>
                     {item.icon}
                   </motion.div>
                 ))}
@@ -70,77 +64,40 @@ const Navbar = () => {
 
         {/* Navigation */}
         <ul className="flex space-x-4 text-gray-800 text-base font-semibold">
-          <li className="px-3 cursor-pointer">
-            <Link to="/" className="hover:text-[#F76D37]">Home</Link>
-          </li>
+          <li className="px-3 cursor-pointer hover:text-orange-500">Home</li>
 
-          <li className="relative px-3 cursor-pointer" onClick={() => toggleDropdown("services")}>
-            <span className="hover:text-[#F76D37]">Services</span>
+          <li className="relative px-3 cursor-pointer hover:text-orange-500" onClick={() => toggleDropdown("services")}>
+            <span>Services</span>
             {dropdown === "services" && (
-              <motion.ul 
-                className="absolute left-0 mt-2 w-52 bg-white shadow-lg rounded-md border border-gray-200"
-                initial={{ opacity: 0, y: -10 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -10 }}
-              >
-                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
-                  <Link to="/services/website-development" className="text-gray-600">Website Development</Link>
-                </li>
-                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
-                  <Link to="/services/mobile-apps" className="text-gray-600">Mobile Apps</Link>
-                </li>
-                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
-                  <Link to="/services/seo" className="text-gray-600">SEO</Link>
-                </li>
-                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
-                  <Link to="/services/design" className="text-gray-600">Design</Link>
-                </li>
-                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
-                  <Link to="/services/content-marketing" className="text-gray-600">Content Marketing</Link>
-                </li>
+              <motion.ul className="absolute left-0 mt-2 w-56 shadow-lg rounded-md bg-white">
+                {dropdownItems.services.map((item, index) => (
+                  <li key={index} className="px-4 py-2 flex items-center space-x-3 text-gray-800 hover:text-orange-500 cursor-pointer">
+                    {item.icon}
+                    <span>{item.label}</span>
+                  </li>
+                ))}
               </motion.ul>
             )}
           </li>
 
-          <li className="px-3 cursor-pointer">
-            <Link to="/about-us" className="hover:text-[#F76D37]">About Us</Link>
-          </li>
+          <li className="px-3 cursor-pointer hover:text-orange-500">About Us</li>
+          <li className="px-3 cursor-pointer hover:text-orange-500">Our Works</li>
 
-          <li className="px-3 cursor-pointer">
-            <Link to="/our-works" className="hover:text-[#F76D37]">Our Works</Link>
-          </li>
-
-          <li className="relative px-3 cursor-pointer" onClick={() => toggleDropdown("softwares")}>
-            <span className="hover:text-[#F76D37]">Softwares</span>
+          <li className="relative px-3 cursor-pointer hover:text-orange-500" onClick={() => toggleDropdown("softwares")}>
+            <span>Softwares</span>
             {dropdown === "softwares" && (
-              <motion.ul 
-                className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md border border-gray-200"
-                initial={{ opacity: 0, y: -10 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -10 }}
-              >
-                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
-                  <Link to="/softwares/crm" className="text-gray-600">CRM</Link>
-                </li>
-                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
-                  <Link to="/softwares/erp" className="text-gray-600">ERP</Link>
-                </li>
-                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
-                  <Link to="/softwares/project-management" className="text-gray-600">Project Management</Link>
-                </li>
-                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
-                  <Link to="/softwares/billing-software" className="text-gray-600">Billing Software</Link>
-                </li>
-                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
-                  <Link to="/softwares/hrm" className="text-gray-600">HRM</Link>
-                </li>
+              <motion.ul className="absolute left-0 mt-2 w-48 shadow-lg rounded-md bg-white">
+                {dropdownItems.softwares.map((item, index) => (
+                  <li key={index} className="px-4 py-2 flex items-center space-x-3 text-gray-800 hover:text-orange-500 cursor-pointer">
+                    {item.icon}
+                    <span>{item.label}</span>
+                  </li>
+                ))}
               </motion.ul>
             )}
           </li>
 
-          <li className="px-3 cursor-pointer">
-            <Link to="/careers" className="hover:text-[#F76D37]">Careers</Link>
-          </li>
+          <li className="px-3 cursor-pointer hover:text-orange-500">Careers</li>
         </ul>
 
         {/* Search Bar & Contact Button */}
@@ -149,15 +106,15 @@ const Navbar = () => {
             <input 
               type="text" 
               placeholder="Search..." 
-              className="bg-gray-100 text-gray-800 px-4 py-2 w-full rounded-md border-2 border-orange-400 focus:outline-none focus:ring-2 focus:ring-[#F76D37] placeholder-gray-500 uppercase"
+              className="bg-gray-100 text-gray-800 px-4 py-2 w-full rounded-md border-2 border-orange-400 focus:outline-none focus:ring-2 focus:ring-orange-500 placeholder-gray-500 uppercase"
             />
-            <FiSearch className="absolute right-4 top-2.5 text-gray-500 text-xl cursor-pointer hover:text-[#F76D37] transition duration-300" />
+            <FiSearch className="absolute right-4 top-2.5 text-gray-500 text-xl cursor-pointer hover:text-orange-500 transition duration-300" />
           </div>
 
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="bg-[#F76D37] text-white px-5 py-2 rounded-md hover:bg-[#D75A2E] transition duration-300 uppercase"
+            className="bg-orange-500 text-white px-5 py-2 rounded-md hover:bg-orange-600 transition duration-300 uppercase"
           >
             CONTACT US
           </motion.button>
