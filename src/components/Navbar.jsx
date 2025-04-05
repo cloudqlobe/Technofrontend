@@ -4,6 +4,7 @@ import { FaFacebookF, FaLinkedinIn, FaInstagram, FaTwitter, FaLaptopCode, FaMobi
 import { BsMicrosoftTeams } from "react-icons/bs";
 import { motion, AnimatePresence } from "framer-motion";
 import logo from "../assets/Image/logo.png";
+import { Link } from 'react-router-dom';
 
 const socialIcons = [
   { id: 1, icon: <FaFacebookF size={14} className="text-white" />, bgColor: "bg-blue-600" },
@@ -15,18 +16,18 @@ const socialIcons = [
 
 const dropdownItems = {
   services: [
-    { icon: <FaLaptopCode />, label: "Website Development" },
-    { icon: <FaMobileAlt />, label: "Mobile Apps" },
-    { icon: <FaChartLine />, label: "SEO" },
-    { icon: <FaPencilRuler />, label: "Design" },
-    { icon: <FaFileAlt />, label: "Content Marketing" },
+    { icon: <FaLaptopCode />, label: "Website Development", url: "/services/web-development" },
+    { icon: <FaMobileAlt />, label: "Mobile Apps", url: "/services/mobile-apps" },
+    { icon: <FaChartLine />, label: "SEO", url: "/services/seo" },
+    { icon: <FaPencilRuler />, label: "Design", url: "/services/design" },
+    { icon: <FaFileAlt />, label: "Content Marketing", url: "/services/content-marketing" },
   ],
   softwares: [
-    { icon: <FaBriefcase />, label: "CRM" },
-    { icon: <FaCogs />, label: "ERP" },
-    { icon: <FaClipboardList />, label: "Project Management" },
-    { icon: <FaMoneyBill />, label: "Billing Software" },
-    { icon: <FaUsers />, label: "HRM" },
+    { icon: <FaBriefcase />, label: "CRM", url: "/software/crm" },
+    { icon: <FaCogs />, label: "ERP", url: "/software/erp" },
+    { icon: <FaClipboardList />, label: "Project Management", url: "/software/project-management" },
+    { icon: <FaMoneyBill />, label: "Billing Software", url: "/software/billing" },
+    { icon: <FaUsers />, label: "HRM", url: "/software/hrm" },
   ],
 };
 
@@ -64,40 +65,60 @@ const Navbar = () => {
 
         {/* Navigation */}
         <ul className="flex space-x-4 text-gray-800 text-base font-semibold">
-          <li className="px-3 cursor-pointer hover:text-orange-500">Home</li>
+          <li className="px-3 cursor-pointer hover:text-orange-500">
+          <Link to="/">Home</Link>
+          </li>
 
           <li className="relative px-3 cursor-pointer hover:text-orange-500" onClick={() => toggleDropdown("services")}>
             <span>Services</span>
             {dropdown === "services" && (
               <motion.ul className="absolute left-0 mt-2 w-56 shadow-lg rounded-md bg-white">
                 {dropdownItems.services.map((item, index) => (
-                  <li key={index} className="px-4 py-2 flex items-center space-x-3 text-gray-800 hover:text-orange-500 cursor-pointer">
-                    {item.icon}
-                    <span>{item.label}</span>
+                  <li key={index} className="px-4 py-2 hover:bg-orange-50">
+                    <Link 
+                      to={item.url} 
+                      className="flex items-center space-x-3 text-gray-800 hover:text-orange-500"
+                      onClick={() => setDropdown("")}
+                    >
+                      {item.icon}
+                      <span>{item.label}</span>
+                    </Link>
                   </li>
                 ))}
               </motion.ul>
             )}
           </li>
 
-          <li className="px-3 cursor-pointer hover:text-orange-500">About Us</li>
-          <li className="px-3 cursor-pointer hover:text-orange-500">Our Works</li>
+          <li  className="px-3 cursor-pointer hover:text-orange-500">
+          <Link to="/about">About Us</Link>
+          </li>
+          <li className="px-3 cursor-pointer hover:text-orange-500">
+          <Link to="/our-works">Our Works</Link>
+          </li>
 
           <li className="relative px-3 cursor-pointer hover:text-orange-500" onClick={() => toggleDropdown("softwares")}>
             <span>Softwares</span>
             {dropdown === "softwares" && (
               <motion.ul className="absolute left-0 mt-2 w-48 shadow-lg rounded-md bg-white">
                 {dropdownItems.softwares.map((item, index) => (
-                  <li key={index} className="px-4 py-2 flex items-center space-x-3 text-gray-800 hover:text-orange-500 cursor-pointer">
-                    {item.icon}
-                    <span>{item.label}</span>
+                  <li key={index} className="px-4 py-2 hover:bg-orange-50">
+                    <Link 
+                      to={item.url} 
+                      className="flex items-center space-x-3 text-gray-800 hover:text-orange-500"
+                      onClick={() => setDropdown("")}
+                    >
+                      {item.icon}
+                      <span>{item.label}</span>
+                    </Link>
                   </li>
                 ))}
               </motion.ul>
             )}
           </li>
 
-          <li className="px-3 cursor-pointer hover:text-orange-500">Careers</li>
+          <li className="px-3 cursor-pointer hover:text-orange-500">
+          <Link to="/careers">Careers</Link>
+          </li>
         </ul>
 
         {/* Search Bar & Contact Button */}
