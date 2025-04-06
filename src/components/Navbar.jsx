@@ -18,16 +18,16 @@ const dropdownItems = {
   services: [
     { icon: <FaLaptopCode />, label: "Website Development", url: "/services/web-development" },
     { icon: <FaMobileAlt />, label: "Mobile Apps", url: "/services/mobile-apps" },
-    { icon: <FaChartLine />, label: "SEO", url: "/services/seo" },
-    { icon: <FaPencilRuler />, label: "Design", url: "/services/design" },
-    { icon: <FaFileAlt />, label: "Content Marketing", url: "/services/content-marketing" },
+    { icon: <FaChartLine />, label: "Hosting Services", url: "/services/seo" },
+    { icon: <FaPencilRuler />, label: "UI & UX Design", url: "/services/design" },
+    { icon: <FaFileAlt />, label: "Tech Consultancy", url: "/services/content-marketing" },
   ],
   softwares: [
     { icon: <FaBriefcase />, label: "CRM", url: "/software/crm" },
     { icon: <FaCogs />, label: "ERP", url: "/software/erp" },
     { icon: <FaClipboardList />, label: "Project Management", url: "/software/project-management" },
     { icon: <FaMoneyBill />, label: "Billing Software", url: "/software/billing" },
-    { icon: <FaUsers />, label: "HRM", url: "/software/hrm" },
+    { icon: <FaUsers />, label: "Chatbot", url: "/software/hrm" },
   ],
 };
 

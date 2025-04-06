@@ -30,6 +30,7 @@ const App = () => {
             <Route path="/mobile-apps" element={<MobileAppPage />} />
             <Route path="/seo" element={<SEOPage />} />
             <Route path="/web-development" element={<WebsitePage />} />
+          
           </Routes>
         } />
         <Route path="/about" element={<AboutPage />} />
