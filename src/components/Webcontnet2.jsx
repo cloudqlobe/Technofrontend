@@ -1,5 +1,5 @@
 import React from "react";
-import image8 from "../assets/Image/61514.jpg";
+import image8 from "../assets/Image/Work_7.jpg";
 import image9 from "../assets/Image/6072194.jpg";
 
 const Webcontent2 = () => {
@@ -21,7 +21,7 @@ const Webcontent2 = () => {
           />
         </div>
         <div>
-          <h2 className="text-3xl font-bold mb-4">
+          <h2 className="text-3xl font-default mb-4">
             <span className="text-black">Powering Your Presence</span>{" "}
             <span className="text-blue-800">with Precision SEO</span>
           </h2>
@@ -30,11 +30,24 @@ const Webcontent2 = () => {
             for maximum search engine exposure. From lightning-fast load times to
             perfectly structured semantic HTML, every element of your site is
             crafted to rank and convert.
+            Through advanced schema markup, meta tags, and SEO-first architecture,
+            we help search engines understand your site’s purpose — leading to
+            better visibility, higher engagement, and measurable growth.
+            Through advanced schema markup, meta tags, and SEO-first architecture,
+            we help search engines understand your site’s purpose — leading to
+            better visibility, higher engagement, and measurable growth.
+            Through advanced schema markup, meta tags, and SEO-first architecture,
+            we help search engines understand your site’s purpose — leading to
+            better visibility, higher engagement, and measurable growth.
           </p>
           <p>
             Through advanced schema markup, meta tags, and SEO-first architecture,
             we help search engines understand your site’s purpose — leading to
             better visibility, higher engagement, and measurable growth.
+            Through advanced schema markup, meta tags, and SEO-first architecture,
+            we help search engines understand your site’s purpose — leading to
+            better visibility, higher engagement, and measurable growth.
+            
           </p>
         </div>
       </div>
@@ -42,19 +55,27 @@ const Webcontent2 = () => {
       {/* Section 2: Performance */}
       <div className="grid md:grid-cols-2 items-center gap-10 mb-[150px]">
   <div>
-    <h2 className="text-3xl font-bold mb-4">
+    <h2 className="text-3xl font-default mb-4">
       <span className="text-black">Social Media</span>{" "}
       <span className="text-blue-800">Marketing Mastery</span>
     </h2>
     <p className="mb-4">
       We help your brand make waves across platforms like Instagram, Facebook, LinkedIn, and more.
       From viral content strategies to daily engagement, we ensure your audience stays connected and loyal.
+      With a blend of analytics, creative campaigns, and targeted advertising,
+      we turn your social presence into a powerful lead-generation machine. Get noticed, get shared, and grow.
+      With a blend of analytics, creative campaigns, and targeted advertising,
+      
     </p>
     <p>
       With a blend of analytics, creative campaigns, and targeted advertising,
       we turn your social presence into a powerful lead-generation machine. Get noticed, get shared, and grow.
       With a blend of analytics, creative campaigns, and targeted advertising,
       we turn your social presence into a powerful lead-generation machine. Get noticed, get shared, and grow.
+      With a blend of analytics, creative campaigns, and targeted advertising,
+      we turn your social presence into a powerful lead-generation machine. Get noticed, get shared, and grow.
+      With a blend of analytics, creative campaigns, and targeted advertising,
+     
     </p>
   </div>
   <div className="flex justify-center">

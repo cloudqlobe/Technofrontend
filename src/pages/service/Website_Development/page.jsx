@@ -5,6 +5,7 @@ import Webheader from '../../../components/Webheader';
 import Webcontents from '../../../components/Webcontents';
 import Webanimation from '../../../components/Webanimation';
 import Webcontnet2 from '../../../components/Webcontnet2';
+import Webregister from '../../../components/Webregister';
 
 
 
@@ -16,6 +17,7 @@ const WebsitePage = () => {
      <Webcontents/>
    <Webanimation/>
    <Webcontnet2/>
+   <Webregister/>
     
       <Footer/>
     
