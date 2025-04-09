@@ -1,8 +1,10 @@
 import React from 'react';
 import image1 from '../assets/Image/4667617.jpg'; // Replace with your actual image
 import image2 from '../assets/Image/6072171.jpg'; // Replace with your actual image
+import Techcontent from './Techcontent';
 
-const Mobcontent1 = () => {
+
+const Techcontent1 = () => {
   return (
     <section className="w-full px-6 md:px-16 py-16 bg-white">
       {/* Main Heading */}
@@ -15,7 +17,7 @@ const Mobcontent1 = () => {
         {/* Image */}
         <div className="w-full md:w-5/12 mb-8 md:mb-0">
           <img
-            src="https://img.freepik.com/free-vector/tablet-with-books-online-learning_1308-69472.jpg?t=st=1744140152~exp=1744143752~hmac=0656bbc0bf45a79216e9093c241ecdd2f088d7f1e0af04e3eb6691bd925415e3&w=900"
+            src={image1}
             alt="App Development"
             className="w-full max-w-[350px] h-auto object-cover rounded-xl mx-auto"
           />
@@ -69,4 +71,4 @@ const Mobcontent1 = () => {
   );
 };
 
-export default Mobcontent1;
+export default Techcontent1 ;

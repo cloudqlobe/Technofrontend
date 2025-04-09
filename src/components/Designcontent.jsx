@@ -3,7 +3,7 @@ import image16 from "../assets/Image/4110955.jpg";
 import image17 from "../assets/Image/6072171.jpg";
 import image18 from "../assets/Image/4630198.jpg";
 
-const Hostingcontent = () => {
+const Designcontent = () => {
   return (
     <section className="w-full px-6 md:px-16 py-16 bg-white">
       <h2 className="text-center text-3xl font-bold text-blue-800 mb-16">
@@ -93,4 +93,4 @@ const Hostingcontent = () => {
   );
 };
 
-export default Hostingcontent;
+export default Designcontent;

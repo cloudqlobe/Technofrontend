@@ -1,5 +1,5 @@
 import React from "react";
-import image8 from "../assets/Image/Work_7.jpg";
+import image8 from "../assets/Image/6185154.jpg";
 import image9 from "../assets/Image/6072194.jpg";
 
 const Webcontent2 = () => {
@@ -17,7 +17,7 @@ const Webcontent2 = () => {
           <img
             src={image8}
             alt="SEO Strategy"
-            className="w-[80%] h-[450px] object-cover rounded-lg "
+            className="w-[70%] h-[500px] object-cover rounded-lg "
           />
         </div>
         <div>
