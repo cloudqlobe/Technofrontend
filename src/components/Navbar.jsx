@@ -21,6 +21,7 @@ const dropdownItems = {
     { icon: <FaChartLine />, label: "Hosting Services", url: "/services/seo" },
     { icon: <FaPencilRuler />, label: "UI & UX Design", url: "/services/design" },
     { icon: <FaFileAlt />, label: "Tech Consultancy", url: "/services/content-marketing" },
+    { icon: <FaFileAlt />, label: "Cloudcomputing", url: "/services/Cloudcomputing" },
   ],
   softwares: [
     { icon: <FaBriefcase />, label: "CRM", url: "/software/crm" },

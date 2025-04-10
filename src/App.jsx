@@ -8,6 +8,7 @@ import Design_Page from "./pages/service/Design/page";
 import MobileAppPage from "./pages/service/Mobile_Apps/page";
 import SEOPage from "./pages/service/SEO/page";
 import WebsitePage from "./pages/service/Website_Development/page";
+import Cloudcomputing from "./pages/service/Cloudcomputing/page"
 import WorksPage from "./pages/works/page";
 import CareerPage from "./pages/careers/page";
 import CRMPage from "./pages/softwares/CRM/page";
@@ -30,6 +31,7 @@ const App = () => {
             <Route path="/mobile-apps" element={<MobileAppPage />} />
             <Route path="/seo" element={<SEOPage />} />
             <Route path="/web-development" element={<WebsitePage />} />
+            <Route path="/cloudcomputing" element={<Cloudcomputing />} />
           
           </Routes>
         } />
