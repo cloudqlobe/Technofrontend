@@ -1,6 +1,6 @@
 import React from 'react';
-import image1 from '../assets/Image/4667617.jpg'; // Replace with your actual image
-import image2 from '../assets/Image/6072171.jpg'; // Replace with your actual image
+import image1 from '../assets/Image/4990129.jpg'; // Replace with your actual image
+import image2 from '../assets/Image/5700262.jpg'; // Replace with your actual image
 import Designcontent from './Designcontent';
 
 
@@ -19,7 +19,7 @@ const Designcontents1 = () => {
           <img
             src={image1}
             alt="App Development"
-            className="w-full max-w-[350px] h-auto object-cover rounded-xl mx-auto"
+            className="w-full max-w-[700px] max-h-[500px] object-contain rounded-xl"
           />
         </div>
         {/* Content */}
@@ -47,7 +47,7 @@ const Designcontents1 = () => {
           <img
             src={image2}
             alt="UI/UX Design"
-            className="w-full max-w-[350px] h-auto object-cover rounded-xl mx-auto"
+             className="w-full max-w-[700px] max-h-[500px] object-contain rounded-xl"
           />
         </div>
         {/* Content */}

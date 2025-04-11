@@ -1,5 +1,5 @@
 import React from 'react';
-import image20 from "../assets/Image/social-media-icons_1197721-44286.jpg";
+import image20 from "../assets/Image/9260584.png";
 import {
   Code,
   Smartphone,
@@ -61,7 +61,7 @@ const Mobanimation = () => {
           <img
             src={image20}
             alt="App Dev Animation"
-            className="w-full rounded-xl "
+            className="w-[500px] h-[500px] rounded-xl "
           />
         </div>
       </div>

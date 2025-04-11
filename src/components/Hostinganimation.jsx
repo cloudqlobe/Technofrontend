@@ -1,5 +1,5 @@
 import React from 'react';
-import image22 from '../assets/Image/462f65b9-98d7-4153-9812-1c9d02059c6e.jpg';
+import image22 from '../assets/Image/gpvg_tm01_220118.jpg';
 import {
   FaServer,
   FaCloudUploadAlt,

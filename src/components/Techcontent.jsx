@@ -1,7 +1,7 @@
 import React from "react";
-import image4 from "../assets/Image/4590506.jpg";
-import image5 from "../assets/Image/4673526.jpg";
-import image6 from "../assets/Image/5397869.jpg";
+import image4 from "../assets/Image/10625917.jpg";
+import image5 from "../assets/Image/6502435.jpg";
+import image6 from "../assets/Image/6224584.jpg";
 
 const Techcontent = () => {
   return (

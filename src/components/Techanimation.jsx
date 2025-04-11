@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaLaptopCode, FaCloud, FaDatabase, FaCog } from 'react-icons/fa';
+import image2 from '../assets/Image/robottech.jpg';
 
 const Techanimation = () => {
   const techIcons = [
@@ -31,7 +32,7 @@ const Techanimation = () => {
           {/* Right: Image */}
           <div className="flex justify-center">
             <img
-              src="https://via.placeholder.com/400"
+              src={image2}
               alt="Tech Illustration"
               className="w-full max-w-md"
             />

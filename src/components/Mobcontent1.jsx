@@ -1,6 +1,6 @@
 import React from 'react';
-import image1 from '../assets/Image/4667617.jpg'; // Replace with your actual image
-import image2 from '../assets/Image/6072171.jpg'; // Replace with your actual image
+import image1 from '../assets/Image/5044055.jpg'; // Replace with your actual image
+import image2 from '../assets/Image/4950546.jpg'; // Replace with your actual image
 
 const Mobcontent1 = () => {
   return (
@@ -15,9 +15,9 @@ const Mobcontent1 = () => {
         {/* Image */}
         <div className="w-full md:w-5/12 mb-8 md:mb-0">
           <img
-            src="https://img.freepik.com/free-vector/tablet-with-books-online-learning_1308-69472.jpg?t=st=1744140152~exp=1744143752~hmac=0656bbc0bf45a79216e9093c241ecdd2f088d7f1e0af04e3eb6691bd925415e3&w=900"
+            src={image1}
             alt="App Development"
-            className="w-full max-w-[350px] h-auto object-cover rounded-xl mx-auto"
+           className="w-full max-w-[700px] max-h-[500px] object-contain rounded-xl"
           />
         </div>
         {/* Content */}
@@ -45,7 +45,7 @@ const Mobcontent1 = () => {
           <img
             src={image2}
             alt="UI/UX Design"
-            className="w-full max-w-[350px] h-auto object-cover rounded-xl mx-auto"
+            className="w-full max-w-[700px] max-h-[500px] object-contain rounded-xl"
           />
         </div>
         {/* Content */}

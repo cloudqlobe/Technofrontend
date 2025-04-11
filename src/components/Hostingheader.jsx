@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import image4 from '../assets/Image/49307.jpg';
 import {
   Server,
   Cloud,
@@ -98,9 +99,9 @@ export default function HostingPage() {
           {/* Right Image */}
           <div className="md:w-1/2 flex justify-end">
             <img
-              src="https://img.freepik.com/premium-photo/vibrant-whimsical-illustration-featuring-social-media-day_1201937-571.jpg"
+              src={image4}
               alt="Reseller Opportunity"
-              className="object-contain h-64 md:h-80 w-80 md:w-[400px]"
+              className="object-contain h-[300px] w-[300px] md:h-[300px] md:w-[450px]"
             />
           </div>
         </div>

@@ -1,4 +1,6 @@
 import React from "react";
+import image26 from '../assets/Image/59508bda-2f3b-4d4f-ad16-11795f976aa9.jpg';
+
 import {
   MonitorSmartphone,
   PenTool,
@@ -94,14 +96,18 @@ const Designheader = () => {
             </div>
           </div>
 
-          {/* Right Image */}
-          <div className="md:w-1/2 flex justify-end">
-            <img
-              src="https://img.freepik.com/premium-photo/vibrant-whimsical-illustration-featuring-social-media-day_1201937-571.jpg"
-              alt="Reseller Opportunity"
-              className="object-contain h-64 md:h-80 w-80 md:w-[400px]"
-            />
-          </div>
+          <div className="md:w-1/2 flex justify-end relative z-20 -my-20 md:-my-32">
+  <div className="absolute top-0 bottom-0 right-0 left-0  z-[-1] rounded-xl" />
+  
+  <img
+    src={image26}
+    alt="Reseller Opportunity"
+    className="h-80 md:h-[450px] w-80 md:w-[750px] object-contain"
+  />
+</div>
+
+
+
         </div>
       </section>
     </>

@@ -1,5 +1,5 @@
 import React from "react";
-import image8 from "../assets/Image/6185154.jpg";
+import image8 from "../assets/Image/4564484.jpg";
 import image9 from "../assets/Image/6072194.jpg";
 
 const Webcontent2 = () => {

@@ -1,7 +1,7 @@
 import React from 'react';
-import image16 from "../assets/Image/4110955.jpg";
-import image17 from "../assets/Image/6072171.jpg";
-import image18 from "../assets/Image/4630198.jpg";
+import image16 from "../assets/Image/4351528.jpg";
+import image17 from "../assets/Image/6500398.jpg";
+import image18 from "../assets/Image/5730353.jpg";
 
 const Hostingcontent = () => {
   return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import image22 from '../assets/Image/462f65b9-98d7-4153-9812-1c9d02059c6e.jpg';
+import image22 from '../assets/Image/14786-Picsart-AiImageEnhancer-removebg-preview.png';
 import {
   FaUser,
   FaUserAlt,
@@ -47,7 +47,7 @@ const DesignServices = () => {
             <img
               src={image22}
               alt="UI/UX Design Illustration"
-              className="w-full max-w-md"
+               className="w-full max-w-[500px] h-[500px] "
             />
           </div>
         </div>
