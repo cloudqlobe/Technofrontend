@@ -1,4 +1,5 @@
 import React from 'react';
+import image6 from "../assets/Image/7088807.jpg";
 
 const Erpheader = () => {
   return (
@@ -64,11 +65,11 @@ const Erpheader = () => {
           </div>
 
           {/* Right Image */}
-          <div className="md:w-1/2 flex justify-end">
+          <div className="md:w-1/2 flex justify-center">
             <img
-              src="https://img.freepik.com/premium-photo/vibrant-whimsical-illustration-featuring-social-media-day_1201937-571.jpg"  // Placeholder, replace with relevant ERP image
+              src={image6}  // Placeholder, replace with relevant ERP image
               alt="ERP Reseller Opportunity"
-              className="object-contain h-64 md:h-80 w-80 md:w-[400px]"
+              className="object-contain h-70 md:h-90 w-90 md:w-[400px]"
             />
           </div>
         </div>

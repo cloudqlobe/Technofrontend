@@ -1,6 +1,6 @@
 import React from "react";
-import image4 from "../assets/Image/4590506.jpg";
-import image5 from "../assets/Image/4673526.jpg";
+import image4 from "../assets/Image/4197677.jpg";
+import image5 from "../assets/Image/6502432.jpg";
 import image6 from "../assets/Image/5397869.jpg";
 
 const Pmcontent = () => {
@@ -45,7 +45,7 @@ const Pmcontent = () => {
           <img
             src={image5}
             alt="Web Development"
-            className="w-[80%] h-[450px] object-cover rounded-lg mt-[50px]"
+            className="w-[100%] h-[450px] object-cover rounded-lg mt-[50px]"
           />
         </div>
       </div>

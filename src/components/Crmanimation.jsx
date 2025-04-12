@@ -1,4 +1,5 @@
 import React from 'react';
+import image6 from "../assets/Image/34_tree_money.jpg"
 
 const Crmanimation = () => {
   return (
@@ -7,7 +8,7 @@ const Crmanimation = () => {
         
         {/* Left: Content with Description */}
         <div>
-          <h2 className="text-3xl md:text-4xl font-bold text-yellow-400 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold t0ext-yellow-400 mb-4">
             Build Stronger Customer Relationships with CRM
           </h2>
           <p className="text-lg mb-6">
@@ -16,19 +17,16 @@ const Crmanimation = () => {
         </div>
 
         {/* Right: Animation or Image */}
-        <div className="flex justify-center">
-          <div className="relative w-64 h-64 bg-white rounded-xl shadow-lg overflow-hidden">
-            <img
-              src="https://via.placeholder.com/300x200"  // Replace with CRM animation or image
-              alt="CRM Animation"
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 flex justify-center items-center bg-black bg-opacity-50">
-              <p className="text-white text-xl font-bold">CRM in Action</p>
-            </div>
-          </div>
-        </div>
-      </div>
+       <div className="flex justify-center">
+                   <img
+                     src={image6}
+                     alt="UI/UX Design Illustration"
+                      className="w-full max-w-[500px] h-[500px] "
+                   />
+                 </div>
+               </div>
+    
+    
 
       {/* Bottom: Tabs Section */}
       <section className="bg-blue-800 py-12 mt-16">

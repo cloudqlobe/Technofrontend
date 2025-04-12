@@ -1,4 +1,5 @@
 import React from 'react';
+import image6 from "../assets/Image/3331363.png"
 
 const Crmheader = () => {
   return (
@@ -29,7 +30,7 @@ const Crmheader = () => {
         <div className="flex justify-center">
           <div className="relative w-64 h-64 bg-white rounded-xl shadow-lg overflow-hidden">
             <img
-              src="https://via.placeholder.com/300x200"  // Replace with your CRM interface or dashboard image
+              src={image6}  // Replace with your CRM interface or dashboard image
               alt="CRM System"
               className="w-full h-full object-cover"
             />
@@ -64,11 +65,13 @@ const Crmheader = () => {
           </div>
 
           {/* Right Image */}
-          <div className="md:w-1/2 flex justify-end">
+           <div className="md:w-1/2 flex justify-end relative z-20 -my-20 md:-my-32">
+            <div className="absolute top-0 bottom-0 right-0 left-0  z-[-1] rounded-xl" />
+            
             <img
-              src="https://img.freepik.com/premium-photo/vibrant-whimsical-illustration-featuring-social-media-day_1201937-571.jpg"  // Placeholder, replace with CRM-related image
-              alt="CRM Reseller Opportunity"
-              className="object-contain h-64 md:h-80 w-80 md:w-[400px]"
+              src={image6}
+              alt="Reseller Opportunity"
+              className="h-80 md:h-[450px] w-80 md:w-[750px] object-contain"
             />
           </div>
         </div>

@@ -1,6 +1,6 @@
 import React from 'react';
-import image1 from '../assets/Image/4667617.jpg'; // Replace with your actual image
-import image2 from '../assets/Image/6072171.jpg'; // Replace with your actual image
+import image1 from '../assets/Image/4117025.jpg'; // Replace with your actual image
+import image2 from '../assets/Image/4574923.jpg'; // Replace with your actual image
 import Designcontent from './Designcontent';
 
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import image9 from "../assets/Image/2011.i039.004..big data science analysis isometric set.jpg";
 
 const Erpanimation = () => {
   return (
@@ -18,15 +19,13 @@ const Erpanimation = () => {
 
         {/* Right: ERP Animation Image */}
         <div className="flex justify-center">
-          <div className="relative w-64 h-64 bg-white rounded-xl shadow-lg overflow-hidden">
+          <div className="relative w-70 h-70 ">
             <img
-              src="https://via.placeholder.com/300x200"  // Replace with ERP animation or image
+              src={image9}
               alt="ERP Animation"
-              className="w-full h-full object-cover"
+             className="w-full max-w-md rounded-xl "
             />
-            <div className="absolute inset-0 flex justify-center items-center bg-black bg-opacity-50">
-              <p className="text-white text-xl font-bold">ERP System in Action</p>
-            </div>
+           
           </div>
         </div>
       </div>
