@@ -1,9 +1,83 @@
-import React from 'react'
+import React from "react";
+import { FaUserGraduate, FaLaughBeam, FaMoneyBillWave, FaUsers, FaLanguage, FaHandHoldingHeart } from "react-icons/fa";
+import image6 from "../assets/Image/-robot-promotion-drink-with-isolated_38049140.png";
+
+const benefits = [
+  {
+    icon: <FaUserGraduate className="text-orange-600" size={30} />,
+    title: "Professional Growth",
+    description: "Get enormous opportunities of learning and growth. Continue to develop your skills and expand your personal and professional network.",
+  },
+  {
+    icon: <FaLaughBeam className="text-orange-600" size={30} />,
+    title: "Fun Activities & Events",
+    description: "Enjoy weekly fun activities and monthly treats. We also celebrate special occasions, organize contests, and throw fun events & parties.",
+  },
+  {
+    icon: <FaMoneyBillWave className="text-orange-600" size={30} />,
+    title: "Competitive Salaries",
+    description: "Get paid what you deserve. We offer competitive salaries based on role and position with yearly reviews for career advancement.",
+  },
+  {
+    icon: <FaUsers className="text-orange-600" size={30} />,
+    title: "Congenial Office & Culture",
+    description: "Work in an open environment & culture which promotes collaboration, with top-notch office furniture, equipment, and facilities.",
+  },
+  {
+    icon: <FaLanguage className="text-orange-600" size={30} />,
+    title: "Improve Personality & English",
+    description: "If your English isn’t as advanced as your other skills, you can learn & improve yourself while working at Technomagic Solutions.",
+  },
+  {
+    icon: <FaHandHoldingHeart className="text-orange-600" size={30} />,
+    title: "Give Back to the Community",
+    description: "Be a part of CSR activities like blood donation, fundraising, visiting schools etc., and contribute to society.",
+  },
+];
 
 const Careeranimation = () => {
   return (
-    <div>Careeranimation</div>
-  )
-}
+    <div className="bg-[#1E3A8A] py-20 px-6 sm:px-12">
+      <div className="max-w-7xl mx-auto">
+        {/* Main Content Layout */}
+        <div className="flex flex-col lg:flex-row items-center gap-12">
+          {/* Left Side Content */}
+          <div className="lg:w-1/2 text-center lg:text-left">
+            <h2 className="text-4xl font-bold text-yellow-400 mb-6">
+              Why <span className="text-blue-600">Technomagic Solutions</span>
+            </h2>
+            <p className="text-lg text-orange-300 mb-6">
+              The salary and benefits offered by Technomagic Solutions are attractive and very competitive in the market. We assure to provide an ethical, challenging, work pressure-free and professionally stimulating work environment that values ethics and determination to succeed.
+            </p>
+          </div>
 
-export default Careeranimation
+          {/* Right Side Image */}
+          <div className="lg:w-1/2">
+            <img
+              src={image6}  // Replace with your image URL
+              alt="Technomagic Solutions"
+              className="w-[400px] h-[400px] ml-[90px]"
+            />
+          </div>
+        </div>
+
+        {/* Benefits Grid */}
+        <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 text-left">
+          {benefits.map((benefit, index) => (
+            <div key={index} className="flex items-start gap-4 p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition">
+              <div className="bg-orange-100 rounded-full p-3">
+                {benefit.icon}
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold text-[#0a1d56] mb-1">{benefit.title}</h3>
+                <p className="text-gray-600 text-sm">{benefit.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Careeranimation;

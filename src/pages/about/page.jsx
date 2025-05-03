@@ -14,8 +14,9 @@ const AboutPage = () => {
       <Aboutheader/>
       <Aboutcontent/>
       <Aboutanimation/>
+   
+      <Aboutcontent1/> 
       <Aboutvision/>
-      <Aboutcontent1/>  
       <Webregister/>
    <Footer/>
     </div>

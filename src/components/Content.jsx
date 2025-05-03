@@ -51,12 +51,12 @@ const ContentPage = () => {
       </div>
 
       {/* Custom Software Solutions Section */}
-      <div className="grid md:grid-cols-2 items-center gap-24 mb-8 max-w-7xl mx-auto mt-8">
+      <div className="grid md:grid-cols-2 items-center gap-24 mb-8 max-w-7xl mx-auto mt-[-50px]">
         <div className="relative flex justify-center items-center w-full p-2">
           <img
             src={image3}
             alt="Custom Software Solutions"
-            className="w-[90%] h-[500px] object-cover mt-24"
+            className="w-[90%] h-[500px] object-cover mt-[10px]"
           />
         </div>
         <div className="flex flex-col justify-center w-full">

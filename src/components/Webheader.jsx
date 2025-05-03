@@ -1,117 +1,176 @@
 import React, { useEffect, useState } from 'react';
-import { Lightbulb, Code, Globe, Rocket } from 'lucide-react';
-import image14 from "../assets/Image/72447547_9742055.png";
+import { FaAngular } from "react-icons/fa";
+import { SiPostman } from "react-icons/si";
+import { SiReactbootstrap } from "react-icons/si";
+import image19 from "../assets/Image/250.jpg";
+import { FaFigma, FaSketch, FaAdobe, FaGithub } from 'react-icons/fa';
+import { AiOutlineCode } from 'react-icons/ai';
+import {
+  IoLogoHtml5, IoLogoCss3, IoLogoJavascript,
+  IoLogoReact, IoLogoNodejs, IoLogoGithub,
+  IoLogoAngular
+} from 'react-icons/io5';
 
-const features = [
-  { icon: <Lightbulb size={36} className="text-yellow-500" />, title: 'UI/UX Design', bg: 'bg-blue-50' },
-  { icon: <Code size={36} className="text-green-600" />, title: 'Front-End Dev', bg: 'bg-green-50' },
-  { icon: <Rocket size={36} className="text-purple-600" />, title: 'Performance & SEO', bg: 'bg-purple-50' },
-  { icon: <Globe size={36} className="text-orange-600" />, title: 'Responsive Design', bg: 'bg-orange-50' },
-  { icon: <Code size={36} className="text-blue-600" />, title: 'Back-End Dev', bg: 'bg-blue-50' },
-  { icon: <Rocket size={36} className="text-red-500" />, title: 'Speed Optimization', bg: 'bg-red-50' },
-  { icon: <Globe size={36} className="text-teal-600" />, title: 'Domain & Hosting', bg: 'bg-teal-50' },
-  { icon: <Lightbulb size={36} className="text-pink-500" />, title: 'Brand Strategy', bg: 'bg-pink-50' },
-  { icon: <Code size={36} className="text-indigo-600" />, title: 'Custom Features', bg: 'bg-indigo-50' },
-  { icon: <Rocket size={36} className="text-amber-500" />, title: 'Launch Support', bg: 'bg-amber-50' },
-  { icon: <Globe size={36} className="text-cyan-600" />, title: 'Cross-browser Ready', bg: 'bg-cyan-50' },
-  { icon: <Lightbulb size={36} className="text-lime-600" />, title: 'Creative Concepts', bg: 'bg-lime-50' },
+// Tech Stack Icons
+const webTech = [
+  { icon: IoLogoHtml5, label: 'HTML5', color: '#E34F26' },
+  { icon: IoLogoCss3, label: 'CSS3', color: '#1572B6' },
+  { icon: IoLogoJavascript, label: 'JavaScript', color: '#F7DF1E' },
+  { icon: IoLogoReact, label: 'React', color: '#61DBFB' },
+  { icon: IoLogoNodejs, label: 'Node.js', color: '#68A063' },
+  { icon: IoLogoAngular, label: 'Angular', color: '#F1502F' },
 ];
 
-const chunkArray = (arr, size) =>
-  Array.from({ length: Math.ceil(arr.length / size) }, (_, i) =>
-    arr.slice(i * size, i * size + size)
-  );
+// Design Tools
+const designTools = [
+  { icon: FaFigma, label: 'Figma', color: '#F24E1E' },
+  { icon: SiPostman, label: 'Postman', color: '#FF9900' },
+  { icon: SiReactbootstrap, label: 'Bootstrap', color: '#563D7C' },
+  { icon: FaGithub, label: 'GitHub', color: '#181717' },
+];
 
 const Webheader = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const slides = chunkArray(features, 4);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 4000);
-    return () => clearInterval(interval);
-  }, [slides.length]);
+    const scrollInterval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % webTech.length);
+    }, 2000);
+    return () => clearInterval(scrollInterval);
+  }, []);
+
+  const currentTool = webTech[currentIndex];
 
   return (
-    <div className="w-full">
-      {/* Header Section */}
-      <div className="relative flex flex-col md:flex-row items-center justify-between px-6 md:px-20 py-20 bg-white mt-32">
-        {/* Left Section */}
-        <div className="md:w-1/2 mb-10 md:mb-[100px] -mt-10">
-          <h1 className="text-4xl font-semibold text-gray-600 leading-tight">
-            Build Stunning <span className="text-blue-500">Web Experiences</span>
-          </h1>
-          <p className="text-gray-600 mt-4 text-lg">
-            We specialize in creating modern, high-performing websites that don’t just look amazing—they deliver results. From responsive designs to powerful back-end systems, we build experiences that keep users engaged.
+    <>
+      <section className="w-full bg-white py-12 px-6 md:px-16 flex flex-col md:flex-row items-center justify-between gap-10">
+        {/* Left Text Section */}
+        <div className="max-w-xl text-center md:text-left mt-[10px]">
+          <h2 className="text-3xl md:text-4xl font-semibold mb-4">
+            <span className="text-blue-800">Build Powerful </span>
+            <span className="text-orange-500">Web Apps</span>
+          </h2>
+          <p className="text-gray-700 mb-6  ">
+            We create fast, responsive, and user-friendly web applications using the latest technologies to ensure high performance and optimal user experience.
           </p>
-          <div className="mt-8 flex flex-wrap gap-4">
-            <button className="bg-blue-600 text-white px-6 py-3 rounded-md font-semibold hover:bg-blue-700 transition">
-              Get a Demo
-            </button>
-            <button className="border border-gray-400 px-6 py-3 rounded-md font-semibold hover:bg-gray-100 transition">
+          <div className="flex flex-col md:flex-row gap-4 justify-center md:justify-start mt-[50px]">
+            <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 squared-lg font-semibold shadow">
               Get a Quote
             </button>
+            <button className="border border-blue-600 hover:bg-blue-50 text-blue-600 px-6 py-2 squared-lg font-semibold shadow">
+              Get a Demo
+            </button>
           </div>
         </div>
 
-        {/* Right Monitor Section */}
-        <div className="relative">
-          <div className="border-4 border-gray-300 rounded-3xl p-6 bg-white overflow-hidden w-[320px] sm:w-[400px] md:w-[560px] h-[350px] transition-all duration-700 ease-in-out shadow-md">
-            <div className="grid grid-cols-2 gap-4 transition-opacity duration-500 ease-in-out">
-              {slides[currentSlide].map((item, index) => (
-                <div
-                  key={index}
-                  className={`w-full h-24 sm:h-28 ${item.bg} rounded-xl flex flex-col items-center justify-center`}
-                >
-                  {item.icon}
-                  <p className="mt-2 font-semibold text-center text-sm">{item.title}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-          <div className="w-24 h-6 bg-gray-400 rounded-b-xl mx-auto mt-2"></div>
+        {/* Monitor and Icons */}
+        {/* Monitor and Icons */}
+<div className="relative flex items-center justify-center mx-auto">
+  {/* Left Icons */}
+  <div className="absolute left-[-50px] top-[50%] transform -translate-y-1/2 flex flex-col justify-center gap-12 items-center">
+    {designTools.slice(0, 2).map((tool, index) => (
+      <div key={index} className="flex flex-col items-center">
+        <div
+          className="text-white rounded-full flex items-center justify-center shadow-lg"
+          style={{
+            width: '80px',
+            height: '80px',
+            backgroundColor: tool.color,
+          }}
+        >
+          <tool.icon style={{ fontSize: '40px' }} />
         </div>
+        <p className="text-sm mt-2 font-medium text-center">{tool.label}</p>
       </div>
-{/* Become a Reseller Section */}
-<div className="w-full bg-[#F1F5F9] py-12 px-6 md:px-20 rounded-xl shadow-md">
-  <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
+    ))}
+  </div>
+
+  {/* Monitor */}
+  <div className="relative w-[500px] h-[300px] rounded-[1rem] border-[4px] border-gray-400 shadow-xl bg-gray-100 flex items-center justify-center overflow-hidden mx-[4rem]">
+    <div className="absolute top-2 left-1/2 -translate-x-1/2 w-6 h-1.5 bg-blue-300 rounded-full"></div>
     
-    {/* Left Content */}
-    <div className="md:w-1/2">
-      <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-orange-600 drop-shadow-sm">
-        Become a Reseller
-      </h2>
-      <p className="text-base md:text-lg mb-6 text-gray-700 leading-relaxed">
-        Start your own business with zero development hassle. Offer world-class web design and development services under your brand, powered by us.
-      </p>
-      <div className="flex flex-wrap gap-4">
-        <button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 squared-xl shadow-md transition-all duration-300">
-          🚀 Register Now
-        </button>
-        <button className="bg-green-600 border border-green-600 text-white  font-semibold px-6 py-3 squared-xl transition-all duration-300">
-          💬 Talk to Us
-        </button>
-      </div>
+    <div
+      key={currentIndex}
+      title={currentTool.label}
+      style={{
+        color: currentTool.color,
+        fontSize: '100px',  // Reduced font size
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+      }}
+    >
+      {currentTool.icon ? (
+        <currentTool.icon />
+      ) : (
+        <AiOutlineCode style={{ fontSize: '100px', color: '#6c757d' }} />
+      )}
+      <p className="text-sm mt-2 font-medium text-gray-700">{currentTool.label}</p> {/* Label Below */}
+     
     </div>
-
-    {/* Right Image */}
-    <div className="md:w-1/2 flex justify-end">
-  <img
-    src={image14}
-    alt="Reseller Opportunity"
-    className="object-contain h-64 md:h-80 w-80 md:w-[400px] "
-  />
-</div>
+    
+  </div>
+  <div className="absolute bottom-[-50px] left-1/2 -translate-x-1/2 w-[120px] h-[30px] bg-gray-500 rounded-b-full shadow-md border-t-[4px] border-gray-400"></div>
 
 
+  {/* Right Icons */}
+  <div className="absolute right-[-50px] top-[50%] transform -translate-y-1/2 flex flex-col justify-center gap-12 items-center">
+    {designTools.slice(2).map((tool, index) => (
+      <div key={index} className="flex flex-col items-center">
+        <div
+          className="text-white rounded-full flex items-center justify-center shadow-lg"
+          style={{
+            width: '80px',
+            height: '80px',
+            backgroundColor: tool.color,
+          }}
+        >
+          <tool.icon style={{ fontSize: '40px' }} />
+        </div>
+        <p className="text-sm mt-2 font-medium text-center">{tool.label}</p>
+      </div>
+    ))}
   </div>
 </div>
 
+      </section>
+<div className="w-full bg-[#F1F5F9] py-12 px-6 md:px-20 rounded-xl shadow-md mt-[100px] border border-gray-300">
+      {/* Become a Reseller */}
+      
 
-</div>
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
+          {/* Text */}
+          <div className="md:w-1/2">
+            <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-orange-600 drop-shadow-sm">
+              Become a Reseller
+            </h2>
+            <p className="text-base md:text-lg mb-6 text-gray-700 leading-relaxed">
+              Start your own business with zero development hassle. Offer world-class web design and development services under your brand, powered by us.
+            </p>
+            <div className="flex flex-wrap gap-4">
+              <button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 squared-xl shadow-md transition-all duration-300">
+                 Register Now
+              </button>
+              <button className="bg-green-600 border border-green-600 text-white font-semibold px-6 py-3 squared-xl transition-all duration-300">
+                 Talk to Us
+              </button>
+            </div>
+          </div>
 
+          {/* Image */}
+          <div className="md:w-1/2 flex justify-end">
+            <img
+              src={image19}
+              alt="Reseller Opportunity"
+              className="object-contain h-64 md:h-80 w-80 md:w-[400px]"
+            />
+          </div>
+        </div>
+      </div>
+    </>
   );
 };
 
 export default Webheader;
+

@@ -3,13 +3,12 @@ import image1 from '../assets/Image/4667617.jpg'; // Replace with your actual im
 import image2 from '../assets/Image/6072171.jpg'; // Replace with your actual image
 import Designcontent from './Designcontent';
 
-
 const Pmcontents1 = () => {
   return (
     <section className="w-full px-6 md:px-16 py-16 bg-white">
       {/* Main Heading */}
-      <h2 className="text-4xl text-center font-bold text-blue-900 mb-16">
-        Cutting-Edge Mobile App Development Solutions
+      <h2 className="text-4xl text-center font- semibold text-gray-800 mb-16">
+        Cutting-Edge <span className="text-blue-800">Project Management</span> Solutions
       </h2>
 
       {/* Section 1 - Image Left, Content Right */}
@@ -18,24 +17,24 @@ const Pmcontents1 = () => {
         <div className="w-full md:w-5/12 mb-8 md:mb-0">
           <img
             src={image1}
-            alt="App Development"
+            alt="Project Management"
             className="w-full max-w-[350px] h-auto object-cover rounded-xl mx-auto"
           />
         </div>
         {/* Content */}
         <div className="w-full md:w-7/12 md:pl-10">
-          <h3 className="text-2xl font-bold mb-4">
-            <span className="text-blue-800">Build Smarter,</span>{' '}
-            <span className="text-yellow-500">Faster Apps</span>
+          <h3 className="text-3xl font-default mb-4">
+            <span className="text-gray-800">Streamline Your</span>{' '}
+            <span className="text-blue-700">Project Workflow</span>
           </h3>
-          <p className="text-gray-700 text-base leading-relaxed mb-4">
-            Our mobile app development services are engineered to help businesses of all sizes launch powerful and scalable apps. Whether it’s a native Android or iOS app, or a modern cross-platform solution using Flutter or React Native, we ensure rapid delivery without compromising performance.
+          <p className="text-gray-600 text-lg leading-relaxed mb-4">
+            Our project management solutions help businesses efficiently manage their projects from start to finish. Whether it’s software development, marketing campaigns, or infrastructure projects, we ensure that every task is tracked, deadlines are met, and resources are optimized for success.
           </p>
-          <p className="text-gray-700 text-base leading-relaxed mb-4">
-            We focus on creating apps that are not just functional, but deeply aligned with your business goals. From designing intuitive screens to writing efficient backend code and ensuring high test coverage, our team guarantees a production-ready application.
+          <p className="text-gray-600 text-lg leading-relaxed mb-4">
+            We provide robust tools for project planning, task assignment, progress tracking, and collaboration, all while fostering transparency across teams. Our goal is to ensure that every project is delivered on time, within scope, and on budget.
           </p>
-          <p className="text-gray-700 text-base leading-relaxed">
-            We also provide seamless integration with APIs, databases, third-party tools, and payment gateways — ensuring your app is complete and competitive in today’s digital marketplace.
+          <p className="text-gray-600 text-lg leading-relaxed">
+            With custom workflows, real-time reporting, and powerful analytics, we help your team stay organized and focused on achieving project goals, whether working in the office or remotely.
           </p>
         </div>
       </div>
@@ -46,24 +45,24 @@ const Pmcontents1 = () => {
         <div className="w-full md:w-5/12 mb-8 md:mb-0">
           <img
             src={image2}
-            alt="UI/UX Design"
+            alt="Project Management Tools"
             className="w-full max-w-[350px] h-auto object-cover rounded-xl mx-auto"
           />
         </div>
         {/* Content */}
         <div className="w-full md:w-7/12 md:pr-10">
-          <h3 className="text-2xl font-bold mb-4">
-            <span className="text-orange-500">Intuitive Interfaces</span>{' '}
-            <span className="text-blue-800">& Seamless Design</span>
+          <h3 className="text-3xl font-default mb-4">
+            <span className="text-gray-600">Collaborative Tools</span>{' '}
+            <span className="text-blue-800">for Seamless Project Delivery</span>
           </h3>
-          <p className="text-gray-700 text-base leading-relaxed mb-4">
-            Design is not just what it looks like — it's how it works. We craft visually rich, user-centric interfaces that guide users smoothly through every screen. Our UI/UX experts use modern design principles and tools like Figma to create experiences that are both beautiful and efficient.
+          <p className="text-gray-600 text-lg leading-relaxed  mb-4">
+            We offer a range of collaborative tools that improve team communication, document sharing, and overall project coordination. From Gantt charts and Kanban boards to time tracking and task management, our solutions make it easy to keep everyone on the same page.
           </p>
-          <p className="text-gray-700 text-base leading-relaxed mb-4">
-            Every app we build is optimized for responsiveness, accessibility, and user satisfaction. We conduct usability testing, implement interactive prototypes, and ensure that the final product delights users across all devices.
+          <p className="text-gray-600 text-lg leading-relaxed mb-4">
+            Our project management systems ensure complete visibility of every task, making it easier to identify potential bottlenecks and resolve issues before they impact your project timeline. We empower teams to collaborate effectively, increase productivity, and reduce project risks.
           </p>
-          <p className="text-gray-700 text-base leading-relaxed">
-            From wireframes to polished UI, our design workflow is structured to bring clarity and creativity to your product’s identity.
+          <p className="text-gray-600 text-lg leading-relaxed">
+            With real-time updates, automated notifications, and centralized documentation, our platform helps your team stay aligned and focused on delivering the best results for your business.
           </p>
         </div>
       </div>

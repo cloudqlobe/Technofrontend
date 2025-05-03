@@ -43,7 +43,7 @@ const Mobheader = () => {
       {/* Mobile Header Section */}
       <section className="w-full bg-white py-12 px-6 md:px-16 flex flex-col md:flex-row items-center justify-between gap-10">
         {/* Left Content */}
-        <div className="max-w-xl text-center md:text-left mt-[-100px]">
+        <div className="max-w-xl text-center md:text-left mt-[-150px]">
           <h2 className="text-3xl md:text-4xl font-semibold mb-4">
             <span className="text-blue-800">Build Smarter </span>
             <span className="text-orange-500">Mobile Apps</span>
@@ -53,18 +53,18 @@ const Mobheader = () => {
           </p>
 
           {/* Action Buttons */}
-          <div className="flex flex-col md:flex-row gap-4 justify-center md:justify-start">
-            <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-semibold shadow">
+          <div className="flex flex-col md:flex-row gap-4 justify-center md:justify-start mb-[-40px]">
+            <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 squared-lg font-semibold shadow">
               Get a Quote
             </button>
-            <button className="border border-blue-600 hover:bg-blue-50 text-blue-600 px-6 py-2 rounded-lg font-semibold shadow">
+            <button className="border border-blue-600 hover:bg-blue-50 text-blue-600 px-6 py-2 squared-lg font-semibold shadow">
               Get a Demo
             </button>
           </div>
         </div>
 
         {/* Phone and Icons Section */}
-        <div className="relative flex items-center justify-center mx-auto">
+        <div className="relative flex items-center justify-center mx-auto mt-[-70px] ml-[180px]">
           {/* Left Side Icons */}
           <div className="flex flex-col justify-center gap-12 mr-4 items-center">
             <div className="flex flex-col items-center">
@@ -117,7 +117,7 @@ const Mobheader = () => {
       </section>
 
       {/* Reseller Section */}
-      <div className="w-full bg-[#F1F5F9] py-12 px-6 md:px-20 rounded-xl shadow-md mt-12">
+      <div className="w-full bg-[#F1F5F9] py-12 px-6 md:px-20 rounded-xl shadow-md mt-[-10px]  border border-gray-300">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
           {/* Left Content */}
           <div className="md:w-1/2">

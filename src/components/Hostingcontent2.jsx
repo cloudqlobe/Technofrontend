@@ -2,13 +2,12 @@ import React from 'react';
 import image1 from '../assets/Image/4709950.jpg'; // Replace with your actual image
 import image2 from '../assets/Image/5648291.jpg'; // Replace with your actual image
 
-
 const Hostingcontent2 = () => {
   return (
     <section className="w-full px-6 md:px-16 py-16 bg-white">
       {/* Main Heading */}
-      <h2 className="text-4xl text-center font-bold text-blue-900 mb-16">
-        Cutting-Edge Mobile App Development Solutions
+      <h2 className="text-4xl text-center font-semibold text-black mb-16">
+        Premium Hosting Services for<span className='text-blue-800'> Fast, Secure, and Scalable Websites</span>
       </h2>
 
       {/* Section 1 - Image Left, Content Right */}
@@ -17,24 +16,24 @@ const Hostingcontent2 = () => {
         <div className="w-full md:w-5/12 mb-8 md:mb-0">
           <img
             src={image1}
-            alt="App Development"
-           className="w-full max-w-[700px] max-h-[500px] object-contain rounded-xl"
+            alt="Hosting Performance"
+            className="w-[90%] h-[450px] object-cover rounded-lg"
           />
         </div>
         {/* Content */}
         <div className="w-full md:w-7/12 md:pl-10">
-          <h3 className="text-2xl font-bold mb-4">
-            <span className="text-blue-800">Build Smarter,</span>{' '}
-            <span className="text-yellow-500">Faster Apps</span>
+          <h3 className="text-3xl font-default mb-4">
+            <span className="text-black ">Fast Loading,</span>{' '}
+            <span className="text-blue-800">Reliable Hosting</span>
           </h3>
-          <p className="text-gray-700 text-base leading-relaxed mb-4">
-            Our mobile app development services are engineered to help businesses of all sizes launch powerful and scalable apps. Whether it’s a native Android or iOS app, or a modern cross-platform solution using Flutter or React Native, we ensure rapid delivery without compromising performance.
+          <p className="text-gray-600 text-lg leading-relaxed mb-4">
+            Our hosting solutions are designed for speed and reliability. Using cutting-edge SSD and NVMe storage, along with high-performance servers and a global CDN, your website will load in milliseconds — keeping users engaged and conversions high.
           </p>
-          <p className="text-gray-700 text-base leading-relaxed mb-4">
-            We focus on creating apps that are not just functional, but deeply aligned with your business goals. From designing intuitive screens to writing efficient backend code and ensuring high test coverage, our team guarantees a production-ready application.
+          <p className="text-gray-600 text-lg leading-relaxed mb-4">
+            Whether you are hosting a simple website, a growing eCommerce platform, or a high-traffic blog, our infrastructure ensures uptime, speed, and dependability. We offer scalable plans that grow with your business.
           </p>
-          <p className="text-gray-700 text-base leading-relaxed">
-            We also provide seamless integration with APIs, databases, third-party tools, and payment gateways — ensuring your app is complete and competitive in today’s digital marketplace.
+          <p className="text-gray-600 text-lg leading-relaxed">
+            Enjoy one-click installations, free domain registration, and lightning-fast support to help you get online effortlessly and stay ahead of the curve.
           </p>
         </div>
       </div>
@@ -45,24 +44,24 @@ const Hostingcontent2 = () => {
         <div className="w-full md:w-5/12 mb-8 md:mb-0">
           <img
             src={image2}
-            alt="UI/UX Design"
-            className="w-full max-w-[700px] max-h-[500px] object-contain rounded-xl"
+            alt="Secure Hosting"
+           className="w-[90%] h-[450px] object-cover rounded-lg"
           />
         </div>
         {/* Content */}
         <div className="w-full md:w-7/12 md:pr-10">
-          <h3 className="text-2xl font-bold mb-4">
-            <span className="text-orange-500">Intuitive Interfaces</span>{' '}
-            <span className="text-blue-800">& Seamless Design</span>
+          <h3 className="text-3xl font-default mb-4">
+            <span className="text-black">Top-Tier Security</span>{' '}
+            <span className="text-blue-800">& Peace of Mind</span>
           </h3>
-          <p className="text-gray-700 text-base leading-relaxed mb-4">
-            Design is not just what it looks like — it's how it works. We craft visually rich, user-centric interfaces that guide users smoothly through every screen. Our UI/UX experts use modern design principles and tools like Figma to create experiences that are both beautiful and efficient.
+          <p className="text-gray-600 text-lg leading-relaxed mb-4">
+            Security is our top priority. Our hosting plans come with built-in firewall protection, free SSL certificates, DDoS attack mitigation, and real-time malware scanning to safeguard your website and customer data.
           </p>
-          <p className="text-gray-700 text-base leading-relaxed mb-4">
-            Every app we build is optimized for responsiveness, accessibility, and user satisfaction. We conduct usability testing, implement interactive prototypes, and ensure that the final product delights users across all devices.
+          <p className="text-gray-600 text-lg leading-relaxed mb-4">
+            With automated daily backups, two-factor authentication, and secure access management, we make sure your site remains protected against any potential threat — so you can focus on growing your business.
           </p>
-          <p className="text-gray-700 text-base leading-relaxed">
-            From wireframes to polished UI, our design workflow is structured to bring clarity and creativity to your product’s identity.
+          <p className="text-gray-600 text-lg leading-relaxed">
+            From small businesses to enterprise-level applications, our secure hosting ensures peace of mind every step of the way.
           </p>
         </div>
       </div>

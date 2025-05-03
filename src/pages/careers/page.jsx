@@ -5,6 +5,7 @@ import Careerheader from '../../components/Careerheader';
 import Careercontent from '../../components/Careercontent';
 import Careeranimation from '../../components/Careeranimation';
 import Careercontent1 from '../../components/Careercontent1';
+import Careerregister from '../../components/Careerregister';
 
 const CareerPage = () => {
   return (
@@ -13,8 +14,9 @@ const CareerPage = () => {
       <Careercontent/>
       <Careeranimation/>
       <Careercontent1/>
+      <Careerregister/>
   
-      <Webregister/>
+     
 <Footer/>
     </div>
   );

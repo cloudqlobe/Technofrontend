@@ -3,13 +3,12 @@ import image1 from '../assets/Image/4117025.jpg'; // Replace with your actual im
 import image2 from '../assets/Image/4574923.jpg'; // Replace with your actual image
 import Designcontent from './Designcontent';
 
-
 const Erpcontents1 = () => {
   return (
     <section className="w-full px-6 md:px-16 py-16 bg-white">
       {/* Main Heading */}
-      <h2 className="text-4xl text-center font-bold text-blue-900 mb-16">
-        Cutting-Edge Mobile App Development Solutions
+      <h2 className="text-4xl text-center font-semibold text-gray-800 mb-16">
+        Cutting-Edge <span className="text-blue-800">ERP Solutions</span>
       </h2>
 
       {/* Section 1 - Image Left, Content Right */}
@@ -18,24 +17,24 @@ const Erpcontents1 = () => {
         <div className="w-full md:w-5/12 mb-8 md:mb-0">
           <img
             src={image1}
-            alt="App Development"
+            alt="ERP Software"
             className="w-full max-w-[350px] h-auto object-cover rounded-xl mx-auto"
           />
         </div>
         {/* Content */}
         <div className="w-full md:w-7/12 md:pl-10">
-          <h3 className="text-2xl font-bold mb-4">
-            <span className="text-blue-800">Build Smarter,</span>{' '}
-            <span className="text-yellow-500">Faster Apps</span>
+          <h3 className="text-2xl font-default mb-4">
+            <span className="text-gray-600">Streamline Your Business</span>{' '}
+            <span className="text-blue-800">With ERP</span>
           </h3>
-          <p className="text-gray-700 text-base leading-relaxed mb-4">
-            Our mobile app development services are engineered to help businesses of all sizes launch powerful and scalable apps. Whether it’s a native Android or iOS app, or a modern cross-platform solution using Flutter or React Native, we ensure rapid delivery without compromising performance.
+          <p className="text-gray-600 text-lg leading-relaxed mb-4">
+            Our ERP solutions are designed to help businesses of all sizes optimize their operations and streamline key processes. From inventory management to finance, HR, and customer relationship management, we provide a seamless, integrated system that connects every aspect of your business.
           </p>
-          <p className="text-gray-700 text-base leading-relaxed mb-4">
-            We focus on creating apps that are not just functional, but deeply aligned with your business goals. From designing intuitive screens to writing efficient backend code and ensuring high test coverage, our team guarantees a production-ready application.
+          <p className="text-gray-600 text-lg leading-relaxed mb-4">
+            With our ERP solutions, you can automate workflows, reduce manual errors, and improve decision-making with real-time data. Whether you're in manufacturing, retail, or services, we ensure that your ERP solution is scalable, secure, and tailored to meet your unique needs.
           </p>
-          <p className="text-gray-700 text-base leading-relaxed">
-            We also provide seamless integration with APIs, databases, third-party tools, and payment gateways — ensuring your app is complete and competitive in today’s digital marketplace.
+          <p className="text-gray-600 text-lg leading-relaxed">
+            Our team provides full integration with your existing systems, ensuring smooth data flow and reducing duplication. Expect a solution that not only improves efficiency but also enhances collaboration across departments, empowering your teams to work smarter and faster.
           </p>
         </div>
       </div>
@@ -46,24 +45,24 @@ const Erpcontents1 = () => {
         <div className="w-full md:w-5/12 mb-8 md:mb-0">
           <img
             src={image2}
-            alt="UI/UX Design"
+            alt="ERP System"
             className="w-full max-w-[350px] h-auto object-cover rounded-xl mx-auto"
           />
         </div>
         {/* Content */}
         <div className="w-full md:w-7/12 md:pr-10">
-          <h3 className="text-2xl font-bold mb-4">
-            <span className="text-orange-500">Intuitive Interfaces</span>{' '}
-            <span className="text-blue-800">& Seamless Design</span>
+          <h3 className="text-2xl font-default mb-4">
+            <span className="text-gray-600">ERP Systems</span> for{' '}
+            <span className="text-blue-800">Business Growth</span>
           </h3>
-          <p className="text-gray-700 text-base leading-relaxed mb-4">
-            Design is not just what it looks like — it's how it works. We craft visually rich, user-centric interfaces that guide users smoothly through every screen. Our UI/UX experts use modern design principles and tools like Figma to create experiences that are both beautiful and efficient.
+          <p className="text-gray-600 text-lg leading-relaxed mb-4">
+            Our ERP systems provide you with a unified platform to manage all aspects of your business processes. From procurement to production and distribution, our solutions are built to integrate seamlessly with your workflow, ensuring that your business runs smoothly and efficiently.
           </p>
-          <p className="text-gray-700 text-base leading-relaxed mb-4">
-            Every app we build is optimized for responsiveness, accessibility, and user satisfaction. We conduct usability testing, implement interactive prototypes, and ensure that the final product delights users across all devices.
+          <p className="text-gray-600 text-lg leading-relaxed mb-4">
+            With advanced reporting and analytics, our ERP solutions enable you to gain valuable insights into your business, allowing you to make data-driven decisions. Our solutions are designed to help you stay ahead of the competition, optimize operations, and reduce costs, all while improving your customer satisfaction.
           </p>
-          <p className="text-gray-700 text-base leading-relaxed">
-            From wireframes to polished UI, our design workflow is structured to bring clarity and creativity to your product’s identity.
+          <p className="text-gray-600 text-lg leading-relaxed">
+            We understand that every business is unique, which is why we offer customized ERP solutions that align with your business goals. Our expert team will work with you to develop and deploy a solution that fits your business needs and growth trajectory.
           </p>
         </div>
       </div>

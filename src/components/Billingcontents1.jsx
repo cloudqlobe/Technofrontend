@@ -3,13 +3,12 @@ import image1 from '../assets/Image/4667617.jpg'; // Replace with your actual im
 import image2 from '../assets/Image/6072171.jpg'; // Replace with your actual image
 import Designcontent from './Designcontent';
 
-
 const Billingcontents1 = () => {
   return (
     <section className="w-full px-6 md:px-16 py-16 bg-white">
       {/* Main Heading */}
-      <h2 className="text-4xl text-center font-bold text-blue-900 mb-16">
-        Cutting-Edge Mobile App Development Solutions
+      <h2 className="text-4xl text-center font-semibold text-gray-800 mb-16">
+        Cutting-Edge <span className="text-blue-800">Billing Software Solutions</span>
       </h2>
 
       {/* Section 1 - Image Left, Content Right */}
@@ -18,24 +17,24 @@ const Billingcontents1 = () => {
         <div className="w-full md:w-5/12 mb-8 md:mb-0">
           <img
             src={image1}
-            alt="App Development"
+            alt="Billing Software"
             className="w-full max-w-[350px] h-auto object-cover rounded-xl mx-auto"
           />
         </div>
         {/* Content */}
         <div className="w-full md:w-7/12 md:pl-10">
-          <h3 className="text-2xl font-bold mb-4">
-            <span className="text-blue-800">Build Smarter,</span>{' '}
-            <span className="text-yellow-500">Faster Apps</span>
+          <h3 className="text-2xl font-default mb-4">
+            <span className="text-gray-600">Efficient,</span>{' '}
+            <span className="text-blue-800">Reliable Billing</span>
           </h3>
-          <p className="text-gray-700 text-base leading-relaxed mb-4">
-            Our mobile app development services are engineered to help businesses of all sizes launch powerful and scalable apps. Whether it’s a native Android or iOS app, or a modern cross-platform solution using Flutter or React Native, we ensure rapid delivery without compromising performance.
+          <p className="text-gray-600 text-lg leading-relaxed mb-4">
+            Our billing software solutions are designed to streamline and automate your billing processes, reducing manual effort and eliminating errors. From invoicing to payment tracking, we provide a seamless experience for businesses of all sizes.
           </p>
-          <p className="text-gray-700 text-base leading-relaxed mb-4">
-            We focus on creating apps that are not just functional, but deeply aligned with your business goals. From designing intuitive screens to writing efficient backend code and ensuring high test coverage, our team guarantees a production-ready application.
+          <p className="text-gray-600 text-lg leading-relaxed mb-4">
+            Our system integrates with multiple payment gateways and accounting tools, offering you a one-stop solution to handle all billing-related tasks. Whether it’s subscription-based billing, one-time payments, or recurring billing cycles, our software can handle it all.
           </p>
-          <p className="text-gray-700 text-base leading-relaxed">
-            We also provide seamless integration with APIs, databases, third-party tools, and payment gateways — ensuring your app is complete and competitive in today’s digital marketplace.
+          <p className="text-gray-600 text-lg leading-relaxed">
+            We also ensure that your billing system complies with the latest tax regulations and accounting standards, making it easy to generate financial reports and stay compliant with local laws.
           </p>
         </div>
       </div>
@@ -46,24 +45,24 @@ const Billingcontents1 = () => {
         <div className="w-full md:w-5/12 mb-8 md:mb-0">
           <img
             src={image2}
-            alt="UI/UX Design"
+            alt="Billing Software Features"
             className="w-full max-w-[350px] h-auto object-cover rounded-xl mx-auto"
           />
         </div>
         {/* Content */}
         <div className="w-full md:w-7/12 md:pr-10">
-          <h3 className="text-2xl font-bold mb-4">
-            <span className="text-orange-500">Intuitive Interfaces</span>{' '}
-            <span className="text-blue-800">& Seamless Design</span>
+          <h3 className="text-2xl font-default mb-4">
+            <span className="text-gray-600">Automation</span>{' '}
+            <span className="text-blue-800">and Accuracy</span>
           </h3>
-          <p className="text-gray-700 text-base leading-relaxed mb-4">
-            Design is not just what it looks like — it's how it works. We craft visually rich, user-centric interfaces that guide users smoothly through every screen. Our UI/UX experts use modern design principles and tools like Figma to create experiences that are both beautiful and efficient.
+          <p className="text-gray-600 text-lg leading-relaxed mb-4">
+            Our billing software automates key tasks such as invoice generation, payment reminders, and late fee calculations, ensuring that your billing operations run smoothly without manual intervention. We also provide real-time tracking and updates of payment statuses.
           </p>
-          <p className="text-gray-700 text-base leading-relaxed mb-4">
-            Every app we build is optimized for responsiveness, accessibility, and user satisfaction. We conduct usability testing, implement interactive prototypes, and ensure that the final product delights users across all devices.
+          <p className="text-gray-600 text-lg leading-relaxed mb-4">
+            With advanced reporting and analytics features, our solution gives you the ability to generate detailed reports and insights into your financial data. Track payment history, outstanding invoices, and revenue growth effortlessly.
           </p>
-          <p className="text-gray-700 text-base leading-relaxed">
-            From wireframes to polished UI, our design workflow is structured to bring clarity and creativity to your product’s identity.
+          <p className="text-gray-600 text-lg leading-relaxed">
+            Whether you are managing a small business or an enterprise, our customizable billing software adapts to your needs, offering scalability and flexibility to grow with your business.
           </p>
         </div>
       </div>

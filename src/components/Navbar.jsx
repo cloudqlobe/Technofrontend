@@ -4,7 +4,7 @@ import {
   FaFacebookF, FaLinkedinIn, FaInstagram, FaTwitter,
   FaLaptopCode, FaMobileAlt, FaChartLine, FaPencilRuler,
   FaFileAlt, FaBriefcase, FaCogs, FaUsers, FaClipboardList,
-  FaMoneyBill, FaChevronRight, FaChevronDown
+  FaMoneyBill, FaChevronDown
 } from "react-icons/fa";
 import { BsMicrosoftTeams } from "react-icons/bs";
 import { motion, AnimatePresence } from "framer-motion";
@@ -19,21 +19,25 @@ const socialIcons = [
   { id: 5, icon: <BsMicrosoftTeams size={14} className="text-white" />, bgColor: "bg-purple-400" },
 ];
 
+// Icon Style for Flat, Two-Colored Illustration
+const cartoonIconStyle = "text-[28px] text-gray-800 hover:text-orange-500 transition-colors duration-300";
+
+// Updated dropdownItems with Two-Colored Icon Styles for Dropdown Content
 const dropdownItems = {
   services: [
-    { icon: <FaLaptopCode className="text-blue-600" />, label: "Website Development", url: "/services/web-development" },
-    { icon: <FaMobileAlt className="text-green-500" />, label: "Mobile Apps", url: "/services/mobile-apps" },
-    { icon: <FaChartLine className="text-orange-500" />, label: "Hosting Services", url: "/services/seo" },
-    { icon: <FaPencilRuler className="text-purple-500" />, label: "UI & UX Design", url: "/services/design" },
-    { icon: <FaFileAlt className="text-red-500" />, label: "Tech Consultancy", url: "/services/content-marketing" },
-    { icon: <FaFileAlt className="text-yellow-500" />, label: "Cloudcomputing", url: "/services/Cloudcomputing" },
+    { icon: <FaLaptopCode className={`${cartoonIconStyle} text-blue-600`} />, label: "Website Development", url: "/services/web-development" },
+    { icon: <FaMobileAlt className={`${cartoonIconStyle} text-green-500`} />, label: "Mobile Apps", url: "/services/mobile-apps" },
+    { icon: <FaChartLine className={`${cartoonIconStyle} text-yellow-500`} />, label: "Hosting Services", url: "/services/seo" },
+    { icon: <FaPencilRuler className={`${cartoonIconStyle} text-indigo-500`} />, label: "UI & UX Design", url: "/services/design" },
+    { icon: <FaFileAlt className={`${cartoonIconStyle} text-red-500`} />, label: "Tech Consultancy", url: "/services/content-marketing" },
+    { icon: <FaFileAlt className={`${cartoonIconStyle} text-purple-600`} />, label: "Cloud Computing", url: "/services/cloudcomputing" },
   ],
   softwares: [
-    { icon: <FaBriefcase className="text-blue-600" />, label: "CRM", url: "/software/crm" },
-    { icon: <FaCogs className="text-green-500" />, label: "ERP", url: "/software/erp" },
-    { icon: <FaClipboardList className="text-orange-500" />, label: "Project Management", url: "/software/project-management" },
-    { icon: <FaMoneyBill className="text-yellow-500" />, label: "Billing Software", url: "/software/billing" },
-    { icon: <FaUsers className="text-purple-500" />, label: "Chatbot", url: "/software/hrm" },
+    { icon: <FaBriefcase className={`${cartoonIconStyle} text-blue-700`} />, label: "CRM", url: "/software/crm" },
+    { icon: <FaCogs className={`${cartoonIconStyle} text-orange-500`} />, label: "ERP", url: "/software/erp" },
+    { icon: <FaClipboardList className={`${cartoonIconStyle} text-gray-600`} />, label: "Project Management", url: "/software/project-management" },
+    { icon: <FaMoneyBill className={`${cartoonIconStyle} text-green-600`} />, label: "Billing Software", url: "/software/billing" },
+    { icon: <FaUsers className={`${cartoonIconStyle} text-purple-600`} />, label: "Chatbot", url: "/software/hrm" },
   ],
 };
 
@@ -61,7 +65,7 @@ const Navbar = () => {
     <motion.div className="w-full bg-white fixed top-0 left-0 z-50">
       <motion.nav className="px-6 py-2 flex items-center justify-between h-20">
         {/* Logo and social icons */}
-        <div 
+        <div
           className="relative flex flex-col items-center"
           onMouseEnter={() => setShowIcons(true)}
           onMouseLeave={() => setShowIcons(false)}
@@ -90,23 +94,6 @@ const Navbar = () => {
             <span className="flex items-center gap-2">
               Services <FaChevronDown className="text-xs" />
             </span>
-            {dropdown === "services" && (
-              <motion.ul className="absolute left-0 mt-2 w-[500px] shadow-lg rounded-none border border-orange-300 bg-white p-2 z-50 grid grid-cols-2 gap-x-4">
-                {dropdownItems.services.map((item, index) => (
-                  <motion.li 
-                    key={index} 
-                    className={`flex items-center px-4 py-2 hover:bg-orange-50`}>
-                    <Link to={item.url} className="flex items-center space-x-3 text-gray-800 hover:text-orange-500">
-                      <span className={`p-2 rounded-full`}>
-                        {item.icon}
-                      </span>
-                      <span>{item.label}</span>
-                      <FaChevronRight className="text-xs" />
-                    </Link>
-                  </motion.li>
-                ))}
-              </motion.ul>
-            )}
           </li>
 
           <li className="px-3 cursor-pointer hover:text-orange-500">
@@ -121,23 +108,6 @@ const Navbar = () => {
             <span className="flex items-center gap-2">
               Softwares <FaChevronDown className="text-xs" />
             </span>
-            {dropdown === "softwares" && (
-              <motion.ul className="absolute left-0 mt-2 w-[500px] shadow-lg rounded-none border border-orange-300 bg-white p-2 z-50 grid grid-cols-2 gap-x-4">
-                {dropdownItems.softwares.map((item, index) => (
-                  <motion.li 
-                    key={index} 
-                    className={`flex items-center px-4 py-2 hover:bg-orange-50`}>
-                    <Link to={item.url} className="flex items-center space-x-3 text-gray-800 hover:text-orange-500">
-                      <span className={`p-2 rounded-full`}>
-                        {item.icon}
-                      </span>
-                      <span>{item.label}</span>
-                      <FaChevronRight className="text-xs" />
-                    </Link>
-                  </motion.li>
-                ))}
-              </motion.ul>
-            )}
           </li>
 
           <li className="px-3 cursor-pointer hover:text-orange-500">
@@ -148,9 +118,9 @@ const Navbar = () => {
         {/* Search and Contact */}
         <div className="flex items-center space-x-10">
           <div className="relative w-80">
-            <input 
-              type="text" 
-              placeholder="Search..." 
+            <input
+              type="text"
+              placeholder="Search..."
               className="bg-gray-100 text-gray-800 px-4 py-2 w-full rounded-md border-2 border-orange-400 focus:outline-none focus:ring-2 focus:ring-orange-500 placeholder-gray-500 uppercase"
             />
             <FiSearch className="absolute right-4 top-2.5 text-gray-500 text-xl cursor-pointer hover:text-orange-500" />
@@ -165,6 +135,51 @@ const Navbar = () => {
           </motion.button>
         </div>
       </motion.nav>
+
+      {/* Dropdown Menu */}
+      <AnimatePresence>
+        {dropdown && (
+          <motion.div
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
+            className="absolute top-20 left-0 w-full bg-[#f9f9f9] shadow-xl z-40 py-10 px-20"
+          >
+            <div className="flex gap-10">
+              {/* Left content */}
+              <div className="w-1/4 pr-6">
+                <h3 className="text-2xl font-bold text-orange-600 mb-4 capitalize">
+                  {dropdown === "services" ? "Our Services" : "Our Softwares"}
+                </h3>
+                <p className="text-gray-700 leading-relaxed">
+                  {dropdown === "services"
+                    ? "We offer cutting-edge services to boost your business digitally — from web and mobile development to design and cloud solutions."
+                    : "Explore our powerful software solutions built for modern businesses to streamline your operations and maximize growth."}
+                </p>
+              </div>
+
+              {/* Vertical divider */}
+              <div className="w-px bg-gray-300"></div>
+
+              {/* Dropdown links */}
+              <div className="grid grid-cols-3 gap-8 w-3/4">
+                {(dropdown === "services" ? dropdownItems.services : dropdownItems.softwares).map((item, index) => (
+                  <Link
+                    to={item.url}
+                    key={index}
+                    className="flex items-center gap-4 p-3 hover:bg-gray-100 rounded-md transition-all"
+                  >
+                    <div>{item.icon}</div>
+                    <span className="text-base font-medium text-gray-700">
+                      {item.label}
+                    </span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </motion.div>
   );
 };
