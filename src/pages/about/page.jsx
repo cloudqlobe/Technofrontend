@@ -5,18 +5,20 @@ import Aboutcontent1 from '../../components/Aboutcontent1';
 import Aboutheader from '../../components/Aboutheader';
 import Aboutcontent from '../../components/Aboutcontent';
 import Aboutanimation from '../../components/Aboutanimation';
-import Aboutvision from '../../components/Aboutvision';
+
+import Resellerpage from '../../components/Resellerpage';
 
 const AboutPage = () => {
   return (
     <div className="mt-32">
       
       <Aboutheader/>
+      <Resellerpage/>
       <Aboutcontent/>
       <Aboutanimation/>
    
       <Aboutcontent1/> 
-      <Aboutvision/>
+     
       <Webregister/>
    <Footer/>
     </div>

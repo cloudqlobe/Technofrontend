@@ -1,13 +1,13 @@
 import React from "react";
-import image19 from "../assets/Image/—Pngtree—charming robot illustration operating laptop_20059321.png"; // adjust path if needed
+ // adjust path if needed
 
 export default function AboutUsSection() {
   return (
     <div className="bg-white px-8 py-12">
       {/* Top Section */}
-      <div className="min-h-screen flex flex-col md:flex-row items-center">
+      <div className="min-h-[504px] flex flex-col md:flex-row items-center">
   {/* Left Side */}
-  <div className="w-full md:w-1/2 ml-[35px] max-w-xl text-center md:text-left mt-[-330px]">
+  <div className="w-full md:w-1/2 ml-[35px] max-w-xl text-center md:text-left mt-[-150px]">
     <h2 className="text-3xl md:text-4xl font-semibold mb-4">
       <span className="text-blue-800">About </span>
       <span className="text-orange-500">TechnoMagic Solutions </span>
@@ -29,7 +29,7 @@ export default function AboutUsSection() {
 
 
         {/* Right Side - Infographic Cards */}
-        <div className="relative w-full md:w-1/2 h-[600px] ml-[220px] mt-[-250px] scale-[0.85] origin-top-left">
+        <div className="relative w-full md:w-1/2 h-[600px] ml-[220px] mt-[-100px] scale-[0.85] origin-top-left">
 
           {/* Connecting Lines */}
           <div className="absolute left-[130px] top-[270px] h-[110px] w-2 bg-blue-500 z-0 shadow-lg rounded"></div>
@@ -73,36 +73,7 @@ export default function AboutUsSection() {
       </div>
 
       {/* Bottom Section - Reseller */}
-      <div className="w-[1510px] bg-[#F1F5F9] py-12 px-6 md:px-20 rounded-xl shadow-md mt-[-270px] ml-[60px] ml-[-30px] border border-bg-gray-400">
-        <div className="max-w-9xl  flex flex-col md:flex-row items-center justify-between gap-10">
-          {/* Left Content */}
-          <div className="md:w-1/2">
-            <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-orange-600 drop-shadow-sm">
-              Become a Reseller
-            </h2>
-            <p className="text-base md:text-lg mb-6 text-gray-700 leading-relaxed">
-              Start your own business with zero development hassle. Offer world-class web design and development services under your brand, powered by us.
-            </p>
-            <div className="flex flex-wrap gap-4">
-              <button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded-xl shadow-md transition-all duration-300">
-                🚀 Register Now
-              </button>
-              <button className="bg-green-600 border border-green-600 text-white font-semibold px-6 py-3 rounded-xl transition-all duration-300">
-                💬 Talk to Us
-              </button>
-            </div>
-          </div>
-
-          {/* Right Image */}
-          <div className="md:w-1/2 flex justify-end">
-            <img
-              src={image19}
-              alt="Reseller Opportunity"
-              className="object-contain h-64 md:h-80 w-80 md:w-[400px]"
-            />
-          </div>
-        </div>
-      </div>
+      
     </div>
   );
 }

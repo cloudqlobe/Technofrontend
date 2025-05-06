@@ -1,71 +1,60 @@
 import React from "react";
-import image1 from "../assets/Image/5031659.jpg"; // Replace with your images
-import image2 from "../assets/Image/10197785.jpg";
-import image3 from "../assets/Image/5024152.jpg";
+import image1 from "../assets/Image/build-robots.jpg";
+import image2 from "../assets/Image/10233603.jpg";
+import image3 from "../assets/Image/12643942_5024145.svg";
 
 const Workcontent1 = () => {
   return (
-    <div className="min-h-screen w-full bg-white px-6 sm:px-12 py-16 text-gray-800">
-      <h1 className="text-4xl font-bold text-center mb-12">
-        Our <span className="text-blue-800 underline">Work Portfolio</span>
+    <div className="min-h-screen w-full bg-white px-12 py-10 overflow-hidden">
+      <h1 className="text-4xl font-semibold text-center text-black mb-8 mt-10">
+        Innovative Technology <span className="text-blue-800">Solutions for Your Business</span>
       </h1>
 
-      {/* Section 1: Image Right */}
-      <div className="grid md:grid-cols-2 items-center gap-10 max-w-7xl mx-auto mb-20">
-        <div>
-          <h2 className="text-3xl font-semibold mb-4 text-gray-700">
-            Interactive Web Designs
-          </h2>
-          <p className="text-lg leading-relaxed text-gray-600">
-            We create intuitive web designs that provide a smooth and engaging user experience across all devices. From layout to micro-interactions, everything is crafted with attention to detail.
-          </p>
-        </div>
-        <div className="flex justify-center">
-          <img
-            src={image1}
-            alt="Interactive Design"
-            className="w-[90%] h-[300px] object-cover rounded-xl shadow-lg"
-          />
-        </div>
-      </div>
-
-      {/* Section 2: Image Left */}
-      <div className="grid md:grid-cols-2 items-center gap-10 max-w-7xl mx-auto mb-20">
-        <div className="flex justify-center order-2 md:order-1">
+      {/* IT Solutions Section */}
+      <div className="grid md:grid-cols-2 items-center gap-6 mb-8 max-w-7xl mx-auto">
+        <div className="relative flex justify-center items-center w-full p-2">
           <img
             src={image2}
-            alt="Development Tools"
-            className="w-[90%] h-[300px] object-cover rounded-xl shadow-lg"
+            alt="IT Solutions"
+            className="w-[80%] h-[450px] object-cover rounded-lg mb-2"
           />
         </div>
-        <div className="order-1 md:order-2">
-          <h2 className="text-3xl font-semibold mb-4 text-gray-700">
-            Modern Tech Stack
-          </h2>
-          <p className="text-lg leading-relaxed text-gray-600">
-            We use the latest frameworks and technologies to deliver high-performance websites and web apps. Scalability, security, and responsiveness are at the core of our builds.
+        <div className="flex flex-col justify-center w-[600px] ml-[58px]">
+  <h2 className="text-4xl font-default text-grey-400 mb-4">
+    Innovative <span className="text-orange-400">Tech Solutions</span>
+  </h2>
+  <p className="text-gray-600 leading-relaxing text-lg text-justify mt-[20px]">
+    Our IT solutions optimize business operations and enhance security. From network management to cloud solutions, we provide services that align with your growth and sustainability goals. We focus on building a robust IT infrastructure that supports your business’s long-term success by reducing costs and increasing productivity.
+  </p>
+  <p className="text-gray-600 mt-3 leading-relaxing text-lg text-justify mt-[30px]">
+    Our solutions include cybersecurity, system integrations, and tailored IT consulting to meet your unique needs. We also cover data backup and recovery, enterprise resource planning (ERP), and business intelligence solutions to ensure that your company stays ahead in the competitive digital landscape.
+  </p>
+</div>
+
+      </div>
+
+      {/* Chatbot Solutions Section */}
+      <div className="grid md:grid-cols-2 items-center gap-6 mb-8 max-w-7xl mx-auto mt-[-24px]">
+        <div className="flex flex-col justify-center w-full ml-[-45px]">
+          <h2 className="text-4xl font-default text-grey-200 mb-4 mt-[40px]">Smart <span className="text-orange-400">Chatbot Solutions</span></h2>
+          <p className="text-gray-600 mt-3 leading-relaxing text-lg text-justify mt-[30px]">
+            Our AI-powered chatbot solutions automate customer support and enhance engagement. They can handle various tasks from answering queries to order processing, improving efficiency and customer satisfaction. These chatbots seamlessly integrate with your existing systems and provide valuable insights through real-time analytics.
           </p>
+          <p className="text-gray-600 mt-3 leading-relaxing text-lg text-justify mt-[30px]">
+            With natural language processing (NLP) and adaptive learning, they evolve to deliver better interactions over time. Additionally, our chatbots can be customized for industries such as e-commerce, healthcare, and finance, providing domain-specific solutions that boost productivity and streamline workflows. With natural language processing (NLP) and adaptive learning, they evolve to deliver better interactions over time. Additionally, our chatbots can be customized for industri
+          </p>
+        </div>
+        <div className="relative flex justify-center items-center w-full p-2">
+          <img
+            src={image1}
+            alt="Chatbot Solutions"
+            className="w-[85%] h-[450px] object-cover rounded-lg"
+          />
         </div>
       </div>
 
-      {/* Section 3: Image Right */}
-      <div className="grid md:grid-cols-2 items-center gap-10 max-w-7xl mx-auto">
-        <div>
-          <h2 className="text-3xl font-semibold mb-4 text-gray-700">
-            Custom Web Solutions
-          </h2>
-          <p className="text-lg leading-relaxed text-gray-600">
-            Every client is unique, and we offer tailored web solutions that align with your business goals. Whether it's an admin dashboard or eCommerce platform, we build it your way.
-          </p>
-        </div>
-        <div className="flex justify-center">
-          <img
-            src={image3}
-            alt="Custom Solutions"
-            className="w-[90%] h-[300px] object-cover rounded-xl shadow-lg"
-          />
-        </div>
-      </div>
+      {/* Custom Software Solutions Section */}
+      
     </div>
   );
 };

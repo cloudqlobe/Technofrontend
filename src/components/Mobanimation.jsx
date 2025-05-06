@@ -51,9 +51,9 @@ const Mobanimation = () => {
     <div className="bg-[#1E3A8A] text-white py-16 px-4">
       {/* Header Section */}
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 mb-16">
-        <div className="md:w-1/2">
+        <div className="md:w-1/2 ml-[-100px] mt-[-100px]">
           <h2 className="text-4xl font-bold text-yellow-400 mb-4">Mobile App Technologies</h2>
-          <p className="text-lg text-white">
+          <p className="text-white mt-3 leading-relaxing text-lg text-justify mt-[30px]">
             We build mobile apps using the most advanced technologies to ensure high performance, smooth UI, and native-like experience across platforms.
           </p>
         </div>
@@ -61,13 +61,13 @@ const Mobanimation = () => {
           <img
             src={image20}
             alt="App Dev Animation"
-            className="w-[500px] h-[500px] rounded-xl "
+            className="w-[500px] h-[500px] rounded-xl ml-[100px] "
           />
         </div>
       </div>
 
       {/* Technologies Grid */}
-      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 bg-[#2743AD] p-6 rounded-xl">
+      <div className="max-w-[1350px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 bg-[#2743AD] p-6 squared-xl ml-[62px]">
         {techStack.map((tech, index) => (
           <div
             key={index}

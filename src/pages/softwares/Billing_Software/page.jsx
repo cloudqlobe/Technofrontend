@@ -5,11 +5,13 @@ import Billingheader from '../../../components/Billingheader';
 import Billingcontents1 from '../../../components/Billingcontents1';
 import Billinganimation from '../../../components/Billinganimation';
 import Billingcontent from '../../../components/Billingcontent';
+import Resellerpage from '../../../components/Resellerpage';
 
 const Billing_Software_Page = () => {
   return (
     <div className="mt-32">
       <Billingheader/>
+      <Resellerpage/>
       <Billingcontent/>
       <Billinganimation/>
       <Billingcontents1/>

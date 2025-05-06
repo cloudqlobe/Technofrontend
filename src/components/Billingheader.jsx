@@ -24,10 +24,10 @@ const Billingheader = () => {
 
   return (
     <div className="bg-white text-gray-900 py-16 px-6 md:px-20">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center ">
+      <div className="max-w-7xl h-[472px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center ">
 
         {/* Left Content */}
-        <div className="max-w-xl text-center md:text-left mt-[-50px] ml-[-40px]">
+        <div className="max-w-xl text-center md:text-left mt-[-160px] ml-[-45px]">
           <h2 className="text-3xl md:text-4xl font-semibold mb-4">
             <span className="text-blue-800">Advanced </span>
             <span className="text-orange-500">Billing Software</span>
@@ -46,7 +46,7 @@ const Billingheader = () => {
         </div>
 
         {/* Right: Tablet Design with 3D Effect */}
-        <div className="flex justify-center mt-[-40px]">
+        <div className="flex justify-center mt-[-150px]">
           <div
             className="relative w-[750px] h-[390px] bg-[#fdfdfd] rounded-[2rem] border-[4px] border-gray-400 p-6 flex flex-col items-center pt-10 shadow-2xl"
             style={{
@@ -72,33 +72,7 @@ const Billingheader = () => {
       </div>
 
       {/* Reseller Section: Full Width of Screen */}
-      <section className="w-10xl bg-[#F1F5F9] py-10 flex flex-col md:flex-row items-center justify-between gap-10 px-6 md:px-20 ml-[-90px] mr-[-80px] mt-[70px]">
-        <div className="md:w-1/2 flex flex-col items-center md:items-start">
-          <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-orange-600 drop-shadow-sm">
-            Become a Reseller
-          </h2>
-          <p className="text-base md:text-lg mb-6 text-gray-700 leading-relaxed text-center md:text-left">
-            Start your own business with zero development hassle. Offer world-class web design and development services under your brand, powered by us.
-          </p>
-          <div className="flex flex-wrap gap-4 justify-center md:justify-start">
-            <button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 shadow-md transition-all duration-300">
-              🚀 Register Now
-            </button>
-            <button className="bg-green-600 border border-green-600 text-white font-semibold px-6 py-3 transition-all duration-300">
-              💬 Talk to Us
-            </button>
-          </div>
-        </div>
-
-        {/* Right Image */}
-        <div className="md:w-1/2 flex justify-end">
-          <img
-            src="https://img.freepik.com/premium-photo/vibrant-whimsical-illustration-featuring-social-media-day_1201937-571.jpg"
-            alt="Reseller Opportunity"
-            className="object-contain h-64 md:h-80 w-80 md:w-[400px]"
-          />
-        </div>
-      </section>
+      
 
       {/* Icon Animation Only */}
       <style>{`

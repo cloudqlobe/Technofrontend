@@ -5,77 +5,86 @@ import image18 from "../assets/Image/4630198.jpg";
 
 const Mobcontent = () => {
   return (
-    <section className="w-full px-6 md:px-20 py-20 bg-white">
-      <h2 className="text-center text-4xl font-semibold text-black mb-20">
-        Mobile App <span className='text-blue-800'>Development Highlights</span>
-      </h2>
+    <div className="min-h-screen w-full bg-white px-12 py-10 overflow-hidden">
+      <h1 className="text-4xl font-semibold text-center text-black mb-8 mt-10">
+        Advanced <span className="text-blue-800">Web Development Solutions</span>
+      </h1>
 
-      {/* Section 1 - Image Left */}
-      <div className="flex flex-col md:flex-row items-center mb-24 gap-12">
-        <div className="w-full md:w-1/2">
+      {/* Front-End Development Section */}
+      <div className="grid md:grid-cols-2 items-center gap-6 mb-12 max-w-7xl mx-auto mt-[-40px]">
+        <div className="relative flex justify-center items-center w-full p-2">
           <img
             src={image18}
-            alt="Cross Platform App Design"
-              className="w-[90%] h-[450px] object-cover rounded-lg"
+            alt="Frontend Development"
+            className="w-[80%] h-[450px] object-cover rounded-lg mb-2 mr-[100px]"
           />
         </div>
-        <div className="w-full md:w-1/2">
-          <h3 className="text-3xl font-default text-black mb-4">
-            Cross-Platform <span className='text-blue-800'>Development with Native Performance</span>
-          </h3>
-          <p className="text-gray-800 text-lg leading-relaxed mb-4">
-            Launch your app across Android, iOS, and web using a single, maintainable codebase built with robust frameworks like Flutter, React Native, and Kotlin Multiplatform. Our cross-platform solutions combine cost-efficiency with uncompromised performance, offering a smooth native-like user experience while cutting down development time.
+        <div className="flex flex-col justify-center w-[600px] ml-[57px]">
+        <h2 className="text-4xl font-default text-grey-400 mb-2">
+            Interactive <span className="text-orange-400">Frontend Interfaces</span>
+          </h2>
+          <p className="text-gray-600 mt-3 leading-relaxing text-lg text-justify mt-[30px]">
+            We specialize in crafting stunning, responsive front-end interfaces using modern frameworks like React, Vue, and Next.js. Every component is tailored to create smooth navigation, fast rendering, and a visually appealing layout across devices.
+            We specialize in crafting stunning, responsive front-end interfaces using modern 
+
           </p>
-          <p className="text-gray-800 text-lg leading-relaxed">
-            We ensure each platform benefits from tailored user interfaces and experiences while keeping the backend and core logic unified. This not only reduces technical debt but also simplifies post-launch maintenance and version control, giving your business the flexibility to scale and adapt to market changes seamlessly.
+          <p className="text-gray-600 mt-3 leading-relaxing text-lg text-justify mt-[30px]">
+            Our design-first approach ensures every visual element has a functional purpose. From landing pages to multi-page applications, we aim to deliver interfaces that are fast, flexible, and highly interactive.
+            We specialize in crafting stunning, responsive front-end interfaces using modern frameworks like React, Vue, and Next.js. Every component is tailored
+
           </p>
+         
         </div>
       </div>
 
-      {/* Section 2 - Image Right */}
-      <div className="flex flex-col md:flex-row-reverse items-center mb-24 gap-12">
-        <div className="w-full md:w-1/2">
+      {/* Backend Development Section */}
+      <div className="grid md:grid-cols-2 items-center gap-6 mb-10 max-w-7xl mx-auto mt-[-60px]">
+        <div className="flex flex-col justify-center w-full ml-[-40px]">
+        <h2 className="text-4xl font-default text-grey-200 mb-4 mt-[40px] ">
+            Powerful <span className="text-orange-400">Backend Systems</span>
+          </h2>
+          <p className="text-gray-600 mt-3 leading-relaxing text-lg text-justify mt-[20px]">
+            We build robust backend systems using Node.js, Express, and other modern tech stacks to ensure your web applications run smoothly and securely. Our APIs are structured for easy integration and optimized performance. hight perforace at the level of tbe sette;;eetuusbssbbxjashs gdjddbdzj hhdhdad jdsddd jjdasddjas djadad  
+          </p>
+          <p className="text-gray-600 mt-3 leading-relaxing text-lg text-justify mt-[30px]">
+            Features like user authentication, role-based access control, session handling, and database security are built into every solution we provide. Our goal is to deliver backends that are not only functional but also secure and scalable. makeing relaible tungs in the hoscbabsfwbhksln  kssnnavs  hxhhxjh hhhhh hhhhh hhh hh hh hh h h 
+          </p>
+          
+        </div>
+        <div className="relative flex justify-center items-center w-full p-2">
           <img
             src={image16}
-            alt="Performance Architecture"
-            className="w-[90%] h-[500px] object-cover rounded-lg"
+            alt="Backend Development"
+            className="w-[80%] h-[450px] object-cover rounded-lg mt-[50px] ml-[30px]"
           />
-        </div>
-        <div className="w-full md:w-1/2">
-          <h3 className="text-3xl font-default text-black mb-4">
-            Performance-Oriented <span className='text-blue-800'>Architecture</span>
-          </h3>
-          <p className="text-gray-800 text-lg leading-relaxed mb-4">
-            From lightweight MVPs to enterprise-grade applications, performance is never an afterthought. We design mobile app architectures that are modular, scalable, and built for real-world usage. Leveraging efficient state management, low-latency communication, and optimized data handling, our apps are engineered to be fast and reliable.
-          </p>
-          <p className="text-gray-800 text-lg leading-relaxed">
-            We emphasize background processing, offline support, and seamless synchronization, ensuring smooth interactions under all network conditions. Whether you're managing live financial data, media streams, or real-time analytics, our architecture ensures smooth execution across devices and usage patterns.
-          </p>
         </div>
       </div>
 
-      {/* Section 3 - Image Left */}
-      <div className="flex flex-col md:flex-row items-center mb-12 gap-12">
-        <div className="w-full md:w-1/2">
+      {/* Full Stack & Custom Development Section */}
+      <div className="grid md:grid-cols-2 items-center gap-24 mb-12 max-w-7xl mx-auto mt-[-60px]">
+        <div className="relative flex justify-center items-center w-full p-2">
           <img
             src={image17}
-            alt="UI UX Design"
-              className="w-[90%] h-[500px] object-cover rounded-lg"
+            alt="Custom Web Applications"
+            className="w-[90%] h-[400px] object-cover mt-24"
           />
         </div>
-        <div className="w-full md:w-1/2">
-          <h3 className="text-3xl font-default text-black mb-4">
-            Clean & <span className='text-blue-800'>Modern UI/UX</span>
-          </h3>
-          <p className="text-gray-800 text-lg leading-relaxed mb-4">
-            Great design is the gateway to strong engagement. Our team crafts user interfaces that aren’t just visually striking but intuitively functional. We combine design systems, motion graphics, and microinteractions to produce mobile experiences that users enjoy navigating.
+        <div className="flex flex-col justify-center w-full mb-[100px] ml-[30px]">
+        <h2 className="text-4xl font-default text-grey-200 mb-2  mt-16">
+            Custom <span className="text-orange-400">Web Applications</span>
+          </h2>
+          <p className="text-gray-600 mt-3 leading-relaxing text-lg text-justify mt-[30px]">
+            We develop tailored web solutions for businesses across all domains. Whether it's a CRM system, an internal admin dashboard, or a customer-facing portal, we combine frontend and backend technologies to bring your ideas to life.
+            Using the MERN stack and beyond, our custom applications feature intuitive UIs, data-driven logic, and modular code architecture.
           </p>
-          <p className="text-gray-800 text-lg leading-relaxed">
-            Accessibility, responsiveness, and performance-driven visuals are at the heart of our UX principles. Every screen is wireframed, tested, and refined to deliver minimal friction and maximum satisfaction—converting casual users into loyal customers through thoughtful design.
+          <p className="text-gray-600 mt-3 leading-relaxing text-lg text-justify mt-[30px]">
+            Using the MERN stack and beyond, our custom applications feature intuitive UIs, data-driven logic, and modular code architecture. We focus on code reusability, microservices, and scalable builds that grow with your business.
+            Using the MERN stack and beyond, our custom applications feature intuitive UIs, data-driven logic, and modular code architecture. 
           </p>
+         
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

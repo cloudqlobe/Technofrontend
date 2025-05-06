@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { FaAngular } from "react-icons/fa";
 import { SiPostman } from "react-icons/si";
 import { SiReactbootstrap } from "react-icons/si";
-import image19 from "../assets/Image/250.jpg";
+
 import { FaFigma, FaSketch, FaAdobe, FaGithub } from 'react-icons/fa';
 import { AiOutlineCode } from 'react-icons/ai';
 import {
@@ -43,14 +43,14 @@ const Webheader = () => {
 
   return (
     <>
-      <section className="w-full bg-white py-12 px-6 md:px-16 flex flex-col md:flex-row items-center justify-between gap-10">
+      <section className="w-full h-[600px] bg-white py-12 px-4 md:px-16 flex flex-col md:flex-row items-center justify-between gap-10 ">
         {/* Left Text Section */}
-        <div className="max-w-xl text-center md:text-left mt-[10px]">
+        <div className="max-w-xl text-center md:text-left mt-[-190px] ml-[13px]">
           <h2 className="text-3xl md:text-4xl font-semibold mb-4">
             <span className="text-blue-800">Build Powerful </span>
             <span className="text-orange-500">Web Apps</span>
           </h2>
-          <p className="text-gray-700 mb-6  ">
+          <p className="text-sm text-gray-600 leading-relaxing text-justify mt-5 max-w-lg ">
             We create fast, responsive, and user-friendly web applications using the latest technologies to ensure high performance and optimal user experience.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center md:justify-start mt-[50px]">
@@ -65,7 +65,7 @@ const Webheader = () => {
 
         {/* Monitor and Icons */}
         {/* Monitor and Icons */}
-<div className="relative flex items-center justify-center mx-auto">
+<div className="relative flex items-center justify-center mx-auto ml-[130px] mt-[-200px]">
   {/* Left Icons */}
   <div className="absolute left-[-50px] top-[50%] transform -translate-y-1/2 flex flex-col justify-center gap-12 items-center">
     {designTools.slice(0, 2).map((tool, index) => (
@@ -135,39 +135,9 @@ const Webheader = () => {
 </div>
 
       </section>
-<div className="w-full bg-[#F1F5F9] py-12 px-6 md:px-20 rounded-xl shadow-md mt-[100px] border border-gray-300">
-      {/* Become a Reseller */}
-      
+     
 
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
-          {/* Text */}
-          <div className="md:w-1/2">
-            <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-orange-600 drop-shadow-sm">
-              Become a Reseller
-            </h2>
-            <p className="text-base md:text-lg mb-6 text-gray-700 leading-relaxed">
-              Start your own business with zero development hassle. Offer world-class web design and development services under your brand, powered by us.
-            </p>
-            <div className="flex flex-wrap gap-4">
-              <button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 squared-xl shadow-md transition-all duration-300">
-                 Register Now
-              </button>
-              <button className="bg-green-600 border border-green-600 text-white font-semibold px-6 py-3 squared-xl transition-all duration-300">
-                 Talk to Us
-              </button>
-            </div>
-          </div>
 
-          {/* Image */}
-          <div className="md:w-1/2 flex justify-end">
-            <img
-              src={image19}
-              alt="Reseller Opportunity"
-              className="object-contain h-64 md:h-80 w-80 md:w-[400px]"
-            />
-          </div>
-        </div>
-      </div>
     </>
   );
 };

@@ -1,5 +1,5 @@
 import React from "react";
-import image10 from "../assets/Image/250.jpg";
+
 import {
   ServerCog,
   Cpu,
@@ -24,15 +24,15 @@ const IconLabel = ({ icon: Icon, label, bgColor, size }) => {
 
 const TechConsultancyHeader = () => {
   return (
-    <div className="w-full px-6 py-20 bg-white">
+    <div className="w-full px-6 py-20 bg-white h-[600px]">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 items-center">
         {/* Left Content */}
-        <div className="max-w-xl text-center md:text-left mt-[-140px] ml-[-50px]">
+        <div className="max-w-xl text-center md:text-left mt-[-90px] ml-[-45px]">
           <h2 className="text-3xl md:text-4xl font-semibold mb-4">
             <span className="text-blue-800">Expert </span>
             <span className="text-orange-500">Tech Consultancy</span>
           </h2>
-          <p className="text-gray-700 mb-6">
+          <p className="text-sm text-gray-600 leading-relaxing text-justify mt-5 max-w-lg ">
             Unlock your business's full potential with our end-to-end technology consulting. From digital strategy and system architecture to custom software solutions and scalable infrastructure, 
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center md:justify-start mt-[50px]">
@@ -47,7 +47,7 @@ const TechConsultancyHeader = () => {
 
         {/* Right Monitor Section */}
         {/* Right Monitor Section */}
-<div className="relative w-full flex justify-center items-center -mt-14">
+<div className="relative w-full flex justify-center items-center -mt-14 ml-[10px]">
 
           {/* Top-left Icon */}
           <div className="absolute -left-8 top-[80px]">
@@ -80,7 +80,7 @@ const TechConsultancyHeader = () => {
           </div>
 
           {/* Bottom-right Icon */}
-          <div className="absolute -right-8 bottom-[80px]">
+          <div className="absolute -right-4 bottom-[80px]">
             <IconLabel
               icon={ShieldCheck}
               label="Security"
@@ -111,37 +111,7 @@ const TechConsultancyHeader = () => {
       </div>
 
       {/* Become a Reseller Section */}
-      <div className="w-[1515px] bg-[#F1F5F9] py-12 px-8 md:px-20 rounded-xl shadow-md mt-[25px] border border-gray-300 ml-[-20px] ">
-        <div className="w-full mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
-          {/* Text */}
-          <div className="md:w-1/2">
-            <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-orange-600 drop-shadow-sm">
-              Become a Reseller
-            </h2>
-            <p className="text-base md:text-lg mb-6 text-gray-700 leading-relaxed">
-              Start your own business with zero development hassle. Offer world-class web design and development services under your brand, powered by us.
-            </p>
-            <div className="flex flex-wrap gap-4">
-              <button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded-xl shadow-md transition-all duration-300">
-                🚀 Register Now
-              </button>
-              <button className="bg-green-600 border border-green-600 text-white font-semibold px-6 py-3 rounded-xl transition-all duration-300">
-                💬 Talk to Us
-              </button>
-            </div>
-          </div>
-
-          {/* Image */}
-          <div className="md:w-1/2 flex justify-end">
-            <img
-              src={image10}
-              alt="Reseller Opportunity"
-              className="object-contain h-64 md:h-80 w-80 md:w-[500px]"
-            />
-          </div>
-        </div>
       </div>
-    </div>
   );
 };
 

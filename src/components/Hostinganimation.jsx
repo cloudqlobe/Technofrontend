@@ -31,10 +31,10 @@ const HostingServices = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* Left: Text */}
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-yellow-400 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-yellow-400 mb-4 ml-[-40px]">
               Hosting Services
             </h2>
-            <p className="text-white text-lg">
+            <p className=" text-white mt-3 leading-relaxing text-lg text-justify ml-[-40px]">
               Our hosting solutions are built for performance, scalability, and security. Whether
               you're running a simple website or complex infrastructure, we provide the tools and
               support you need to thrive online.
@@ -52,7 +52,7 @@ const HostingServices = () => {
         </div>
 
         {/* Bottom: Full-width Features */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 bg-blue-800 p-6 rounded-xl">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 bg-blue-800 p-8 rounded-xl w-[1350px] ml-[-40px]">
           {hostingFeatures.map((feature, index) => (
             <div
               key={index}

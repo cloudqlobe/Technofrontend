@@ -9,7 +9,7 @@ export default function ResellerSection() {
         <img 
           src={business}
           alt="Business Illustration" 
-          className="w-[85%] h-[75%] object-contain mr-16" 
+          className="w-[85%] h-[75%] object-contain ml-[-60px]" 
         />
       </div>
 
@@ -25,7 +25,7 @@ export default function ResellerSection() {
         </p>
 
         {/* Features Grid */}
-        <div className="grid grid-cols-2 gap-6 mb-8 w-full">
+        <div className="grid grid-cols-2 gap-6 mb-8 w-full ml-[-43px]">
           <div className="bg-blue-100 p-5 h-20 flex items-center border border-blue-400 shadow-md squared-md">
             <FaHeadset className="text-blue-500 text-3xl mr-4" />
             <span className="text-lg font-semibold">24/7 Support</span>
@@ -45,7 +45,7 @@ export default function ResellerSection() {
         </div>
 
         {/* Reseller Section */}
-        <div className="bg-white p-10 border border-gray-400 text-center w-full shadow-lg rounded-md">
+        <div className="bg-white p-10 border border-gray-400 text-center w-full shadow-lg rounded-md ml-[-43px]">
           <h3 className="text-2xl font-bold mb-4">Become a Reseller</h3>
           <p className="text-md mb-5 text-gray-700">
             Join our reseller program and start earning by offering our services to your clients.

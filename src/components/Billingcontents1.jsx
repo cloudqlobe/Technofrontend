@@ -5,69 +5,60 @@ import Designcontent from './Designcontent';
 
 const Billingcontents1 = () => {
   return (
-    <section className="w-full px-6 md:px-16 py-16 bg-white">
-      {/* Main Heading */}
-      <h2 className="text-4xl text-center font-semibold text-gray-800 mb-16">
-        Cutting-Edge <span className="text-blue-800">Billing Software Solutions</span>
-      </h2>
+    <div className="min-h-screen w-full bg-white px-12 py-10 overflow-hidden">
+      <h1 className="text-4xl font-semibold text-center text-black mb-8 mt-10">
+        Innovative Technology <span className="text-blue-800">Solutions for Your Business</span>
+      </h1>
 
-      {/* Section 1 - Image Left, Content Right */}
-      <div className="flex flex-col md:flex-row items-center mb-20">
-        {/* Image */}
-        <div className="w-full md:w-5/12 mb-8 md:mb-0">
+      {/* IT Solutions Section */}
+      <div className="grid md:grid-cols-2 items-center gap-6 mb-8 max-w-7xl mx-auto">
+        <div className="relative flex justify-center items-center w-full p-2">
           <img
             src={image1}
-            alt="Billing Software"
-            className="w-full max-w-[350px] h-auto object-cover rounded-xl mx-auto"
+            alt="IT Solutions"
+            className="w-[80%] h-[450px] object-cover rounded-lg mb-2"
           />
         </div>
-        {/* Content */}
-        <div className="w-full md:w-7/12 md:pl-10">
-          <h3 className="text-2xl font-default mb-4">
-            <span className="text-gray-600">Efficient,</span>{' '}
-            <span className="text-blue-800">Reliable Billing</span>
-          </h3>
-          <p className="text-gray-600 text-lg leading-relaxed mb-4">
-            Our billing software solutions are designed to streamline and automate your billing processes, reducing manual effort and eliminating errors. From invoicing to payment tracking, we provide a seamless experience for businesses of all sizes.
+        <div className="flex flex-col justify-center w-[600px] ml-[58px]">
+  <h2 className="text-4xl font-default text-grey-400 mb-4">
+    Innovative <span className="text-orange-400">Tech Solutions</span>
+  </h2>
+  <p className="text-gray-600 leading-relaxing text-lg text-justify mt-[20px]">
+    Our IT solutions optimize business operations and enhance security. From network management to cloud solutions, we provide services that align with your growth and sustainability goals. We focus on building a robust IT infrastructure that supports your business’s long-term success by reducing costs and increasing productivity.
+  </p>
+  <p className="text-gray-600 mt-3 leading-relaxing text-lg text-justify mt-[30px]">
+    Our solutions include cybersecurity, system integrations, and tailored IT consulting to meet your unique needs. We also cover data backup and recovery, enterprise resource planning (ERP), and business intelligence solutions to ensure that your company stays ahead in the competitive digital landscape.
+  </p>
+</div>
+
+      </div>
+
+      {/* Chatbot Solutions Section */}
+      <div className="grid md:grid-cols-2 items-center gap-6 mb-8 max-w-7xl mx-auto mt-[-24px]">
+        <div className="flex flex-col justify-center w-full ml-[-45px]">
+          <h2 className="text-4xl font-default text-grey-200 mb-4 mt-[40px]">Smart <span className="text-orange-400">Chatbot Solutions</span></h2>
+          <p className="text-gray-600 mt-3 leading-relaxing text-lg text-justify mt-[30px]">
+            Our AI-powered chatbot solutions automate customer support and enhance engagement. They can handle various tasks from answering queries to order processing, improving efficiency and customer satisfaction. These chatbots seamlessly integrate with your existing systems and provide valuable insights through real-time analytics.
           </p>
-          <p className="text-gray-600 text-lg leading-relaxed mb-4">
-            Our system integrates with multiple payment gateways and accounting tools, offering you a one-stop solution to handle all billing-related tasks. Whether it’s subscription-based billing, one-time payments, or recurring billing cycles, our software can handle it all.
+          <p className="text-gray-600 mt-3 leading-relaxing text-lg text-justify mt-[30px]">
+            With natural language processing (NLP) and adaptive learning, they evolve to deliver better interactions over time. Additionally, our chatbots can be customized for industries such as e-commerce, healthcare, and finance, providing domain-specific solutions that boost productivity and streamline workflows. With natural language processing (NLP) and adaptive learning, they evolve to deliver better interactions over time. Additionally, our chatbots can be customized for industri
           </p>
-          <p className="text-gray-600 text-lg leading-relaxed">
-            We also ensure that your billing system complies with the latest tax regulations and accounting standards, making it easy to generate financial reports and stay compliant with local laws.
-          </p>
+        </div>
+        <div className="relative flex justify-center items-center w-full p-2">
+          <img
+            src={image2}
+            alt="Chatbot Solutions"
+            className="w-[85%] h-[450px] object-cover rounded-lg"
+          />
         </div>
       </div>
 
-      {/* Section 2 - Image Right, Content Left */}
-      <div className="flex flex-col md:flex-row-reverse items-center">
-        {/* Image */}
-        <div className="w-full md:w-5/12 mb-8 md:mb-0">
-          <img
-            src={image2}
-            alt="Billing Software Features"
-            className="w-full max-w-[350px] h-auto object-cover rounded-xl mx-auto"
-          />
-        </div>
-        {/* Content */}
-        <div className="w-full md:w-7/12 md:pr-10">
-          <h3 className="text-2xl font-default mb-4">
-            <span className="text-gray-600">Automation</span>{' '}
-            <span className="text-blue-800">and Accuracy</span>
-          </h3>
-          <p className="text-gray-600 text-lg leading-relaxed mb-4">
-            Our billing software automates key tasks such as invoice generation, payment reminders, and late fee calculations, ensuring that your billing operations run smoothly without manual intervention. We also provide real-time tracking and updates of payment statuses.
-          </p>
-          <p className="text-gray-600 text-lg leading-relaxed mb-4">
-            With advanced reporting and analytics features, our solution gives you the ability to generate detailed reports and insights into your financial data. Track payment history, outstanding invoices, and revenue growth effortlessly.
-          </p>
-          <p className="text-gray-600 text-lg leading-relaxed">
-            Whether you are managing a small business or an enterprise, our customizable billing software adapts to your needs, offering scalability and flexibility to grow with your business.
-          </p>
-        </div>
-      </div>
-    </section>
+      {/* Custom Software Solutions Section */}
+      
+    </div>
   );
 };
+
+
 
 export default Billingcontents1;

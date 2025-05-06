@@ -34,10 +34,10 @@ const DesignServices = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* Left: Text */}
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-yellow-400 mb-4">
+            <h2 className="text-3xl md:text-4xl font-semibold text-yellow-400 mb-4 ml-[-38px]">
               UI/UX Design Services
             </h2>
-            <p className="text-white text-lg">
+            <p className="text-white text-lg leading-relaxing text-justify ml-[-38px]">
               Our design services focus on creating intuitive, user-friendly interfaces and experiences that connect with your audience. From wireframing to user testing, we bring your ideas to life with attention to detail.
             </p>
           </div>
@@ -53,7 +53,7 @@ const DesignServices = () => {
         </div>
 
         {/* Bottom: Full-width Features */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 bg-blue-800 p-6 rounded-xl">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 bg-blue-800 p-6 squared-xl w-[1350px] ml-[-40px]">
           {designFeatures.map((feature, index) => (
             <div
               key={index}

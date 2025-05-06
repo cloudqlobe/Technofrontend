@@ -2,76 +2,93 @@ import React from "react";
 import image4 from "../assets/Image/6603271.jpg";
 import image5 from "../assets/Image/3826348.jpg";
 import image6 from "../assets/Image/6548437.jpg";
-import Botcontents1 from "./Botcontents1";
+
 
 const Botcontent = () => {
   return (
     <div className="min-h-screen w-full bg-white px-12 py-10 overflow-hidden">
       <h1 className="text-4xl font-semibold text-center text-black mb-8 mt-10">
-        Advanced <span className="text-blue-800">Chatbot Solutions</span>
+        Advanced <span className="text-blue-800">Web Development Solutions</span>
       </h1>
 
-      {/* Chatbot Design Section */}
-      <div className="grid md:grid-cols-2 items-center gap-6 mb-12 max-w-7xl mx-auto">
+      {/* Front-End Development Section */}
+      <div className="grid md:grid-cols-2 items-center gap-6 mb-12 max-w-7xl mx-auto mt-[-40px]">
         <div className="relative flex justify-center items-center w-full p-2">
           <img
             src={image4}
-            alt="Chatbot Design"
+            alt="Frontend Development"
             className="w-[80%] h-[450px] object-cover rounded-lg mb-2 mr-[100px]"
           />
         </div>
-        <div className="flex flex-col justify-center w-full">
-          <h2 className="text-4xl text-gray-700 mb-4">Intuitive <span className="text-blue-600">Chatbot Designs</span></h2>
-          <p className="text-gray-600 leading-relaxed text-lg mb-3">
-            Our chatbot designs focus on creating engaging, user-friendly interfaces that enhance customer interaction. We ensure that every chatbot is intuitive, guiding users through the conversation seamlessly to provide the best customer experience.
+        <div className="flex flex-col justify-center w-[600px] ml-[57px]">
+        <h2 className="text-4xl font-default text-grey-400 mb-2">
+            Interactive <span className="text-orange-400">Frontend Interfaces</span>
+          </h2>
+          <p className="text-gray-600 mt-3 leading-relaxing text-lg text-justify mt-[30px]">
+            We specialize in crafting stunning, responsive front-end interfaces using modern frameworks like React, Vue, and Next.js. Every component is tailored to create smooth navigation, fast rendering, and a visually appealing layout across devices.
+            We specialize in crafting stunning, responsive front-end interfaces using modern 
+
           </p>
-          <p className="text-gray-600 leading-relaxed text-lg">
-            From live chat to AI-driven virtual assistants, our chatbot designs are tailored to meet your specific business needs. Whether it's for customer support, lead generation, or data collection, we ensure the interface is intuitive and engaging across all devices.
+          <p className="text-gray-600 mt-3 leading-relaxing text-lg text-justify mt-[30px]">
+            Our design-first approach ensures every visual element has a functional purpose. From landing pages to multi-page applications, we aim to deliver interfaces that are fast, flexible, and highly interactive.
+            We specialize in crafting stunning, responsive front-end interfaces using modern frameworks like React, Vue, and Next.js. Every component is tailored
+
           </p>
+         
         </div>
       </div>
 
-      {/* Chatbot Development Section */}
-      <div className="grid md:grid-cols-2 items-center gap-6 mb-10 max-w-7xl mx-auto mt-[-20px]">
-        <div className="flex flex-col justify-center w-full">
-          <h2 className="text-4xl text-gray-700 mb-4">Advanced <span className="text-blue-600">Chatbot Development</span></h2>
-          <p className="text-gray-600 leading-relaxed text-lg mb-3">
-            Our chatbot development team builds AI-driven solutions that can automate tasks, handle customer inquiries, and provide instant support. We focus on creating chatbots that learn from interactions, becoming smarter and more effective over time.
+      {/* Backend Development Section */}
+      <div className="grid md:grid-cols-2 items-center gap-6 mb-10 max-w-7xl mx-auto mt-[-60px]">
+        <div className="flex flex-col justify-center w-full ml-[-40px]">
+        <h2 className="text-4xl font-default text-grey-200 mb-4 mt-[40px] ">
+            Powerful <span className="text-orange-400">Backend Systems</span>
+          </h2>
+          <p className="text-gray-600 mt-3 leading-relaxing text-lg text-justify mt-[20px]">
+            We build robust backend systems using Node.js, Express, and other modern tech stacks to ensure your web applications run smoothly and securely. Our APIs are structured for easy integration and optimized performance. hight perforace at the level of tbe sette;;eetuusbssbbxjashs gdjddbdzj hhdhdad jdsddd jjdasddjas djadad  
           </p>
-          <p className="text-gray-600 leading-relaxed text-lg">
-            From rule-based bots to advanced machine learning models, we integrate cutting-edge technologies to deliver chatbots that enhance customer experiences. Whether it's integrating with your CRM, scheduling systems, or payment gateways, our solutions are versatile and scalable.
+          <p className="text-gray-600 mt-3 leading-relaxing text-lg text-justify mt-[30px]">
+            Features like user authentication, role-based access control, session handling, and database security are built into every solution we provide. Our goal is to deliver backends that are not only functional but also secure and scalable. makeing relaible tungs in the hoscbabsfwbhksln  kssnnavs  hxhhxjh hhhhh hhhhh hhh hh hh hh h h 
           </p>
+          
         </div>
         <div className="relative flex justify-center items-center w-full p-2">
           <img
             src={image5}
-            alt="Chatbot Development"
-            className="w-[80%] h-[450px] object-cover rounded-lg mt-[50px]"
+            alt="Backend Development"
+            className="w-[80%] h-[450px] object-cover rounded-lg mt-[50px] ml-[30px]"
           />
         </div>
       </div>
 
-      {/* Custom Chatbot Solutions Section */}
-      <div className="grid md:grid-cols-2 items-center gap-24 mb-12 max-w-7xl mx-auto">
+      {/* Full Stack & Custom Development Section */}
+      <div className="grid md:grid-cols-2 items-center gap-24 mb-12 max-w-7xl mx-auto mt-[-60px]">
         <div className="relative flex justify-center items-center w-full p-2">
           <img
             src={image6}
-            alt="Custom Chatbot Solutions"
-            className="w-[90%] h-[450px] object-cover mt-24"
+            alt="Custom Web Applications"
+            className="w-[90%] h-[400px] object-cover mt-24"
           />
         </div>
-        <div className="flex flex-col justify-center w-full mb-[100px]">
-          <h2 className="text-4xl text-gray-700 mb-4 ml-2 mt-16">Tailored <span className="text-blue-600">Chatbot Solutions</span></h2>
-          <p className="text-gray-600 leading-relaxed text-lg ml-4 mb-3">
-            Every business has unique customer interaction needs, and our custom chatbot solutions are designed to meet those requirements. Whether it's for personalized customer support, product recommendations, or task automation, we create bots that are tailored to your workflows and goals.
+        <div className="flex flex-col justify-center w-full mb-[100px] ml-[30px]">
+        <h2 className="text-4xl font-default text-grey-200 mb-2  mt-16">
+            Custom <span className="text-orange-400">Web Applications</span>
+          </h2>
+          <p className="text-gray-600 mt-3 leading-relaxing text-lg text-justify mt-[30px]">
+            We develop tailored web solutions for businesses across all domains. Whether it's a CRM system, an internal admin dashboard, or a customer-facing portal, we combine frontend and backend technologies to bring your ideas to life.
+            Using the MERN stack and beyond, our custom applications feature intuitive UIs, data-driven logic, and modular code architecture.
           </p>
-          <p className="text-gray-600 leading-relaxed text-lg ml-4">
-            With a focus on performance and adaptability, our chatbots are built to evolve with your business. We provide chatbots that integrate seamlessly with your existing systems, ensuring scalability and efficiency as your operations grow.
+          <p className="text-gray-600 mt-3 leading-relaxing text-lg text-justify mt-[30px]">
+            Using the MERN stack and beyond, our custom applications feature intuitive UIs, data-driven logic, and modular code architecture. We focus on code reusability, microservices, and scalable builds that grow with your business.
+            Using the MERN stack and beyond, our custom applications feature intuitive UIs, data-driven logic, and modular code architecture. 
           </p>
+         
         </div>
       </div>
     </div>
   );
 };
+
+
 
 export default Botcontent;

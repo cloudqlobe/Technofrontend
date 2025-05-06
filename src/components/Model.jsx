@@ -31,17 +31,17 @@ const Model = () => {
       <div className="flex flex-col lg:flex-row items-start justify-center w-full space-x-28 mb-20"> 
     
         {/* Left Side - Programming Languages & Tech */}
-        <div className="flex flex-col lg:w-1/2 text-left flex-shrink-0 mb-10 relative left-[-34px] mt-10">
-          <h3 className="text-4xl font-semibold text-gray-900 mb-6 text-center">
+        <div className="flex flex-col lg:w-1/2 text-left flex-shrink-0 mb-10 relative left-[-100px] mt-10">
+          <h3 className="text-4xl font-semibold text-gray-900 mb-6 text-center mt-[20px]">
             Code the Future: Build, Scale & Innovate  
             <span className="text-orange-500 block text-center ">Next-Gen Technologies</span>
           </h3>
 
-          <div className="mt-12 grid grid-cols-6 gap-12 mt-28"> 
+          <div className="mt-12 grid grid-cols-6 gap-14 mt-20 ml-[25px]"> 
             {iconData.map(({ Icon, bgColor }, index) => (
               <div 
                 key={index} 
-                className={`w-16 h-16 flex items-center justify-center ${bgColor} text-white text-4xl shadow-md 
+                className={`w-[90px] h-[90px] flex items-center justify-center ${bgColor} text-white text-4xl shadow-md 
                 transform transition-all duration-300 hover:scale-110 hover:rotate-6 hover:shadow-lg hover:shadow-gray-400`}
               >
                 <Icon />
@@ -52,7 +52,7 @@ const Model = () => {
 
         {/* Right Side - Get a Quote Form (Pop Animation on Hover) */}
         <div 
-          className="bg-white p-6 shadow-lg w-full max-w-sm border-2 border-orange-300 flex flex-col h-auto flex-shrink-0 rounded-none relative right-[-40px]
+          className="bg-white p-10 shadow-lg w-full max-w-[400px] border-2 border-orange-300 flex flex-col h-auto flex-shrink-0 rounded-none relative right-[-66px]
           transform transition-all duration-300 hover:scale-105"
         >  
           <h3 className="text-3xl font-semibold text-gray-900 text-center mb-4">Get a Free Quote</h3>

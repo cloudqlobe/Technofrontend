@@ -5,11 +5,13 @@ import Cloudheader from '../../../components/Cloudheader';
 import Cloudcontent from '../../../components/Cloudcontent';
 import Cloudanimation from '../../../components/Cloudanimation';
 import Cloudcontents1 from '../../../components/Cloudcontents1';
+import Resellerpage from '../../../components/Resellerpage';
 
 const Page = () => {
   return (
     <div>
       <Cloudheader/>
+      <Resellerpage/>
       <Cloudcontent/>
       <Cloudanimation/>
       <Cloudcontents1/>

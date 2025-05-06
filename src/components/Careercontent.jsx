@@ -2,71 +2,60 @@ import React from 'react';
 import image1 from '../assets/Image/5242970.jpg'; // Replace with your actual image
 import image2 from '../assets/Image/6333412.jpg'; // Replace with your actual image
 
-const CareerContent = () => {
+const Careercontent = () => {
   return (
-    <section className="w-full px-6 md:px-16 py-16 bg-white mt-[-50px]">
-      {/* Main Heading */}
-      <h2 className="text-4xl text-center font-semibold text-gray-800 mb-16">
-        Join Our <span className="text-blue-800">Innovative</span> Team
-      </h2>
+    <div className="min-h-screen w-full bg-white px-12 py-10 overflow-hidden">
+      <h1 className="text-4xl font-semibold text-center text-black mb-8 mt-10">
+        Innovative Technology <span className="text-blue-800">Solutions for Your Business</span>
+      </h1>
 
-      {/* Section 1 - Image Left, Content Right */}
-      <div className="flex flex-col md:flex-row items-center mb-20">
-        {/* Image */}
-        <div className="w-full md:w-5/12 mb-8 md:mb-0">
+      {/* IT Solutions Section */}
+      <div className="grid md:grid-cols-2 items-center gap-6 mb-8 max-w-7xl mx-auto">
+        <div className="relative flex justify-center items-center w-full p-2">
           <img
             src={image1}
-            alt="Career at Technomagic"
-            className="w-full max-w-[350px] h-auto object-cover rounded-xl mx-auto"
+            alt="IT Solutions"
+            className="w-[80%] h-[450px] object-cover rounded-lg mb-2"
           />
         </div>
-        {/* Content */}
-        <div className="w-full md:w-7/12 md:pl-10">
-          <h3 className="text-2xl font-default mb-4">
-            <span className="text-gray-600">Exciting Career</span>{' '}
-            <span className="text-blue-500">Opportunities Await</span>
-          </h3>
-          <p className="text-gray-600 text-lg leading-relaxed mb-4">
-            At Technomagic Solutions, we are always looking for bright and passionate individuals to join our team. Whether you're an experienced professional or just starting your career journey, we offer opportunities for growth, development, and the chance to make a real impact on exciting projects.
+        <div className="flex flex-col justify-center w-[600px] ml-[58px]">
+  <h2 className="text-4xl font-default text-grey-400 mb-4">
+    Innovative <span className="text-orange-400">Tech Solutions</span>
+  </h2>
+  <p className="text-gray-600 leading-relaxing text-lg text-justify mt-[20px]">
+    Our IT solutions optimize business operations and enhance security. From network management to cloud solutions, we provide services that align with your growth and sustainability goals. We focus on building a robust IT infrastructure that supports your business’s long-term success by reducing costs and increasing productivity.
+  </p>
+  <p className="text-gray-600 mt-3 leading-relaxing text-lg text-justify mt-[30px]">
+    Our solutions include cybersecurity, system integrations, and tailored IT consulting to meet your unique needs. We also cover data backup and recovery, enterprise resource planning (ERP), and business intelligence solutions to ensure that your company stays ahead in the competitive digital landscape.
+  </p>
+</div>
+
+      </div>
+
+      {/* Chatbot Solutions Section */}
+      <div className="grid md:grid-cols-2 items-center gap-6 mb-8 max-w-7xl mx-auto mt-[-24px]">
+        <div className="flex flex-col justify-center w-full ml-[-45px]">
+          <h2 className="text-4xl font-default text-grey-200 mb-4 mt-[40px]">Smart <span className="text-orange-400">Chatbot Solutions</span></h2>
+          <p className="text-gray-600 mt-3 leading-relaxing text-lg text-justify mt-[30px]">
+            Our AI-powered chatbot solutions automate customer support and enhance engagement. They can handle various tasks from answering queries to order processing, improving efficiency and customer satisfaction. These chatbots seamlessly integrate with your existing systems and provide valuable insights through real-time analytics.
           </p>
-          <p className="text-gray-600 text-lg leading-relaxed mb-4">
-            We believe in fostering a dynamic, collaborative work environment where creativity and innovation thrive. Our team members are our greatest asset, and we are committed to helping them grow professionally and personally while enjoying a fulfilling and rewarding career path.
+          <p className="text-gray-600 mt-3 leading-relaxing text-lg text-justify mt-[30px]">
+            With natural language processing (NLP) and adaptive learning, they evolve to deliver better interactions over time. Additionally, our chatbots can be customized for industries such as e-commerce, healthcare, and finance, providing domain-specific solutions that boost productivity and streamline workflows. With natural language processing (NLP) and adaptive learning, they evolve to deliver better interactions over time. Additionally, our chatbots can be customized for industri
           </p>
-          <p className="text-gray-600 text-lg leading-relaxed">
-            Join us and be a part of a forward-thinking team that's driving the future of technology and making a difference in the world. Your contributions will help shape the future of software development and innovative solutions.
-          </p>
+        </div>
+        <div className="relative flex justify-center items-center w-full p-2">
+          <img
+            src={image2}
+            alt="Chatbot Solutions"
+            className="w-[85%] h-[450px] object-cover rounded-lg"
+          />
         </div>
       </div>
 
-      {/* Section 2 - Image Right, Content Left */}
-      <div className="flex flex-col md:flex-row-reverse items-center">
-        {/* Image */}
-        <div className="w-full md:w-5/12 mb-8 md:mb-0">
-          <img
-            src={image2}
-            alt="Career Growth"
-            className="w-full max-w-[350px] h-auto object-cover rounded-xl mx-auto"
-          />
-        </div>
-        {/* Content */}
-        <div className="w-full md:w-7/12 md:pr-10">
-          <h3 className="text-2xl font-default mb-4">
-            <span className="text-gray-500">Build Your</span>{' '}
-            <span className="text-blue-800">Career with Us</span>
-          </h3>
-          <p className="text-gray-600 text-lg leading-relaxed mb-4">
-            Our commitment to your growth goes beyond just a paycheck. We provide ongoing training, mentorship, and a variety of career development programs to help you unlock your full potential. With access to a wealth of resources and a supportive team, you'll have everything you need to thrive.
-          </p>
-          <p className="text-gray-600 text-lg leading-relaxed mb-4">
-            Whether you're looking to specialize in a specific technology, develop leadership skills, or explore new career paths within the company, we offer the flexibility and support to help you achieve your goals.
-          </p>
-          <p className="text-gray-600 text-lg leading-relaxed">
-            Join our team and take the next step in your career. At Technomagic Solutions, you’ll have the opportunity to work on challenging projects, collaborate with experts in the field, and make a lasting impact on the company and its clients.
-          </p>
-        </div>
-      </div>
-    </section>
+      {/* Custom Software Solutions Section */}
+     
+    </div>
   );
 };
 
-export default CareerContent;
+export default Careercontent;

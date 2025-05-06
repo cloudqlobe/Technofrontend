@@ -5,69 +5,60 @@ import Designcontent from './Designcontent';
 
 const Crmcontent1 = () => {
   return (
-    <section className="w-full px-6 md:px-16 py-16 bg-white">
-      {/* Main Heading */}
-      <h2 className="text-4xl text-center font-semibold text-gray-800 mb-16">
-        Cutting-Edge <span className="text-blue-800">CRM Development</span> Solutions
-      </h2>
+    <div className="min-h-screen w-full bg-white px-12 py-10 overflow-hidden">
+      <h1 className="text-4xl font-semibold text-center text-black mb-8 mt-10">
+        Innovative Technology <span className="text-blue-800">Solutions for Your Business</span>
+      </h1>
 
-      {/* Section 1 - Image Left, Content Right */}
-      <div className="flex flex-col md:flex-row items-center mb-20">
-        {/* Image */}
-        <div className="w-full md:w-5/12 mb-8 md:mb-0">
+      {/* IT Solutions Section */}
+      <div className="grid md:grid-cols-2 items-center gap-6 mb-8 max-w-7xl mx-auto">
+        <div className="relative flex justify-center items-center w-full p-2">
           <img
             src={image1}
-            alt="CRM Development"
-            className="w-full max-w-[350px] h-auto object-cover rounded-xl mx-auto"
+            alt="IT Solutions"
+            className="w-[80%] h-[450px] object-cover rounded-lg mb-2"
           />
         </div>
-        {/* Content */}
-        <div className="w-full md:w-7/12 md:pl-10">
-          <h3 className="text-2xl font-default mb-4">
-            <span className="text-gray-600">Transform Your Customer</span>{' '}
-            <span className="text-blue-500">Relationship Management</span>
-          </h3>
-          <p className="text-gray-600 text-lg leading-relaxed mb-4">
-            Our CRM development solutions help businesses streamline their processes, enhance customer relationships, and drive sales growth. With advanced features like contact management, lead tracking, email marketing automation, and custom reporting, we ensure that your CRM system is tailored to your business needs.
+        <div className="flex flex-col justify-center w-[600px] ml-[58px]">
+  <h2 className="text-4xl font-default text-grey-400 mb-4">
+    Innovative <span className="text-orange-400">Tech Solutions</span>
+  </h2>
+  <p className="text-gray-600 leading-relaxing text-lg text-justify mt-[20px]">
+    Our IT solutions optimize business operations and enhance security. From network management to cloud solutions, we provide services that align with your growth and sustainability goals. We focus on building a robust IT infrastructure that supports your business’s long-term success by reducing costs and increasing productivity.
+  </p>
+  <p className="text-gray-600 mt-3 leading-relaxing text-lg text-justify mt-[30px]">
+    Our solutions include cybersecurity, system integrations, and tailored IT consulting to meet your unique needs. We also cover data backup and recovery, enterprise resource planning (ERP), and business intelligence solutions to ensure that your company stays ahead in the competitive digital landscape.
+  </p>
+</div>
+
+      </div>
+
+      {/* Chatbot Solutions Section */}
+      <div className="grid md:grid-cols-2 items-center gap-6 mb-8 max-w-7xl mx-auto mt-[-24px]">
+        <div className="flex flex-col justify-center w-full ml-[-45px]">
+          <h2 className="text-4xl font-default text-grey-200 mb-4 mt-[40px]">Smart <span className="text-orange-400">Chatbot Solutions</span></h2>
+          <p className="text-gray-600 mt-3 leading-relaxing text-lg text-justify mt-[30px]">
+            Our AI-powered chatbot solutions automate customer support and enhance engagement. They can handle various tasks from answering queries to order processing, improving efficiency and customer satisfaction. These chatbots seamlessly integrate with your existing systems and provide valuable insights through real-time analytics.
           </p>
-          <p className="text-gray-600 text-lg leading-relaxed mb-4">
-            We provide CRM solutions for businesses of all sizes, whether you need a custom-built CRM or integration with existing systems like Salesforce, HubSpot, or Zoho. Our focus is to improve communication between your teams and customers, optimize workflows, and help your business grow through data-driven insights.
+          <p className="text-gray-600 mt-3 leading-relaxing text-lg text-justify mt-[30px]">
+            With natural language processing (NLP) and adaptive learning, they evolve to deliver better interactions over time. Additionally, our chatbots can be customized for industries such as e-commerce, healthcare, and finance, providing domain-specific solutions that boost productivity and streamline workflows. With natural language processing (NLP) and adaptive learning, they evolve to deliver better interactions over time. Additionally, our chatbots can be customized for industri
           </p>
-          <p className="text-gray-600 text-lg leading-relaxed">
-            Our CRM systems are fully customizable, ensuring seamless integration with your business processes. With our support, you can increase productivity, improve customer retention, and deliver exceptional customer service, all while maintaining a user-friendly interface.
-          </p>
+        </div>
+        <div className="relative flex justify-center items-center w-full p-2">
+          <img
+            src={image2}
+            alt="Chatbot Solutions"
+            className="w-[85%] h-[450px] object-cover rounded-lg"
+          />
         </div>
       </div>
 
-      {/* Section 2 - Image Right, Content Left */}
-      <div className="flex flex-col md:flex-row-reverse items-center">
-        {/* Image */}
-        <div className="w-full md:w-5/12 mb-8 md:mb-0">
-          <img
-            src={image2}
-            alt="CRM User Interface"
-            className="w-full max-w-[350px] h-auto object-cover rounded-xl mx-auto"
-          />
-        </div>
-        {/* Content */}
-        <div className="w-full md:w-7/12 md:pr-10">
-          <h3 className="text-2xl font-default mb-4">
-            <span className="text-gray-500">Intuitive CRM Interfaces</span>{' '}
-            <span className="text-blue-800">for Better Customer Insights</span>
-          </h3>
-          <p className="text-gray-600 text-lg leading-relaxed mb-4">
-            We design intuitive CRM interfaces that help your team easily track and manage customer data. From contact management to sales forecasting, our systems provide comprehensive features for all aspects of customer relationship management, helping your teams access insights at the right time.
-          </p>
-          <p className="text-gray-600 text-lg leading-relaxed mb-4">
-            Whether it’s task automation, customer support tracking, or advanced analytics, our CRM solutions enable your business to respond quickly to customer needs, increase customer satisfaction, and boost overall sales.
-          </p>
-          <p className="text-gray-600 text-lg leading-relaxed">
-            With an emphasis on design and usability, our CRM systems are built to be flexible, scalable, and user-friendly, ensuring that your team can focus on what matters: building stronger customer relationships and driving growth.
-          </p>
-        </div>
-      </div>
-    </section>
+      {/* Custom Software Solutions Section */}
+      
+    </div>
   );
 };
+
+
 
 export default Crmcontent1;

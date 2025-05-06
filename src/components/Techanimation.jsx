@@ -27,12 +27,12 @@ const Techanimation = () => {
     <div className="bg-blue-900 text-white min-h-screen py-16 px-6 md:px-20">
       <div className="max-w-7xl mx-auto space-y-16">
         {/* Top Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center ml-[-45px]">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-yellow-400 mb-4">
               Transform Your Business with Expert Tech Solutions
             </h2>
-            <p className="text-lg">
+            <p className="text-white mt-3 leading-relaxing text-lg text-justify mt-[30px]">
               Our tech consultancy and animation services help businesses embrace the latest technologies to innovate and grow. From software development to cloud solutions, 
             </p>
            
@@ -47,20 +47,21 @@ const Techanimation = () => {
         </div>
 
         {/* Bottom Section */}
-        <div className="bg-blue-800 p-8 rounded-xl">
-          <h3 className="text-2xl font-bold text-yellow-400 text-center mb-8">Our Services</h3>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 justify-items-center">
-            {techIcons.map((tech, index) => (
-              <div
-                key={index}
-                className="bg-blue-900 p-4 rounded-lg flex flex-col items-center border border-yellow-400 shadow-md hover:shadow-lg transition duration-300 w-44"
-              >
-                <div className="mb-3">{tech.icon}</div>
-                <p className="text-center text-sm font-medium">{tech.label}</p>
-              </div>
-            ))}
-          </div>
-        </div>
+        <div className="bg-blue-800 p-10 squared-xl w-[1350px] mx-auto ml-[-40px]">
+  <h3 className="text-2xl font-semibold text-yellow-400 text-center mb-8">Our Services</h3>
+  <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 justify-items-center">
+    {techIcons.map((tech, index) => (
+      <div
+        key={index}
+        className="bg-blue-900 p-4 squared-lg flex flex-col items-center border border-yellow-400 shadow-md hover:shadow-lg transition duration-300 w-52"
+      >
+        <div className="mb-3">{tech.icon}</div>
+        <p className="text-center text-sm font-medium">{tech.label}</p>
+      </div>
+    ))}
+  </div>
+</div>
+
       </div>
     </div>
   );

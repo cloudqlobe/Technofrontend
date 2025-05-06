@@ -8,70 +8,87 @@ const Erpcontent = () => {
   return (
     <div className="min-h-screen w-full bg-white px-12 py-10 overflow-hidden">
       <h1 className="text-4xl font-semibold text-center text-black mb-8 mt-10">
-        ERP <span className="text-blue-800">Design & Development Solutions</span>
+        Advanced <span className="text-blue-800">Web Development Solutions</span>
       </h1>
 
-      {/* ERP UI/UX Design Section */}
-      <div className="grid md:grid-cols-2 items-center gap-6 mb-12 max-w-7xl mx-auto">
+      {/* Front-End Development Section */}
+      <div className="grid md:grid-cols-2 items-center gap-6 mb-12 max-w-7xl mx-auto mt-[-40px]">
         <div className="relative flex justify-center items-center w-full p-2">
           <img
             src={image4}
-            alt="ERP Design"
+            alt="Frontend Development"
             className="w-[80%] h-[450px] object-cover rounded-lg mb-2 mr-[100px]"
           />
         </div>
-        <div className="flex flex-col justify-center w-full">
-          <h2 className="text-4xl text-gray-700 mb-4">User-Centric <span className="text-blue-600">ERP Interface Design</span></h2>
-          <p className="text-gray-600 leading-relaxed text-lg mb-3">
-            ERP systems need to be functional, but also intuitive. Our design team creates clean and efficient user interfaces that simplify complex processes and improve user adoption. Every screen is tailored to streamline your workflows and make operations smoother.
+        <div className="flex flex-col justify-center w-[600px] ml-[57px]">
+        <h2 className="text-4xl font-default text-grey-400 mb-2">
+            Interactive <span className="text-orange-400">Frontend Interfaces</span>
+          </h2>
+          <p className="text-gray-600 mt-3 leading-relaxing text-lg text-justify mt-[30px]">
+            We specialize in crafting stunning, responsive front-end interfaces using modern frameworks like React, Vue, and Next.js. Every component is tailored to create smooth navigation, fast rendering, and a visually appealing layout across devices.
+            We specialize in crafting stunning, responsive front-end interfaces using modern 
+
           </p>
-          <p className="text-gray-600 leading-relaxed text-lg">
-            From dashboards to detailed modules, our UI/UX design ensures accessibility, responsiveness, and visual clarity across all user roles — be it finance, HR, inventory, or project management.
+          <p className="text-gray-600 mt-3 leading-relaxing text-lg text-justify mt-[30px]">
+            Our design-first approach ensures every visual element has a functional purpose. From landing pages to multi-page applications, we aim to deliver interfaces that are fast, flexible, and highly interactive.
+            We specialize in crafting stunning, responsive front-end interfaces using modern frameworks like React, Vue, and Next.js. Every component is tailored
+
           </p>
+         
         </div>
       </div>
 
-      {/* ERP Development Section */}
-      <div className="grid md:grid-cols-2 items-center gap-6 mb-10 max-w-7xl mx-auto mt-[-20px]">
-        <div className="flex flex-col justify-center w-full">
-          <h2 className="text-4xl text-gray-700 mb-4">Comprehensive <span className="text-blue-600">ERP Development</span></h2>
-          <p className="text-gray-600 leading-relaxed text-lg mb-3">
-            Our development team builds scalable, secure ERP systems that centralize and automate business operations. We use modern frameworks and robust architectures to ensure your ERP handles real-time transactions and large data volumes effortlessly.
+      {/* Backend Development Section */}
+      <div className="grid md:grid-cols-2 items-center gap-6 mb-10 max-w-7xl mx-auto mt-[-60px]">
+        <div className="flex flex-col justify-center w-full ml-[-40px]">
+        <h2 className="text-4xl font-default text-grey-200 mb-4 mt-[40px] ">
+            Powerful <span className="text-orange-400">Backend Systems</span>
+          </h2>
+          <p className="text-gray-600 mt-3 leading-relaxing text-lg text-justify mt-[20px]">
+            We build robust backend systems using Node.js, Express, and other modern tech stacks to ensure your web applications run smoothly and securely. Our APIs are structured for easy integration and optimized performance. hight perforace at the level of tbe sette;;eetuusbssbbxjashs gdjddbdzj hhdhdad jdsddd jjdasddjas djadad  
           </p>
-          <p className="text-gray-600 leading-relaxed text-lg">
-            From core modules like finance and HR to custom-built features, we provide fully integrated solutions tailored to your business logic — enhancing collaboration and operational efficiency across departments.
+          <p className="text-gray-600 mt-3 leading-relaxing text-lg text-justify mt-[30px]">
+            Features like user authentication, role-based access control, session handling, and database security are built into every solution we provide. Our goal is to deliver backends that are not only functional but also secure and scalable. makeing relaible tungs in the hoscbabsfwbhksln  kssnnavs  hxhhxjh hhhhh hhhhh hhh hh hh hh h h 
           </p>
+          
         </div>
         <div className="relative flex justify-center items-center w-full p-2">
           <img
             src={image5}
-            alt="ERP Development"
-            className="w-[80%] h-[450px] object-cover rounded-lg mt-[50px]"
+            alt="Backend Development"
+            className="w-[80%] h-[450px] object-cover rounded-lg mt-[50px] ml-[30px]"
           />
         </div>
       </div>
 
-      {/* Custom ERP Solutions Section */}
-      <div className="grid md:grid-cols-2 items-center gap-24 mb-12 max-w-7xl mx-auto">
+      {/* Full Stack & Custom Development Section */}
+      <div className="grid md:grid-cols-2 items-center gap-24 mb-12 max-w-7xl mx-auto mt-[-60px]">
         <div className="relative flex justify-center items-center w-full p-2">
           <img
             src={image6}
-            alt="Custom ERP Solutions"
+            alt="Custom Web Applications"
             className="w-[90%] h-[400px] object-cover mt-24"
           />
         </div>
-        <div className="flex flex-col justify-center w-full mb-[100px]">
-          <h2 className="text-4xl text-gray-700 mb-4 ml-2 mt-16">Tailored <span className="text-blue-600">ERP Solutions</span></h2>
-          <p className="text-gray-600 leading-relaxed text-lg ml-4 mb-3">
-            We understand that every organization has unique processes. Our custom ERP solutions are designed around your workflows—whether it’s multi-location inventory management, supply chain automation, or advanced reporting.
+        <div className="flex flex-col justify-center w-full mb-[100px] ml-[30px]">
+        <h2 className="text-4xl font-default text-grey-200 mb-2  mt-16">
+            Custom <span className="text-orange-400">Web Applications</span>
+          </h2>
+          <p className="text-gray-600 mt-3 leading-relaxing text-lg text-justify mt-[30px]">
+            We develop tailored web solutions for businesses across all domains. Whether it's a CRM system, an internal admin dashboard, or a customer-facing portal, we combine frontend and backend technologies to bring your ideas to life.
+            Using the MERN stack and beyond, our custom applications feature intuitive UIs, data-driven logic, and modular code architecture.
           </p>
-          <p className="text-gray-600 leading-relaxed text-lg ml-4">
-            Our goal is to build ERP systems that not only meet your current needs but scale with your growth. We integrate third-party services, support mobile dashboards, and offer real-time analytics for informed business decisions.
+          <p className="text-gray-600 mt-3 leading-relaxing text-lg text-justify mt-[30px]">
+            Using the MERN stack and beyond, our custom applications feature intuitive UIs, data-driven logic, and modular code architecture. We focus on code reusability, microservices, and scalable builds that grow with your business.
+            Using the MERN stack and beyond, our custom applications feature intuitive UIs, data-driven logic, and modular code architecture. 
           </p>
+         
         </div>
       </div>
     </div>
   );
 };
+
+
 
 export default Erpcontent;

@@ -5,68 +5,57 @@ import Designcontent from './Designcontent';
 
 const Botcontents1 = () => {
   return (
-    <section className="w-full px-6 md:px-16 py-16 bg-white">
-      {/* Main Heading */}
-      <h2 className="text-4xl text-center font-semibold text-gray-900 mb-16">
-        Cutting-Edge <span className="text-blue-800">Chatbot Development</span> Solutions
-      </h2>
+    <div className="min-h-screen w-full bg-white px-12 py-10 overflow-hidden">
+      <h1 className="text-4xl font-semibold text-center text-black mb-8 mt-10">
+        Innovative Technology <span className="text-blue-800">Solutions for Your Business</span>
+      </h1>
 
-      {/* Section 1 - Image Left, Content Right */}
-      <div className="flex flex-col md:flex-row items-center mb-20">
-        {/* Image */}
-        <div className="w-full md:w-5/12 mb-8 md:mb-0">
-          <img
-            src={image1}
-            alt="Chatbot Development"
-            className="w-full max-w-[350px] h-auto object-cover rounded-xl mx-auto"
-          />
-        </div>
-        {/* Content */}
-        <div className="w-full md:w-7/12 md:pl-10">
-          <h3 className="text-2xl font-bold mb-4">
-            <span className="text-gray-600">Build Smarter,</span>{' '}
-            <span className="text-blue-800">Automated Chatbots</span>
-          </h3>
-          <p className="text-gray-600 text-lg leading-relaxed mb-4">
-            Our chatbot development services are designed to help businesses provide instant and effective customer support. Whether it's an AI-powered assistant for your website, social media, or messaging platforms, we offer tailored chatbot solutions to suit your needs.
-          </p>
-          <p className="text-gray-600 text-lg leading-relaxed mb-4">
-            We focus on creating intelligent chatbots that can handle complex queries, automate tasks, and enhance user experiences. By using cutting-edge technologies like Natural Language Processing (NLP) and machine learning, we ensure our bots are capable and scalable.
-          </p>
-          <p className="text-gray-600 text-lg leading-relaxed">
-            Our chatbots integrate seamlessly with your existing systems and can be easily customized to fit the tone and personality of your brand, enhancing the way you interact with customers.
-          </p>
-        </div>
-      </div>
-
-      {/* Section 2 - Image Right, Content Left */}
-      <div className="flex flex-col md:flex-row-reverse items-center">
-        {/* Image */}
-        <div className="w-full md:w-5/12 mb-8 md:mb-0">
+      {/* IT Solutions Section */}
+      <div className="grid md:grid-cols-2 items-center gap-6 mb-8 max-w-7xl mx-auto">
+        <div className="relative flex justify-center items-center w-full p-2">
           <img
             src={image2}
-            alt="AI Chatbots"
-            className="w-full max-w-[350px] h-auto object-cover rounded-xl mx-auto"
+            alt="IT Solutions"
+            className="w-[80%] h-[450px] object-cover rounded-lg mb-2"
           />
         </div>
-        {/* Content */}
-        <div className="w-full md:w-7/12 md:pr-10">
-          <h3 className="text-2xl font-default mb-4">
-            <span className="text-gray-600">AI-Powered</span>{' '}
-            <span className="text-blue-800">Chatbot Solutions</span>
-          </h3>
-          <p className="text-gray-600 text-lg leading-relaxed mb-4">
-            Our AI-powered chatbots are built to offer seamless customer interactions, from answering FAQs to performing complex actions like booking appointments or processing transactions. We leverage machine learning algorithms to continually improve the chatbot's performance.
+        <div className="flex flex-col justify-center w-[600px] ml-[58px]">
+  <h2 className="text-4xl font-default text-grey-400 mb-4">
+    Innovative <span className="text-orange-400">Tech Solutions</span>
+  </h2>
+  <p className="text-gray-600 leading-relaxing text-lg text-justify mt-[20px]">
+    Our IT solutions optimize business operations and enhance security. From network management to cloud solutions, we provide services that align with your growth and sustainability goals. We focus on building a robust IT infrastructure that supports your business’s long-term success by reducing costs and increasing productivity.
+  </p>
+  <p className="text-gray-600 mt-3 leading-relaxing text-lg text-justify mt-[30px]">
+    Our solutions include cybersecurity, system integrations, and tailored IT consulting to meet your unique needs. We also cover data backup and recovery, enterprise resource planning (ERP), and business intelligence solutions to ensure that your company stays ahead in the competitive digital landscape.
+  </p>
+</div>
+
+      </div>
+
+      {/* Chatbot Solutions Section */}
+      <div className="grid md:grid-cols-2 items-center gap-6 mb-8 max-w-7xl mx-auto mt-[-24px]">
+        <div className="flex flex-col justify-center w-full ml-[-45px]">
+          <h2 className="text-4xl font-default text-grey-200 mb-4 mt-[40px]">Smart <span className="text-orange-400">Chatbot Solutions</span></h2>
+          <p className="text-gray-600 mt-3 leading-relaxing text-lg text-justify mt-[30px]">
+            Our AI-powered chatbot solutions automate customer support and enhance engagement. They can handle various tasks from answering queries to order processing, improving efficiency and customer satisfaction. These chatbots seamlessly integrate with your existing systems and provide valuable insights through real-time analytics.
           </p>
-          <p className="text-gray-600 text-lg leading-relaxed mb-4">
-            We design conversational workflows that engage users, understand context, and provide instant solutions, all while maintaining a natural conversation flow. Our bots are optimized for various platforms, ensuring a consistent experience across websites, mobile apps, and social media channels.
-          </p>
-          <p className="text-gray-600 text-lg leading-relaxed">
-            From initial chatbot design to deployment and optimization, we provide end-to-end chatbot development services, delivering a solution that enhances user engagement and drives results for your business.
+          <p className="text-gray-600 mt-3 leading-relaxing text-lg text-justify mt-[30px]">
+            With natural language processing (NLP) and adaptive learning, they evolve to deliver better interactions over time. Additionally, our chatbots can be customized for industries such as e-commerce, healthcare, and finance, providing domain-specific solutions that boost productivity and streamline workflows. With natural language processing (NLP) and adaptive learning, they evolve to deliver better interactions over time. Additionally, our chatbots can be customized for industri
           </p>
         </div>
+        <div className="relative flex justify-center items-center w-full p-2">
+          <img
+            src={image1}
+            alt="Chatbot Solutions"
+            className="w-[85%] h-[450px] object-cover rounded-lg"
+          />
+        </div>
       </div>
-    </section>
+
+      {/* Custom Software Solutions Section */}
+      
+    </div>
   );
 };
 

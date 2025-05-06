@@ -42,7 +42,7 @@ const HomePage = () => {
       <div className="w-full flex flex-row items-center justify-between px-20 py-16 bg-white mt-10">
         {/* Left: Text Content */}
         <div className="w-1/2">
-          <motion.h1 className="text-5xl font-bold text-gray-900 leading-tight" initial={{ opacity: 0, x: -30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}>
+          <motion.h1 className="text-3xl font-semibold text-gray-600 leading-tight" initial={{ opacity: 0, x: -30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}>
             The Future of <span className="text-orange-500">Technology</span>
           </motion.h1>
           <motion.p className="text-lg text-gray-600 mt-5 max-w-lg" initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 1.2 }}>

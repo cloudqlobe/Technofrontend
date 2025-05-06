@@ -22,7 +22,7 @@ const Webanimation = () => {
       {/* Top Section */}
       <div className="grid md:grid-cols-2 gap-12 items-center mb-14 ">
         {/* Left - Content */}
-        <div className="ml-[80px]">
+        <div className="ml-[40px] mt-[20px]">
           <h2 className="text-4xl font-bold mb-4 leading-snug">
             Build Powerful <span className="text-yellow-400">Web Solutions</span>
           </h2>
@@ -47,7 +47,7 @@ const Webanimation = () => {
   <h3 className="text-2xl font-semibold text-yellow-400 mb-8">
     Technologies We Work With
   </h3>
-  <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 max-w-6xl mx-auto mb-[30px]">
+  <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 max-w-[1350px] mx-auto mb-[30px] ml-[40px]">
     {techIcons.map((tech, index) => (
       <div
         key={index}

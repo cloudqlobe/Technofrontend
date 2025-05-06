@@ -48,26 +48,27 @@ const HomePage = () => {
       {/* ====== Main Section ====== */}
       <div className="w-full flex flex-row items-center justify-between px-20 py-16 bg-white mt-10">
         {/* Left: Text Content */}
-        <div className="w-1/2">
-          <motion.h1 className="text-5xl font-bold text-gray-900 leading-tight" initial={{ opacity: 0, x: -30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}>
+        <div className="w-1/2 mt-[-20px]">
+          <motion.h1 className="text-5xl font-semibold text-gray-700 leading-tight" initial={{ opacity: 0, x: -30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}>
             The Future of <span className="text-orange-500">Technology</span>
           </motion.h1>
-          <motion.p className="text-lg text-gray-600 mt-5 max-w-lg" initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 1.2 }}>
+          <motion.p className="text-sm text-gray-600 leading-relaxing text-justify mt-5 max-w-lg" initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 1.2 }}>
             Empowering businesses with cutting-edge digital solutions. From AI and automation to cybersecurity and web development, we innovate for a smarter tomorrow.
           </motion.p>
           <div className="mt-10 flex space-x-5">
-            <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="bg-orange-500 text-white px-7 py-3 rounded-lg text-lg font-semibold hover:bg-orange-600 transition">
-              Get Started 🚀
+            <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="bg-orange-500 text-white px-7 py-3 squared-lg text-lg font-semibold hover:bg-orange-600 transition">
+              Get Started 
             </motion.button>
-            <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="border border-gray-500 text-gray-900 px-7 py-3 rounded-lg text-lg font-semibold hover:bg-gray-300 transition">
-              Learn More 📖
+            <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="border border-gray-500 text-gray-900 px-7 py-3 squared-lg text-lg font-semibold hover:bg-gray-300 transition">
+              Learn More 
             </motion.button>
+            
           </div>
         </div>
 
         {/* Right Side: White Monitor with Sliding Content */}
         {/* Right Side: White Monitor with Sliding Content */}
-        <div className="w-1/2 flex justify-center relative">
+        <div className="w-1/2 flex justify-center relative ml-[130px]">
           <div className="relative w-[600px] h-[350px] bg-white rounded-xl border-[6px] border-gray-400 overflow-hidden flex items-center justify-center">
             <motion.div
               key={currentIndex}
@@ -87,7 +88,7 @@ const HomePage = () => {
 
 
           {/* iMac-Style Curved Stand (Untouched) */}
-          <div className="absolute -bottom-16 left-1/2 transform -translate-x-1/2 w-44 h-10 bg-gray-400 rounded-b-3xl"></div>
+          <div className="absolute -bottom-14 left-1/2 transform -translate-x-1/2 w-44 h-10 bg-gray-400 rounded-b-3xl"></div>
         </div>
       </div>
 

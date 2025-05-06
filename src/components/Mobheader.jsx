@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import image19 from "../assets/Image/250.jpg";
+
 import {
   FaApple,
   FaWindows,
@@ -41,30 +41,30 @@ const Mobheader = () => {
   return (
     <>
       {/* Mobile Header Section */}
-      <section className="w-full bg-white py-12 px-6 md:px-16 flex flex-col md:flex-row items-center justify-between gap-10">
+      <section className="w-full h-[600px] bg-white py-12 px-6 md:px-16 flex flex-col md:flex-row items-center justify-between gap-10">
         {/* Left Content */}
-        <div className="max-w-xl text-center md:text-left mt-[-150px]">
+        <div className="max-w-xl text-center md:text-left mt-[-240px] ml-[10px]">
           <h2 className="text-3xl md:text-4xl font-semibold mb-4">
             <span className="text-blue-800">Build Smarter </span>
             <span className="text-orange-500">Mobile Apps</span>
           </h2>
-          <p className="text-gray-700 mb-6 leading-relaxed">
+          <p className="text-sm text-gray-600 mb-6 leading-relaxed text-justify  max-w-lg ml-[5px]">
             We develop fast, modern mobile apps using the most powerful cross-platform and native technologies to deliver performance and experience that matters.
           </p>
 
           {/* Action Buttons */}
           <div className="flex flex-col md:flex-row gap-4 justify-center md:justify-start mb-[-40px]">
-            <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 squared-lg font-semibold shadow">
+            <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 squared-lg font-semibold shadow mt-[10px]">
               Get a Quote
             </button>
-            <button className="border border-blue-600 hover:bg-blue-50 text-blue-600 px-6 py-2 squared-lg font-semibold shadow">
+            <button className="border border-blue-600 hover:bg-blue-50 text-blue-600 px-6 py-2 squared-lg font-semibold shadow mt-[10px]">
               Get a Demo
             </button>
           </div>
         </div>
 
         {/* Phone and Icons Section */}
-        <div className="relative flex items-center justify-center mx-auto mt-[-70px] ml-[180px]">
+        <div className="relative flex items-center justify-center mx-auto mt-[-150px] ml-[320px]">
           {/* Left Side Icons */}
           <div className="flex flex-col justify-center gap-12 mr-4 items-center">
             <div className="flex flex-col items-center">
@@ -117,36 +117,7 @@ const Mobheader = () => {
       </section>
 
       {/* Reseller Section */}
-      <div className="w-full bg-[#F1F5F9] py-12 px-6 md:px-20 rounded-xl shadow-md mt-[-10px]  border border-gray-300">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
-          {/* Left Content */}
-          <div className="md:w-1/2">
-            <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-orange-600 drop-shadow-sm">
-              Become a Reseller
-            </h2>
-            <p className="text-base md:text-lg mb-6 text-gray-700 leading-relaxed">
-              Start your own business with zero development hassle. Offer world-class web design and development services under your brand, powered by us.
-            </p>
-            <div className="flex flex-wrap gap-4">
-              <button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded-xl shadow-md transition-all duration-300">
-                🚀 Register Now
-              </button>
-              <button className="bg-green-600 border border-green-600 text-white font-semibold px-6 py-3 rounded-xl transition-all duration-300">
-                💬 Talk to Us
-              </button>
-            </div>
-          </div>
-
-          {/* Right Image */}
-          <div className="md:w-1/2 flex justify-end">
-            <img
-              src={image19}
-              alt="Reseller Opportunity"
-              className="object-contain h-64 md:h-80 w-80 md:w-[400px]"
-            />
-          </div>
-        </div>
-      </div>
+      
     </>
   );
 };

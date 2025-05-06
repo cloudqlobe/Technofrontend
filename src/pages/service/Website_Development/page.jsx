@@ -6,6 +6,7 @@ import Webcontents from '../../../components/Webcontents';
 import Webanimation from '../../../components/Webanimation';
 import Webcontnet2 from '../../../components/Webcontnet2';
 import Webregister from '../../../components/Webregister';
+import Resellerpage from '../../../components/Resellerpage';
 
 
 
@@ -14,6 +15,7 @@ const WebsitePage = () => {
   return (
     <div className="mt-32">
       <Webheader/>
+      <Resellerpage/>
      <Webcontents/>
    <Webanimation/>
    <Webcontnet2/>

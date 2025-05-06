@@ -51,9 +51,9 @@ const PmHeader = () => {
     <>
       {/* Project Management Header Section */}
       <div className="bg-white text-gray-900 py-20 px-6 md:px-20">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center ml-[-10px]">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center ml-[-5px]">
           {/* Left Content */}
-          <div className="max-w-xl text-center md:text-left mt-[-100px]">
+          <div className="max-w-xl text-center md:text-left mt-[-130px]">
   <h2 className="text-3xl md:text-4xl font-semibold mb-4">
     <span className="text-blue-800">Efficient </span>
     <span className="text-orange-500">Project Management</span>
@@ -73,7 +73,7 @@ const PmHeader = () => {
 
 
           {/* Right Visual Panel */}
-          <div className="relative w-full bg-white rounded-xl mx-auto px-4 py-6 mt-[-90px] ml-[100px]">
+          <div className="relative w-full h-[530px]  px-4 py-6 mt-[-90px] ml-[140px]">
             <div className="grid grid-cols-2 gap-x-[-50px]">
               {/* Left Side - 3 Items */}
               <div className="flex flex-col justify-center items-end gap-y-6">
@@ -143,36 +143,7 @@ const PmHeader = () => {
       </div>
 
       {/* Become a Reseller Section */}
-      <div className="w-full bg-[#F1F5F9] py-12 px-6 md:px-20 rounded-xl shadow-md mt-[-50px]">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
-          {/* Text */}
-          <div className="md:w-1/2">
-            <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-orange-600 drop-shadow-sm">
-              Become a Reseller
-            </h2>
-            <p className="text-base md:text-lg mb-6 text-gray-700 leading-relaxed">
-              Start your own business with zero development hassle. Offer world-class web design and development services under your brand, powered by us.
-            </p>
-            <div className="flex flex-wrap gap-4">
-              <button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded-xl shadow-md transition-all duration-300">
-                🚀 Register Now
-              </button>
-              <button className="bg-green-600 border border-green-600 text-white font-semibold px-6 py-3 rounded-xl transition-all duration-300">
-                💬 Talk to Us
-              </button>
-            </div>
-          </div>
-
-          {/* Image */}
-          <div className="md:w-1/2 flex justify-end">
-            <img
-              src={image2}
-              alt="Reseller Opportunity"
-              className="object-contain h-64 md:h-80 w-80 md:w-[400px]"
-            />
-          </div>
-        </div>
-      </div>
+      
     </>
   );
 };

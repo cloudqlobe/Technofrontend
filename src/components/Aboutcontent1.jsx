@@ -1,62 +1,62 @@
-import React from 'react';
-import image1 from '../assets/Image/6548442.jpg'; // Mission image
-import image2 from '../assets/Image/10286772.jpg'; // Values image
+import React from "react";
+import image1 from "../assets/Image/build-robots.jpg";
+import image2 from "../assets/Image/10233603.jpg";
 
-const OurMissionContentPage = () => {
+
+const ContentPage = () => {
   return (
-    <section className="w-full px-6 md:px-16 py-16 bg-white">
-      {/* Main Heading */}
-      <h2 className="text-4xl text-center font-bold text-blue-900 mb-16">
-        Our Mission & Core Values
-      </h2>
+    <div className="min-h-screen w-full bg-white px-12 py-10 overflow-hidden">
+      <h1 className="text-4xl font-semibold text-center text-black mb-8 mt-10">
+        Innovative Technology <span className="text-blue-800">Solutions for Your Business</span>
+      </h1>
 
-      {/* Section 1 - Our Mission */}
-      <div className="flex flex-col md:flex-row items-center mb-20">
-        <div className="w-full md:w-5/12 mb-8 md:mb-0">
-          <img
-            src={image1}
-            alt="Our Mission"
-            className="w-full max-w-[350px] h-auto object-cover rounded-xl mx-auto"
-          />
-        </div>
-        <div className="w-full md:w-7/12 md:pl-10">
-          <h3 className="text-2xl font-bold mb-4">
-            <span className="text-blue-800">Empowering Businesses</span>{' '}
-            <span className="text-yellow-500">Through Innovation</span>
-          </h3>
-          <p className="text-gray-700 text-base leading-relaxed mb-4">
-            At TechnoMagic Solutions, our mission is to deliver innovative digital experiences that help businesses unlock their full potential. We combine strategy, creativity, and technology to craft solutions that drive impact.
-          </p>
-          <p className="text-gray-700 text-base leading-relaxed">
-            By putting people at the center of technology, we aim to build a more connected, efficient, and inspired future.
-          </p>
-        </div>
-      </div>
-
-      {/* Section 2 - Our Values */}
-      <div className="flex flex-col md:flex-row-reverse items-center">
-        <div className="w-full md:w-5/12 mb-8 md:mb-0">
+      {/* IT Solutions Section */}
+      <div className="grid md:grid-cols-2 items-center gap-6 mb-8 max-w-7xl mx-auto">
+        <div className="relative flex justify-center items-center w-full p-2">
           <img
             src={image2}
-            alt="Our Values"
-            className="w-full max-w-[350px] h-auto object-cover rounded-xl mx-auto"
+            alt="IT Solutions"
+            className="w-[80%] h-[450px] object-cover rounded-lg mb-2"
           />
         </div>
-        <div className="w-full md:w-7/12 md:pr-10">
-          <h3 className="text-2xl font-bold mb-4">
-            <span className="text-orange-500">Driven by Values</span>{' '}
-            <span className="text-blue-800">& Built on Trust</span>
-          </h3>
-          <p className="text-gray-700 text-base leading-relaxed mb-4">
-            Integrity, creativity, and collaboration form the foundation of everything we do. We foster a culture that encourages teamwork and celebrates every milestone, big or small.
+        <div className="flex flex-col justify-center w-[600px] ml-[58px]">
+  <h2 className="text-4xl font-default text-grey-400 mb-4">
+    Innovative <span className="text-orange-400">Tech Solutions</span>
+  </h2>
+  <p className="text-gray-600 leading-relaxing text-lg text-justify mt-[20px]">
+    Our IT solutions optimize business operations and enhance security. From network management to cloud solutions, we provide services that align with your growth and sustainability goals. We focus on building a robust IT infrastructure that supports your business’s long-term success by reducing costs and increasing productivity.
+  </p>
+  <p className="text-gray-600 mt-3 leading-relaxing text-lg text-justify mt-[30px]">
+    Our solutions include cybersecurity, system integrations, and tailored IT consulting to meet your unique needs. We also cover data backup and recovery, enterprise resource planning (ERP), and business intelligence solutions to ensure that your company stays ahead in the competitive digital landscape.
+  </p>
+</div>
+
+      </div>
+
+      {/* Chatbot Solutions Section */}
+      <div className="grid md:grid-cols-2 items-center gap-6 mb-8 max-w-7xl mx-auto mt-[-24px]">
+        <div className="flex flex-col justify-center w-full ml-[-45px]">
+          <h2 className="text-4xl font-default text-grey-200 mb-4 mt-[40px]">Smart <span className="text-orange-400">Chatbot Solutions</span></h2>
+          <p className="text-gray-600 mt-3 leading-relaxing text-lg text-justify mt-[30px]">
+            Our AI-powered chatbot solutions automate customer support and enhance engagement. They can handle various tasks from answering queries to order processing, improving efficiency and customer satisfaction. These chatbots seamlessly integrate with your existing systems and provide valuable insights through real-time analytics.
           </p>
-          <p className="text-gray-700 text-base leading-relaxed">
-            Our commitment to excellence ensures that we not only meet expectations — we exceed them.
+          <p className="text-gray-600 mt-3 leading-relaxing text-lg text-justify mt-[30px]">
+            With natural language processing (NLP) and adaptive learning, they evolve to deliver better interactions over time. Additionally, our chatbots can be customized for industries such as e-commerce, healthcare, and finance, providing domain-specific solutions that boost productivity and streamline workflows. With natural language processing (NLP) and adaptive learning, they evolve to deliver better interactions over time. Additionally, our chatbots can be customized for industri
           </p>
         </div>
+        <div className="relative flex justify-center items-center w-full p-2">
+          <img
+            src={image1}
+            alt="Chatbot Solutions"
+            className="w-[85%] h-[450px] object-cover rounded-lg"
+          />
+        </div>
       </div>
-    </section>
+
+      {/* Custom Software Solutions Section */}
+     
+    </div>
   );
 };
 
-export default OurMissionContentPage;
+export default ContentPage;
