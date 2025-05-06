@@ -20,23 +20,25 @@ const CloudAnimation = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         
         {/* Left Content */}
-        <div>
+        <div >
           <h2 className="text-3xl md:text-3xl font-semibold text-yellow-400 mb-4 ml-[-38px]">
             Powerful Cloud Infrastructure for Modern Businesses
           </h2>
           <p className="text-lg mb-6 text-blue-100 text-justify leading-relaxing ml-[-38px]">
+            Scale your applications and data with confidence. Our cloud 
             Scale your applications and data with confidence. Our cloud solutions offer secure, reliable, and fast infrastructure tailored to your business needs.
+            solutions offer secure, reliable, and fast infrastructure tailored to your business needs.
           </p>
           
         </div>
 
         {/* Right Image */}
         <div className="flex justify-center">
-          <div className="relative w-[600px] h-[600px] rounded-xl overflow-hidden">
+          <div className="relative w-[400px] h-[400px] rounded-xl overflow-hidden">
             <img
               src={image2}
               alt="Cloud Computing"
-              className="w-full h-full object-contain p-6"
+              className="w-full h-full object-contain p-4"
             />
           </div>
         </div>
