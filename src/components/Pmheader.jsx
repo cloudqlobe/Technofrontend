@@ -1,5 +1,6 @@
 import React from "react";
 import image2 from '../assets/Image/robottech.jpg';
+import { motion } from "framer-motion";
 import {
   FaLightbulb,
   FaClipboardList,
@@ -53,23 +54,27 @@ const PmHeader = () => {
       <div className="bg-white text-gray-900 py-20 px-6 md:px-20">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center ml-[-5px]">
           {/* Left Content */}
-          <div className="max-w-xl text-center md:text-left mt-[-130px]">
-  <h2 className="text-3xl md:text-4xl font-semibold mb-4">
-    <span className="text-blue-800">Efficient </span>
-    <span className="text-orange-500">Project Management</span>
+          <div className="max-w-xl text-center md:text-left mt-[-180px]">
+  <h2 className="text-2xl md:text-4xl font-semibold mb-4">
+    <span className="text-blue-800">Streamline </span>
+    <span className="text-orange-500">Your Projects</span>
   </h2>
   <p className="text-gray-700 mb-6">
-    Our project management system provides a centralized platform for managing tasks, tracking progress, and collaborating effectively. We focus on building scalable, user-friendly systems that enhance team productivity and streamline project workflows.
-  </p>
-  <div className="flex flex-col md:flex-row gap-4 justify-center md:justify-start mt-[50px]">
-    <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 squared-lg font-semibold shadow">
-      Get a Quote
-    </button>
-    <button className="border border-blue-600 hover:bg-blue-50 text-blue-600 px-6 py-2 squared-lg font-semibold shadow">
-      Get a Demo
-    </button>
+  Streamline your project management with our intuitive platform. Easily assign tasks, monitor progress, and track milestones. Enhance team collaboration and efficiency to meet your deadlines. Drive successful project outcomes with real-time insights.
+</p>
+
+
+
+  <div className="mt-10 flex space-x-5">
+    <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="bg-orange-500 text-white px-7 py-3 squared-lg text-lg font-semibold hover:bg-orange-600 transition text-justify leading relaxing">
+      Start Now
+    </motion.button>
+    <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="border border-gray-500 text-gray-900 px-7 py-3 squared-lg text-lg font-semibold hover:bg-gray-300 transition">
+      Explore Features
+    </motion.button>
   </div>
 </div>
+
 
 
           {/* Right Visual Panel */}

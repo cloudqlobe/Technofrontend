@@ -56,16 +56,14 @@ const Careeranimation = () => {
         <div className="flex flex-col lg:flex-row items-center gap-12">
           {/* Left Side Content */}
           <div className="lg:w-1/2 text-center lg:text-left mt-[-150px]">
-            <h2 className="text-4xl font-semibold text-yellow-400 mb-6 ml-[-40px]">
-              Why <span className="text-blue-600">Technomagic Solutions</span>
-            </h2>
-            <p className="text-lg text-orange-300 mb-6 text-justify leading-relaxing ml-[-40px]">
-              The salary and benefits offered by Technomagic Solutions are
-              attractive and very competitive in the market. We assure to
-              provide an ethical, challenging, work pressure-free and
-              professionally stimulating work environment that values ethics and
-              determination to succeed.
-            </p>
+          <h2 className="text-4xl font-semibold text-yellow-400 mb-6 ml-[-40px]">
+  Why <span className="text-blue-600">TechnoMagic Solutions</span>
+</h2>
+<p className="text-lg text-orange-300 mb-6 text-justify leading-relaxing ml-[-40px]">
+  TechnoMagic Solutions offers competitive salaries and a growth-focused environment where innovation and integrity thrive. We prioritize a healthy work-life balance, value-driven leadership, and collaborative culture. Our team benefits from mentorship, flexibility, and continuous learning. Join us to build a rewarding and future-ready career.
+</p>
+
+
           </div>
 
           {/* Right Side Image */}

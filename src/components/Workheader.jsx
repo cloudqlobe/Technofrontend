@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
  // adjust path if needed
 import {
   Lightbulb,
@@ -13,25 +14,26 @@ const OurWorks = () => {
     <div className="w-full py-16 px-4 md:px-12 bg-white">
       <div className="max-w-8xl h-[472px] mx-auto flex flex-col md:flex-row items-start justify-between gap-12">
         {/* Left Side */}
-        <div className="max-w-xl text-center md:text-left mt-[44px] ml-[28px]">
-          <h2 className="text-3xl md:text-4xl font-semibold mb-4">
-            <span className="text-blue-800">Build Powerful </span>
-            <span className="text-orange-500">Web Apps</span>
-          </h2>
-          <p className="text-sm text-gray-600 leading-relaxing text-justify mt-5 max-w-lg ">
-            We create fast, responsive, and user-friendly web applications using
-            the latest technologies to ensure high performance and optimal user
-            experience.
-          </p>
-          <div className="flex flex-col md:flex-row gap-4 justify-center md:justify-start mt-[50px]">
-            <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 squared-lg font-semibold shadow">
-              Get a Quote
-            </button>
-            <button className="border border-blue-600 hover:bg-blue-50 text-blue-600 px-6 py-2 squared-lg font-semibold shadow">
-              Get a Demo
-            </button>
-          </div>
-        </div>
+        <div className="max-w-xl text-center md:text-left mt-[20px] ml-[28px]">
+  <h2 className="text-3xl md:text-4xl font-semibold mb-4">
+    <span className="text-blue-800">Empowering </span>
+    <span className="text-orange-500">Digital Innovation</span>
+  </h2>
+  <p className="text-sm text-gray-600 leading-relaxing text-justify mt-5 max-w-lg">
+  At TechnoMagic, we deliver cutting-edge digital solutions that drive growth and efficiency. Our team specializes in crafting custom software, scalable applications, and seamless integrations, enabling businesses to innovate and evolve with precision and agility.
+</p>
+
+  <div className="mt-10 flex space-x-5">
+    <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="bg-orange-500 text-white px-7 py-3 squared-lg text-lg font-semibold hover:bg-orange-600 transition text-justify leading relaxing">
+      Explore Our Innovations
+    </motion.button>
+    <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="border border-gray-500 text-gray-900 px-7 py-3 squared-lg text-lg font-semibold hover:bg-gray-300 transition">
+      View Our Success Stories
+    </motion.button>
+  </div>
+</div>
+
+
 
         {/* Right Side - Steps */}
         <div className="flex flex-wrap justify-right gap-[-50px] ml-[-30px]">

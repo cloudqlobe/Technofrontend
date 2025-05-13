@@ -33,14 +33,17 @@ const DesignServices = () => {
         {/* Top Section: Text + Image */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* Left: Text */}
-          <div>
-            <h2 className="text-3xl md:text-4xl font-semibold text-yellow-400 mb-4 ml-[-38px]">
-              UI/UX Design Services
-            </h2>
-            <p className="text-white text-lg leading-relaxing text-justify ml-[-38px]">
-              Our design services focus on creating intuitive, user-friendly interfaces and experiences that connect with your audience. From wireframing to user testing, we bring your ideas to life with attention to detail.
-            </p>
-          </div>
+          <div className='mt-[-10px]'>
+  <h2 className="text-3xl md:text-4xl font-semibold text-yellow-400 mb-4 ml-[-38px]">
+    Creating Impactful UI/UX Designs
+  </h2>
+  <p className="text-white text-lg leading-relaxing text-justify ml-[-38px]">
+    We craft intuitive UI/UX designs that elevate user engagement. Our approach integrates wireframing, prototyping, and user testing to deliver seamless, responsive designs. Focused on both aesthetics and functionality, we align designs with your brand’s vision.
+  </p>
+</div>
+
+
+
 
           {/* Right: Image */}
           <div className="flex justify-center">

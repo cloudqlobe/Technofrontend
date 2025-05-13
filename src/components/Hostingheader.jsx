@@ -7,6 +7,7 @@ import {
   FaCogs,
   FaShieldAlt,
 } from 'react-icons/fa';
+import { motion } from "framer-motion";
 
 
 const icons = [
@@ -34,22 +35,25 @@ const HostingHeader = () => {
 
       <section className=" h-[600px] flex flex-col lg:flex-row items-center justify-between bg-white text-gray-800 px-6 py-16">
         {/* Left Side */}
-        <div className="max-w-xl text-center md:text-left mt-[-190px] ml-[50px]">
+        <div className="max-w-xl text-center md:text-left mt-[-200px] ml-[50px]">
   <h2 className="text-4xl font-semibold mb-4 whitespace-nowrap">
     <span className="text-blue-800">Reliable & Scalable </span>
     <span className="text-orange-500">Hosting Services</span>
   </h2>
   <p className="text-gray-700 mb-6 leading-relaxing text-justify text-sm ml-[5px]">
-    Get lightning-fast, secure, and scalable hosting solutions tailored for websites, web apps, and business platforms.
-  </p>
-  <div className="flex flex-col md:flex-row gap-4 justify-center md:justify-start mt-[50px]">
-    <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 squared-lg font-semibold shadow ml-[5px]">
-      Get Hosting Now
-    </button>
-    <button className="border border-blue-600 hover:bg-blue-50 text-blue-600 px-6 py-2 squared-lg font-semibold shadow ml-[5px]">
-      View Plans
-    </button>
-  </div>
+    Experience fast, secure, and scalable hosting solutions designed for websites, web apps, and enterprise platforms. Our services ensure optimal performance with 24/7 monitoring and top-notch security. Enjoy seamless uptime and faster load speeds. Scale automatically to meet the growing demands of your digital presence.
+</p>
+
+
+<div className="mt-10 flex space-x-5">
+    <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="bg-orange-500 text-white px-7 py-3 squared-lg text-lg font-semibold hover:bg-orange-600 transition text-justify leading relaxing">
+        Get Your Hosting Now 
+    </motion.button>
+    <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="border border-gray-500 text-gray-900 px-7 py-3 squared-lg text-lg font-semibold hover:bg-gray-300 transition">
+        Discover More Features
+    </motion.button>
+            
+          </div>
 </div>
 
 

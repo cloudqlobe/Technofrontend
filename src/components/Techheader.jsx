@@ -7,6 +7,7 @@ import {
   ShieldCheck,
 } from "lucide-react";
 import image19 from "../assets/Image/367935039113420802-vmake.mp4";
+import { motion } from "framer-motion";
 
 const IconLabel = ({ icon: Icon, label, bgColor, size }) => {
   const iconSize = size === "lg" ? "w-10 h-10" : "w-6 h-6";
@@ -27,23 +28,24 @@ const TechConsultancyHeader = () => {
     <div className="w-full px-6 py-20 bg-white h-[600px]">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 items-center">
         {/* Left Content */}
-        <div className="max-w-xl text-center md:text-left mt-[-90px] ml-[-45px]">
-          <h2 className="text-3xl md:text-4xl font-semibold mb-4">
-            <span className="text-blue-800">Expert </span>
-            <span className="text-orange-500">Tech Consultancy</span>
-          </h2>
-          <p className="text-sm text-gray-600 leading-relaxing text-justify mt-5 max-w-lg ">
-            Unlock your business's full potential with our end-to-end technology consulting. From digital strategy and system architecture to custom software solutions and scalable infrastructure, 
-          </p>
-          <div className="flex flex-col md:flex-row gap-4 justify-center md:justify-start mt-[50px]">
-            <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 squared-lg font-semibold shadow">
-              Book a Consultation
-            </button>
-            <button className="border border-blue-600 hover:bg-blue-50 text-blue-600 px-6 py-2 squared-lg font-semibold shadow">
-              Explore Services
-            </button>
-          </div>
-        </div>
+        <div className="max-w-xl text-center md:text-left mt-[-120px] ml-[-45px]">
+  <h2 className="text-3xl md:text-4xl font-semibold mb-4">
+    <span className="text-blue-800">Transformative </span>
+    <span className="text-orange-500">Tech Consultancy</span>
+  </h2>
+  <p className="text-sm text-gray-600 leading-relaxed text-justify mt-5 max-w-lg">
+    Drive transformative business outcomes with our cutting-edge technology consulting. Our solutions, from AI-driven digital transformations to scalable, high-performance systems, are designed to empower your enterprise with the agility and innovation needed to thrive in the digital era. 
+  </p>
+  <div className="mt-10 flex space-x-5">
+    <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="bg-orange-500 text-white px-7 py-3 squared-lg text-lg font-semibold hover:bg-orange-600 transition">
+    Book a Session
+    </motion.button>
+    <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="border border-gray-500 text-gray-900 px-7 py-3 squared-lg text-lg font-semibold hover:bg-gray-300 transition">
+    Discover Solutions
+    </motion.button>
+  </div>
+</div>
+
 
         {/* Right Monitor Section */}
         {/* Right Monitor Section */}

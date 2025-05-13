@@ -31,14 +31,13 @@ const HostingServices = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* Left: Text */}
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-yellow-400 mb-4 ml-[-40px]">
-              Hosting Services
-            </h2>
-            <p className=" text-white mt-3 leading-relaxing text-lg text-justify ml-[-40px]">
-              Our hosting solutions are built for performance, scalability, and security. Whether
-              you're running a simple website or complex infrastructure, we provide the tools and
-              support you need to thrive online.
-            </p>
+          <h2 className="text-3xl md:text-4xl font-bold text-yellow-400 mb-4 ml-[-40px]">
+  Premium Hosting Services for Your Digital Presence
+</h2>
+<p className="text-white mt-3 leading-relaxing text-lg text-justify ml-[-40px]">
+  Our hosting solutions deliver unmatched performance, scalability, and security to ensure your business thrives online. From basic websites to high-performance applications, we provide the infrastructure and support needed to meet your growth demands.
+</p>
+
           </div>
 
           {/* Right: Image */}

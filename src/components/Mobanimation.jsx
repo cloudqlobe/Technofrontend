@@ -52,10 +52,14 @@ const Mobanimation = () => {
       {/* Header Section */}
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 mb-16">
         <div className="md:w-1/2 ml-[-100px] mt-[-100px]">
-          <h2 className="text-4xl font-bold text-yellow-400 mb-4">Mobile App Technologies</h2>
-          <p className="text-white mt-3 leading-relaxing text-lg text-justify mt-[30px]">
-            We build mobile apps using the most advanced technologies to ensure high performance, smooth UI, and native-like experience across platforms.
-          </p>
+        <h2 className="text-4xl font-bold text-yellow-400 mb-4">
+  Advanced Web & Mobile App Development
+</h2>
+<p className="text-white mt-3 leading-relaxing text-lg text-justify mt-[30px]">
+  We craft high-performance web and mobile apps using cutting-edge technologies. Our solutions ensure fast load times, seamless user experiences, and scalable architectures — built to power modern businesses across all platforms.
+</p>
+
+
         </div>
         <div className="md:w-1/2">
           <img

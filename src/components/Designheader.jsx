@@ -1,5 +1,6 @@
 import React from "react";
 import { Play, Download, Upload, Plus, User, Lock } from "lucide-react";
+import { motion } from "framer-motion";
 
 
 const Designheader = () => {
@@ -9,21 +10,24 @@ const Designheader = () => {
       <div className="flex flex-col md:flex-row items-center justify-between w-full px-6 md:px-20 py-20">
         {/* Left Content */}
         <div className="md:w-1/2 text-center md:text-left mt-[-140px] ml-[-5px]">
-          <h2 className="text-4xl font-semibold text-[#1B3BAC]">
-            Engaging <span className="text-[#FF6A00]">UI & Seamless UX Design</span>
-          </h2>
-          <p className="mt-4 text-gray-600 text-sm text-justify leading relaxing">
-            Create user-first designs that are visually stunning and functionally smooth. Our UI/UX services blend creativity with usability to elevate your digital experience.
-          </p>
-          <div className="flex flex-col md:flex-row gap-4 justify-center md:justify-start mt-[50px]">
-            <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 squared-lg font-semibold shadow ml-[5px]">
-              Get a Quote
-            </button>
-            <button className="border border-blue-600 hover:bg-blue-50 text-blue-600 px-6 py-2 squared-lg font-semibold shadow">
-              Get a Demo
-            </button>
-          </div>
-        </div>
+        <h2 className="text-2xl md:text-4xl font-semibold mb-4">
+  <span className="text-blue-800">Pioneering </span>
+  <span className="text-orange-500">Next-Gen Design Solutions</span>
+</h2>
+
+  <p className="mt-4 text-gray-600 text-sm text-justify leading-relaxing">
+    Crafting visually stunning designs that make a lasting impression. Our design solutions combine creativity, strategy, and innovation to elevate your brand and captivate your audience. We focus on delivering sleek, user-friendly designs that resonate across all platforms. Let us help you create a powerful visual identity for your business.
+  </p>
+  <div className="mt-10 flex space-x-5">
+    <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="bg-orange-500 text-white px-7 py-3 squared-lg text-lg font-semibold hover:bg-orange-600 transition text-justify leading relaxing">
+      Start Your Design Journey
+    </motion.button>
+    <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="border border-gray-500 text-gray-900 px-7 py-3 squared-lg text-lg font-semibold hover:bg-gray-300 transition">
+      Discover Our Approach
+    </motion.button>
+  </div>
+</div>
+
 
         {/* Right Visual */}
         <div className="md:w-1/2 relative flex justify-center items-center mt-0 md:mt-[-110px] h-[500px] ">

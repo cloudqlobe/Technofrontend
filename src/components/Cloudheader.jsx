@@ -1,5 +1,6 @@
 import React from "react";
 import image26 from '../assets/Image/97ec0abf-3ba8-4ee5-99f5-cf02780b30aa.jpg';
+import { motion } from "framer-motion";
 import {
   Cloud,
   Database,
@@ -27,22 +28,24 @@ const Designheader = () => {
 
           {/* LEFT SIDE – Content */}
           <div className="max-w-xl text-center md:text-left mt-[-100px] ml-[-48px]">
-            <h2 className="text-4xl font-semibold mb-4 whitespace-nowrap">
-              <span className="text-blue-800">Powerful & Flexible </span>
-              <span className="text-orange-500">Cloud Computing</span>
-            </h2>
-            <p className="text-gray-700 mb-6 text-sm leading-relaxing text-justify ml-[5px]">
-              Leverage secure, scalable, and on-demand cloud solutions for your applications, infrastructure, and business operations — anytime, anywhere.
-            </p>
-            <div className="flex flex-col md:flex-row gap-4 justify-center md:justify-start mt-[50px]">
-              <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 squared-lg font-semibold shadow ml-[5px]">
-                Explore Cloud Solutions
-              </button>
-              <button className="border border-blue-600 hover:bg-blue-50 text-blue-600 px-6 py-2 squared-lg font-semibold shadow">
-                View Cloud Plans
-              </button>
-            </div>
-          </div>
+  <h2 className="text-4xl font-semibold mb-4 whitespace-nowrap">
+    <span className="text-blue-800">Enterprise-Grade </span>
+    <span className="text-orange-500">Cloud Infrastructure</span>
+  </h2>
+  <p className="text-gray-700 mb-6 text-sm leading-relaxed text-justify ml-[5px]">
+  Harness secure, scalable, and globally distributed cloud architecture—built for high availability and peak performance. Our solutions enable faster deployments, cost efficiency, data resilience, and real-time collaboration, all while ensuring compliance and operational reliability.
+</p>
+
+  <div className="mt-10 flex space-x-5">
+    <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="bg-orange-500 text-white px-7 py-3 squared-lg text-lg font-semibold hover:bg-orange-600 transition text-justify leading-relaxed">
+      Get Started 
+    </motion.button>
+    <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="border border-gray-500 text-gray-900 px-7 py-3 squared-lg text-lg font-semibold hover:bg-gray-300 transition">
+      Learn More 
+    </motion.button>
+  </div>
+</div>
+
 
           {/* RIGHT SIDE – Centered Icon Columns */}
           <div className="max-w-7xl md:w-1/2 mt-[-40px] ">

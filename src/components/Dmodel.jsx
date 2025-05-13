@@ -24,9 +24,8 @@ const Dmodel = () => {
             Why Choose <span className="text-orange-500">TechnoMagic Solutions?</span>
           </h1>
           <p className="text-white mt-3 leading-relaxing text-lg text-justify mt-[30px]">
-            We are a leading website development agency in India, committed to providing top-notch digital solutions. 
-            Our expert team creates customized, innovative, and high-performing websites that enhance user experience, 
-            improve engagement, and drive business success.
+          We are TechnoMagic Solutions — India’s premier IT powerhouse, delivering comprehensive digital solutions tailored for the future. From robust cybersecurity to scalable hosting services, we manage every aspect of your digital infrastructure. With our all-in-one service model, you gain reliability, innovation, and a strategic edge — all from one trusted technology partner.
+
           </p>
         </div>
 

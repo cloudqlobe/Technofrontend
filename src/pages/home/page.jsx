@@ -50,13 +50,12 @@ const HomePage = () => {
         {/* Left: Text Content */}
         <div className="w-1/2 mt-[-20px]">
           <motion.h1 className="text-5xl font-semibold text-gray-700 leading-tight" initial={{ opacity: 0, x: -30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}>
-            The Future of <span className="text-orange-500">Technology</span>
+          The mastery of  <span className="text-orange-500">Innovations</span>
           </motion.h1>
-          <motion.p className="text-sm text-gray-600 leading-relaxing text-justify mt-5 max-w-lg" initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 1.2 }}>
-            Empowering businesses with cutting-edge digital solutions. From AI and automation to cybersecurity and web development, we innovate for a smarter tomorrow.
-          </motion.p>
+          <motion.p className="text-sm text-gray-600 leading-relaxing text-justify mt-5 max-w-xl" initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 1.2 }}>
+          We at TechnoMagic Solutions revolutionize the digital landscape by delivering powerful, future-driven technologies. From artificial intelligence and smart automation to robust cybersecurity and advanced web engineering, we provide an all-in-one solution that empowers businesses to lead, innovate, and transform.          </motion.p>
           <div className="mt-10 flex space-x-5">
-            <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="bg-orange-500 text-white px-7 py-3 squared-lg text-lg font-semibold hover:bg-orange-600 transition">
+            <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="bg-orange-500 text-white px-7 py-3 squared-lg text-lg font-semibold hover:bg-orange-600 transition text-justify leading relaxing">
               Get Started 
             </motion.button>
             <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="border border-gray-500 text-gray-900 px-7 py-3 squared-lg text-lg font-semibold hover:bg-gray-300 transition">

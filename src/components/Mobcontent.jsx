@@ -6,82 +6,73 @@ import image18 from "../assets/Image/4630198.jpg";
 const Mobcontent = () => {
   return (
     <div className="min-h-screen w-full bg-white px-12 py-10 overflow-hidden">
-      <h1 className="text-4xl font-semibold text-center text-black mb-8 mt-10">
-        Advanced <span className="text-blue-800">Web Development Solutions</span>
+      <h1 className="text-4xl font-semibold text-center text-black mb-8 mt-[30px]">
+        Advanced <span className="text-blue-800">App Development Solutions</span>
       </h1>
 
-      {/* Front-End Development Section */}
+      {/* Mobile App Development Section */}
       <div className="grid md:grid-cols-2 items-center gap-6 mb-12 max-w-7xl mx-auto mt-[-40px]">
         <div className="relative flex justify-center items-center w-full p-2">
           <img
             src={image18}
-            alt="Frontend Development"
-            className="w-[80%] h-[450px] object-cover rounded-lg mb-2 mr-[100px]"
+            alt="Mobile App Development"
+            className="w-[600px] h-[550px] object-cover rounded-lg mt-[50px] ml-[-100px]"
           />
         </div>
-        <div className="flex flex-col justify-center w-[600px] ml-[57px]">
-        <h2 className="text-4xl font-default text-grey-400 mb-2">
-            Interactive <span className="text-orange-400">Frontend Interfaces</span>
+        <div className="flex flex-col justify-center w-[600px] ml-[58px]">
+          <h2 className="text-4xl font-default text-grey-400 mt-[30px]">
+            Innovative <span className="text-orange-400">Mobile App Solutions</span>
           </h2>
           <p className="text-gray-600 mt-3 leading-relaxing text-lg text-justify mt-[30px]">
-            We specialize in crafting stunning, responsive front-end interfaces using modern frameworks like React, Vue, and Next.js. Every component is tailored to create smooth navigation, fast rendering, and a visually appealing layout across devices.
-            We specialize in crafting stunning, responsive front-end interfaces using modern 
-
+            We specialize in developing mobile applications that transform your business ideas into user-friendly, high-performance products. Whether it's iOS or Android, our team uses cutting-edge technologies such as React Native, Flutter, and Swift to create apps that provide an intuitive user experience. From enterprise solutions to consumer apps, we ensure that each app is optimized for performance, scalability, and ease of use across a variety of devices and operating systems.
           </p>
           <p className="text-gray-600 mt-3 leading-relaxing text-lg text-justify mt-[30px]">
-            Our design-first approach ensures every visual element has a functional purpose. From landing pages to multi-page applications, we aim to deliver interfaces that are fast, flexible, and highly interactive.
-            We specialize in crafting stunning, responsive front-end interfaces using modern frameworks like React, Vue, and Next.js. Every component is tailored
-
+            Our mobile apps are designed to engage users while delivering exceptional performance. We integrate robust features such as push notifications, geolocation services, and real-time data syncing to provide a seamless experience. Additionally, we focus on continuous testing and quality assurance throughout the development process to ensure your app performs flawlessly from launch to long-term use.
           </p>
-         
         </div>
       </div>
 
-      {/* Backend Development Section */}
+      {/* Web App Development Section */}
       <div className="grid md:grid-cols-2 items-center gap-6 mb-10 max-w-7xl mx-auto mt-[-60px]">
         <div className="flex flex-col justify-center w-full ml-[-40px]">
-        <h2 className="text-4xl font-default text-grey-200 mb-4 mt-[40px] ">
-            Powerful <span className="text-orange-400">Backend Systems</span>
+          <h2 className="text-4xl font-default text-grey-200  mt-[30px]">
+            Scalable <span className="text-orange-400">Web Applications</span>
           </h2>
-          <p className="text-gray-600 mt-3 leading-relaxing text-lg text-justify mt-[20px]">
-            We build robust backend systems using Node.js, Express, and other modern tech stacks to ensure your web applications run smoothly and securely. Our APIs are structured for easy integration and optimized performance. hight perforace at the level of tbe sette;;eetuusbssbbxjashs gdjddbdzj hhdhdad jdsddd jjdasddjas djadad  
+          <p className="text-gray-600 mt-3 leading-relaxing text-lg text-justify mt-[30px]">
+            Our team develops high-performance web applications using modern technologies like React, Angular, and Vue.js for the frontend, and Node.js, Django, or Ruby on Rails for the backend. We focus on building scalable web apps that are easy to maintain and adapt to future business needs. Whether it’s an e-commerce platform, a CRM system, or a custom dashboard, we ensure that every web app we develop is fast, reliable, and user-friendly.
           </p>
           <p className="text-gray-600 mt-3 leading-relaxing text-lg text-justify mt-[30px]">
-            Features like user authentication, role-based access control, session handling, and database security are built into every solution we provide. Our goal is to deliver backends that are not only functional but also secure and scalable. makeing relaible tungs in the hoscbabsfwbhksln  kssnnavs  hxhhxjh hhhhh hhhhh hhh hh hh hh h h 
+            Our development approach is based on collaboration, with constant communication to ensure the app meets your specifications and business goals. We also prioritize security, data protection, and the integration of third-party services to enhance the functionality of your web app. By following agile practices, we continuously refine and update your web app to stay aligned with market trends and evolving user needs.
           </p>
-          
         </div>
         <div className="relative flex justify-center items-center w-full p-2">
           <img
             src={image16}
-            alt="Backend Development"
-            className="w-[80%] h-[450px] object-cover rounded-lg mt-[50px] ml-[30px]"
+            alt="Web App Development"
+            className="w-[600px] h-[550px] object-cover rounded-lg mt-[10px] ml-[120px]"
           />
         </div>
       </div>
 
-      {/* Full Stack & Custom Development Section */}
-      <div className="grid md:grid-cols-2 items-center gap-24 mb-12 max-w-7xl mx-auto mt-[-60px]">
+      {/* Full Stack App Development Section */}
+      <div className="grid md:grid-cols-2 items-center gap-24 mb-12 max-w-7xl mx-auto mt-[-70px]">
         <div className="relative flex justify-center items-center w-full p-2">
           <img
             src={image17}
-            alt="Custom Web Applications"
-            className="w-[90%] h-[400px] object-cover mt-24"
+            alt="Full Stack App Development"
+            className="w-[680px] h-[680px] object-cover mt-[25px] ml-[-50px]"
           />
         </div>
-        <div className="flex flex-col justify-center w-full mb-[100px] ml-[30px]">
-        <h2 className="text-4xl font-default text-grey-200 mb-2  mt-16">
-            Custom <span className="text-orange-400">Web Applications</span>
+        <div className="flex flex-col justify-center w-full mb-[100px] ml-[30px] mt-[150px]">
+          <h2 className="text-4xl font-default text-grey-200  mt-[30px]">
+            Full-Stack <span className="text-orange-400">App Development</span>
           </h2>
           <p className="text-gray-600 mt-3 leading-relaxing text-lg text-justify mt-[30px]">
-            We develop tailored web solutions for businesses across all domains. Whether it's a CRM system, an internal admin dashboard, or a customer-facing portal, we combine frontend and backend technologies to bring your ideas to life.
-            Using the MERN stack and beyond, our custom applications feature intuitive UIs, data-driven logic, and modular code architecture.
+            We offer end-to-end full-stack app development, handling both the frontend and backend with seamless integration. Our team is skilled in technologies like the MERN stack (MongoDB, Express, React, Node.js), enabling us to deliver apps with rich user interfaces and dynamic data management. Full-stack development allows us to create applications that are not only visually appealing but also scalable and easy to maintain.
           </p>
           <p className="text-gray-600 mt-3 leading-relaxing text-lg text-justify mt-[30px]">
-            Using the MERN stack and beyond, our custom applications feature intuitive UIs, data-driven logic, and modular code architecture. We focus on code reusability, microservices, and scalable builds that grow with your business.
-            Using the MERN stack and beyond, our custom applications feature intuitive UIs, data-driven logic, and modular code architecture. 
+            Our full-stack approach ensures that your app is developed efficiently, with consistent functionality and fast delivery. By using a single tech stack for both frontend and backend, we streamline the development process, reducing complexities and improving collaboration. Whether you need a new app built from scratch or an existing one revamped, our full-stack services provide you with a seamless, high-quality solution that supports your business objectives.
           </p>
-         
         </div>
       </div>
     </div>
@@ -89,3 +80,4 @@ const Mobcontent = () => {
 };
 
 export default Mobcontent;
+     

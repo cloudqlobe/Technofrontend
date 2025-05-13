@@ -29,12 +29,14 @@ const Techanimation = () => {
         {/* Top Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center ml-[-45px]">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-yellow-400 mb-4">
-              Transform Your Business with Expert Tech Solutions
-            </h2>
-            <p className="text-white mt-3 leading-relaxing text-lg text-justify mt-[30px]">
-              Our tech consultancy and animation services help businesses embrace the latest technologies to innovate and grow. From software development to cloud solutions, 
-            </p>
+          <h2 className="text-3xl md:text-4xl font-bold text-yellow-400 mb-4">
+          Empower Your Business with Tech Consultancy
+</h2>
+<p className="text-white mt-3 leading-relaxing text-lg text-justify mt-[30px]">
+  Our tech consultancy services provide businesses with innovative solutions to enhance efficiency and growth. We specialize in custom software development, cloud integration, and digital transformation. Let us help you implement the right technologies that fit your business needs and drive success.
+</p>
+
+
            
           </div>
           <div className="flex justify-center">

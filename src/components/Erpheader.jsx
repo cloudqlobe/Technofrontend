@@ -9,6 +9,7 @@ import {
   FaBoxes,
   FaTruck,
 } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 // <-- update this path as needed
 
@@ -46,23 +47,26 @@ const ERPHeader = () => {
       <div className="min-h-[200px] px-6 py-8">
         <div className="max-w-screen-2xl h-[536px] mx-auto flex flex-col lg:flex-row justify-between items-start gap-12">
           {/* Left Side Content */}
-          <div className="max-w-xl text-center md:text-left mt-[80px] ml-[50px]">
-            <h2 className="text-3xl md:text-4xl font-semibold mb-4">
-              <span className="text-blue-800">Enterprise </span>
-              <span className="text-orange-500">ERP Development</span>
-            </h2>
-            <p className="text-gray-700 mb-6 text-sm text-justify leading-relaxing ml-[5px]">
-              We develop scalable ERP systems to manage your operations, finance, HR, and inventory under one unified platform. Boost productivity with smart automation and real-time insights.
-            </p>
-            <div className="flex flex-col md:flex-row gap-4 justify-center md:justify-start mt-[50px]">
-              <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 squared-lg font-semibold shadow ml-[5px]">
-                Get a Quote
-              </button>
-              <button className="border border-blue-600 hover:bg-blue-50 text-blue-600 px-6 py-2 squared-lg font-semibold shadow">
-                Get a Demo
-              </button>
-            </div>
-          </div>
+          <div className="max-w-xl text-center md:text-left mt-[50px] ml-[50px]">
+  <h2 className="text-2xl md:text-4xl font-semibold mb-4">
+    <span className="text-blue-800">Optimize </span>
+    <span className="text-orange-500">Your Operations with ERP</span>
+  </h2>
+  <p className="text-gray-700 mb-6 text-sm text-justify leading-relaxing ml-[5px]">
+  Integrate all business functions into a unified platform with our tailored ERP solutions. Streamline operations across finance, HR, and inventory. 
+  Enhance efficiency, minimize errors, and drive productivity. Get real-time insights to make smarter decisions and accelerate growth.
+</p>
+
+  <div className="mt-10 flex space-x-5">
+    <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="bg-orange-500 text-white px-7 py-3 squared-lg text-lg font-semibold hover:bg-orange-600 transition text-justify leading relaxing">
+      Get Started Now
+    </motion.button>
+    <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="border border-gray-500 text-gray-900 px-7 py-3 squared-lg text-lg font-semibold hover:bg-gray-300 transition">
+      Learn More
+    </motion.button>
+  </div>
+</div>
+
 
           {/* Right Side - Monitor Box */}
           <div className="w-[700px] h-[420px] bg-white rounded-lg p-8 border-4 border-bg-gray-1000 mr-[60px] mt-[-30px]">

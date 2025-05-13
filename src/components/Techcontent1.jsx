@@ -5,55 +5,60 @@ import image2 from '../assets/Image/9628536.jpg';
 const Techcontent1 = () => {
   return (
     <div className="min-h-screen w-full bg-white px-12 py-10 overflow-hidden">
-      <h1 className="text-4xl font-semibold text-center text-black mb-8 mt-10">
-        Innovative Technology <span className="text-blue-800">Solutions for Your Business</span>
+      <h1 className="text-4xl font-semibold text-center text-black mb-8 mt-[30px]">
+        Expert <span className="text-blue-800">Technology Consultancy</span> for Future-Ready Businesses
       </h1>
 
-      {/* IT Solutions Section */}
+      {/* Tech Consultancy Section */}
       <div className="grid md:grid-cols-2 items-center gap-6 mb-8 max-w-7xl mx-auto">
         <div className="relative flex justify-center items-center w-full p-2">
           <img
             src={image1}
-            alt="IT Solutions"
-            className="w-[80%] h-[450px] object-cover rounded-lg mb-2"
+            alt="Tech Strategy"
+            className="w-[750px] h-[650px] object-cover rounded-lg mt-[30px] ml-[-130px]"
           />
         </div>
         <div className="flex flex-col justify-center w-[600px] ml-[58px]">
-  <h2 className="text-4xl font-default text-grey-400 mb-4">
-    Innovative <span className="text-orange-400">Tech Solutions</span>
-  </h2>
-  <p className="text-gray-600 leading-relaxing text-lg text-justify mt-[20px]">
-    Our IT solutions optimize business operations and enhance security. From network management to cloud solutions, we provide services that align with your growth and sustainability goals. We focus on building a robust IT infrastructure that supports your business’s long-term success by reducing costs and increasing productivity.
-  </p>
-  <p className="text-gray-600 mt-3 leading-relaxing text-lg text-justify mt-[30px]">
-    Our solutions include cybersecurity, system integrations, and tailored IT consulting to meet your unique needs. We also cover data backup and recovery, enterprise resource planning (ERP), and business intelligence solutions to ensure that your company stays ahead in the competitive digital landscape.
-  </p>
-</div>
+          <h2 className="text-4xl font-default text-grey-400  mt-[30px]">
+            Strategic <span className="text-orange-400">Tech Consultancy</span>
+          </h2>
+          <p className="text-gray-600 leading-relaxing text-lg text-justify mt-[30px]">
+  Our technology consultancy services are crafted to help businesses unlock the full potential of their digital capabilities. By analyzing your current infrastructure, workflows, and strategic goals, we deliver tailored roadmaps that improve efficiency, reduce costs, and support sustainable innovation. Whether you're modernizing legacy systems, moving to the cloud, or exploring automation, we act as your technology partner to align every decision with measurable business outcomes. We ensure that your technology investments align with evolving market needs, driving both performance and growth across all departments.
+</p>
 
+<p className="text-gray-600 mt-3 leading-relaxing text-lg text-justify mt-[30px]">
+  We collaborate with organizations across industries to guide critical areas such as IT modernization, digital infrastructure, and secure software adoption. Our expertise blends technical insight with industry context to help you adapt quickly, reduce risks, and scale confidently. Through smart, scalable, and forward-thinking solutions, we ensure your business is future-ready and positioned to lead in a fast-changing digital landscape. From strategic planning to execution, we remain committed to delivering technology frameworks that evolve with your business and generate long-term value.
+</p>
+
+
+
+        </div>
       </div>
 
-      {/* Chatbot Solutions Section */}
-      <div className="grid md:grid-cols-2 items-center gap-6 mb-8 max-w-7xl mx-auto mt-[-24px]">
+      {/* Digital Transformation Section */}
+      <div className="grid md:grid-cols-2 items-center gap-6 mb-8 max-w-7xl mx-auto mt-[70px]">
         <div className="flex flex-col justify-center w-full ml-[-45px]">
-          <h2 className="text-4xl font-default text-grey-200 mb-4 mt-[40px]">Smart <span className="text-orange-400">Chatbot Solutions</span></h2>
+          <h2 className="text-4xl font-default text-grey-200  mt-[30px]">
+            Digital <span className="text-orange-400">Transformation Advisory</span>
+          </h2>
           <p className="text-gray-600 mt-3 leading-relaxing text-lg text-justify mt-[30px]">
-            Our AI-powered chatbot solutions automate customer support and enhance engagement. They can handle various tasks from answering queries to order processing, improving efficiency and customer satisfaction. These chatbots seamlessly integrate with your existing systems and provide valuable insights through real-time analytics.
-          </p>
-          <p className="text-gray-600 mt-3 leading-relaxing text-lg text-justify mt-[30px]">
-            With natural language processing (NLP) and adaptive learning, they evolve to deliver better interactions over time. Additionally, our chatbots can be customized for industries such as e-commerce, healthcare, and finance, providing domain-specific solutions that boost productivity and streamline workflows. With natural language processing (NLP) and adaptive learning, they evolve to deliver better interactions over time. Additionally, our chatbots can be customized for industri
-          </p>
+  Embracing digital transformation is no longer optional—it’s essential for survival and success in today’s fast-paced world. We help businesses redesign their operational models and customer experiences by integrating disruptive technologies such as AI, machine learning, IoT, and robotic process automation. From reimagining legacy systems to scaling cloud-based solutions, we guide your transformation journey every step of the way. Our approach ensures that innovation is not only visionary but also practical, empowering you to stay agile, competitive, and prepared for future challenges. By aligning transformation with your core objectives, we help you extract more value from every digital initiative and drive sustainable business growth.
+</p>
+
+<p className="text-gray-600 mt-3 leading-relaxing text-lg text-justify mt-[30px]">
+  Our advisory services focus on identifying digital gaps, prioritizing initiatives, and fostering a culture of innovation. We ensure that your team is prepared to thrive in a digitally-driven environment with structured planning, agile execution, and continuous improvement. By aligning strategy with day-to-day operations, we embed lasting change and equip your organization to adapt, scale, and lead confidently in a tech-driven market. Our consultants work closely with stakeholders at all levels to build a strong digital foundation that supports long-term resilience, innovation, and measurable success.
+</p>
+
+
         </div>
         <div className="relative flex justify-center items-center w-full p-2">
           <img
             src={image2}
-            alt="Chatbot Solutions"
-            className="w-[85%] h-[450px] object-cover rounded-lg"
+            alt="Digital Advisory"
+            className="w-[600px] h-[600px] object-cover rounded-lg mt-[70px] ml-[130px]"
           />
         </div>
       </div>
-
-      {/* Custom Software Solutions Section */}
-      
     </div>
   );
 };

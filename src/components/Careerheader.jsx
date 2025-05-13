@@ -3,6 +3,7 @@ import { FaUsersGear } from "react-icons/fa6";
 import { DiRuby} from "react-icons/di";
 import { BsDiagram3 } from "react-icons/bs";
 import { FaAward } from "react-icons/fa6";
+import { motion } from "framer-motion";
 
 import { LuBrainCog,LuBadgeCheck,LuCpu,LuLocateFixed ,LuSnowflake,LuTarget  } from "react-icons/lu";
 
@@ -13,23 +14,29 @@ const Careerheader = () => {
       <div className="max-w-7xl h-[440px] mx-auto flex flex-col md:flex-row items-center gap-12">
 
         {/* Left Side */}
-        <div className="max-w-xl text-center md:text-left mt-[-140px] ml-[-60px]">
-          <h2 className="text-4xl font-semibold mb-4 whitespace-nowrap">
-            <span className="text-blue-800">Join Our Team </span>
-            <span className="text-orange-500">Shape Your Future</span>
-          </h2>
-          <p className="text-gray-700 mb-6">
-            We’re on the lookout for passionate, driven individuals to be part of our growing family. Explore exciting career opportunities and take the next step toward a rewarding future with us.
-          </p>
-          <div className="flex flex-col md:flex-row gap-4 justify-center md:justify-start mt-[50px]">
-            <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-semibold shadow">
-              Explore Open Roles
-            </button>
-            <button className="border border-blue-600 hover:bg-blue-50 text-blue-600 px-6 py-2 rounded-lg font-semibold shadow">
-              Life at Our Company
-            </button>
-          </div>
-        </div>
+        <div className="max-w-xl text-center md:text-left mt-[-200px] ml-[-50px]">
+  <h2 className="text-4xl font-semibold mb-4 whitespace-nowrap">
+    <span className="text-blue-800">Join Our Team </span>
+    <span className="text-orange-500">Shape Your Future</span>
+  </h2>
+  <p className="text-gray-700 mb-6 text-sm leading-relaxed text-justify max-w-lg">
+  Be part of a dynamic, forward-thinking team that values innovation, growth, and lasting impact. Explore diverse career paths designed to unlock your true potential and thrive in a supportive, collaborative, and empowering environment shaping the future of tech.
+</p>
+
+
+
+  <div className="mt-10 flex space-x-5">
+    <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="bg-orange-500 text-white px-7 py-3 squared-lg text-lg font-semibold hover:bg-orange-600 transition text-justify leading-relaxed">
+      View Open Roles
+    </motion.button>
+    <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="border border-gray-500 text-gray-900 px-7 py-3 squared-lg text-lg font-semibold hover:bg-gray-300 transition">
+      Life at TechnoMagic
+    </motion.button>
+  </div>
+</div>
+
+        
+   
 
         {/* Right Side (Boxes) */}
         <div className="relative w-[450px] h-[450px] ml-[100px]">

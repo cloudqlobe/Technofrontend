@@ -2,6 +2,7 @@ import React from 'react';
 import { FaCommentDots, FaQuestion, FaCog } from 'react-icons/fa';
 import { MdTextsms } from 'react-icons/md';
 import image12 from "../assets/Image/369748101520986116-vmake.mp4";
+import { motion } from "framer-motion";
  // adjust path if needed
 
 const Botheader = () => {
@@ -12,23 +13,29 @@ const Botheader = () => {
         <div className="max-w-7xl h-[472px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
           {/* Left Content */}
-          <div className="max-w-xl text-center md:text-left mt-[-150px] ml-[-40px]">
-  <h2 className="text-3xl md:text-4xl font-semibold mb-4">
-    <span className="text-blue-800">Custom </span>
-    <span className="text-orange-500">AI Solutions</span>
+          <div className="max-w-xl text-center md:text-left mt-[-210px] ml-[-45px]">
+          <h2 className="text-4xl font-semibold mb-4 whitespace-nowrap">
+    <span className="text-blue-800">Revolutionize
+    </span>
+    <span className="text-orange-500"> Your Business with AI</span>
   </h2>
-  <p className="text-gray-700 mb-6 text-sm text-justify leading relaxing">
-    We specialize in creating cutting-edge AI solutions tailored to your business needs. From predictive analytics to machine learning models, we help you harness the power of AI to optimize operations, improve decision-making, and deliver personalized experiences.
-  </p>
-  <div className="flex flex-col md:flex-row gap-4 justify-center md:justify-start mt-[50px]">
-    <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 squared-lg font-semibold shadow">
-      Get a Quote
-    </button>
-    <button className="border border-blue-600 hover:bg-blue-50 text-blue-600 px-6 py-2 squared-lg font-semibold shadow">
-      Get a Demo
-    </button>
+
+  <p className="text-gray-700 mb-6 text-sm text-justify leading-relaxed">
+  Transform your business with intelligent, scalable AI systems designed for real-world impact. From advanced machine learning to real-time data analysis, our custom solutions seamlessly streamline operations, boost overall productivity, and drive smarter, faster, and more strategic decisions.
+</p>
+
+
+
+  <div className="mt-10 flex space-x-5">
+    <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="bg-orange-500 text-white px-7 py-3 squared-lg text-lg font-semibold hover:bg-orange-600 transition">
+      Explore AI Potential
+    </motion.button>
+    <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="border border-gray-500 text-gray-900 px-7 py-3 squared-lg text-lg font-semibold hover:bg-gray-300 transition">
+      View Use Cases
+    </motion.button>
   </div>
 </div>
+
 
 
 

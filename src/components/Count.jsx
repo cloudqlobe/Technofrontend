@@ -21,9 +21,9 @@ export default function StatsSection() {
           Celebrating Milestones, <span className="text-yellow-400">Driving Excellence</span>
         </h1>
         <p className="text-white mt-3 leading-relaxing text-semibold text-justify mt-[30px]">
-          With over <span className="text-yellow-300">150+ completed projects</span> and a <span className="text-pink-400">98% client satisfaction rate</span>,
-          we continue to set new benchmarks in the tech industry. Our solutions are trusted globally for their reliability and performance.
-        </p>
+  At TechnoMagic Solutions, we specialize in delivering <span className="text-yellow-300">advanced projects</span> and <span className="text-pink-400">innovative assignments</span> that redefine industry standards. With a proven track record of achieving <span className="text-yellow-300">exceptional client satisfaction</span>, our solutions are globally recognized for their <span className="text-pink-400">cutting-edge technology</span>, reliability, and unparalleled performance.
+</p>
+
       </div>
 
       {/* Center Video */}

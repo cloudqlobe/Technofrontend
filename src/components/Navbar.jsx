@@ -1,15 +1,16 @@
 import React, { useState, useEffect, useRef } from "react";
+import { useLocation, Link } from "react-router-dom";
 import { FiSearch } from "react-icons/fi";
+import { TbCloudComputing } from "react-icons/tb";
 import {
   FaFacebookF, FaLinkedinIn, FaInstagram, FaTwitter,
-  FaLaptopCode, FaMobileAlt, FaChartLine, FaPencilRuler,
-  FaFileAlt, FaBriefcase, FaCogs, FaUsers, FaClipboardList,
-  FaMoneyBill, FaChevronDown
+  FaLaptopCode, FaMobileAlt, FaCloud, FaPaintBrush,
+  FaLightbulb, FaServer, FaBriefcase, FaIndustry, FaProjectDiagram,
+  FaFileInvoiceDollar, FaRobot, FaChevronDown
 } from "react-icons/fa";
 import { BsMicrosoftTeams } from "react-icons/bs";
 import { motion, AnimatePresence } from "framer-motion";
 import logo from "../assets/Image/logo.png";
-import { Link } from 'react-router-dom';
 
 const socialIcons = [
   { id: 1, icon: <FaFacebookF size={14} className="text-white" />, bgColor: "bg-blue-600" },
@@ -19,29 +20,76 @@ const socialIcons = [
   { id: 5, icon: <BsMicrosoftTeams size={14} className="text-white" />, bgColor: "bg-purple-400" },
 ];
 
-// Icon Style for Flat, Two-Colored Illustration
-const cartoonIconStyle = "text-[28px] text-gray-800 hover:text-orange-500 transition-colors duration-300";
+const dualToneIconStyle = {
+  color: "rgba(236, 126, 8, 0.95)", // orange with 60% opacity
+  stroke: "black",
+  strokeWidth: 20,
+};
 
-// Updated dropdownItems with Two-Colored Icon Styles for Dropdown Content
 const dropdownItems = {
   services: [
-    { icon: <FaLaptopCode className={`${cartoonIconStyle} text-blue-600`} />, label: "Website Development", url: "/services/web-development" },
-    { icon: <FaMobileAlt className={`${cartoonIconStyle} text-green-500`} />, label: "Mobile Apps", url: "/services/mobile-apps" },
-    { icon: <FaChartLine className={`${cartoonIconStyle} text-yellow-500`} />, label: "Hosting Services", url: "/services/seo" },
-    { icon: <FaPencilRuler className={`${cartoonIconStyle} text-indigo-500`} />, label: "UI & UX Design", url: "/services/design" },
-    { icon: <FaFileAlt className={`${cartoonIconStyle} text-red-500`} />, label: "Tech Consultancy", url: "/services/content-marketing" },
-    { icon: <FaFileAlt className={`${cartoonIconStyle} text-purple-600`} />, label: "Cloud Computing", url: "/services/cloudcomputing" },
+    {
+      icon: <FaLaptopCode style={dualToneIconStyle} className="text-3xl" />,
+      label: "Website Development",
+      url: "/services/web-development",
+    },
+    {
+      icon: <FaMobileAlt style={dualToneIconStyle} className="text-3xl" />,
+      label: "Mobile Apps",
+      url: "/services/mobile-apps",
+    },
+    {
+      icon: <FaCloud style={dualToneIconStyle} className="text-3xl" />,
+      label: "Cloud Computing",
+      url: "/services/cloudcomputing",
+    },
+    {
+      icon: <FaPaintBrush style={dualToneIconStyle} className="text-3xl" />,
+      label: "UI & UX Design",
+      url: "/services/design",
+    },
+    {
+      icon: <FaLightbulb style={dualToneIconStyle} className="text-3xl" />,
+      label: "Tech Consultancy",
+      url: "/services/content-marketing",
+    },
+    {
+      icon: <FaServer style={dualToneIconStyle} className="text-3xl" />,
+      label: "Hosting Services",
+      url: "/services/seo",
+    },
   ],
   softwares: [
-    { icon: <FaBriefcase className={`${cartoonIconStyle} text-blue-700`} />, label: "CRM", url: "/software/crm" },
-    { icon: <FaCogs className={`${cartoonIconStyle} text-orange-500`} />, label: "ERP", url: "/software/erp" },
-    { icon: <FaClipboardList className={`${cartoonIconStyle} text-gray-600`} />, label: "Project Management", url: "/software/project-management" },
-    { icon: <FaMoneyBill className={`${cartoonIconStyle} text-green-600`} />, label: "Billing Software", url: "/software/billing" },
-    { icon: <FaUsers className={`${cartoonIconStyle} text-purple-600`} />, label: "Chatbot", url: "/software/hrm" },
+    {
+      icon: <FaBriefcase style={dualToneIconStyle} className="text-3xl" />,
+      label: "CRM",
+      url: "/software/crm",
+    },
+    {
+      icon: <FaIndustry style={dualToneIconStyle} className="text-3xl" />,
+      label: "ERP",
+      url: "/software/erp",
+    },
+    {
+      icon: <FaProjectDiagram style={dualToneIconStyle} className="text-3xl" />,
+      label: "Project Management",
+      url: "/software/project-management",
+    },
+    {
+      icon: <FaFileInvoiceDollar style={dualToneIconStyle} className="text-3xl" />,
+      label: "Billing Software",
+      url: "/software/billing",
+    },
+    {
+      icon: <FaRobot style={dualToneIconStyle} className="text-3xl" />,
+      label: "Chatbot",
+      url: "/software/hrm",
+    },
   ],
 };
 
 const Navbar = () => {
+  const location = useLocation();
   const [showIcons, setShowIcons] = useState(false);
   const [dropdown, setDropdown] = useState("");
   const dropdownRef = useRef();
@@ -61,10 +109,12 @@ const Navbar = () => {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
+  const isActive = (path) => location.pathname === path;
+
   return (
     <motion.div className="w-full bg-white fixed top-0 left-0 z-50">
       <motion.nav className="px-6 py-2 flex items-center justify-between h-20">
-        {/* Logo and social icons */}
+        {/* Logo + Social Icons */}
         <div
           className="relative flex flex-col items-center"
           onMouseEnter={() => setShowIcons(true)}
@@ -84,33 +134,39 @@ const Navbar = () => {
           </AnimatePresence>
         </div>
 
-        {/* Nav items */}
+        {/* Nav Items */}
         <ul className="flex space-x-4 text-gray-800 text-base font-semibold" ref={dropdownRef}>
-          <li className="px-3 cursor-pointer hover:text-orange-500">
+          <li className={`px-3 cursor-pointer ${isActive("/") ? "text-orange-500" : ""}`}>
             <Link to="/">Home</Link>
           </li>
 
-          <li className="relative px-3 cursor-pointer hover:text-orange-500" onClick={() => toggleDropdown("services")}>
+          <li
+            className={`relative px-3 cursor-pointer ${dropdown === "services" || location.pathname.includes("/services") ? "text-orange-500" : ""}`}
+            onClick={() => toggleDropdown("services")}
+          >
             <span className="flex items-center gap-2">
               Services <FaChevronDown className="text-xs" />
             </span>
           </li>
 
-          <li className="px-3 cursor-pointer hover:text-orange-500">
+          <li className={`px-3 cursor-pointer ${isActive("/about") ? "text-orange-500" : ""}`}>
             <Link to="/about">About Us</Link>
           </li>
 
-          <li className="px-3 cursor-pointer hover:text-orange-500">
+          <li className={`px-3 cursor-pointer ${isActive("/our-works") ? "text-orange-500" : ""}`}>
             <Link to="/our-works">Our Works</Link>
           </li>
 
-          <li className="relative px-3 cursor-pointer hover:text-orange-500" onClick={() => toggleDropdown("softwares")}>
+          <li
+            className={`relative px-3 cursor-pointer ${dropdown === "softwares" || location.pathname.includes("/software") ? "text-orange-500" : ""}`}
+            onClick={() => toggleDropdown("softwares")}
+          >
             <span className="flex items-center gap-2">
               Softwares <FaChevronDown className="text-xs" />
             </span>
           </li>
 
-          <li className="px-3 cursor-pointer hover:text-orange-500">
+          <li className={`px-3 cursor-pointer ${isActive("/careers") ? "text-orange-500" : ""}`}>
             <Link to="/careers">Careers</Link>
           </li>
         </ul>
@@ -125,7 +181,6 @@ const Navbar = () => {
             />
             <FiSearch className="absolute right-4 top-2.5 text-gray-500 text-xl cursor-pointer hover:text-orange-500" />
           </div>
-
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
@@ -136,7 +191,7 @@ const Navbar = () => {
         </div>
       </motion.nav>
 
-      {/* Dropdown Menu */}
+      {/* Dropdown */}
       <AnimatePresence>
         {dropdown && (
           <motion.div
@@ -146,7 +201,6 @@ const Navbar = () => {
             className="absolute top-20 left-0 w-full bg-[#f9f9f9] shadow-xl z-40 py-10 px-20"
           >
             <div className="flex gap-10">
-              {/* Left content */}
               <div className="w-1/4 pr-6">
                 <h3 className="text-2xl font-bold text-orange-600 mb-4 capitalize">
                   {dropdown === "services" ? "Our Services" : "Our Softwares"}
@@ -157,22 +211,19 @@ const Navbar = () => {
                     : "Explore our powerful software solutions built for modern businesses to streamline your operations and maximize growth."}
                 </p>
               </div>
-
-              {/* Vertical divider */}
               <div className="w-px bg-gray-300"></div>
-
-              {/* Dropdown links */}
               <div className="grid grid-cols-3 gap-8 w-3/4">
                 {(dropdown === "services" ? dropdownItems.services : dropdownItems.softwares).map((item, index) => (
                   <Link
                     to={item.url}
                     key={index}
-                    className="flex items-center gap-4 p-3 hover:bg-gray-100 rounded-md transition-all"
+                    className={`flex items-center gap-4 p-3 rounded-md transition-all hover:bg-gray-100 ${
+                      isActive(item.url) ? "bg-orange-100" : ""
+                    }`}
                   >
-                    <div>{item.icon}</div>
-                    <span className="text-base font-medium text-gray-700">
-                      {item.label}
-                    </span>
+                    <div className="w-12 h-12 flex items-center justify-center squared-full border border-gray-500">
+                      {item.icon}</div>
+                    <span className="text-base font-medium text-gray-700">{item.label}</span>
                   </Link>
                 ))}
               </div>

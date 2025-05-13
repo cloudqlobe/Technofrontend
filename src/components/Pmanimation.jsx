@@ -28,12 +28,13 @@ const Pmanimation = () => {
 
         {/* Left Content */}
         <div>
-          <h2 className="text-3xl md:text-3xl font-semibold text-yellow-400 mt-[-20px] ml-[-40px]">
-            Transform Your Business with Expert Tech Solutions
-          </h2>
-          <p className="text-white mt-3 leading-relaxing text-lg text-justify mt-[30px] ml-[-35px]">
-            Our tech consultancy and animation services help businesses embrace the latest technologies to innovate and grow. From software development to cloud solutions,
-          </p>
+        <h2 className="text-3xl md:text-3xl font-bold text-yellow-400 mt-[-20px] ml-[-40px]">
+  Transform Your Business with Smart Project Management
+</h2>
+<p className="text-white mt-3 leading-relaxing text-lg text-justify mt-[30px] ml-[-35px]">
+  Our project management solutions empower businesses to streamline operations, enhance collaboration, and deliver results with precision. Whether you're managing client deliverables, internal workflows, or long-term strategies, our tools help teams stay aligned, deadlines met, and resources optimized.
+</p>
+
         </div>
 
         {/* Right Circle Form */}

@@ -54,12 +54,12 @@ const Resellerpage = () => {
     
     {/* Item 1 */}
     <div className="flex items-center gap-6 w-full ml-[-10px]">
-      <div className="border border-gray-400 w-[130px] h-[80px] flex items-center justify-center">
+      <div className="border border-gray-400 w-[180px] h-[80px] flex items-center justify-center">
         <LuAlarmClockCheck size={48} className="text-gray-400" />
       </div>
       <div>
         <p className="text-base font-semibold text-orange-500">Fast Onboarding</p>
-        <p className="text-gray-600 leading-relaxing text-xs text-justify mt-1">with minimal setup and instant access.</p>
+        <p className="text-gray-600 leading-relaxing text-xs text-justify mt-1"> Join our reseller network with instant access and simple setup.</p>
       </div>
     </div>
 
@@ -70,29 +70,29 @@ const Resellerpage = () => {
       </div>
       <div>
         <p className="text-base font-semibold text-orange-500">Diverse Products</p>
-        <p className="text-gray-600 leading-relaxing text-xs text-justify mt-1">Offer a wide range of in-demand digital solutions.</p>
+        <p className="text-gray-600 leading-relaxing text-xs text-justify mt-1">Resell top-demand digital services and solutions under one platform.</p>
       </div>
     </div>
 
     {/* Item 3 */}
     <div className="flex items-center gap-6 w-full ml-[-10px]">
-      <div className="border border-gray-400 w-[180px] h-[80px] flex items-center justify-center">
+      <div className="border border-gray-400 w-[190px] h-[80px] flex items-center justify-center">
         <GrMoney size={48} className="text-gray-400" />
       </div>
       <div>
         <p className="text-base font-semibold text-orange-500">High Margins</p>
-        <p className="text-gray-600 leading-relaxing text-xs text-justify mt-1">Earn attractive commissions with strong profit potential.</p>
+        <p className="text-gray-600 leading-relaxing text-xs text-justify mt-1">Enjoy competitive commission rates with strong earning potential.</p>
       </div>
     </div>
 
     {/* Item 4 */}
     <div className="flex items-center gap-6 w-full ml-[-10px]">
-      <div className="border border-gray-400 w-[130px] h-[80px] flex items-center justify-center">
+      <div className="border border-gray-400 w-[180px] h-[80px] flex items-center justify-center">
         <BsGraphUpArrow size={46} className="text-gray-400" />
       </div>
       <div>
         <p className="text-base font-semibold text-orange-500">Sales Insights</p>
-        <p className="text-gray-600 leading-relaxing text-xs text-justify mt-1">Track customer behavior in real time .</p>
+        <p className="text-gray-600 leading-relaxing text-xs text-justify mt-1">Track your customers and sales in real time with built-in analytics.</p>
       </div>
     </div>
 

@@ -4,54 +4,54 @@ import image9 from "../assets/Image/6072194.jpg";
 
 const Webcontent2 = () => {
   return (
-    <div className="bg-white text-gray-900 px-6 md:px-12 py-16 space-y-24">
+    <div className="bg-white text-gray-900 px-6 md:px-12 py-12 space-y-24">
       {/* Main Heading */}
-      <h1 className="text-3xl md:text-4xl font-semibold text-center mb-12">
-        <span className="text-black">SEO &</span>{" "}
-        <span className="text-blue-800">Performance-Driven Web Development</span>
+      <h1 className="text-3xl md:text-4xl font-semibold text-center mb-8 mt-[30px]">
+        <span className="text-black">Reliable &</span>{" "}
+        <span className="text-blue-800">Scalable Web Development Solutions</span>
       </h1>
 
-      {/* Section 1: SEO Optimization */}
-      <div className="grid md:grid-cols-2 items-center gap-12 ">
+      {/* Section 1: Modern Web Development */}
+      <div className="grid md:grid-cols-2 items-center gap-12">
         <div className="flex justify-center ml-[-50px]">
           <img
             src={image8}
-            alt="SEO Strategy"
-            className="w-[70%] h-[500px] object-cover rounded-lg"
+            alt="Modern Web Development"
+            className="w-[650px] h-[450px] object-cover rounded-lg mt-[30px] ml-[-40px]"
           />
         </div>
-        <div className="flex flex-col justify-center w-full ml-[-40px]">
-          <h2 className="text-4xl font-default text-grey-200 mb-2 ml-2 mt-16">SEO <span className="text-orange-400">Startegic Solutions</span></h2>
-          <p className="text-gray-600 mt-3 leading-relaxing text-lg text-justify mt-[30px]">
-            We develop customized software to enhance efficiency and scalability. Our team creates tailored solutions, from mobile apps to web platforms, that seamlessly integrate with your existing systems, ensuring a smooth user experience. By working closely with you, we ensure the software aligns with your goals.
+        <div className="flex flex-col justify-center w-full ml-[-30px] mt-[-150px]">
+          <h2 className="text-4xl font-default text-grey-200 mb-2  mt-16">
+            Modern <span className="text-orange-400">Web Development</span>
+          </h2>
+          <p className="text-gray-600 mt-3 text-lg text-justify mt-[30px]">
+            In today's fast-paced digital world, having a high-performance, responsive, and user-friendly website is crucial. Our team uses cutting-edge frameworks such as React, Next.js, and Tailwind CSS to craft beautiful, interactive user interfaces that function seamlessly across all devices. From intuitive layouts to lightning-fast loading times, we prioritize the user experience at every step. We implement best practices in UI/UX design and use performance optimization techniques such as lazy loading, code splitting, and minimalistic component structure.
           </p>
-          <p className="text-gray-600 mt-3 leading-relaxing text-lg text-justify mt-[30px]">
-            We provide regular updates and iterative improvements to keep your solutions relevant. Our expertise spans various industries, helping businesses optimize their digital presence and operational efficiency. Our services also include API development, enterprise software, and automation tools that enhance workflow management and enable businesses to scale effortlessly with cutting-edge technology.
+          <p className="text-gray-600 mt-3 text-lg text-justify mt-[30px]">
+            Beyond just aesthetics, we ensure your web platform is technically sound and SEO-friendly. We integrate tools like structured data, semantic HTML, and SSR (server-side rendering) where needed to maximize discoverability. Our development process includes automated testing, continuous integration, and clean code principles to maintain long-term scalability. Whether you need a simple landing page or a full-fledged interactive platform, our web development practices ensure you’re building on a solid, future-ready foundation.
           </p>
         </div>
       </div>
 
-      {/* Section 2: Digital Solutions */}
-      <div className="grid md:grid-cols-2 items-center gap-12 mb-[150px]">
+      {/* Section 2: Custom Web Applications */}
+      <div className="grid md:grid-cols-2 items-center gap-12 mt-[100px]">
         <div className="ml-[20px]">
-          <h2 className="text-4xl font-default text-grey-200 mb-2 ml-2 mt-16">
-            <span className="text-black">Empowering Businesses</span>{" "}
-            <span className="text-orange-400">Through Digital Solutions</span>
+          <h2 className="text-4xl font-default text-grey-200 mb-2 ml-[25px] mt-[-50px]">
+            <span className="text-black"> Web Applications</span>
+            <span className="text-orange-400"> & Scalable Architecture</span>
           </h2>
-          <p className="text-gray-600 mt-3 leading-relaxing text-lg text-justify mt-[30px] ml-[10px]">
-            Your digital journey deserves more than just a website — it needs a strategy. We create high-impact, custom-built digital ecosystems that go beyond aesthetics. From frontend frameworks like React and Next.js to backend systems like Node.js and MySQL, our stack is tailored to scale with your business.
+          <p className="text-gray-600 mt-3 text-lg text-justify mt-[30px] ml-[30px]">
+            We don’t believe in one-size-fits-all solutions. Our custom web applications are engineered to align precisely with your business logic, workflow, and goals. From CRMs and booking systems to e-commerce platforms and internal dashboards, every solution is built from scratch to meet your operational needs. We focus on clean interfaces, robust functionality, and modular coding structures that allow for easy updates and future expansion.
           </p>
-          <p className="text-gray-600 mt-3 leading-relaxing text-lg text-justify mt-[30px] ml-[10px]">
-            We engineer portals, dashboards, booking systems, ecommerce platforms, and SaaS tools that empower teams and serve users with ease. Whether you need multilingual content, dynamic search, or role-based access control, we can build it from scratch — pixel-perfect and bug-free.
+          <p className="text-gray-600 mt-3 text-lg text-justify mt-[30px] ml-[30px]">
+            On the backend, we architect scalable and secure infrastructures using technologies like Node.js, Express, MySQL, and MongoDB. We ensure proper API architecture, database normalization, and security protocols like JWT authentication and role-based access control. Our apps are designed for high performance under load, support cloud deployments, and are optimized for data integrity and real-time processing where needed. As your traffic grows, your app grows with it—reliably and efficiently.
           </p>
-        
-         
         </div>
         <div className="flex justify-center">
           <img
             src={image9}
-            alt="Digital Solutions"
-            className="w-[90%] h-[500px] object-cover rounded-lg"
+            alt="Custom Web Applications"
+            className="w-[650px] h-[650px] object-cover rounded-lg ml-[30px] mt[-30px]"
           />
         </div>
       </div>

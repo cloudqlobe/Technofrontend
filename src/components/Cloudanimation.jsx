@@ -21,7 +21,7 @@ const CloudAnimation = () => {
         
         {/* Left Content */}
         <div >
-          <h2 className="text-3xl md:text-3xl font-semibold text-yellow-400 mb-4 ml-[-38px]">
+          <h2 className="text-4xl md:text-3xl font-bold text-yellow-400 mb-4 ml-[-38px]">
             Powerful Cloud Infrastructure for Modern Businesses
           </h2>
           <p className="text-lg mb-6 text-blue-100 text-justify leading-relaxing ml-[-38px]">

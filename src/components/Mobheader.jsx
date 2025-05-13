@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { motion } from "framer-motion";
 
 import {
   FaApple,
@@ -43,24 +44,25 @@ const Mobheader = () => {
       {/* Mobile Header Section */}
       <section className="w-full h-[600px] bg-white py-12 px-6 md:px-16 flex flex-col md:flex-row items-center justify-between gap-10">
         {/* Left Content */}
-        <div className="max-w-xl text-center md:text-left mt-[-240px] ml-[10px]">
-          <h2 className="text-3xl md:text-4xl font-semibold mb-4">
-            <span className="text-blue-800">Build Smarter </span>
-            <span className="text-orange-500">Mobile Apps</span>
-          </h2>
-          <p className="text-sm text-gray-600 mb-6 leading-relaxed text-justify  max-w-lg ml-[5px]">
-            We develop fast, modern mobile apps using the most powerful cross-platform and native technologies to deliver performance and experience that matters.
-          </p>
+        <div className="max-w-xl text-left md:text-left mt-[-240px] ml-[5px]">
+        <h2 className="text-3xl md:text-4xl font-semibold mb-4">
+  <span className="text-blue-800"> Build Seamless </span>
+  <span className="text-orange-500">Apps for Business</span>
+</h2>
+<p className="text-sm text-gray-600 mb-6 leading-relaxed text-justify max-w-lg ml-[5px]">
+  We specialize in building high-performance mobile apps that offer smooth user experiences. Utilizing cross-platform and native technologies, our apps enhance productivity, engagement, and user satisfaction.
+</p>
 
-          {/* Action Buttons */}
-          <div className="flex flex-col md:flex-row gap-4 justify-center md:justify-start mb-[-40px]">
-            <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 squared-lg font-semibold shadow mt-[10px]">
-              Get a Quote
-            </button>
-            <button className="border border-blue-600 hover:bg-blue-50 text-blue-600 px-6 py-2 squared-lg font-semibold shadow mt-[10px]">
-              Get a Demo
-            </button>
-          </div>
+{/* Action Buttons */}
+<div className="mt-10 flex space-x-5">
+  <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="bg-orange-500 text-white px-7 py-3 squared-lg text-lg font-semibold hover:bg-orange-600 transition">
+    Start Your Project
+  </motion.button>
+  <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="border border-gray-500 text-gray-900 px-7 py-3 squared-lg text-lg font-semibold hover:bg-gray-300 transition">
+    Discover Our Work
+  </motion.button>
+</div>
+
         </div>
 
         {/* Phone and Icons Section */}

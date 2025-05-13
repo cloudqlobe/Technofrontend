@@ -1,4 +1,11 @@
 import React from "react";
+import { LuAperture } from "react-icons/lu";
+import { RiCustomerService2Fill } from "react-icons/ri";
+import { TbSettingsCheck } from "react-icons/tb";
+import { FaUsers } from "react-icons/fa";
+import { FaLaptop } from "react-icons/fa6";
+import { LuBadgeDollarSign } from "react-icons/lu";
+
 import {
   Laptop,
   ShoppingCart,
@@ -11,6 +18,7 @@ import {
   Network,
   Lightbulb,
 } from "lucide-react";
+import { motion } from "framer-motion";
 
 
 export default function CRMSection() {
@@ -22,19 +30,21 @@ export default function CRMSection() {
           <div className="max-w-xl text-center md:text-left mt-[-170px] ml-[-47px]">
 
   <h2 className="text-3xl md:text-4xl font-semibold mb-4">
-    <span className="text-blue-800">Custom </span>
-    <span className="text-orange-500">CRM Development</span>
+    <span className="text-blue-800">Comprehensive </span>
+    <span className="text-orange-500">CRM Solutions</span>
   </h2>
   <p className="text-gray-700 mb-6 text-sm text-justify leading relaxing ml-[5px]">
-    We build tailored CRM solutions to streamline your sales, support, and customer engagement workflows. Optimize client relationships with automation, analytics, and seamless integrations.
-  </p>
-  <div className="flex flex-col md:flex-row gap-4 justify-center md:justify-start mt-[50px]">
-    <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 squared-lg font-semibold shadow ml-[5px]">
-      Get a Quote
-    </button>
-    <button className="border border-blue-600 hover:bg-blue-50 text-blue-600 px-6 py-2 squared-lg font-semibold shadow">
-      Get a Demo
-    </button>
+    Revolutionize your business with custom CRM systems that optimize every customer interaction. Streamline sales, automate tasks, and enhance client relationships with advanced technology. 
+    Gain real-time insights to unlock growth opportunities tailored to your needs. Drive efficiency and improve your bottom line with seamless CRM integration.
+</p>
+
+  <div className="mt-10 flex space-x-5">
+    <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="bg-orange-500 text-white px-7 py-3 squared-lg text-lg font-semibold hover:bg-orange-600 transition text-justify leading relaxing">
+      Start Your Journey
+    </motion.button>
+    <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="border border-gray-500 text-gray-900 px-7 py-3 squared-lg text-lg font-semibold hover:bg-gray-300 transition">
+      Discover More
+    </motion.button>
   </div>
 </div>
 
@@ -60,21 +70,21 @@ export default function CRMSection() {
             {/* Info Text Top Right */}
             <div className="absolute left-[445px] top-[100px] max-w-[400px] ">
               <h2 className="text-2xl font-default">INFORMATION</h2>
-              <p className="text-sm text-gray-600">
-                Lorem ipsum dolor sit ametmavsjhabnbnasbnn
+              <p className="text-sm text-gray-600  ">
+              AI-based CRM system for smarter customer 
               </p>
             </div>
 
             {/* Icon Cards */}
-            <IconCard icon={<Network size={40} />} x="left-[80px]" y="top-[100px]" width="w-[125px]" height="h-[125px]" />
-            <IconCard icon={<Headphones size={30} />} x="left-[250px]" y="top-[80px]" width="w-[155px]" height="h-[150px]" />
-            <IconCard icon={<TrendingUp size={30} />} x="left-[110px]" y="top-[255px]" width="w-[110px]" height="h-[95px]" />
-            <IconCard icon={<ShoppingCart size={30} />} x="left-[520px]" y="top-[440px]" width="w-[125px]" height="h-[125px]" />
-            <IconCard icon={<BadgeCheck size={30} />} x="left-[140px]" y="top-[460px]" width="w-[100px]" height="h-[100px]" />
-            <IconCard icon={<Users size={30} />} x="left-[370px]" y="top-[500px]" width="w-[110px]" height="h-[95px]" />
-            <IconCard icon={<Settings size={30} />} x="left-[690px]" y="top-[150px]" width="w-[90px]" height="h-[90px]" />
-            <IconCard icon={<HeartHandshake size={30} />} x="left-[510px]" y="top-[250px]" width="w-[180px]" height="h-[170px]" />
-            <IconCard icon={<Lightbulb size={30} />} x="left-[680px]" y="top-[440px]" width="w-[90px]" height="h-[80px]" />
+            <IconCard icon={<Network size={50} />} x="left-[80px]" y="top-[100px]" width="w-[125px]" height="h-[125px]" />
+            <IconCard icon={<RiCustomerService2Fill size={50} />} x="left-[250px]" y="top-[80px]" width="w-[155px]" height="h-[150px]" />
+            <IconCard icon={<LuAperture size={50} />} x="left-[110px]" y="top-[255px]" width="w-[110px]" height="h-[95px]" />
+            <IconCard icon={<ShoppingCart size={50} />} x="left-[520px]" y="top-[440px]" width="w-[125px]" height="h-[125px]" />
+            <IconCard icon={<LuBadgeDollarSign size={50} />} x="left-[140px]" y="top-[460px]" width="w-[100px]" height="h-[100px]" />
+            <IconCard icon={<FaUsers size={50} />} x="left-[370px]" y="top-[500px]" width="w-[110px]" height="h-[95px]" />
+            <IconCard icon={<TbSettingsCheck size={50} />} x="left-[690px]" y="top-[150px]" width="w-[90px]" height="h-[90px]" />
+            <IconCard icon={<HeartHandshake size={50} />} x="left-[510px]" y="top-[250px]" width="w-[180px]" height="h-[170px]" />
+            <IconCard icon={<Lightbulb size={50} />} x="left-[680px]" y="top-[440px]" width="w-[90px]" height="h-[80px]" />
 
           </div>
         </div>
@@ -108,9 +118,9 @@ function IconCard({ icon, x, y, width = "w-20", height = "h-20" }) {
 function MainCard() {
   return (
     <div className="absolute w-[240px] h-[220px] bg-white border-2 border-bg-gray-400  shadow rounded-2xl flex flex-col items-center justify-center left-[250px] top-[250px] z-10">
-      <Laptop size={30} />
-      <p className="text-[10px] text-center text-gray-700 mt-1 px-1">
-        Lorem ipsum dolor sit amet.
+      < FaLaptop size={150} className="" />
+      <p className="text-sm text-center text-gray-700 mt-1 px-1">
+        Innovative Customer Relationship<br></br> Management.
       </p>
     </div>
   );

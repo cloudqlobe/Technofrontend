@@ -1,64 +1,57 @@
 import React from 'react';
 import image1 from '../assets/Image/5242970.jpg'; // Replace with your actual image
 import image2 from '../assets/Image/6333412.jpg'; // Replace with your actual image
-import Designcontent from './Designcontent';
 
 const Crmcontent1 = () => {
   return (
     <div className="min-h-screen w-full bg-white px-12 py-10 overflow-hidden">
-      <h1 className="text-4xl font-semibold text-center text-black mb-8 mt-10">
-        Innovative Technology <span className="text-blue-800">Solutions for Your Business</span>
+      <h1 className="text-4xl font-semibold text-center text-black mb-8 mt-[30px]">
+        Transform Your Business with <span className="text-blue-800">CRM Solutions</span>
       </h1>
 
-      {/* IT Solutions Section */}
+      {/* CRM Solutions Section */}
       <div className="grid md:grid-cols-2 items-center gap-6 mb-8 max-w-7xl mx-auto">
         <div className="relative flex justify-center items-center w-full p-2">
           <img
             src={image1}
-            alt="IT Solutions"
-            className="w-[80%] h-[450px] object-cover rounded-lg mb-2"
+            alt="CRM Solutions"
+            className="w-[550px] h-[550px] object-cover rounded-lg mt-[50px] ml-[-100px]"
           />
         </div>
         <div className="flex flex-col justify-center w-[600px] ml-[58px]">
-  <h2 className="text-4xl font-default text-grey-400 mb-4">
-    Innovative <span className="text-orange-400">Tech Solutions</span>
-  </h2>
-  <p className="text-gray-600 leading-relaxing text-lg text-justify mt-[20px]">
-    Our IT solutions optimize business operations and enhance security. From network management to cloud solutions, we provide services that align with your growth and sustainability goals. We focus on building a robust IT infrastructure that supports your business’s long-term success by reducing costs and increasing productivity.
-  </p>
-  <p className="text-gray-600 mt-3 leading-relaxing text-lg text-justify mt-[30px]">
-    Our solutions include cybersecurity, system integrations, and tailored IT consulting to meet your unique needs. We also cover data backup and recovery, enterprise resource planning (ERP), and business intelligence solutions to ensure that your company stays ahead in the competitive digital landscape.
-  </p>
-</div>
-
-      </div>
-
-      {/* Chatbot Solutions Section */}
-      <div className="grid md:grid-cols-2 items-center gap-6 mb-8 max-w-7xl mx-auto mt-[-24px]">
-        <div className="flex flex-col justify-center w-full ml-[-45px]">
-          <h2 className="text-4xl font-default text-grey-200 mb-4 mt-[40px]">Smart <span className="text-orange-400">Chatbot Solutions</span></h2>
-          <p className="text-gray-600 mt-3 leading-relaxing text-lg text-justify mt-[30px]">
-            Our AI-powered chatbot solutions automate customer support and enhance engagement. They can handle various tasks from answering queries to order processing, improving efficiency and customer satisfaction. These chatbots seamlessly integrate with your existing systems and provide valuable insights through real-time analytics.
+          <h2 className="text-4xl font-default text-grey-400 mt-[30px]">
+            Advanced <span className="text-orange-400">CRM Solutions</span>
+          </h2>
+          <p className="text-gray-600 leading-relaxing text-lg text-justify mt-[30px]">
+            Our CRM solutions are designed to streamline customer management and enhance engagement across multiple touchpoints. By leveraging customer data, we help businesses build stronger relationships, increase customer satisfaction, and improve retention rates. We focus on providing businesses with a centralized platform that enables them to manage every aspect of their customer interactions, from sales and support to marketing automation. This ensures that every department is aligned and can deliver consistent, personalized experiences to customers.
           </p>
           <p className="text-gray-600 mt-3 leading-relaxing text-lg text-justify mt-[30px]">
-            With natural language processing (NLP) and adaptive learning, they evolve to deliver better interactions over time. Additionally, our chatbots can be customized for industries such as e-commerce, healthcare, and finance, providing domain-specific solutions that boost productivity and streamline workflows. With natural language processing (NLP) and adaptive learning, they evolve to deliver better interactions over time. Additionally, our chatbots can be customized for industri
+            In addition, our CRM systems are highly customizable and scalable, ensuring they can adapt to the evolving needs of your business. By integrating with existing platforms like email, social media, and analytics tools, we ensure seamless data flow and real-time updates across all customer touchpoints. This powerful system empowers businesses to not only manage their customer relationships but to anticipate needs, track interactions, and forecast future trends, ultimately improving efficiency and bottom-line results.
+          </p>
+        </div>
+      </div>
+
+      {/* Customer Support Solutions Section */}
+      <div className="grid md:grid-cols-2 items-center gap-6 mb-8 max-w-7xl mx-auto mt-[60px]">
+        <div className="flex flex-col justify-center w-full ml-[-45px]">
+          <h2 className="text-4xl font-default text-grey-200  mt-[30px]">Enhanced <span className="text-orange-400">Customer Support</span></h2>
+          <p className="text-gray-600 mt-3 leading-relaxing text-lg text-justify mt-[30px]">
+            Our CRM solutions come equipped with advanced customer support features that enable businesses to provide quicker, more efficient, and more personalized service. Integrated help desks, automated ticketing systems, and multi-channel support ensure that customer inquiries are addressed promptly and accurately. By empowering support teams with the tools they need to resolve issues quickly, businesses can significantly improve customer satisfaction and reduce response times, leading to enhanced loyalty and better customer experiences.
+          </p>
+          <p className="text-gray-600 mt-3 leading-relaxing text-lg text-justify mt-[30px]">
+            Furthermore, our CRM support systems incorporate AI-driven chatbots that provide instant responses to common customer inquiries, freeing up your support team to handle more complex issues. These AI assistants also continuously learn from customer interactions to offer increasingly accurate solutions over time. By incorporating detailed analytics and reporting features, our CRM solutions allow businesses to track the effectiveness of their customer support efforts, uncover trends, and make data-driven decisions that improve service levels and operational efficiency.
           </p>
         </div>
         <div className="relative flex justify-center items-center w-full p-2">
           <img
             src={image2}
-            alt="Chatbot Solutions"
-            className="w-[85%] h-[450px] object-cover rounded-lg"
+            alt="Customer Support"
+            className="w-[550px] h-[550px] object-cover rounded-lg ml-[130px] mt-[-50px] "
           />
         </div>
       </div>
-
-      {/* Custom Software Solutions Section */}
-      
     </div>
   );
 };
-
-
 
 export default Crmcontent1;

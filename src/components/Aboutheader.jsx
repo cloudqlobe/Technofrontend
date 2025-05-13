@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
  // adjust path if needed
 
 export default function AboutUsSection() {
@@ -7,24 +8,24 @@ export default function AboutUsSection() {
       {/* Top Section */}
       <div className="min-h-[504px] flex flex-col md:flex-row items-center">
   {/* Left Side */}
-  <div className="w-full md:w-1/2 ml-[35px] max-w-xl text-center md:text-left mt-[-150px]">
-    <h2 className="text-3xl md:text-4xl font-semibold mb-4">
-      <span className="text-blue-800">About </span>
-      <span className="text-orange-500">TechnoMagic Solutions </span>
-    </h2>
-    <p className="text-gray-700 mb-6">
-      TechnoMagic Solutions Pvt is a forward-thinking technology company committed to delivering innovative software and digital solutions. We specialize in custom ERP systems, web development, 
-    </p>
-   
-    <div className="flex flex-col md:flex-row gap-4 justify-center md:justify-start mt-[50px]">
-      <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 squared-xl font-semibold shadow-md transition">
-        Get to Know Us
-      </button>
-      <button className="border border-blue-600 hover:bg-blue-50 text-blue-600 px-6 py-2 squared-xl font-semibold shadow-md transition">
-        Learn More
-      </button>
-    </div>
+  <div className="w-full md:w-1/2 ml-[35px] max-w-xl text-center md:text-left mt-[-200px]">
+  <h2 className="text-3xl md:text-4xl font-semibold mb-4">
+    <span className="text-blue-800">One Partner, </span>
+    <span className="text-orange-500">All Digital Solutions</span>
+  </h2>
+  <p className="text-gray-700 mb-6 text-sm text-justify leading-relaxed">
+    TechnoMagic Solutions Pvt Ltd offers secure, scalable, and intelligent digital services. From web and app development to cloud hosting, cybersecurity, UI/UX design, and chatbot solutions—we deliver everything under one roof to drive growth, enhance user experience, and protect your data.
+  </p>
+
+  <div className="mt-10 flex space-x-5">
+    <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="bg-orange-500 text-white px-7 py-3 squared-lg text-lg font-semibold hover:bg-orange-600 transition">
+      Explore Services
+    </motion.button>
+    <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="border border-gray-500 text-gray-900 px-7 py-3 squared-lg text-lg font-semibold hover:bg-gray-300 transition">
+      Who We Are
+    </motion.button>
   </div>
+</div>
 
 
 
