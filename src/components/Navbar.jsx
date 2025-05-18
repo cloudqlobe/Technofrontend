@@ -1,14 +1,13 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useLocation, Link } from "react-router-dom";
 import { FiSearch } from "react-icons/fi";
-import { TbCloudComputing } from "react-icons/tb";
-import {
-  FaFacebookF, FaLinkedinIn, FaInstagram, FaTwitter,
-  FaLaptopCode, FaMobileAlt, FaCloud, FaPaintBrush,
-  FaLightbulb, FaServer, FaBriefcase, FaIndustry, FaProjectDiagram,
-  FaFileInvoiceDollar, FaRobot, FaChevronDown
-} from "react-icons/fa";
-import { BsMicrosoftTeams } from "react-icons/bs";
+import { BsLifePreserver, BsMicrosoftTeams } from "react-icons/bs";
+import { GiCloudRing, GiSurroundedEye } from "react-icons/gi";
+import { IoAppsSharp } from "react-icons/io5";
+import { SiDevexpress, SiWebmoney, SiSitecore } from "react-icons/si";
+import { FaRobot, FaPhoenixSquadron, FaQuinscape, FaStroopwafel } from "react-icons/fa";
+import { FaFacebookF, FaLinkedinIn, FaInstagram, FaTwitter } from "react-icons/fa";
+import { FaChevronDown } from "react-icons/fa6";
 import { motion, AnimatePresence } from "framer-motion";
 import logo from "../assets/Image/logo.png";
 
@@ -20,71 +19,26 @@ const socialIcons = [
   { id: 5, icon: <BsMicrosoftTeams size={14} className="text-white" />, bgColor: "bg-purple-400" },
 ];
 
-const dualToneIconStyle = {
-  color: "rgba(236, 126, 8, 0.95)", // orange with 60% opacity
-  stroke: "black",
-  strokeWidth: 20,
+const iconStyle = {
+  color: "#607D8B",
+  fontSize: "2rem",
 };
 
 const dropdownItems = {
   services: [
-    {
-      icon: <FaLaptopCode style={dualToneIconStyle} className="text-3xl" />,
-      label: "Website Development",
-      url: "/services/web-development",
-    },
-    {
-      icon: <FaMobileAlt style={dualToneIconStyle} className="text-3xl" />,
-      label: "Mobile Apps",
-      url: "/services/mobile-apps",
-    },
-    {
-      icon: <FaCloud style={dualToneIconStyle} className="text-3xl" />,
-      label: "Cloud Computing",
-      url: "/services/cloudcomputing",
-    },
-    {
-      icon: <FaPaintBrush style={dualToneIconStyle} className="text-3xl" />,
-      label: "UI & UX Design",
-      url: "/services/design",
-    },
-    {
-      icon: <FaLightbulb style={dualToneIconStyle} className="text-3xl" />,
-      label: "Tech Consultancy",
-      url: "/services/content-marketing",
-    },
-    {
-      icon: <FaServer style={dualToneIconStyle} className="text-3xl" />,
-      label: "Hosting Services",
-      url: "/services/seo",
-    },
+    { icon: <SiWebmoney style={iconStyle} />, label: "Website Development", url: "/services/web-development" },
+    { icon: <IoAppsSharp style={iconStyle} />, label: "Mobile Apps", url: "/services/mobile-apps" },
+    { icon: <GiCloudRing style={iconStyle} />, label: "Cloud Computing", url: "/services/cloudcomputing" },
+    { icon: <SiDevexpress style={iconStyle} />, label: "UI & UX Design", url: "/services/design" },
+    { icon: <GiSurroundedEye style={iconStyle} />, label: "Tech Consultancy", url: "/services/content-marketing" },
+    { icon: <BsLifePreserver style={iconStyle} />, label: "Hosting Services", url: "/services/seo" },
   ],
   softwares: [
-    {
-      icon: <FaBriefcase style={dualToneIconStyle} className="text-3xl" />,
-      label: "CRM",
-      url: "/software/crm",
-    },
-    {
-      icon: <FaIndustry style={dualToneIconStyle} className="text-3xl" />,
-      label: "ERP",
-      url: "/software/erp",
-    },
-    {
-      icon: <FaProjectDiagram style={dualToneIconStyle} className="text-3xl" />,
-      label: "Project Management",
-      url: "/software/project-management",
-    },
-    {
-      icon: <FaFileInvoiceDollar style={dualToneIconStyle} className="text-3xl" />,
-      label: "Billing Software",
-      url: "/software/billing",
-    },
-    {
-      icon: <FaRobot style={dualToneIconStyle} className="text-3xl" />,
-      label: "Chatbot",
-      url: "/software/hrm",
-    },
+    { icon: <FaStroopwafel style={iconStyle} />, label: "CRM", url: "/software/crm" },
+    { icon: <FaQuinscape style={iconStyle} />, label: "ERP", url: "/software/erp" },
+    { icon: <SiSitecore style={iconStyle} />, label: "Project Management", url: "/software/project-management" },
+    { icon: <FaPhoenixSquadron style={iconStyle} />, label: "Billing Software", url: "/software/billing" },
+    { icon: <FaRobot style={iconStyle} />, label: "Chatbot", url: "/software/hrm" },
   ],
 };
 
@@ -94,9 +48,7 @@ const Navbar = () => {
   const [dropdown, setDropdown] = useState("");
   const dropdownRef = useRef();
 
-  const toggleDropdown = (menu) => {
-    setDropdown(dropdown === menu ? "" : menu);
-  };
+  const toggleDropdown = (menu) => setDropdown(dropdown === menu ? "" : menu);
 
   const handleClickOutside = (event) => {
     if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
@@ -139,7 +91,6 @@ const Navbar = () => {
           <li className={`px-3 cursor-pointer ${isActive("/") ? "text-orange-500" : ""}`}>
             <Link to="/">Home</Link>
           </li>
-
           <li
             className={`relative px-3 cursor-pointer ${dropdown === "services" || location.pathname.includes("/services") ? "text-orange-500" : ""}`}
             onClick={() => toggleDropdown("services")}
@@ -148,15 +99,12 @@ const Navbar = () => {
               Services <FaChevronDown className="text-xs" />
             </span>
           </li>
-
           <li className={`px-3 cursor-pointer ${isActive("/about") ? "text-orange-500" : ""}`}>
             <Link to="/about">About Us</Link>
           </li>
-
           <li className={`px-3 cursor-pointer ${isActive("/our-works") ? "text-orange-500" : ""}`}>
             <Link to="/our-works">Our Works</Link>
           </li>
-
           <li
             className={`relative px-3 cursor-pointer ${dropdown === "softwares" || location.pathname.includes("/software") ? "text-orange-500" : ""}`}
             onClick={() => toggleDropdown("softwares")}
@@ -165,7 +113,6 @@ const Navbar = () => {
               Softwares <FaChevronDown className="text-xs" />
             </span>
           </li>
-
           <li className={`px-3 cursor-pointer ${isActive("/careers") ? "text-orange-500" : ""}`}>
             <Link to="/careers">Careers</Link>
           </li>
@@ -191,41 +138,52 @@ const Navbar = () => {
         </div>
       </motion.nav>
 
-      {/* Dropdown */}
+      {/* Dropdown Section */}
       <AnimatePresence>
         {dropdown && (
           <motion.div
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
-            className="absolute top-20 left-0 w-full bg-[#f9f9f9] shadow-xl z-40 py-10 px-20"
+            className="absolute top-full left-0 w-full bg-[#f9f9f9] border-t border-gray-200 shadow-xl z-40 py-6"
           >
-            <div className="flex gap-10">
-              <div className="w-1/4 pr-6">
+            <div className="w-full px-6 flex flex-col lg:flex-row gap-6">
+              {/* Left Section (Wider) */}
+              <div className="basis-[400px] shrink-0 p-5 bg-white rounded-md shadow-sm">
                 <h3 className="text-2xl font-bold text-orange-600 mb-4 capitalize">
                   {dropdown === "services" ? "Our Services" : "Our Softwares"}
                 </h3>
-                <p className="text-gray-700 leading-relaxed">
+                <div className="h-px bg-gray-300 my-2"></div>
+                <p className="text-gray-700 text-sm">
                   {dropdown === "services"
                     ? "We offer cutting-edge services to boost your business digitally — from web and mobile development to design and cloud solutions."
                     : "Explore our powerful software solutions built for modern businesses to streamline your operations and maximize growth."}
                 </p>
               </div>
-              <div className="w-px bg-gray-300"></div>
-              <div className="grid grid-cols-3 gap-8 w-3/4">
-                {(dropdown === "services" ? dropdownItems.services : dropdownItems.softwares).map((item, index) => (
-                  <Link
-                    to={item.url}
-                    key={index}
-                    className={`flex items-center gap-4 p-3 rounded-md transition-all hover:bg-gray-100 ${
-                      isActive(item.url) ? "bg-orange-100" : ""
-                    }`}
-                  >
-                    <div className="w-12 h-12 flex items-center justify-center squared-full border border-gray-500">
-                      {item.icon}</div>
-                    <span className="text-base font-medium text-gray-700">{item.label}</span>
-                  </Link>
-                ))}
+
+              {/* Right Section */}
+              <div className="flex-grow p-5 bg-white rounded-md shadow-sm border border-gray-200">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                  {(dropdown === "services"
+                    ? dropdownItems.services
+                    : dropdownItems.softwares
+                  ).map((item, index) => (
+                    <Link
+                      to={item.url}
+                      key={index}
+                      className={`flex items-center gap-4 p-4 rounded-md transition-all hover:bg-gray-100 ${
+                        isActive(item.url) ? "bg-orange-100" : ""
+                      }`}
+                    >
+                      <div className="w-16 h-16 flex items-center justify-center border-2 border-gray-300 rounded-md">
+                        {item.icon}
+                      </div>
+                      <span className="text-base font-medium text-gray-800">
+                        {item.label}
+                      </span>
+                    </Link>
+                  ))}
+                </div>
               </div>
             </div>
           </motion.div>
