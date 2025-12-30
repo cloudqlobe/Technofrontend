@@ -9,7 +9,7 @@ import { FaRobot, FaPhoenixSquadron, FaQuinscape, FaStroopwafel } from "react-ic
 import { FaFacebookF, FaLinkedinIn, FaInstagram, FaTwitter } from "react-icons/fa";
 import { FaChevronDown } from "react-icons/fa6";
 import { motion, AnimatePresence } from "framer-motion";
-import logo from "../assets/Image/logo.png";
+import logo from "../assets/Image/logo2.png";
 
 const socialIcons = [
   { id: 1, icon: <FaFacebookF size={14} className="text-white" />, bgColor: "bg-blue-600" },
@@ -68,7 +68,7 @@ const Navbar = () => {
       <motion.nav className="px-6 py-2 flex items-center justify-between h-20">
         {/* Logo + Social Icons */}
         <div
-          className="relative flex flex-col items-center"
+          className="relative flex flex-col items-center mt-[16px]"
           onMouseEnter={() => setShowIcons(true)}
           onMouseLeave={() => setShowIcons(false)}
         >
