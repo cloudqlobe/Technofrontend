@@ -20,7 +20,7 @@ const OurWorks = () => {
     <span className="text-orange-500">Digital Innovation</span>
   </h2>
   <p className="text-sm text-gray-600 leading-relaxing text-justify mt-5 max-w-lg">
-  At TechnoMagic, we deliver cutting-edge digital solutions that drive growth and efficiency. Our team specializes in crafting custom software, scalable applications, and seamless integrations, enabling businesses to innovate and evolve with precision and agility.
+  At Codo Stack, we deliver cutting-edge digital solutions that drive growth and efficiency. Our team specializes in crafting custom software, scalable applications, and seamless integrations, enabling businesses to innovate and evolve with precision and agility.
 </p>
 
   <div className="mt-10 flex space-x-5">

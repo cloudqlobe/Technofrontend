@@ -53,7 +53,7 @@ const HomePage = () => {
           The mastery of  <span className="text-orange-500">Innovations</span>
           </motion.h1>
           <motion.p className="text-sm text-gray-600 leading-relaxing text-justify mt-5 max-w-xl" initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 1.2 }}>
-          We at TechnoMagic Solutions revolutionize the digital landscape by delivering powerful, future-driven technologies. From artificial intelligence and smart automation to robust cybersecurity and advanced web engineering, we provide an all-in-one solution that empowers businesses to lead, innovate, and transform.          </motion.p>
+          We at Codo Stack Solutions revolutionize the digital landscape by delivering powerful, future-driven technologies. From artificial intelligence and smart automation to robust cybersecurity and advanced web engineering, we provide an all-in-one solution that empowers businesses to lead, innovate, and transform.          </motion.p>
           <div className="mt-10 flex space-x-5">
             <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="bg-orange-500 text-white px-7 py-3 squared-lg text-lg font-semibold hover:bg-orange-600 transition text-justify leading relaxing">
               Get Started 

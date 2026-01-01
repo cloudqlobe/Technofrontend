@@ -38,7 +38,7 @@ const benefits = [
     icon: <FaLanguage className="text-orange-600" size={30} />,
     title: "Improve Personality & English",
     description:
-      "If your English isn’t as advanced as your other skills, you can learn & improve yourself while working at Technomagic Solutions.",
+      "If your English isn’t as advanced as your other skills, you can learn & improve yourself while working at Codo Stack.",
   },
   {
     icon: <FaHandHoldingHeart className="text-orange-600" size={30} />,
@@ -57,10 +57,10 @@ const Careeranimation = () => {
           {/* Left Side Content */}
           <div className="lg:w-1/2 text-center lg:text-left mt-[-150px]">
           <h2 className="text-4xl font-semibold text-yellow-400 mb-6 ml-[-40px]">
-  Why <span className="text-blue-600">TechnoMagic Solutions</span>
+  Why <span className="text-blue-600">Codo Stack</span>
 </h2>
 <p className="text-lg text-orange-300 mb-6 text-justify leading-relaxing ml-[-40px]">
-  TechnoMagic Solutions offers competitive salaries and a growth-focused environment where innovation and integrity thrive. We prioritize a healthy work-life balance, value-driven leadership, and collaborative culture. Our team benefits from mentorship, flexibility, and continuous learning. Join us to build a rewarding and future-ready career.
+  Codo Stack offers competitive salaries and a growth-focused environment where innovation and integrity thrive. We prioritize a healthy work-life balance, value-driven leadership, and collaborative culture. Our team benefits from mentorship, flexibility, and continuous learning. Join us to build a rewarding and future-ready career.
 </p>
 
 
@@ -70,7 +70,7 @@ const Careeranimation = () => {
           <div className="lg:w-1/2">
             <img
               src={image6}
-              alt="Technomagic Solutions"
+              alt="Codo Stack"
               className="w-[400px] h-[400px] ml-[90px]"
             />
           </div>

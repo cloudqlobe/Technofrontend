@@ -57,10 +57,10 @@ const OurVision = () => {
         {/* Left: Vision Content */}
         <div className="md:w-1/2 space-y-6 mt-[-150px]">
           <h2 className="text-3xl md:text-3xl font-semibold text-yellow-400 ml-[-110px]">
-            The Vision Behind Technomagic
+            The Vision Behind Codo Stack
           </h2>
           <p className="text-blue-100 text-lg leading-relaxed text-justify ml-[-110px]">
-            At <span className="text-white font-semibold">Technomagic Solutions</span>, our vision is to revolutionize
+            At <span className="text-white font-semibold">Codo Stack Solutions</span>, our vision is to revolutionize
             the digital landscape by merging creativity with technology. We empower
             businesses through intelligent automation, user-centric design, and scalable
             solutions — built with purpose and passion.

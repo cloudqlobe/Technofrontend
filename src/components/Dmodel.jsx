@@ -21,10 +21,10 @@ const Dmodel = () => {
         <div className="lg:w-1/2 text-center lg:text-left ml-[-45px]">
           <p className="text-orange-400 uppercase text-5sm font-default mb-2">WHY CHOOSE US?</p>
           <h1 className="text-3xl font-bold mb-4 leading-snug">
-            Why Choose <span className="text-orange-500">TechnoMagic Solutions?</span>
+            Why Choose <span className="text-orange-500">Codo Stack ?</span>
           </h1>
           <p className="text-white mt-3 leading-relaxing text-lg text-justify mt-[30px]">
-          We are TechnoMagic Solutions — India’s premier IT powerhouse, delivering comprehensive digital solutions tailored for the future. From robust cybersecurity to scalable hosting services, we manage every aspect of your digital infrastructure. With our all-in-one service model, you gain reliability, innovation, and a strategic edge — all from one trusted technology partner.
+          We are Codo Stack — India’s premier IT powerhouse, delivering comprehensive digital solutions tailored for the future. From robust cybersecurity to scalable hosting services, we manage every aspect of your digital infrastructure. With our all-in-one service model, you gain reliability, innovation, and a strategic edge — all from one trusted technology partner.
 
           </p>
         </div>

@@ -9,7 +9,7 @@ import { FaRobot, FaPhoenixSquadron, FaQuinscape, FaStroopwafel } from "react-ic
 import { FaFacebookF, FaLinkedinIn, FaInstagram, FaTwitter } from "react-icons/fa";
 import { FaChevronDown } from "react-icons/fa6";
 import { motion, AnimatePresence } from "framer-motion";
-import logo from "../assets/Image/logo2.png";
+import logo from "../assets/Image/logo512.jpeg";
 
 const socialIcons = [
   { id: 1, icon: <FaFacebookF size={14} className="text-white" />, bgColor: "bg-blue-600" },
@@ -67,24 +67,50 @@ const Navbar = () => {
     <motion.div className="w-full bg-white fixed top-0 left-0 z-50">
       <motion.nav className="px-6 py-2 flex items-center justify-between h-20">
         {/* Logo + Social Icons */}
-        <div
-          className="relative flex flex-col items-center mt-[16px]"
-          onMouseEnter={() => setShowIcons(true)}
-          onMouseLeave={() => setShowIcons(false)}
-        >
-          <img src={logo} alt="Logo" className="w-[250px] h-[80px] object-contain" />
-          <AnimatePresence>
-            {showIcons && (
-              <motion.div className="absolute top-24 flex space-x-6">
-                {socialIcons.map(item => (
-                  <motion.div key={item.id} className={`p-2 ${item.bgColor} rounded-lg shadow-lg`}>
-                    {item.icon}
-                  </motion.div>
-                ))}
-              </motion.div>
-            )}
-          </AnimatePresence>
-        </div>
+<div
+  className="relative flex flex-col items-center mt-4"
+  onMouseEnter={() => setShowIcons(true)}
+  onMouseLeave={() => setShowIcons(false)}
+>
+  {/* Logo + Text Row */}
+<div className="flex items-center gap-3">
+  <img
+    src={logo}
+    alt="Logo"
+    className="w-[56px] h-[56px] object-contain"
+  />
+  
+  <h2 className="text-3xl font-extrabold tracking-wider flex">
+    <span className="text-blue-500">C</span>
+    <span className="text-red-500">o</span>
+    <span className="text-green-500">d</span>
+    <span className="text-yellow-500">o</span>
+    <span className="ml-2 text-gray-800">STACK</span>
+  </h2>
+</div>
+
+
+  <AnimatePresence>
+    {showIcons && (
+      <motion.div
+        className="absolute top-20 flex space-x-6"
+        initial={{ opacity: 0, y: -10 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -10 }}
+      >
+        {socialIcons.map(item => (
+          <motion.div
+            key={item.id}
+            className={`p-2 ${item.bgColor} rounded-lg shadow-lg`}
+          >
+            {item.icon}
+          </motion.div>
+        ))}
+      </motion.div>
+    )}
+  </AnimatePresence>
+</div>
+
 
         {/* Nav Items */}
         <ul className="flex space-x-4 text-gray-800 text-base font-semibold" ref={dropdownRef}>
@@ -102,9 +128,9 @@ const Navbar = () => {
           <li className={`px-3 cursor-pointer ${isActive("/about") ? "text-orange-500" : ""}`}>
             <Link to="/about">About Us</Link>
           </li>
-          <li className={`px-3 cursor-pointer ${isActive("/our-works") ? "text-orange-500" : ""}`}>
+          {/* <li className={`px-3 cursor-pointer ${isActive("/our-works") ? "text-orange-500" : ""}`}>
             <Link to="/our-works">Our Works</Link>
-          </li>
+          </li> */}
           <li
             className={`relative px-3 cursor-pointer ${dropdown === "softwares" || location.pathname.includes("/software") ? "text-orange-500" : ""}`}
             onClick={() => toggleDropdown("softwares")}

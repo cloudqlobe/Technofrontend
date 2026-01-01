@@ -55,7 +55,7 @@ const Webheader = () => {
 
 
   <p className="text-sm text-gray-600 leading-relaxed text-justify mt-5 max-w-lg">
-    At TechnoMagic, we build robust, future-ready web solutions that combine cutting-edge performance, sleek design, and seamless functionality. From dynamic enterprise apps to custom portals, our development process is engineered for speed, scalability, and user-centric precision.
+    At Codo Stack, we build robust, future-ready web solutions that combine cutting-edge performance, sleek design, and seamless functionality. From dynamic enterprise apps to custom portals, our development process is engineered for speed, scalability, and user-centric precision.
   </p>
   <div className="mt-10 flex space-x-5">
     <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="bg-orange-500 text-white px-7 py-3 squared-lg text-lg font-semibold hover:bg-orange-600 transition">

@@ -30,7 +30,7 @@ const Careerheader = () => {
       View Open Roles
     </motion.button>
     <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="border border-gray-500 text-gray-900 px-7 py-3 squared-lg text-lg font-semibold hover:bg-gray-300 transition">
-      Life at TechnoMagic
+      Life at Codo Stack
     </motion.button>
   </div>
 </div>
