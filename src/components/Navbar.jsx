@@ -9,7 +9,8 @@ import { FaRobot, FaPhoenixSquadron, FaQuinscape, FaStroopwafel } from "react-ic
 import { FaFacebookF, FaLinkedinIn, FaInstagram, FaTwitter } from "react-icons/fa";
 import { FaChevronDown } from "react-icons/fa6";
 import { motion, AnimatePresence } from "framer-motion";
-import logo from "../assets/Image/logo512.jpeg";
+// import logo from "../assets/Image/logo512.jpeg";
+import logo from "../assets/Image/logo1.png";
 
 const socialIcons = [
   { id: 1, icon: <FaFacebookF size={14} className="text-white" />, bgColor: "bg-blue-600" },
@@ -77,16 +78,16 @@ const Navbar = () => {
   <img
     src={logo}
     alt="Logo"
-    className="w-[56px] h-[56px] object-contain"
+    className="w-[190px] object-contain"
   />
   
-  <h2 className="text-3xl font-extrabold tracking-wider flex">
+  {/* <h2 className="text-3xl font-extrabold tracking-wider flex">
     <span className="text-blue-500">C</span>
     <span className="text-red-500">o</span>
     <span className="text-green-500">d</span>
     <span className="text-yellow-500">o</span>
     <span className="ml-2 text-gray-800">STACK</span>
-  </h2>
+  </h2> */}
 </div>
 
 

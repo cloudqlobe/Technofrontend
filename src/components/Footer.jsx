@@ -10,7 +10,7 @@ import {
   FaGithub
 } from "react-icons/fa";
 import { MdOutlineArrowForward } from "react-icons/md";
-import logo from "../assets/Image/logo-removebg-.png";
+import logo from "../assets/Image/logo.png";
 
 export default function Footer() {
   return (
