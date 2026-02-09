@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import HomePage from "./pages/home/page";
+import HomePage from "./pages/home/Page";
 import AboutPage from "./pages/about/AboutPage";
 import CareerPage from "./pages/careers/CareerPage";
 import MarketingPage from "./pages/service/Content_Marketing/MarketingPage";
@@ -14,12 +14,14 @@ import ERPPage from "./pages/softwares/ERP/ERPPage";
 import ProjectManagementPage from "./pages/softwares/Project Management/ProjectManagementPage";
 import BillingSoftwarePage from "./pages/softwares/Billing_Software/BillingSoftwarePage";
 import HRMPage from "./pages/softwares/HRM/HRMPage";
+import ScrollToTop from "./ScrollToTop";
 
 
 
 const App = () => {
   return (
     <Router>
+      <ScrollToTop />   {/* 👈 ADD HERE */}
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />

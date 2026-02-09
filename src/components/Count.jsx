@@ -27,7 +27,7 @@ export default function StatsSection() {
       </div>
 
       {/* Center Video */}
-      <div className="absolute bottom-[10px] left-[150px] flex flex-col items-center">
+<div className="absolute bottom-[10px] left-[150px] flex flex-col items-center lg:hidden 2xl:flex">
         <video
           src={logoVideo}
           autoPlay

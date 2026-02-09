@@ -11,6 +11,7 @@ import {
 } from "react-icons/fa";
 import { MdOutlineArrowForward } from "react-icons/md";
 import logo from "../assets/Image/logo1.jpeg";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -20,46 +21,119 @@ export default function Footer() {
         {/* Main Content */}
         <div className="flex flex-col lg:flex-row items-start justify-between mt-8 md:mt-16 gap-8 lg:gap-0">
           <div className="grid md:grid-cols-1 gap-8 md:gap-14 w-full lg:w-2/2">
-            <div className="
-  flex flex-wrap justify-between
-  gap-8 md:gap-12
-  text-gray-300
-">
-              {/* Services Column */}
+
+            <div
+              className="
+    flex flex-wrap justify-between
+    gap-8 md:gap-12
+    text-gray-300
+    uppercase
+  "
+            >
+              {/* SERVICES */}
               <div>
-                <h3 className="text-lg md:text-xl font-default text-white mb-3 md:mb-0">SERVICES</h3>
-                <ul className="mt-3 md:mt-4 space-y-2 md:space-y-3 text-sm md:text-base">
-                  <li className="hover:text-white transition cursor-pointer">SEO</li>
-                  <li className="hover:text-white transition cursor-pointer">ORM</li>
-                  <li className="hover:text-white transition cursor-pointer">SMO</li>
-                  <li className="hover:text-white transition cursor-pointer">Link Building</li>
-                  <li className="hover:text-white transition cursor-pointer">PPC Management</li>
-                  <li className="hover:text-white transition cursor-pointer">Content Development</li>
+                <h3 className="text-lg md:text-xl text-white tracking-wide">
+                  SERVICES
+                </h3>
+                <ul className="mt-4 space-y-2">
+                  <li>
+                    <Link to="/services/web-development" className="hover:text-white transition">
+                      WEBSITE DEVELOPMENT
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/services/mobile-apps" className="hover:text-white transition">
+                      MOBILE APPS
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/services/cloudcomputing" className="hover:text-white transition">
+                      CLOUD COMPUTING
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/services/design" className="hover:text-white transition">
+                      UI & UX DESIGN
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/services/consultancy" className="hover:text-white transition">
+                      TECH CONSULTANCY
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/services/hosting" className="hover:text-white transition">
+                      HOSTING SERVICES
+                    </Link>
+                  </li>
                 </ul>
               </div>
 
-              {/* Company Column */}
+              {/* SOFTWARES */}
               <div>
-                <h3 className="text-lg md:text-xl font-default text-white mb-3 md:mb-0">COMPANY</h3>
-                <ul className="mt-3 md:mt-4 space-y-2 md:space-y-3 text-sm md:text-base">
-                  <li className="hover:text-white transition cursor-pointer">Home</li>
-                  <li className="hover:text-white transition cursor-pointer">Services</li>
-                  <li className="hover:text-white transition cursor-pointer">About Us</li>
-                  <li className="hover:text-white transition cursor-pointer">Our Works</li>
-                  <li className="hover:text-white transition cursor-pointer">Softwares</li>
-                  <li className="hover:text-white transition cursor-pointer">Careers</li>
+                <h3 className="text-lg md:text-xl text-white tracking-wide">
+                  SOFTWARES
+                </h3>
+                <ul className="mt-4 space-y-2">
+                  <li>
+                    <Link to="/software/crm" className="hover:text-white transition">
+                      CRM MANAGEMENT
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/software/erp" className="hover:text-white transition">
+                      ERP SYSTEM
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/software/chatbot" className="hover:text-white transition">
+                      CHATBOT
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/software/project-management" className="hover:text-white transition">
+                      PROJECT MANAGEMENT
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/software/billing" className="hover:text-white transition">
+                      BILLING SOFTWARE
+                    </Link>
+                  </li>
                 </ul>
               </div>
 
-              {/* Support Column */}
+              {/* SUPPORT */}
               <div>
-                <h3 className="text-lg md:text-xl font-default text-white mb-3 md:mb-0">SUPPORT</h3>
-                <ul className="mt-3 md:mt-4 space-y-2 md:space-y-3 text-sm md:text-base">
-                  <li className="hover:text-white transition cursor-pointer">Resources</li>
-                  <li className="hover:text-white transition cursor-pointer">Career</li>
-                  <li className="hover:text-white transition cursor-pointer">Get a Quote</li>
-                  <li className="hover:text-white transition cursor-pointer">Request for Proposal</li>
-                  <li className="hover:text-white transition cursor-pointer">Make a Payment</li>
+                <h3 className="text-lg md:text-xl text-white tracking-wide">
+                  SUPPORT
+                </h3>
+                <ul className="mt-4 space-y-2">
+                  <li>
+                    <Link to="/" className="hover:text-white transition">
+                      RESOURCES
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/careers" className="hover:text-white transition">
+                      CAREER
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/" className="hover:text-white transition">
+                      GET A QUOTE
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/" className="hover:text-white transition">
+                      REQUEST FOR PROPOSAL
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/" className="hover:text-white transition">
+                      MAKE A PAYMENT
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -67,13 +141,13 @@ export default function Footer() {
             {/* Contact + Social Icons */}
             <div className="text-gray-300 mt-4 md:mt-8 lg:mt-0">
               <div>
-              <h3 className="text-lg md:text-xl font-default text-white mb-3 md:mb-0">CONTACT</h3>
-              <p className="flex items-center mt-4 md:mt-6 text-base md:text-lg">
-                <FaPhoneAlt className="mr-3 text-sm md:text-base flex-shrink-0" /> +44 7491 896532
-              </p>
-              <p className="flex items-center mt-3 md:mt-4 text-base md:text-lg">
-                <FaEnvelope className="mr-3 text-sm md:text-base flex-shrink-0" /> business@codostack.com
-              </p>
+                <h3 className="text-lg md:text-xl font-default text-white mb-3 md:mb-0">CONTACT</h3>
+                <p className="flex items-center mt-4 md:mt-6 text-base md:text-lg">
+                  <FaPhoneAlt className="mr-3 text-sm md:text-base flex-shrink-0" /> +44 7491 896532
+                </p>
+                <p className="flex items-center mt-3 md:mt-4 text-base md:text-lg">
+                  <FaEnvelope className="mr-3 text-sm md:text-base flex-shrink-0" /> business@codostack.com
+                </p>
               </div>
 
 

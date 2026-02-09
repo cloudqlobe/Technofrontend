@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { IoIosCloudDone } from "react-icons/io";
 import { FaCode, FaShieldAlt, FaDatabase, FaRobot, FaMobile } from "react-icons/fa";
@@ -9,6 +9,7 @@ import StatsSection from "../../components/Count";
 import ResellerSection from "../../components/Card";
 import Footer from "../../components/Footer";
 import Dmodel from "../../components/Dmodel";
+import { useLocation } from "react-router-dom";
 
 const techDetails = [
   { icon: <FaCode className="text-blue-500 text-[5rem]" />, name: "Web Development", description: "Building responsive and interactive websites using React, Vue, and Next.js." },
@@ -31,7 +32,18 @@ const techServices = [
 ];
 
 const HomePage = () => {
+  const contactRef = useRef(null);
   const [currentIndex, setCurrentIndex] = useState(0);
+
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash === "#contact") {
+      const el = document.getElementById("contact-section");
+      el?.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  }, [location]);
+
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -59,12 +71,12 @@ const HomePage = () => {
             </motion.h1>
 
             <motion.p
-              className="text-sm text-gray-600 mt-5 max-w-xl mx-auto lg:mx-0"
+              className="text-sm text-gray-600 mt-5 text-justify max-w-xl mx-auto lg:mx-0"
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1.2 }}
             >
-We at Codo Stack Solutions revolutionize the digital landscape by delivering powerful, future-driven technologies. From artificial intelligence and smart automation to robust cybersecurity and advanced web engineering, we provide an all-in-one solution that empowers businesses to lead, innovate, and transform.
+              We at Codo Stack Solutions revolutionize the digital landscape by delivering powerful, future-driven technologies. From artificial intelligence and smart automation to robust cybersecurity and advanced web engineering, we provide an all-in-one solution that empowers businesses to lead, innovate, and transform.
             </motion.p>
 
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -127,39 +139,41 @@ We at Codo Stack Solutions revolutionize the digital landscape by delivering pow
             From AI to cloud computing, we cover all your tech needs.
           </p>
 
-        <div className="overflow-hidden">
-          <motion.div
-            className="flex space-x-10 whitespace-nowrap px-5 mt-5"
-            animate={{ x: ["0%", "-100%"] }}
-            transition={{ repeat: Infinity, duration: 15, ease: "linear" }} // Smooth infinite loop
-          >
-            {[...techServices, ...techServices].map((service, index) => (
-              <div
-                key={index}
-                className="flex items-center px-6 py-3 border-2 border-gray-300 shadow-md bg-white w-70 h-25 rounded-lg"
-              >
-                {/* Icon Left with Hover Animation */}
-                <motion.div
-                  whileHover={{ scale: 1.2 }}
-                  transition={{ duration: 0.2 }}
-                  className={`w-16 h-16 flex items-center justify-center ${service.bgColor} text-white text-4xl rounded-lg`}
+          <div className="overflow-hidden">
+            <motion.div
+              className="flex space-x-10 whitespace-nowrap px-5 mt-5"
+              animate={{ x: ["0%", "-100%"] }}
+              transition={{ repeat: Infinity, duration: 15, ease: "linear" }} // Smooth infinite loop
+            >
+              {[...techServices, ...techServices].map((service, index) => (
+                <div
+                  key={index}
+                  className="flex items-center px-6 py-3 border-2 border-gray-300 shadow-md bg-white w-70 h-25 rounded-lg"
                 >
-                  {service.icon}
-                </motion.div>
+                  {/* Icon Left with Hover Animation */}
+                  <motion.div
+                    whileHover={{ scale: 1.2 }}
+                    transition={{ duration: 0.2 }}
+                    className={`w-16 h-16 flex items-center justify-center ${service.bgColor} text-white text-4xl rounded-lg`}
+                  >
+                    {service.icon}
+                  </motion.div>
 
-                {/* Text Right */}
-                <span className="text-gray-800 text-lg font-default ml-5">
-                  {service.name}
-                </span>
-              </div>
-            ))}
-          </motion.div>
-        </div>
+                  {/* Text Right */}
+                  <span className="text-gray-800 text-lg font-default ml-5">
+                    {service.name}
+                  </span>
+                </div>
+              ))}
+            </motion.div>
+          </div>
         </div>
       </div>
 
-      <Model />
-      <Dmodel/>
+      <div ref={contactRef} id="contact-section">
+        <Model />
+      </div>
+      <Dmodel />
       <ContentPage />
       <StatsSection />
       <ResellerSection />

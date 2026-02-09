@@ -149,7 +149,7 @@ const Navbar = () => {
 
         {/* Desktop Search and Contact */}
         <div className="hidden lg:flex items-center space-x-10">
-<div className="relative w-80 hidden min-[1301px]:block">
+          <div className="relative w-80 hidden min-[1301px]:block">
             <input
               type="text"
               placeholder="Search..."
@@ -157,13 +157,13 @@ const Navbar = () => {
             />
             <FiSearch className="absolute right-4 top-2.5 text-gray-500 text-xl cursor-pointer hover:text-orange-500" />
           </div>
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
+          <Link
+            to="/#contact"
             className="bg-orange-500 text-white px-5 py-2 rounded-md hover:bg-orange-600 uppercase"
           >
             Contact Us
-          </motion.button>
+          </Link>
+
         </div>
 
         {/* Mobile Menu Button */}
@@ -208,9 +208,8 @@ const Navbar = () => {
                     <Link
                       to={item.url}
                       key={index}
-                      className={`flex items-center gap-4 p-4 rounded-md transition-all hover:bg-gray-100 ${
-                        isActive(item.url) ? "bg-orange-100" : ""
-                      }`}
+                      className={`flex items-center gap-4 p-4 rounded-md transition-all hover:bg-gray-100 ${isActive(item.url) ? "bg-orange-100" : ""
+                        }`}
                     >
                       <div className="w-16 h-16 flex items-center justify-center border-2 border-gray-300 rounded-md">
                         {item.icon}
@@ -251,8 +250,8 @@ const Navbar = () => {
               {/* Mobile Nav Items */}
               <ul className="space-y-1">
                 <li className={`${isActive("/") ? "text-orange-500" : "text-gray-800"}`}>
-                  <Link 
-                    to="/" 
+                  <Link
+                    to="/"
                     className="block px-4 py-3 font-semibold hover:bg-gray-100 rounded-md"
                     onClick={closeMobileMenu}
                   >
@@ -263,9 +262,8 @@ const Navbar = () => {
                 {/* Services Dropdown */}
                 <li>
                   <div
-                    className={`px-4 py-3 font-semibold cursor-pointer hover:bg-gray-100 rounded-md flex items-center justify-between ${
-                      mobileDropdown === "services" || location.pathname.includes("/services") ? "text-orange-500" : "text-gray-800"
-                    }`}
+                    className={`px-4 py-3 font-semibold cursor-pointer hover:bg-gray-100 rounded-md flex items-center justify-between ${mobileDropdown === "services" || location.pathname.includes("/services") ? "text-orange-500" : "text-gray-800"
+                      }`}
                     onClick={() => toggleMobileDropdown("services")}
                   >
                     <span>Services</span>
@@ -284,9 +282,8 @@ const Navbar = () => {
                             <Link
                               key={index}
                               to={item.url}
-                              className={`flex items-center gap-3 p-3 rounded-md transition-all hover:bg-gray-100 ${
-                                isActive(item.url) ? "bg-orange-100" : ""
-                              }`}
+                              className={`flex items-center gap-3 p-3 rounded-md transition-all hover:bg-gray-100 ${isActive(item.url) ? "bg-orange-100" : ""
+                                }`}
                               onClick={closeMobileMenu}
                             >
                               <div className="w-10 h-10 flex items-center justify-center border border-gray-300 rounded-md flex-shrink-0">
@@ -304,8 +301,8 @@ const Navbar = () => {
                 </li>
 
                 <li className={`${isActive("/about") ? "text-orange-500" : "text-gray-800"}`}>
-                  <Link 
-                    to="/about" 
+                  <Link
+                    to="/about"
                     className="block px-4 py-3 font-semibold hover:bg-gray-100 rounded-md"
                     onClick={closeMobileMenu}
                   >
@@ -316,9 +313,8 @@ const Navbar = () => {
                 {/* Softwares Dropdown */}
                 <li>
                   <div
-                    className={`px-4 py-3 font-semibold cursor-pointer hover:bg-gray-100 rounded-md flex items-center justify-between ${
-                      mobileDropdown === "softwares" || location.pathname.includes("/software") ? "text-orange-500" : "text-gray-800"
-                    }`}
+                    className={`px-4 py-3 font-semibold cursor-pointer hover:bg-gray-100 rounded-md flex items-center justify-between ${mobileDropdown === "softwares" || location.pathname.includes("/software") ? "text-orange-500" : "text-gray-800"
+                      }`}
                     onClick={() => toggleMobileDropdown("softwares")}
                   >
                     <span>Softwares</span>
@@ -337,9 +333,8 @@ const Navbar = () => {
                             <Link
                               key={index}
                               to={item.url}
-                              className={`flex items-center gap-3 p-3 rounded-md transition-all hover:bg-gray-100 ${
-                                isActive(item.url) ? "bg-orange-100" : ""
-                              }`}
+                              className={`flex items-center gap-3 p-3 rounded-md transition-all hover:bg-gray-100 ${isActive(item.url) ? "bg-orange-100" : ""
+                                }`}
                               onClick={closeMobileMenu}
                             >
                               <div className="w-10 h-10 flex items-center justify-center border border-gray-300 rounded-md flex-shrink-0">
@@ -357,8 +352,8 @@ const Navbar = () => {
                 </li>
 
                 <li className={`${isActive("/careers") ? "text-orange-500" : "text-gray-800"}`}>
-                  <Link 
-                    to="/careers" 
+                  <Link
+                    to="/careers"
                     className="block px-4 py-3 font-semibold hover:bg-gray-100 rounded-md"
                     onClick={closeMobileMenu}
                   >
@@ -368,13 +363,14 @@ const Navbar = () => {
               </ul>
 
               {/* Mobile Contact Button */}
-              <motion.button
-                whileTap={{ scale: 0.95 }}
-                className="w-full mt-6 bg-orange-500 text-white px-5 py-3 rounded-md hover:bg-orange-600 uppercase font-semibold"
+              <Link
+                to="/#contact"
                 onClick={closeMobileMenu}
+                className="block text-center bg-orange-500 text-white px-5 py-3 rounded-md uppercase font-semibold"
               >
                 Contact Us
-              </motion.button>
+              </Link>
+
 
               {/* Mobile Social Icons */}
               <div className="flex justify-center space-x-4 mt-6 pt-6 border-t border-gray-200">
