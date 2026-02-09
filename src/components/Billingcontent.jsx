@@ -2,7 +2,6 @@ import React from "react";
 import image4 from "../assets/Image/4590506.jpg";
 import image5 from "../assets/Image/4673526.jpg";
 import image6 from "../assets/Image/5397869.jpg";
-import Billingcontents1 from "./Billingcontents1";
 
 const Billingcontent = () => {
   return (

@@ -79,25 +79,25 @@ export default function Footer() {
 
               {/* Social Icons */}
               <div className="flex flex-wrap gap-3 md:gap-5 mt-8 md:mt-16 ml-0 md:ml-2">
-                <a href="#" className="bg-[#3b5998] p-2 md:p-3 text-lg md:text-xl font-bold text-white hover:scale-110 transition mt-4 md:mt-8">
+                <a href="/" className="bg-[#3b5998] p-2 md:p-3 text-lg md:text-xl font-bold text-white hover:scale-110 transition mt-4 md:mt-8">
                   <FaFacebookF />
                 </a>
-                <a href="#" className="bg-[#00acee] p-2 md:p-3 text-lg md:text-xl font-bold text-white hover:scale-110 transition mt-4 md:mt-8">
+                <a href="/" className="bg-[#00acee] p-2 md:p-3 text-lg md:text-xl font-bold text-white hover:scale-110 transition mt-4 md:mt-8">
                   <FaTwitter />
                 </a>
-                <a href="#" className="bg-[#C13584] p-2 md:p-3 text-lg md:text-xl font-bold text-white hover:scale-110 transition mt-4 md:mt-8">
+                <a href="/" className="bg-[#C13584] p-2 md:p-3 text-lg md:text-xl font-bold text-white hover:scale-110 transition mt-4 md:mt-8">
                   <FaInstagram />
                 </a>
-                <a href="#" className="bg-[#0A66C2] p-2 md:p-3 text-lg md:text-xl font-bold text-white hover:scale-110 transition mt-4 md:mt-8">
+                <a href="/" className="bg-[#0A66C2] p-2 md:p-3 text-lg md:text-xl font-bold text-white hover:scale-110 transition mt-4 md:mt-8">
                   <FaLinkedinIn />
                 </a>
-                <a href="#" className="bg-[#FF0000] p-2 md:p-3 text-lg md:text-xl font-bold text-white hover:scale-110 transition mt-4 md:mt-8">
+                <a href="/" className="bg-[#FF0000] p-2 md:p-3 text-lg md:text-xl font-bold text-white hover:scale-110 transition mt-4 md:mt-8">
                   <FaYoutube />
                 </a>
-                <a href="#" className="bg-[#E60023] p-2 md:p-3 text-lg md:text-xl font-bold text-white hover:scale-110 transition mt-4 md:mt-8">
+                <a href="/" className="bg-[#E60023] p-2 md:p-3 text-lg md:text-xl font-bold text-white hover:scale-110 transition mt-4 md:mt-8">
                   <FaPinterestP />
                 </a>
-                <a href="#" className="bg-[#333] p-2 md:p-3 text-lg md:text-xl font-bold text-white hover:scale-110 transition mt-4 md:mt-8">
+                <a href="/" className="bg-[#333] p-2 md:p-3 text-lg md:text-xl font-bold text-white hover:scale-110 transition mt-4 md:mt-8">
                   <FaGithub />
                 </a>
               </div>

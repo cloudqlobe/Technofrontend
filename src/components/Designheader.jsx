@@ -1,5 +1,3 @@
-import React from "react";
-import { Play, Download, Upload, Plus, User, Lock } from "lucide-react";
 import { motion } from "framer-motion";
 
 

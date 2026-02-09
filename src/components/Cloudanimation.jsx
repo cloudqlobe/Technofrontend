@@ -8,8 +8,6 @@ import {
   RefreshCcw,
   Database,
   Lock,
-  Settings,
-  Globe,
   MonitorSmartphone,
 } from 'lucide-react';
 

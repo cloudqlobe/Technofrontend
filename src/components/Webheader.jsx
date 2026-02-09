@@ -1,15 +1,14 @@
-import React, { useEffect, useState } from 'react';
-import { FaAngular } from "react-icons/fa";
+import  { useEffect, useState } from 'react';
 import { SiPostman } from "react-icons/si";
 import { SiReactbootstrap } from "react-icons/si";
 import { motion } from "framer-motion";      
 
 
-import { FaFigma, FaSketch, FaAdobe, FaGithub } from 'react-icons/fa';
+import { FaFigma,FaGithub } from 'react-icons/fa';
 import { AiOutlineCode } from 'react-icons/ai';
 import {
   IoLogoHtml5, IoLogoCss3, IoLogoJavascript,
-  IoLogoReact, IoLogoNodejs, IoLogoGithub,
+  IoLogoReact, IoLogoNodejs,
   IoLogoAngular
 } from 'react-icons/io5';
 

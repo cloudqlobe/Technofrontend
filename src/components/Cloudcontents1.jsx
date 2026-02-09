@@ -1,7 +1,6 @@
 import React from 'react';
 import image1 from '../assets/Image/10895191.jpg'; // Cloud Infra Image
 import image2 from '../assets/Image/6478073.jpg'; // Cloud Design UI Image
-import Designcontent from './Designcontent';
 
 const Cloudcontents1 = () => {
   return (

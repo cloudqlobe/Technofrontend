@@ -5,7 +5,6 @@ import {
   Smartphone,
   Rocket,
   Atom,
-  Layers,
   Database,
   Cloud,
   ShieldCheck,

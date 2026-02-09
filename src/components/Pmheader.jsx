@@ -1,5 +1,3 @@
-import React from "react";
-import image2 from '../assets/Image/robottech.jpg';
 import { motion } from "framer-motion";
 import {
   FaLightbulb,

@@ -9,9 +9,6 @@ import {
   FaUsers,
   FaUserFriends,
   FaUserLock,
-  FaUserShield,
-  FaUserTimes,
-  FaUserMd,
 } from 'react-icons/fa';
 
 const designFeatures = [

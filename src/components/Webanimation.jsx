@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import image7 from "../assets/Image/380621791_11479203.svg";
 
 const techIcons = [

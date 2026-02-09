@@ -1,5 +1,3 @@
-import React from "react";
-import { Rocket, Package, DollarSign, BarChart2 } from "lucide-react";
 import { LuLoaderPinwheel } from "react-icons/lu";
 import { BsGraphUpArrow } from "react-icons/bs";
 import { LuAlarmClockCheck } from "react-icons/lu";

@@ -7,14 +7,8 @@ import { FaLaptop } from "react-icons/fa6";
 import { LuBadgeDollarSign } from "react-icons/lu";
 
 import {
-  Laptop,
   ShoppingCart,
-  Headphones,
-  Settings,
-  Users,
   HeartHandshake,
-  BadgeCheck,
-  TrendingUp,
   Network,
   Lightbulb,
 } from "lucide-react";

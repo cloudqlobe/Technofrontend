@@ -8,23 +8,14 @@ import {
   Brain,
   Globe,
   Code2,
-  Mail,
-  MessageSquare,
-  Send,
   User,
 } from "lucide-react";
 
 import {
-  FaReact,
-  FaHtml5,
-  FaCss3Alt,
-  FaJs,
-  FaNodeJs,
   FaPhoneAlt,
   FaMailBulk,
   FaSeedling,
 } from "react-icons/fa";
-import { SiNextdotjs, SiTailwindcss, SiTypescript } from "react-icons/si";
 import { FaMessage } from "react-icons/fa6";
 
 const OurVision = () => {

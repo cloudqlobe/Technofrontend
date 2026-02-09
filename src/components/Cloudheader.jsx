@@ -1,5 +1,4 @@
 import React from "react";
-import image26 from '../assets/Image/97ec0abf-3ba8-4ee5-99f5-cf02780b30aa.jpg';
 import { motion } from "framer-motion";
 import {
   Cloud,

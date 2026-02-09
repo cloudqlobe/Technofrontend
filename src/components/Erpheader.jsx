@@ -25,7 +25,6 @@ const benefits = [
 ];
 
 const mainColor = "#396D8A";
-const hoverColor = "#f97316"; // orange-500
 
 const ERPHeader = () => {
   return (

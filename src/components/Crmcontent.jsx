@@ -2,7 +2,6 @@ import React from "react";
 import image4 from "../assets/Image/5922860.jpg";
 import image5 from "../assets/Image/4990138.jpg";
 import image6 from "../assets/Image/5_communication02.jpg";
-import Crmcontent1 from "./Crmcontent1";
 
 const Crmcontent = () => {
   return (

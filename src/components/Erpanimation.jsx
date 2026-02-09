@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import image9 from "../assets/Image/2011.i039.004..big data science analysis isometric set.jpg";
 import {
   Settings, Layers, BarChart3, LifeBuoy,
   Package, MonitorSmartphone, RefreshCw, ShieldCheck,

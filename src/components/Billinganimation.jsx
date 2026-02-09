@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {
-  CreditCard, Banknote, FileBarChart2, HeadsetMic, ReceiptText,
+  CreditCard, Banknote, FileBarChart2, ReceiptText,
   DollarSign, ShieldCheck, PieChart, Mail, MessageSquare, Send, User
 } from "lucide-react";
 import { FaIcicles, FaPhoneAlt } from 'react-icons/fa';

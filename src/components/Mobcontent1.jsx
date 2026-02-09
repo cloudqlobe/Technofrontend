@@ -1,7 +1,6 @@
 import React from 'react';
 import image1 from '../assets/Image/5044055.jpg'; // Replace with your actual image
 import image2 from '../assets/Image/4950546.jpg'; // Replace with your actual image
-import Mobcontent from './Mobcontent';
 
 const Mobcontent1 = () => {
   return (
