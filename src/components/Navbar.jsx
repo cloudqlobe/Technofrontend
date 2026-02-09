@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useLocation, Link } from "react-router-dom";
-import { FiSearch } from "react-icons/fi";
+import { FiSearch, FiMenu, FiX } from "react-icons/fi";
 import { BsLifePreserver, BsMicrosoftTeams } from "react-icons/bs";
 import { GiCloudRing, GiSurroundedEye } from "react-icons/gi";
 import { IoAppsSharp } from "react-icons/io5";
@@ -9,8 +9,7 @@ import { FaRobot, FaPhoenixSquadron, FaQuinscape, FaStroopwafel } from "react-ic
 import { FaFacebookF, FaLinkedinIn, FaInstagram, FaTwitter } from "react-icons/fa";
 import { FaChevronDown } from "react-icons/fa6";
 import { motion, AnimatePresence } from "framer-motion";
-// import logo from "../assets/Image/logo512.jpeg";
-import logo from "../assets/Image/logo1.png";
+import logo from "../assets/Image/logo1.jpeg";
 
 const socialIcons = [
   { id: 1, icon: <FaFacebookF size={14} className="text-white" />, bgColor: "bg-blue-600" },
@@ -47,9 +46,12 @@ const Navbar = () => {
   const location = useLocation();
   const [showIcons, setShowIcons] = useState(false);
   const [dropdown, setDropdown] = useState("");
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [mobileDropdown, setMobileDropdown] = useState("");
   const dropdownRef = useRef();
 
   const toggleDropdown = (menu) => setDropdown(dropdown === menu ? "" : menu);
+  const toggleMobileDropdown = (menu) => setMobileDropdown(mobileDropdown === menu ? "" : menu);
 
   const handleClickOutside = (event) => {
     if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
@@ -62,59 +64,62 @@ const Navbar = () => {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
+  useEffect(() => {
+    if (mobileMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+  }, [mobileMenuOpen]);
+
   const isActive = (path) => location.pathname === path;
+
+  const closeMobileMenu = () => {
+    setMobileMenuOpen(false);
+    setMobileDropdown("");
+  };
 
   return (
     <motion.div className="w-full bg-white fixed top-0 left-0 z-50">
-      <motion.nav className="px-6 py-2 flex items-center justify-between h-20">
+      <motion.nav className="px-4 lg:px-6 py-2 flex items-center justify-between h-16 lg:h-20">
         {/* Logo + Social Icons */}
-<div
-  className="relative flex flex-col items-center mt-4"
-  onMouseEnter={() => setShowIcons(true)}
-  onMouseLeave={() => setShowIcons(false)}
->
-  {/* Logo + Text Row */}
-<div className="flex items-center gap-3">
-  <img
-    src={logo}
-    alt="Logo"
-    className="w-[190px] object-contain"
-  />
-  
-  {/* <h2 className="text-3xl font-extrabold tracking-wider flex">
-    <span className="text-blue-500">C</span>
-    <span className="text-red-500">o</span>
-    <span className="text-green-500">d</span>
-    <span className="text-yellow-500">o</span>
-    <span className="ml-2 text-gray-800">STACK</span>
-  </h2> */}
-</div>
+        <div
+          className="relative flex flex-col items-center"
+          onMouseEnter={() => setShowIcons(true)}
+          onMouseLeave={() => setShowIcons(false)}
+        >
+          {/* Logo */}
+          <div className="flex items-center gap-3">
+            <img
+              src={logo}
+              alt="Logo"
+              className="w-[140px] lg:w-[220px] object-contain"
+            />
+          </div>
 
+          <AnimatePresence>
+            {showIcons && (
+              <motion.div
+                className="hidden lg:flex absolute top-20 space-x-6"
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -10 }}
+              >
+                {socialIcons.map(item => (
+                  <motion.div
+                    key={item.id}
+                    className={`p-2 ${item.bgColor} rounded-lg shadow-lg`}
+                  >
+                    {item.icon}
+                  </motion.div>
+                ))}
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </div>
 
-  <AnimatePresence>
-    {showIcons && (
-      <motion.div
-        className="absolute top-20 flex space-x-6"
-        initial={{ opacity: 0, y: -10 }}
-        animate={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0, y: -10 }}
-      >
-        {socialIcons.map(item => (
-          <motion.div
-            key={item.id}
-            className={`p-2 ${item.bgColor} rounded-lg shadow-lg`}
-          >
-            {item.icon}
-          </motion.div>
-        ))}
-      </motion.div>
-    )}
-  </AnimatePresence>
-</div>
-
-
-        {/* Nav Items */}
-        <ul className="flex space-x-4 text-gray-800 text-base font-semibold" ref={dropdownRef}>
+        {/* Desktop Nav Items */}
+        <ul className="hidden lg:flex space-x-4 text-gray-800 text-base font-semibold" ref={dropdownRef}>
           <li className={`px-3 cursor-pointer ${isActive("/") ? "text-orange-500" : ""}`}>
             <Link to="/">Home</Link>
           </li>
@@ -129,9 +134,6 @@ const Navbar = () => {
           <li className={`px-3 cursor-pointer ${isActive("/about") ? "text-orange-500" : ""}`}>
             <Link to="/about">About Us</Link>
           </li>
-          {/* <li className={`px-3 cursor-pointer ${isActive("/our-works") ? "text-orange-500" : ""}`}>
-            <Link to="/our-works">Our Works</Link>
-          </li> */}
           <li
             className={`relative px-3 cursor-pointer ${dropdown === "softwares" || location.pathname.includes("/software") ? "text-orange-500" : ""}`}
             onClick={() => toggleDropdown("softwares")}
@@ -145,9 +147,9 @@ const Navbar = () => {
           </li>
         </ul>
 
-        {/* Search and Contact */}
-        <div className="flex items-center space-x-10">
-          <div className="relative w-80">
+        {/* Desktop Search and Contact */}
+        <div className="hidden lg:flex items-center space-x-10">
+<div className="relative w-80 hidden min-[1301px]:block">
             <input
               type="text"
               placeholder="Search..."
@@ -163,16 +165,24 @@ const Navbar = () => {
             Contact Us
           </motion.button>
         </div>
+
+        {/* Mobile Menu Button */}
+        <button
+          className="lg:hidden text-gray-800 text-2xl p-2"
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+        >
+          {mobileMenuOpen ? <FiX /> : <FiMenu />}
+        </button>
       </motion.nav>
 
-      {/* Dropdown Section */}
+      {/* Desktop Dropdown Section */}
       <AnimatePresence>
         {dropdown && (
           <motion.div
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
-            className="absolute top-full left-0 w-full bg-[#f9f9f9] border-t border-gray-200 shadow-xl z-40 py-6"
+            className="hidden lg:block absolute top-full left-0 w-full bg-[#f9f9f9] border-t border-gray-200 shadow-xl z-40 py-6"
           >
             <div className="w-full px-6 flex flex-col lg:flex-row gap-6">
               {/* Left Section (Wider) */}
@@ -211,6 +221,171 @@ const Navbar = () => {
                     </Link>
                   ))}
                 </div>
+              </div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* Mobile Menu */}
+      <AnimatePresence>
+        {mobileMenuOpen && (
+          <motion.div
+            initial={{ opacity: 0, x: "100%" }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: "100%" }}
+            transition={{ type: "tween", duration: 0.3 }}
+            className="lg:hidden fixed top-16 left-0 w-full h-[calc(100vh-4rem)] bg-white overflow-y-auto z-40 shadow-lg"
+          >
+            <div className="px-4 py-6">
+              {/* Mobile Search */}
+              <div className="relative mb-6">
+                <input
+                  type="text"
+                  placeholder="Search..."
+                  className="bg-gray-100 text-gray-800 px-4 py-3 w-full rounded-md border-2 border-orange-400 focus:outline-none focus:ring-2 focus:ring-orange-500 placeholder-gray-500 uppercase text-sm"
+                />
+                <FiSearch className="absolute right-4 top-3.5 text-gray-500 text-xl" />
+              </div>
+
+              {/* Mobile Nav Items */}
+              <ul className="space-y-1">
+                <li className={`${isActive("/") ? "text-orange-500" : "text-gray-800"}`}>
+                  <Link 
+                    to="/" 
+                    className="block px-4 py-3 font-semibold hover:bg-gray-100 rounded-md"
+                    onClick={closeMobileMenu}
+                  >
+                    Home
+                  </Link>
+                </li>
+
+                {/* Services Dropdown */}
+                <li>
+                  <div
+                    className={`px-4 py-3 font-semibold cursor-pointer hover:bg-gray-100 rounded-md flex items-center justify-between ${
+                      mobileDropdown === "services" || location.pathname.includes("/services") ? "text-orange-500" : "text-gray-800"
+                    }`}
+                    onClick={() => toggleMobileDropdown("services")}
+                  >
+                    <span>Services</span>
+                    <FaChevronDown className={`text-xs transition-transform ${mobileDropdown === "services" ? "rotate-180" : ""}`} />
+                  </div>
+                  <AnimatePresence>
+                    {mobileDropdown === "services" && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: "auto", opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        className="overflow-hidden"
+                      >
+                        <div className="pl-4 pr-2 py-2 space-y-2">
+                          {dropdownItems.services.map((item, index) => (
+                            <Link
+                              key={index}
+                              to={item.url}
+                              className={`flex items-center gap-3 p-3 rounded-md transition-all hover:bg-gray-100 ${
+                                isActive(item.url) ? "bg-orange-100" : ""
+                              }`}
+                              onClick={closeMobileMenu}
+                            >
+                              <div className="w-10 h-10 flex items-center justify-center border border-gray-300 rounded-md flex-shrink-0">
+                                {React.cloneElement(item.icon, { style: { ...iconStyle, fontSize: "1.5rem" } })}
+                              </div>
+                              <span className="text-sm font-medium text-gray-800">
+                                {item.label}
+                              </span>
+                            </Link>
+                          ))}
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </li>
+
+                <li className={`${isActive("/about") ? "text-orange-500" : "text-gray-800"}`}>
+                  <Link 
+                    to="/about" 
+                    className="block px-4 py-3 font-semibold hover:bg-gray-100 rounded-md"
+                    onClick={closeMobileMenu}
+                  >
+                    About Us
+                  </Link>
+                </li>
+
+                {/* Softwares Dropdown */}
+                <li>
+                  <div
+                    className={`px-4 py-3 font-semibold cursor-pointer hover:bg-gray-100 rounded-md flex items-center justify-between ${
+                      mobileDropdown === "softwares" || location.pathname.includes("/software") ? "text-orange-500" : "text-gray-800"
+                    }`}
+                    onClick={() => toggleMobileDropdown("softwares")}
+                  >
+                    <span>Softwares</span>
+                    <FaChevronDown className={`text-xs transition-transform ${mobileDropdown === "softwares" ? "rotate-180" : ""}`} />
+                  </div>
+                  <AnimatePresence>
+                    {mobileDropdown === "softwares" && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: "auto", opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        className="overflow-hidden"
+                      >
+                        <div className="pl-4 pr-2 py-2 space-y-2">
+                          {dropdownItems.softwares.map((item, index) => (
+                            <Link
+                              key={index}
+                              to={item.url}
+                              className={`flex items-center gap-3 p-3 rounded-md transition-all hover:bg-gray-100 ${
+                                isActive(item.url) ? "bg-orange-100" : ""
+                              }`}
+                              onClick={closeMobileMenu}
+                            >
+                              <div className="w-10 h-10 flex items-center justify-center border border-gray-300 rounded-md flex-shrink-0">
+                                {React.cloneElement(item.icon, { style: { ...iconStyle, fontSize: "1.5rem" } })}
+                              </div>
+                              <span className="text-sm font-medium text-gray-800">
+                                {item.label}
+                              </span>
+                            </Link>
+                          ))}
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </li>
+
+                <li className={`${isActive("/careers") ? "text-orange-500" : "text-gray-800"}`}>
+                  <Link 
+                    to="/careers" 
+                    className="block px-4 py-3 font-semibold hover:bg-gray-100 rounded-md"
+                    onClick={closeMobileMenu}
+                  >
+                    Careers
+                  </Link>
+                </li>
+              </ul>
+
+              {/* Mobile Contact Button */}
+              <motion.button
+                whileTap={{ scale: 0.95 }}
+                className="w-full mt-6 bg-orange-500 text-white px-5 py-3 rounded-md hover:bg-orange-600 uppercase font-semibold"
+                onClick={closeMobileMenu}
+              >
+                Contact Us
+              </motion.button>
+
+              {/* Mobile Social Icons */}
+              <div className="flex justify-center space-x-4 mt-6 pt-6 border-t border-gray-200">
+                {socialIcons.map(item => (
+                  <div
+                    key={item.id}
+                    className={`p-2.5 ${item.bgColor} rounded-lg shadow-lg cursor-pointer hover:opacity-80 transition-opacity`}
+                  >
+                    {item.icon}
+                  </div>
+                ))}
               </div>
             </div>
           </motion.div>

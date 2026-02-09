@@ -4,13 +4,12 @@ import { IoIosCloudDone } from "react-icons/io";
 import { FaCode, FaShieldAlt, FaDatabase, FaRobot, FaMobile } from "react-icons/fa";
 import { FaServer, FaLock, FaCloud, FaCodeBranch, FaNetworkWired, FaTools } from "react-icons/fa";
 import Model from "../../components/Model";
-import Dmodel from "../../components/Dmodel";
 import ContentPage from "../../components/Content";
 import StatsSection from "../../components/Count";
 import ResellerSection from "../../components/Card";
 import Footer from "../../components/Footer";
+import Dmodel from "../../components/Dmodel";
 
-// Tech Icons and Descriptions
 const techDetails = [
   { icon: <FaCode className="text-blue-500 text-[5rem]" />, name: "Web Development", description: "Building responsive and interactive websites using React, Vue, and Next.js." },
   { icon: <FaShieldAlt className="text-red-500 text-[5rem]" />, name: "Cybersecurity", description: "Protecting data with encryption, firewalls, and ethical hacking." },
@@ -20,7 +19,6 @@ const techDetails = [
   { icon: <FaMobile className="text-purple-500 text-[5rem]" />, name: "App Development", description: "Building mobile apps for iOS and Android using Flutter, React Native, and Swift." }
 ];
 
-// Tech Service Categories for Scroller
 const techServices = [
   { icon: <FaRobot />, name: "AI Solutions", bgColor: "bg-blue-500" },
   { icon: <FaLock />, name: "VPN Services", bgColor: "bg-green-500" },
@@ -37,68 +35,98 @@ const HomePage = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % techDetails.length);
+      setCurrentIndex((prev) => (prev + 1) % techDetails.length);
     }, 3000);
     return () => clearInterval(interval);
   }, []);
 
   return (
     <>
-    <div className="w-full flex flex-col items-center bg-white mt-20">
-      {/* ====== Main Section ====== */}
-      <div className="w-full flex flex-row items-center justify-between px-20 py-16 bg-white mt-10">
-        {/* Left: Text Content */}
-        <div className="w-1/2 mt-[-20px]">
-          <motion.h1 className="text-5xl font-semibold text-gray-700 leading-tight" initial={{ opacity: 0, x: -30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}>
-          The mastery of  <span className="text-orange-500">Innovations</span>
-          </motion.h1>
-          <motion.p className="text-sm text-gray-600 leading-relaxing text-justify mt-5 max-w-xl" initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 1.2 }}>
-          We at Codo Stack Solutions revolutionize the digital landscape by delivering powerful, future-driven technologies. From artificial intelligence and smart automation to robust cybersecurity and advanced web engineering, we provide an all-in-one solution that empowers businesses to lead, innovate, and transform.          </motion.p>
-          <div className="mt-10 flex space-x-5">
-            <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="bg-orange-500 text-white px-7 py-3 squared-lg text-lg font-semibold hover:bg-orange-600 transition text-justify leading relaxing">
-              Get Started 
-            </motion.button>
-            <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="border border-gray-500 text-gray-900 px-7 py-3 squared-lg text-lg font-semibold hover:bg-gray-300 transition">
-              Learn More 
-            </motion.button>
-            
-          </div>
-        </div>
+      <div className="w-full flex flex-col items-center bg-white mt-20">
 
-        {/* Right Side: White Monitor with Sliding Content */}
-        {/* Right Side: White Monitor with Sliding Content */}
-        <div className="w-1/2 flex justify-center relative ml-[130px]">
-          <div className="relative w-[600px] h-[350px] bg-white rounded-xl border-[6px] border-gray-400 overflow-hidden flex items-center justify-center">
-            <motion.div
-              key={currentIndex}
-              initial={{ opacity: 0, x: 50 }}
+        {/* ===== Main Section ===== */}
+        <div className="w-full flex flex-col lg:flex-row items-center justify-between px-6 lg:px-20 py-12 lg:py-16 bg-white mt-10">
+
+          {/* Left Content */}
+          <div className="w-full lg:w-1/2 mt-0 lg:mt-[-20px] text-center lg:text-left">
+            <motion.h1
+              className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-700 leading-tight"
+              initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: -50 }}
-              transition={{ duration: 0.8 }}
-              className="flex flex-col items-center text-center space-y-3"
+              transition={{ duration: 1 }}
             >
-              {techDetails[currentIndex].icon}
-              <span className="text-gray-900 text-3xl font-semibold">{techDetails[currentIndex].name}</span>
-              <p className="text-gray-600 text-sm max-w-xs">{techDetails[currentIndex].description}</p>
-            </motion.div>
+              The mastery of <span className="text-orange-500">Innovations</span>
+            </motion.h1>
+
+            <motion.p
+              className="text-sm text-gray-600 mt-5 max-w-xl mx-auto lg:mx-0"
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1.2 }}
+            >
+We at Codo Stack Solutions revolutionize the digital landscape by delivering powerful, future-driven technologies. From artificial intelligence and smart automation to robust cybersecurity and advanced web engineering, we provide an all-in-one solution that empowers businesses to lead, innovate, and transform.
+            </motion.p>
+
+            <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="bg-orange-500 text-white px-7 py-3 text-lg font-semibold hover:bg-orange-600 transition rounded-lg"
+              >
+                Get Started
+              </motion.button>
+
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="border border-gray-500 text-gray-900 px-7 py-3 text-lg font-semibold hover:bg-gray-300 transition rounded-lg"
+              >
+                Learn More
+              </motion.button>
+            </div>
           </div>
 
-          {/* Chatbot in the Corner */}
+          {/* Right Monitor */}
+          <div className="w-full lg:w-1/2 flex justify-center relative mt-10 lg:mt-0 lg:ml-[130px]">
 
+            <div className="relative w-[320px] sm:w-[450px] lg:w-[600px] 
+                            h-[220px] sm:h-[280px] lg:h-[350px] 
+                            bg-white rounded-xl border-[6px] border-gray-400 
+                            overflow-hidden flex items-center justify-center">
 
-          {/* iMac-Style Curved Stand (Untouched) */}
-          <div className="absolute -bottom-14 left-1/2 transform -translate-x-1/2 w-44 h-10 bg-gray-400 rounded-b-3xl"></div>
+              <motion.div
+                key={currentIndex}
+                initial={{ opacity: 0, x: 50 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8 }}
+                className="flex flex-col items-center text-center space-y-3 px-4"
+              >
+                {techDetails[currentIndex].icon}
+                <span className="text-xl sm:text-2xl lg:text-3xl font-semibold">
+                  {techDetails[currentIndex].name}
+                </span>
+                <p className="text-gray-600 text-sm max-w-xs">
+                  {techDetails[currentIndex].description}
+                </p>
+              </motion.div>
+            </div>
+
+            {/* Monitor Stand */}
+            <div className="absolute -bottom-10 lg:-bottom-14 left-1/2 transform -translate-x-1/2 w-32 lg:w-44 h-8 lg:h-10 bg-gray-400 rounded-b-3xl"></div>
+          </div>
         </div>
-      </div>
 
-      {/* ===== Scroller Section ===== */}
-      <div className="w-full py-10 mt-8 bg-[#EFEFEF]">
-        <h3 className="text-2xl font-semibold text-black text-center">
-          Advanced IT & <span className="text-orange-500"> Networking Solutions</span>
-        </h3>
-        <p className="text-md text-gray-600 text-center mb-8">
-          From AI to cloud computing, we cover all your tech needs.
-        </p>
+        {/* ===== Scroller Section ===== */}
+        <div className="w-full py-10 mt-8 bg-[#EFEFEF]">
+
+          <h3 className="text-xl sm:text-2xl font-semibold text-center">
+            Advanced IT & <span className="text-orange-500">Networking Solutions</span>
+          </h3>
+
+          <p className="text-sm sm:text-md text-gray-600 text-center mb-8 px-4">
+            From AI to cloud computing, we cover all your tech needs.
+          </p>
+
         <div className="overflow-hidden">
           <motion.div
             className="flex space-x-10 whitespace-nowrap px-5 mt-5"
@@ -127,14 +155,15 @@ const HomePage = () => {
             ))}
           </motion.div>
         </div>
+        </div>
       </div>
-    </div>
-    <Model/>
-    <Dmodel/>
-    <ContentPage/>
-    <StatsSection/>
-    <ResellerSection/>
-    <Footer/>
+
+      <Model />
+      <Dmodel/>
+      <ContentPage />
+      <StatsSection />
+      <ResellerSection />
+      <Footer />
     </>
   );
 };

@@ -1,6 +1,5 @@
-import React from 'react';
-import { FaPython, FaJava, FaReact, FaRust, FaNodeJs, FaDocker, FaDatabase, FaRuby, FaMagento, FaAws, FaGoogle, FaMicrosoft } from "react-icons/fa";
-import { SiMongodb, SiExpress, SiKubernetes, SiTensorflow, SiGraphql, SiPostgresql, SiRedis } from "react-icons/si";
+import { FaPython, FaJava, FaReact, FaRust, FaNodeJs, FaDocker, FaDatabase,FaMagento, FaAws, FaGoogle } from "react-icons/fa";
+import { SiMongodb, SiExpress } from "react-icons/si";
 
 const iconData = [
   { Icon: FaReact, bgColor: "bg-blue-500" },      
@@ -14,13 +13,7 @@ const iconData = [
   { Icon: FaDocker, bgColor: "bg-blue-400" },     
   { Icon: FaMagento, bgColor: "bg-red-700" },     
   { Icon: FaAws, bgColor: "bg-yellow-500" },      
-  { Icon: FaGoogle, bgColor: "bg-red-500" },      
-  // { Icon: FaMicrosoft, bgColor: "bg-blue-700" },  
-  // { Icon: SiKubernetes, bgColor: "bg-blue-500" }, 
-  // { Icon: SiTensorflow, bgColor: "bg-orange-600" },
-  // { Icon: SiGraphql, bgColor: "bg-pink-500" },    
-  // { Icon: SiPostgresql, bgColor: "bg-blue-900" }, 
-  // { Icon: SiRedis, bgColor: "bg-red-600" }        
+  { Icon: FaGoogle, bgColor: "bg-red-500" },             
 ];
 
 const Model = () => {
