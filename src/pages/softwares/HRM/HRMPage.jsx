@@ -7,7 +7,7 @@ import Botcontent from '../../../components/Botcontent';
 import Botheader from '../../../components/Botheader';
 import Resellerpage from '../../../components/Resellerpage';
 
-const HRM_Page = () => {
+const HRMPage = () => {
   return (
     <div className="mt-32">
     <Botheader/>
@@ -21,4 +21,4 @@ const HRM_Page = () => {
   );
 };
 
-export default HRM_Page;
+export default HRMPage;

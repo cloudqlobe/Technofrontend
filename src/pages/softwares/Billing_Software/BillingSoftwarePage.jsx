@@ -7,7 +7,7 @@ import Billinganimation from '../../../components/Billinganimation';
 import Billingcontent from '../../../components/Billingcontent';
 import Resellerpage from '../../../components/Resellerpage';
 
-const Billing_Software_Page = () => {
+const BillingSoftwarePage = () => {
   return (
     <div className="mt-32">
       <Billingheader/>
@@ -21,4 +21,4 @@ const Billing_Software_Page = () => {
   );
 };
 
-export default Billing_Software_Page;
+export default BillingSoftwarePage;

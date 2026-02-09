@@ -7,7 +7,7 @@ import Pmanimation from '../../../components/Pmanimation';
 import Pmcontents1 from '../../../components/Pmcontents1';
 import Resellerpage from '../../../components/Resellerpage';
 
-const Project_Management = () => {
+const ProjectManagementPage = () => {
   return (
     <div className="mt-32">
      
@@ -23,4 +23,4 @@ const Project_Management = () => {
   );
 };
 
-export default Project_Management;
+export default ProjectManagementPage;

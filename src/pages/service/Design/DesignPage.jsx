@@ -9,7 +9,7 @@ import Designanimation from '../../../components/Designanimation';
 import Designcontent from '../../../components/Designcontent';
 import Resellerpage from '../../../components/Resellerpage';
 
-const Design_Page = () => {
+const DesignPage = () => {
   return (
     <div className="mt-32">
     <Designheader/>
@@ -25,4 +25,4 @@ const Design_Page = () => {
   );
 };
 
-export default Design_Page;
+export default DesignPage;

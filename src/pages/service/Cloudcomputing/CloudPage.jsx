@@ -7,7 +7,7 @@ import Cloudanimation from '../../../components/Cloudanimation';
 import Cloudcontents1 from '../../../components/Cloudcontents1';
 import Resellerpage from '../../../components/Resellerpage';
 
-const Page = () => {
+const CloudPage = () => {
   return (
     <div>
       <Cloudheader/>
@@ -21,4 +21,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default CloudPage;
