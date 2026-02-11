@@ -20,7 +20,7 @@ export default function ResellerSection() {
       </div>
 
       {/* Right Section */}
-      <div className="w-full lg:w-[50%] flex flex-col h-full justify-center px-4 lg:pl-6">
+      <div className="w-full lg:w-[50%] flex flex-col h-full justify-center lg:px-4 lg:pl-6">
         
         {/* Main Heading */}
         <h2 className="text-3xl sm:text-4xl font-semibold text-gray-700 mb-8 lg:ml-6 text-center lg:text-left">

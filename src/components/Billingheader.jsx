@@ -25,37 +25,66 @@ const Billingheader = () => {
 
   return (
     <div className="bg-white text-gray-900 py-16 px-6 md:px-20">
-      <div className="max-w-7xl h-[472px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center ">
+      <style>{`
+        @keyframes icon-only-bounce {
+          0%, 100% {
+            transform: translateY(0);
+          }
+          50% {
+            transform: translateY(-6px);
+          }
+        }
+        .animate-icon-only {
+          animation: icon-only-bounce 2s ease-in-out infinite;
+          display: inline-block;
+        }
+        @media (max-width: 1024px) {
+          .center-below-1024 {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            margin-top: 0 !important;
+          }
+          .center-below-1024 p {
+            text-align: center;
+          }
+          .center-below-1024 .button-container {
+            justify-content: center;
+          }
+        }
+      `}</style>
+
+      <div className="max-w-7xl lg:h-[472px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
         {/* Left Content */}
-        <div className="max-w-xl text-center md:text-left mt-[-210px] ml-[-45px]">
-  <h2 className="text-3xl md:text-4xl font-semibold mb-4">
-    <span className="text-blue-800">Smart </span>
-    <span className="text-orange-500">Billing Automation</span>
-  </h2>
-  <p className="text-gray-700 mb-6 text-sm text-justify leading-relaxed">
-  Upgrade to intelligent billing solutions built for accuracy, speed, and scalability. Our software automates invoicing, manages recurring payments, and delivers real-time financial insights—designed to grow with your business and simplify complex accounting workflows, all while ensuring control and compliance.
-</p>
+        <div className="center-below-1024 max-w-xl text-center md:text-left lg:mt-[-210px] lg:ml-[-45px] px-4 lg:px-0">
+          <h2 className="text-3xl md:text-4xl font-semibold mb-4">
+            <span className="text-blue-800">Smart </span>
+            <span className="text-orange-500">Billing Automation</span>
+          </h2>
+          <p className="text-gray-700 mb-6 text-sm text-justify leading-relaxed">
+            Upgrade to intelligent billing solutions built for accuracy, speed, and scalability. Our software automates invoicing, manages recurring payments, and delivers real-time financial insights—designed to grow with your business and simplify complex accounting workflows, all while ensuring control and compliance.
+          </p>
 
-  <div className="mt-10 flex space-x-5">
-    <motion.button 
-      whileHover={{ scale: 1.05 }} 
-      whileTap={{ scale: 0.95 }} 
-      className="bg-orange-500 text-white px-7 py-3 squared-lg text-lg font-semibold hover:bg-orange-600 transition text-justify leading-relaxed">
-      Try Demo
-    </motion.button>
-    <motion.button 
-      whileHover={{ scale: 1.05 }} 
-      whileTap={{ scale: 0.95 }} 
-      className="border border-gray-500 text-gray-900 px-7 py-3 squared-lg text-lg font-semibold hover:bg-gray-300 transition">
-      View Features
-    </motion.button>
-  </div>
-</div>
+          <div className="button-container mt-10 flex flex-col sm:flex-row gap-4 sm:gap-5 items-center justify-center md:justify-start">
+            <motion.button 
+              whileHover={{ scale: 1.05 }} 
+              whileTap={{ scale: 0.95 }} 
+              className="bg-orange-500 text-white px-7 py-3 text-lg font-semibold hover:bg-orange-600 transition w-full sm:w-auto">
+              Try Demo
+            </motion.button>
+            <motion.button 
+              whileHover={{ scale: 1.05 }} 
+              whileTap={{ scale: 0.95 }} 
+              className="border border-gray-500 text-gray-900 px-7 py-3 text-lg font-semibold hover:bg-gray-300 transition w-full sm:w-auto">
+              View Features
+            </motion.button>
+          </div>
+        </div>
 
 
-        {/* Right: Tablet Design with 3D Effect */}
-        <div className="flex justify-center mt-[-150px]">
+        {/* Right: Tablet Design with 3D Effect (Hidden below 1024px) */}
+        <div className="hidden lg:flex justify-center mt-[-150px]">
           <div
             className="relative w-[750px] h-[390px] bg-[#fdfdfd] rounded-[2rem] border-[4px] border-gray-400 p-6 flex flex-col items-center pt-10 shadow-2xl"
             style={{
@@ -82,22 +111,6 @@ const Billingheader = () => {
 
       {/* Reseller Section: Full Width of Screen */}
       
-
-      {/* Icon Animation Only */}
-      <style>{`
-        @keyframes icon-only-bounce {
-          0%, 100% {
-            transform: translateY(0);
-          }
-          50% {
-            transform: translateY(-6px);
-          }
-        }
-        .animate-icon-only {
-          animation: icon-only-bounce 2s ease-in-out infinite;
-          display: inline-block;
-        }
-      `}</style>
     </div>
   );
 };

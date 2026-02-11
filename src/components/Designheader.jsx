@@ -5,30 +5,59 @@ const Designheader = () => {
   return (
     <div className="h-[600px] flex flex-col items-center w-full bg-white">
       {/* UI/UX Section */}
-      <div className="flex flex-col md:flex-row items-center justify-between w-full px-6 md:px-20 py-20">
-        {/* Left Content */}
-        <div className="md:w-1/2 text-center md:text-left mt-[-140px] ml-[-5px]">
-        <h2 className="text-2xl md:text-4xl font-semibold mb-4">
-  <span className="text-blue-800">Pioneering </span>
-  <span className="text-orange-500">Next-Gen Design Solutions</span>
-</h2>
+      <div className="
+        flex flex-col xl:flex-row
+        items-center
+        justify-center xl:justify-between
+        w-full
+        px-6 xl:px-20
+        py-20
+      ">
 
-  <p className="mt-4 text-gray-600 text-sm text-justify leading-relaxing">
-    Crafting visually stunning designs that make a lasting impression. Our design solutions combine creativity, strategy, and innovation to elevate your brand and captivate your audience. We focus on delivering sleek, user-friendly designs that resonate across all platforms. Let us help you create a powerful visual identity for your business.
-  </p>
-  <div className="mt-10 flex space-x-5">
-    <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="bg-orange-500 text-white px-7 py-3 squared-lg text-lg font-semibold hover:bg-orange-600 transition text-justify leading relaxing">
-      Start Your Design Journey
-    </motion.button>
-    <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="border border-gray-500 text-gray-900 px-7 py-3 squared-lg text-lg font-semibold hover:bg-gray-300 transition">
-      Discover Our Approach
-    </motion.button>
-  </div>
-</div>
+        {/* LEFT CONTENT */}
+        <div className="
+          w-full xl:w-1/2
+          text-center xl:text-left
+          mt-0 xl:mt-[-140px]
+          flex flex-col items-center xl:items-start
+        ">
+          <h2 className="text-3xl sm:text-4xl lg:text-4xl font-semibold text-gray-700 leading-tight"
+          >
+            <span className="text-blue-800">Pioneering </span>
+            <span className="text-orange-500">Next-Gen Design Solutions</span>
+          </h2>
+
+          <p className="mt-4 text-gray-600 text-sm leading-relaxed text-justify max-w-xl">
+            Crafting visually stunning designs that make a lasting impression. Our design solutions combine creativity, strategy, and innovation to elevate your brand and captivate your audience. We focus on delivering sleek, user-friendly designs that resonate across all platforms. Let us help you create a powerful visual identity for your business.          </p>
+<div className="mt-10 flex flex-col sm:flex-row gap-4 sm:gap-5 w-full sm:w-auto justify-center xl:justify-start">
+            <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="
+  w-full sm:w-auto
+  bg-orange-500 text-white
+  px-7 py-3
+  squared-lg text-lg font-semibold
+  hover:bg-orange-600 transition
+"
+>
+              Start Your Design Journey
+            </motion.button>
+            <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="
+  w-full sm:w-auto
+  border border-gray-500 text-gray-900
+  px-7 py-3
+  squared-lg text-lg font-semibold
+  hover:bg-gray-300 transition
+"
+>
+              Discover Our Approach
+            </motion.button>
+          </div>
+
+        </div>
+
 
 
         {/* Right Visual */}
-        <div className="md:w-1/2 relative flex justify-center items-center mt-0 md:mt-[-110px] h-[500px] ">
+        <div className="hidden xl:flex md:w-1/2 relative flex justify-center items-center mt-0 md:mt-[-110px] h-[500px] ">
           {/* Phone */}
           <div className="relative w-64 h-[480px] rounded-[2.5rem] bg-white border-[6px] border-gray-300 shadow-xl pt-20 pb-10 z-10 overflow-visible">
             {/* Notches */}
@@ -71,36 +100,36 @@ const Designheader = () => {
           {/* Left Floating UI */}
           <div className="absolute left-0 top-0 h-full flex flex-col justify-between py-6 z-20 mt-[20px]">
             {/* Inputs */}
-           
-         
+
+
 
             {/* Toggles */}
-            
+
 
             {/* Progress Circle - 75% */}
-            
+
 
             {/* Icon Buttons */}
-           
+
           </div>
 
           {/* Right Floating UI */}
           <div className="absolute right-0 top-0 h-full flex flex-col justify-between py-6 z-20">
             {/* Buttons */}
-            
+
 
             {/* Progress Circle - 95% */}
-            
+
 
             {/* Action Buttons */}
-            
-            
+
+
           </div>
         </div>
       </div>
 
       {/* Become a Reseller Section */}
-      
+
     </div>
   );
 };

@@ -8,39 +8,67 @@ import { motion } from "framer-motion";
 const Botheader = () => {
   return (
     <>
+      <style>{`
+        @media (max-width: 1229px) {
+          .center-below-1230 {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            margin-top: 0 !important;
+          }
+          .center-below-1230 p {
+            text-align: center;
+          }
+          .center-below-1230 .button-container {
+            justify-content: center;
+          }
+          .center-below-1230 h2 {
+            white-space: normal;
+          }
+        }
+        @media (min-width: 1024px) and (max-width: 1229px) {
+          .bot-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 60vh;
+          }
+        }
+      `}</style>
+
       {/* Bot Section */}
       <div className="bg-white text-gray-900 py-16 px-6 md:px-20">
-        <div className="max-w-7xl h-[472px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div className="bot-container max-w-7xl min-[1230px]:h-[472px] mx-auto grid grid-cols-1 min-[1230px]:grid-cols-2 gap-12 items-center">
 
           {/* Left Content */}
-          <div className="max-w-xl text-center md:text-left mt-[-210px] ml-[-45px]">
-          <h2 className="text-4xl font-semibold mb-4 whitespace-nowrap">
-    <span className="text-blue-800">Revolutionize
-    </span>
-    <span className="text-orange-500"> Your Business with AI</span>
-  </h2>
+          <div className="center-below-1230 max-w-xl text-center md:text-left min-[1230px]:mt-[-210px] min-[1230px]:ml-[-45px] px-4 min-[1230px]:px-0">
+            <h2 className="text-3xl md:text-4xl font-semibold mb-4 min-[1230px]:whitespace-nowrap">
+              <span className="text-blue-800">Revolutionize </span>
+              <span className="text-orange-500">Your Business with AI</span>
+            </h2>
 
-  <p className="text-gray-700 mb-6 text-sm text-justify leading-relaxed">
-  Transform your business with intelligent, scalable AI systems designed for real-world impact. From advanced machine learning to real-time data analysis, our custom solutions seamlessly streamline operations, boost overall productivity, and drive smarter, faster, and more strategic decisions.
-</p>
+            <p className="text-gray-700 mb-6 text-sm text-justify leading-relaxed">
+              Transform your business with intelligent, scalable AI systems designed for real-world impact. From advanced machine learning to real-time data analysis, our custom solutions seamlessly streamline operations, boost overall productivity, and drive smarter, faster, and more strategic decisions.
+            </p>
 
+            <div className="button-container mt-10 flex flex-col sm:flex-row gap-4 sm:gap-5 items-center justify-center md:justify-start">
+              <motion.button 
+                whileHover={{ scale: 1.05 }} 
+                whileTap={{ scale: 0.95 }} 
+                className="bg-orange-500 text-white px-7 py-3 rounded-lg text-lg font-semibold hover:bg-orange-600 transition w-full sm:w-auto">
+                Explore AI Potential
+              </motion.button>
+              <motion.button 
+                whileHover={{ scale: 1.05 }} 
+                whileTap={{ scale: 0.95 }} 
+                className="border border-gray-500 text-gray-900 px-7 py-3 rounded-lg text-lg font-semibold hover:bg-gray-300 transition w-full sm:w-auto">
+                View Use Cases
+              </motion.button>
+            </div>
+          </div>
 
-
-  <div className="mt-10 flex space-x-5">
-    <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="bg-orange-500 text-white px-7 py-3 squared-lg text-lg font-semibold hover:bg-orange-600 transition">
-      Explore AI Potential
-    </motion.button>
-    <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="border border-gray-500 text-gray-900 px-7 py-3 squared-lg text-lg font-semibold hover:bg-gray-300 transition">
-      View Use Cases
-    </motion.button>
-  </div>
-</div>
-
-
-
-
-          {/* Phone with Bubbles */}
-          <div className="flex justify-center relative w-full max-w-sm h-[480px] ml-[150px] mt-[-120px]">
+          {/* Phone with Bubbles (Hidden below 1230px) */}
+          <div className="hidden min-[1230px]:flex justify-center relative w-full max-w-sm h-[480px] ml-[150px] mt-[-120px]">
             {/* Phone */}
             <div className="relative w-[300px] h-[460px] rounded-[2.5rem] border-[4px] border-gray-400 shadow-xl bg-white flex items-center justify-center overflow-hidden z-10">
               <video

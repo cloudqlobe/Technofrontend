@@ -12,15 +12,14 @@ import Resellerpage from '../../../components/Resellerpage';
 const DesignPage = () => {
   return (
     <div className="mt-32">
-    <Designheader/>
-    <Resellerpage/>
-   <Designcontent/>
-    <Designanimation/>
-    <Designcontents1/>
+      <Designheader />
+      <Resellerpage />
+      <Designcontent />
+      <Designanimation />
+      <Designcontents1 />
+      <Webregister />
+      <Footer />
 
-      <Webregister/>
-      <Footer/>
-  
     </div>
   );
 };

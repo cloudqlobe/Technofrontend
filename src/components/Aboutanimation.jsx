@@ -44,13 +44,13 @@ const OurVision = () => {
   return (
     <div className="bg-[#0a1d56] text-white py-24 px-6 sm:px-12">
       {/* Vision Section */}
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-12">
         {/* Left: Vision Content */}
-        <div className="md:w-1/2 space-y-6 mt-[-150px]">
-          <h2 className="text-3xl md:text-3xl font-semibold text-yellow-400 ml-[-110px]">
+<div className="md:w-1/2 space-y-6 mt-[-86px] text-center md:text-left mx-auto">
+          <h2 className="text-3xl md:text-3xl font-semibold text-yellow-400">
             The Vision Behind Codo Stack
           </h2>
-          <p className="text-blue-100 text-lg leading-relaxed text-justify ml-[-110px]">
+          <p className="text-blue-100 text-lg leading-relaxed text-justify">
             At <span className="text-white font-semibold">Codo Stack Solutions</span>, our vision is to revolutionize
             the digital landscape by merging creativity with technology. We empower
             businesses through intelligent automation, user-centric design, and scalable
@@ -59,7 +59,7 @@ const OurVision = () => {
         </div>
 
         {/* Right: Vision Image with Form */}
-        <div className="relative flex justify-center items-center gap-8 mt-[-20px] ml-[60px]">
+<div className="relative hidden lg:flex justify-center items-center gap-8 mt-[-20px] ml-[60px]">
           {/* Left side icons */}
           <div className="flex flex-col items-center justify-center gap-8 ml-[40px]">
             <div className="bg-yellow-400 text-blue-900 p-4 squared-lg shadow-md text-xl">

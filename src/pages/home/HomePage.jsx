@@ -88,13 +88,14 @@ const HomePage = () => {
                 Get Started
               </motion.button>
 
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="border border-gray-500 text-gray-900 px-7 py-3 text-lg font-semibold hover:bg-gray-300 transition rounded-lg"
-              >
-                Learn More
-              </motion.button>
+<motion.button
+  whileHover={{ scale: 1.05 }}
+  whileTap={{ scale: 0.95 }}
+  className="hidden md:inline-flex border border-gray-500 text-gray-900 px-7 py-3 text-lg font-semibold hover:bg-gray-300 transition rounded-lg"
+>
+  Learn More
+</motion.button>
+
             </div>
           </div>
 

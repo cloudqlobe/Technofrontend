@@ -10,15 +10,13 @@ import Resellerpage from '../../components/Resellerpage';
 
 const AboutPage = () => {
   return (
-    <div className="mt-32">
+    <div>
       
       <Aboutheader/>
       <Resellerpage/>
       <Aboutcontent/>
       <Aboutanimation/>
-   
       <Aboutcontent1/> 
-     
       <Webregister/>
    <Footer/>
     </div>

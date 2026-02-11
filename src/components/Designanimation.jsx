@@ -24,36 +24,34 @@ const designFeatures = [
 
 const DesignServices = () => {
   return (
-    <div className="bg-blue-900 text-white py-16 px-6 md:px-20">
-      <div className="max-w-7xl mx-auto space-y-12">
+    <div className="bg-blue-900 text-white py-16 px-6 md:px-20 overflow-hidden">
+      <div className="max-w-8xl mx-auto space-y-12">
         
-        {/* Top Section: Text + Image */}
+        {/* Top Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          
           {/* Left: Text */}
-          <div className='mt-[-10px]'>
-  <h2 className="text-3xl md:text-4xl font-semibold text-yellow-400 mb-4 ml-[-38px]">
-    Creating Impactful UI/UX Designs
-  </h2>
-  <p className="text-white text-lg leading-relaxing text-justify ml-[-38px]">
-    We craft intuitive UI/UX designs that elevate user engagement. Our approach integrates wireframing, prototyping, and user testing to deliver seamless, responsive designs. Focused on both aesthetics and functionality, we align designs with your brand’s vision.
-  </p>
-</div>
-
-
-
+          <div>
+            <h2 className="text-3xl md:text-4xl font-semibold text-yellow-400 mb-4">
+              Creating Impactful UI/UX Designs
+            </h2>
+            <p className="text-white text-lg leading-relaxed text-justify">
+              We craft intuitive UI/UX designs that elevate user engagement. Our approach integrates wireframing, prototyping, and user testing to deliver seamless, responsive designs. Focused on both aesthetics and functionality, we align designs with your brand’s vision.
+            </p>
+          </div>
 
           {/* Right: Image */}
           <div className="flex justify-center">
             <img
               src={image22}
               alt="UI/UX Design Illustration"
-               className="w-full max-w-[500px] h-[500px] "
+              className="w-full max-w-[500px] h-auto md:h-[500px] object-contain"
             />
           </div>
         </div>
 
-        {/* Bottom: Full-width Features */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 bg-blue-800 p-6 squared-xl w-[1350px] ml-[-40px]">
+        {/* Bottom: Features */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 bg-blue-800 p-6 rounded-xl">
           {designFeatures.map((feature, index) => (
             <div
               key={index}
@@ -64,6 +62,7 @@ const DesignServices = () => {
             </div>
           ))}
         </div>
+
       </div>
     </div>
   );

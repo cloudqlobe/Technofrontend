@@ -41,34 +41,48 @@ const Mobheader = () => {
 
   return (
     <>
-      {/* Mobile Header Section */}
-      <section className="w-full h-[600px] bg-white py-12 px-6 md:px-16 flex flex-col md:flex-row items-center justify-between gap-10">
-        {/* Left Content */}
-        <div className="max-w-xl text-left md:text-left mt-[-240px] ml-[5px]">
-        <h2 className="text-3xl md:text-4xl font-semibold mb-4">
-  <span className="text-blue-800"> Build Seamless </span>
-  <span className="text-orange-500">Apps for Business</span>
-</h2>
-<p className="text-sm text-gray-600 mb-6 leading-relaxed text-justify max-w-lg ml-[5px]">
-  We specialize in building high-performance mobile apps that offer smooth user experiences. Utilizing cross-platform and native technologies, our apps enhance productivity, engagement, and user satisfaction.
-</p>
 
-{/* Action Buttons */}
-<div className="mt-10 flex space-x-5">
-  <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="bg-orange-500 text-white px-7 py-3 squared-lg text-lg font-semibold hover:bg-orange-600 transition">
-    Start Your Project
-  </motion.button>
-  <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="border border-gray-500 text-gray-900 px-7 py-3 squared-lg text-lg font-semibold hover:bg-gray-300 transition">
-    Discover Our Work
-  </motion.button>
-</div>
+      <section className="w-full h-[600px] bg-white py-12 px-6 md:px-16 flex flex-col md:flex-row phone-hide:flex-row
+  items-center
+  justify-center phone-hide:justify-between
+  gap-10">
+
+        {/* Left Content */}
+        <div className="
+  max-w-xl
+  text-center phone-hide:text-left
+  mt-[-240px]
+  ml-0 phone-hide:ml-[5px]
+">
+          <h2 className="text-3xl md:text-4xl font-semibold mb-4">
+            <span className="text-blue-800"> Build Seamless </span>
+            <span className="text-orange-500">Apps for Business</span>
+          </h2>
+          <p className="
+  text-sm text-gray-600 mb-6 leading-relaxed
+  text-justify phone-hide:text-justify
+  max-w-lg
+  mx-auto phone-hide:ml-[5px]
+">
+            We specialize in building high-performance mobile apps that offer smooth user experiences. Utilizing cross-platform and native technologies, our apps enhance productivity, engagement, and user satisfaction.
+          </p>
+
+          {/* Action Buttons */}
+          <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="bg-orange-500 text-white px-7 py-3 squared-lg text-lg font-semibold hover:bg-orange-600 transition">
+              Start Your Project
+            </motion.button>
+            <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="border border-gray-500 text-gray-900 px-7 py-3 squared-lg text-lg font-semibold hover:bg-gray-300 transition">
+              Discover Our Work
+            </motion.button>
+          </div>
 
         </div>
 
         {/* Phone and Icons Section */}
-        <div className="relative flex items-center justify-center mx-auto mt-[-150px] ml-[320px]">
+        <div className="relative flex items-center justify-center mx-auto mt-[-150px] desktop-1430:ml-[320px] ml-0 phone-hide:flex hidden">
           {/* Left Side Icons */}
-          <div className="flex flex-col justify-center gap-12 mr-4 items-center">
+          <div className="flex flex-col justify-center gap-12 ml-4 items-center">
             <div className="flex flex-col items-center">
               <div className="bg-black text-white p-5 rounded-full">
                 <FaApple size={48} />
@@ -119,7 +133,7 @@ const Mobheader = () => {
       </section>
 
       {/* Reseller Section */}
-      
+
     </>
   );
 };

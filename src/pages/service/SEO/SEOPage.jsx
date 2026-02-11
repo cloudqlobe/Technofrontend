@@ -17,8 +17,6 @@ const SEOPage = () => {
       <Hostingcontent2/>
       <Webregister/>
       <Footer/>
-
-   
     </div>
   );
 };

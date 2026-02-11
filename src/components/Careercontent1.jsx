@@ -25,7 +25,7 @@ const jobs = [
   },
 ];
 
-const JobPortal = () => {
+const Careercontent1 = () => {
   return (
     <div className="min-h-screen w-full p-8 bg-gray-100">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -130,4 +130,4 @@ const JobPortal = () => {
   );
 };
 
-export default JobPortal;
+export default Careercontent1;

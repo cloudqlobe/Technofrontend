@@ -1,42 +1,48 @@
 import React from "react";
 import { motion } from "framer-motion";
- // adjust path if needed
 
 export default function AboutUsSection() {
   return (
-    <div className="bg-white px-8 py-12">
+    <div className="bg-white px-6 md:px-8 py-12 desktop-1500:mt-32">
       {/* Top Section */}
-      <div className="min-h-[504px] flex flex-col md:flex-row items-center">
-  {/* Left Side */}
-  <div className="w-full md:w-1/2 ml-[35px] max-w-xl text-center md:text-left mt-[-200px]">
-  <h2 className="text-3xl md:text-4xl font-semibold mb-4">
-    <span className="text-blue-800">One Partner, </span>
-    <span className="text-orange-500">All Digital Solutions</span>
-  </h2>
-  <p className="text-gray-700 mb-6 text-sm text-justify leading-relaxed">
-    Codo Stack Pvt Ltd offers secure, scalable, and intelligent digital services. From web and app development to cloud hosting, cybersecurity, UI/UX design, and chatbot solutions—we deliver everything under one roof to drive growth, enhance user experience, and protect your data.
-  </p>
+      <div className="min-h-[504px] flex flex-col desktop-1100:flex-row items-center  justify-around">
+        {/* Left Side */}
+        <div className="w-full desktop-1100:w-1/2 desktop-1500:ml-[35px] max-w-xl 
+  flex flex-col items-center text-center 
+  desktop-1100:items-start desktop-1100:text-left 
+  mx-auto desktop-1100:mx-0
+  desktop-1500:mt-[-200px]">
+          <h2 className="text-2xl sm:text-3xl desktop-1500:text-4xl font-semibold mb-4">
+            <span className="text-blue-800">One Partner, </span>
+            <span className="text-orange-500">All Digital Solutions</span>
+          </h2>
+          <p className="text-gray-700 mb-6 text-sm text-justify leading-relaxed max-w-lg mx-auto desktop-1100:mx-0">
+Codo Stack Pvt Ltd offers secure, scalable, and intelligent digital services. From web and app development to cloud hosting, cybersecurity, UI/UX design, and chatbot solutions—we deliver everything under one roof to drive growth, enhance user experience, and protect your data.          </p>
 
-  <div className="mt-10 flex space-x-5">
-    <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="bg-orange-500 text-white px-7 py-3 squared-lg text-lg font-semibold hover:bg-orange-600 transition">
-      Explore Services
-    </motion.button>
-    <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="border border-gray-500 text-gray-900 px-7 py-3 squared-lg text-lg font-semibold hover:bg-gray-300 transition">
-      Who We Are
-    </motion.button>
-  </div>
-</div>
+          <div className="mt-5 flex flex-col desktop-1100:flex-row gap-4 desktop-1100:gap-5 justify-center desktop-1100:justify-start w-full">
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="bg-orange-500 text-white px-6 sm:px-7 py-3 text-base sm:text-lg font-semibold hover:bg-orange-600 transition w-full sm:w-auto"
+            >
+              Explore Services
+            </motion.button>
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="border border-gray-500 text-gray-900 px-6 sm:px-7 py-3 text-base sm:text-lg font-semibold hover:bg-gray-300 transition w-full sm:w-auto"
+            >
+              Who We Are
+            </motion.button>
+          </div>
+        </div>
 
-
-
-        {/* Right Side - Infographic Cards */}
-        <div className="relative w-full md:w-1/2 h-[600px] ml-[220px] mt-[-100px] scale-[0.85] origin-top-left">
-
+        {/* Right Side - Infographic Cards (Desktop 1500px+ Only) */}
+        <div className="hidden desktop-1500:block relative w-full desktop-1500:w-1/2 h-[600px] ml-[220px] mt-[-100px] scale-[0.85] origin-top-left">
           {/* Connecting Lines */}
           <div className="absolute left-[130px] top-[270px] h-[110px] w-2 bg-blue-500 z-0 shadow-lg rounded"></div>
           <div className="absolute left-[250px] top-[430px] w-[100px] h-2 bg-red-500 z-0 shadow-lg rounded"></div>
           <div className="absolute left-[600px] top-[125px] w-[173px] h-2 bg-orange-500 z-0 shadow-lg rounded"></div>
-          {/* <div className="absolute left-[515px] top-[-60px] h-[100px] w-2 bg-orange-400 z-0 shadow-lg rounded"></div> */}
           <div className="absolute left-[500px] top-[210px] h-[70px] w-2 bg-green-500 z-0 shadow-lg rounded"></div>
 
           {/* Card: Analyse */}
@@ -71,10 +77,42 @@ export default function AboutUsSection() {
             <button className="mt-4 px-4 py-1 bg-green-500 text-white rounded-xl text-sm shadow">CLICK HERE</button>
           </div>
         </div>
-      </div>
 
+        <div className="hidden desktop-1100:grid desktop-1500:hidden w-1/2 grid-cols-2 gap-6 max-w-lg">
+          {/* Analyse Card */}
+          <div className="p-4 bg-white border-6 border-blue-500 rounded-2xl shadow-xl text-center">
+            <div className="text-4xl mb-2">📊</div>
+            <h3 className="text-base font-semibold">ANALYSE</h3>
+            <p className="text-xs text-gray-600 mt-2">Lorem ipsum dolor sit amet.</p>
+            <button className="mt-3 px-3 py-1 bg-blue-500 text-white rounded-xl text-xs shadow">CLICK HERE</button>
+          </div>
+
+          {/* Idea Card */}
+          <div className="p-4 bg-white border-6 border-red-500 rounded-2xl shadow-xl text-center">
+            <div className="text-4xl mb-2">💡</div>
+            <h3 className="text-base font-semibold">IDEA</h3>
+            <p className="text-xs text-gray-600 mt-2">Lorem ipsum dolor sit amet.</p>
+            <button className="mt-3 px-3 py-1 bg-red-500 text-white rounded-xl text-xs shadow">CLICK HERE</button>
+          </div>
+
+          {/* Management Card */}
+          <div className="p-4 bg-white border-6 border-orange-400 rounded-2xl shadow-xl text-center">
+            <div className="text-4xl mb-2">🧑‍💼</div>
+            <h3 className="text-base font-semibold">MANAGEMENT</h3>
+            <p className="text-xs text-gray-600 mt-2">Lorem ipsum dolor sit amet.</p>
+            <button className="mt-3 px-3 py-1 bg-orange-400 text-white rounded-xl text-xs shadow">CLICK HERE</button>
+          </div>
+
+          {/* Target Market Card */}
+          <div className="p-4 bg-white border-6 border-green-500 rounded-2xl shadow-xl text-center">
+            <div className="text-4xl mb-2">🎯</div>
+            <h3 className="text-base font-semibold">TARGET MARKET</h3>
+            <p className="text-xs text-gray-600 mt-2">Lorem ipsum dolor sit amet.</p>
+            <button className="mt-3 px-3 py-1 bg-green-500 text-white rounded-xl text-xs shadow">CLICK HERE</button>
+          </div>
+        </div>
+      </div>
       {/* Bottom Section - Reseller */}
-      
     </div>
   );
 }
