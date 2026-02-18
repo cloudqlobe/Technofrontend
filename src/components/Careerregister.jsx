@@ -33,143 +33,62 @@ const Careerregister = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic here (e.g., send the data to an API)
     console.log(formData);
   };
 
-  return (
-    <div className="bg-white py-20 px-6 sm:px-12 mt-[-50px]  border border-gray-100">
-      <div className="max-w-7xl mx-auto">
-        {/* Full-width Centered Heading Section */}
+  const fields = [
+    { id: 'firstName', label: 'First Name *', type: 'text', name: 'firstName' },
+    { id: 'lastName', label: 'Last Name *', type: 'text', name: 'lastName' },
+    { id: 'email', label: 'Email *', type: 'email', name: 'email' },
+    { id: 'position', label: 'Position *', type: 'text', name: 'position' },
+    { id: 'experience', label: 'Experience *', type: 'text', name: 'experience' },
+    { id: 'phone', label: 'Phone *', type: 'text', name: 'phone' },
+    { id: 'location', label: 'Location *', type: 'text', name: 'location' },
+  ];
 
-        {/* Content: Image on Left and Form on Right in a Single Row */}
-        <div className="flex items-center gap-12">
-          {/* Left Side: Image/Illustration */}
-          <div className="flex justify-center items-center w-1/2">
+  return (
+    <div className="bg-white py-10 md:py-20 px-4 sm:px-6 md:px-12 border border-gray-100">
+      <div className="max-w-7xl mx-auto">
+        <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
+
+          {/* Image: top on mobile, left on desktop */}
+          <div className="flex justify-center items-center w-full lg:w-1/2 order-1 lg:order-1">
             <img
               src={image22}
               alt="Join our team"
-              className="w-[850px] h-[600px] ml-[-100px] "
+              className="w-full max-w-[500px] lg:max-w-full h-[250px] sm:h-[350px] md:h-[450px] lg:h-[600px] object-cover rounded-lg"
             />
           </div>
 
-          {/* Right Side: Form */}
-          <div className="w-1/2 ml-[100px]">
-            <form onSubmit={handleSubmit} className="w-full max-w-xl bg-white p-8 squared-lg shadow-lg border border-orange-300">
-              <div className="space-y-4"> {/* This will add spacing between each row */}
-                {/* First Name */}
-                <div className="flex items-center gap-6 mb-4">
-                  <label htmlFor="firstName" className="w-1/3 text-lg font-default text-gray-500">
-                    First Name *
-                  </label>
-                  <input
-                    type="text"
-                    id="firstName"
-                    name="firstName"
-                    value={formData.firstName}
-                    onChange={handleChange}
-                    required
-                    className="w-2/3 px-4 py-2 border border-gray-300 squared-lg"
-                  />
-                </div>
+          {/* Form: below image on mobile, right on desktop */}
+          <div className="w-full lg:w-1/2 order-2 lg:order-2">
+            <form
+              onSubmit={handleSubmit}
+              className="w-full bg-white p-5 sm:p-8 shadow-lg border border-orange-300"
+            >
+              <div className="space-y-4">
 
-                {/* Last Name */}
-                <div className="flex items-center gap-6 mb-4">
-                  <label htmlFor="lastName" className="w-1/3 text-lg font-default text-gray-500">
-                    Last Name *
-                  </label>
-                  <input
-                    type="text"
-                    id="lastName"
-                    name="lastName"
-                    value={formData.lastName}
-                    onChange={handleChange}
-                    required
-                    className="w-2/3 px-4 py-2 border border-gray-300 squared-lg"
-                  />
-                </div>
-
-                {/* Email */}
-                <div className="flex items-center gap-6 mb-4">
-                  <label htmlFor="email" className="w-1/3 text-lg font-default text-gray-500">
-                    Email *
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                    className="w-2/3 px-4 py-2 border border-gray-300 squared-lg"
-                  />
-                </div>
-
-                {/* Position */}
-                <div className="flex items-center gap-6 mb-4">
-                  <label htmlFor="position" className="w-1/3 text-lg font-default text-gray-500">
-                    Position *
-                  </label>
-                  <input
-                    type="text"
-                    id="position"
-                    name="position"
-                    value={formData.position}
-                    onChange={handleChange}
-                    required
-                    className="w-2/3 px-4 py-2 border border-gray-300 squared-lg"
-                  />
-                </div>
-
-                {/* Experience */}
-                <div className="flex items-center gap-6 mb-4">
-                  <label htmlFor="experience" className="w-1/3 text-lg font-default text-gray-500">
-                    Experience *
-                  </label>
-                  <input
-                    type="text"
-                    id="experience"
-                    name="experience"
-                    value={formData.experience}
-                    onChange={handleChange}
-                    required
-                    className="w-2/3 px-4 py-2 border border-gray-300 squared-lg"
-                  />
-                </div>
-
-                {/* Phone */}
-                <div className="flex items-center gap-6 mb-4">
-                  <label htmlFor="phone" className="w-1/3 text-lg font-default text-gray-500">
-                    Phone *
-                  </label>
-                  <input
-                    type="text"
-                    id="phone"
-                    name="phone"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    required
-                    className="w-2/3 px-4 py-2 border border-gray-300 squared-lg"
-                  />
-                </div>
-                <div className="flex items-center gap-6 mb-4">
-                  <label htmlFor="location" className="w-1/3 text-lg font-default text-gray-500">
-                    Location *
-                  </label>
-                  <input
-                    type="text"
-                    id="location"
-                    name="location"
-                    value={formData.location}
-                    onChange={handleChange}
-                    required
-                    className="w-2/3 px-4 py-2 border border-gray-300 squared-lg"
-                  />
-                </div>
+                {/* Text Fields */}
+                {fields.map(({ id, label, type, name }) => (
+                  <div key={id} className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-6">
+                    <label htmlFor={id} className="sm:w-1/3 text-base font-default text-gray-500 shrink-0">
+                      {label}
+                    </label>
+                    <input
+                      type={type}
+                      id={id}
+                      name={name}
+                      value={formData[name]}
+                      onChange={handleChange}
+                      required
+                      className="w-full sm:w-2/3 px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-orange-200"
+                    />
+                  </div>
+                ))}
 
                 {/* Upload Resume */}
-                <div className="flex items-center gap-6 mb-4">
-                  <label htmlFor="file" className="w-1/3 text-lg font-default text-gray-500">
+                <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-6">
+                  <label htmlFor="file" className="sm:w-1/3 text-base font-default text-gray-500 shrink-0">
                     Upload Resume *
                   </label>
                   <input
@@ -178,26 +97,14 @@ const Careerregister = () => {
                     name="file"
                     onChange={handleFileChange}
                     required
-                    className="w-2/3 px-4 py-2 border border-gray-300 squared-lg"
+                    className="w-full sm:w-2/3 px-2 py-2 border border-gray-300 rounded text-sm text-gray-600 focus:outline-none"
                   />
                 </div>
-
-                {/* CTC */}
-                
-
-                {/* Location */}
-               
-
-                {/* Cover Letter */}
-               
-
-                {/* Captcha */}
-                
               </div>
 
               <button
                 type="submit"
-                className="bg-orange-400 text-white px-6 py-3 squared-lg w-full hover:bg-orange-700 transition mt-[20px]"
+                className="bg-orange-400 text-white px-6 py-3 rounded w-full hover:bg-orange-700 transition mt-6"
               >
                 Submit
               </button>

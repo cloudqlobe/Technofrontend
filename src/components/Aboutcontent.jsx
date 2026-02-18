@@ -6,7 +6,7 @@ import image6 from "../assets/Image/5397869.jpg";
 const Webcontents = () => {
   return (
     <div className="min-h-screen w-full bg-white px-6 sm:px-12 py-10 overflow-hidden">
-      <h1 className="text-3xl sm:text-4xl font-semibold text-center text-black mb-8 mt-10">
+      <h1 className="text-3xl sm:text-4xl text-center text-black mb-8 mt-10">
         Advanced <span className="text-blue-800">Web Development Solutions</span>
       </h1>
 
@@ -22,7 +22,7 @@ const Webcontents = () => {
         </div>
         {/* Content */}
         <div className="flex flex-col justify-center w-full md:w-auto text-center md:text-left px-2 md:px-0">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-800 mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl text-gray-800 mb-4">
             Interactive <span className="text-orange-400">Frontend Interfaces</span>
           </h2>
           <p className="text-gray-600 text-base sm:text-lg leading-relaxed mb-4 text-justify">
@@ -36,7 +36,7 @@ Our design-first approach ensures every visual element has a functional purpose.
       <div className="grid md:grid-cols-2 items-center gap-6 mb-12 max-w-7xl mx-auto">
         {/* Content */}
         <div className="flex flex-col justify-center w-full md:w-auto text-center md:text-left px-2 md:px-0 order-2 md:order-1">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-800 mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl text-gray-800 mb-4">
             Powerful <span className="text-orange-400">Backend Systems</span>
           </h2>
           <p className="text-gray-600 text-base sm:text-lg leading-relaxed mb-4 text-justify">

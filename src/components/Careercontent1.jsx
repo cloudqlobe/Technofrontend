@@ -27,18 +27,19 @@ const jobs = [
 
 const Careercontent1 = () => {
   return (
-    <div className="min-h-screen w-full p-8 bg-gray-100">
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+    <div className="min-h-screen w-full p-4 sm:p-6 md:p-8 bg-gray-100">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8 max-w-7xl mx-auto">
+
         {/* Left: Job Listings */}
-        <div className="lg:col-span-2 space-y-8 w-full lg:w-[650px]"> {/* Decreased width */}
+        <div className="lg:col-span-2 space-y-6 md:space-y-8 w-full">
           {jobs.map((job, index) => (
             <div
               key={index}
-              className="bg-white squared-lg shadow-md p-6 w-full min-h-[255px] ml-[50px]" // Adjusted width and padding
+              className="bg-white rounded-lg shadow-md p-4 sm:p-6 w-full"
             >
-              <div className="flex justify-between items-start">
-                <div>
-                  <h2 className="text-xl font-semibold text-gray-800">{job.title}</h2>
+              <div className="flex justify-between items-start gap-2">
+                <div className="flex-1">
+                  <h2 className="text-base sm:text-xl font-semibold text-gray-800">{job.title}</h2>
                   <p className="text-sm text-gray-600 mt-1">
                     {job.company} • ⭐ {job.rating} • {job.reviews}
                   </p>
@@ -49,7 +50,7 @@ const Careercontent1 = () => {
                   </div>
                   <p className="mt-2 text-sm text-gray-600">{job.tags.join(" • ")}</p>
                 </div>
-                <div className="text-xs text-gray-500 whitespace-nowrap">{job.daysAgo}</div>
+                <div className="text-xs text-gray-500 whitespace-nowrap shrink-0">{job.daysAgo}</div>
               </div>
 
               {/* Apply Button */}
@@ -62,10 +63,11 @@ const Careercontent1 = () => {
           ))}
         </div>
 
-        {/* Right: Demat Account & Investment Promo */}
-        <div className="space-y-6 lg:ml-[-100px]"> {/* Negative margin to shift left */}
+        {/* Right: Promo Cards */}
+        <div className="space-y-6 w-full">
+
           {/* DEMAT Account Offer */}
-          <div className=" w-[550px] bg-white rounded-lg shadow-md p-6 text-center space-y-4 ml-[-50px] ">
+          <div className="w-full bg-white rounded-lg shadow-md p-5 sm:p-6 text-center space-y-4">
             <div className="bg-orange-500 text-white text-sm font-bold px-3 py-1 rounded-full inline-block">
               #1 in India
             </div>
@@ -73,7 +75,7 @@ const Careercontent1 = () => {
               <p className="text-xs text-gray-600">Best Retail Brokerages</p>
               <p className="text-xs text-gray-600 mb-2">ASIAMONEY BROKERS POLL 2023</p>
             </div>
-            <h3 className="text-lg font-semibold text-gray-800 leading-tight">
+            <h3 className="text-base sm:text-lg font-semibold text-gray-800 leading-tight">
               OPEN FREE* DEMAT AND TRADING ACCOUNT IN 15 MIN**
             </h3>
             <p className="text-xs text-gray-500">Limited Period Offer</p>
@@ -92,7 +94,7 @@ const Careercontent1 = () => {
           </div>
 
           {/* Orange Club Investment CTA */}
-          <div className=" w-[550px] bg-blue-900 text-white rounded-lg shadow-md p-6 space-y-3 ml-[-50px]">
+          <div className="w-full bg-blue-900 text-white rounded-lg shadow-md p-5 sm:p-6 space-y-3">
             <div className="flex items-center gap-3">
               <div className="text-3xl">🪑</div>
               <p className="text-sm">
@@ -109,20 +111,20 @@ const Careercontent1 = () => {
         </div>
       </div>
 
-      {/* Pagination with arrows */}
-      <div className="mt-10 flex justify-center items-center gap-2">
-        <button className="w-10 h-10 bg-white border border-gray-300 rounded hover:bg-gray-200 text-lg">
+      {/* Pagination */}
+      <div className="mt-8 md:mt-10 flex justify-center items-center gap-2 flex-wrap">
+        <button className="w-9 h-9 sm:w-10 sm:h-10 bg-white border border-gray-300 rounded hover:bg-gray-200 text-lg">
           ⬅
         </button>
         {[1, 2, 3, 4, 5].map((num) => (
           <button
             key={num}
-            className="w-10 h-10 bg-white border border-gray-300 rounded hover:bg-gray-200 transition text-lg font-medium"
+            className="w-9 h-9 sm:w-10 sm:h-10 bg-white border border-gray-300 rounded hover:bg-gray-200 transition text-base sm:text-lg font-medium"
           >
             {num}
           </button>
         ))}
-        <button className="w-10 h-10 bg-white border border-gray-300 rounded hover:bg-gray-200 text-lg">
+        <button className="w-9 h-9 sm:w-10 sm:h-10 bg-white border border-gray-300 rounded hover:bg-gray-200 text-lg">
           ➡
         </button>
       </div>
