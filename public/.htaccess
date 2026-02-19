@@ -1,0 +1,14 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Allow sitemap.xml (IMPORTANT)
+  RewriteRule ^sitemap\.xml$ - [L]
+
+  # Allow robots.txt
+  RewriteRule ^robots\.txt$ - [L]
+
+  # React SPA routing
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /index.html [L]
+</IfModule>

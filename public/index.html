@@ -1,45 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Basic -->
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+
+    <!-- Title (CRITICAL) -->
+    <title>
+      CodoStack | Website Development, Mobile Apps, Cloud & UI/UX Services
+    </title>
+
+    <!-- Meta Description -->
     <meta
       name="description"
-      content="codo stack"
+      content="CodoStack provides professional website development, mobile app development, cloud computing solutions, UI & UX design, and reliable hosting services for businesses."
     />
+
+    <!-- Keywords (optional but okay) -->
+    <meta
+      name="keywords"
+      content="website development, mobile app development, cloud computing services, ui ux design, hosting services, web development company, software development"
+    />
+
+    <!-- Author -->
+    <meta name="author" content="CodoStack" />
+
+    <!-- Theme -->
+    <meta name="theme-color" content="#000000" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="%PUBLIC_URL%/favicon.png" />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.jpeg" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.codostack.com/" />
+
+    <!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="CodoStack | Web, Mobile & Cloud Solutions" />
+    <meta
+      property="og:description"
+      content="Expert website development, mobile apps, cloud computing, UI/UX design, and hosting services tailored for your business growth."
+    />
+    <meta property="og:url" content="https://www.codostack.com/" />
+    <meta property="og:image" content="https://www.codostack.com/og-image.jpg" />
+    <meta property="og:site_name" content="CodoStack" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="CodoStack | Digital Solutions Company" />
+    <meta
+      name="twitter:description"
+      content="Web development, mobile apps, cloud solutions, UI/UX design, and secure hosting services by CodoStack."
+    />
+    <meta name="twitter:image" content="https://www.codostack.com/og-image.jpg" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow" />
+
+    <!-- Web App Manifest -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-
-    <title>codostack</title>
-
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "CodoStack",
+        "url": "https://www.codostack.com",
+        "logo": "https://www.codostack.com/logo.jpeg",
+        "description": "CodoStack offers website development, mobile app development, cloud computing, UI & UX design, and hosting services.",
+        "sameAs": [
+          "https://www.linkedin.com/company/codostack/posts/?feedView=all",
+          "https://www.facebook.com/share/1KQ2SgDp8g/?mibextid=wwXIfr"
+        ],
+        "services": [
+          "Website Development",
+          "Mobile App Development",
+          "Cloud Computing",
+          "UI & UX Design",
+          "Hosting Services"
+        ]
+      }
+    </script>
   </head>
+
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<noscript>
+  <h1>Welcome to Codo Stack</h1>
+  <p>
+    We specialize in building scalable websites, web applications, and
+    custom software solutions. Please enable JavaScript to get the best
+    experience on our platform.
+  </p>
+</noscript>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>
