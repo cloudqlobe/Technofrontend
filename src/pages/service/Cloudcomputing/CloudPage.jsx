@@ -6,18 +6,22 @@ import Cloudcontent from '../../../components/Cloudcontent';
 import Cloudanimation from '../../../components/Cloudanimation';
 import Cloudcontents1 from '../../../components/Cloudcontents1';
 import Resellerpage from '../../../components/Resellerpage';
+import { Helmet } from 'react-helmet';
 
 const CloudPage = () => {
   return (
     <div>
-      <Cloudheader/>
-      <Resellerpage/>
-      <Cloudcontent/>
-      <Cloudanimation/>
-      <Cloudcontents1/>
-         <Webregister />
+      <Helmet>
+        <title>Secure & Scalable Cloud Services for Business | Codo Stack</title>
+      </Helmet>
+      <Cloudheader />
+      <Resellerpage />
+      <Cloudcontent />
+      <Cloudanimation />
+      <Cloudcontents1 />
+      <Webregister />
       <Footer />
-    </div>   
+    </div>
   );
 };
 

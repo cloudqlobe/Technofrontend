@@ -13,8 +13,8 @@ import CRMPage from "./pages/softwares/CRM/CRMPage";
 import ERPPage from "./pages/softwares/ERP/ERPPage";
 import ProjectManagementPage from "./pages/softwares/Project Management/ProjectManagementPage";
 import BillingSoftwarePage from "./pages/softwares/Billing_Software/BillingSoftwarePage";
-import HRMPage from "./pages/softwares/HRM/HRMPage";
 import ScrollToTop from "./ScrollToTop";
+import ChatbotPage from "./pages/softwares/Chatbot/ChatbotPage";
 
 
 
@@ -45,7 +45,7 @@ const App = () => {
             <Route path="/erp" element={<ERPPage />} />
             <Route path="/project-management" element={<ProjectManagementPage />} />
             <Route path="/billing" element={<BillingSoftwarePage />} />
-            <Route path="/hrm" element={<HRMPage />} />
+            <Route path="/chatbot" element={<ChatbotPage />} />
           </Routes>
         } />
       </Routes>

@@ -6,11 +6,14 @@ import Pmcontent from '../../../components/Pmcontent';
 import Pmanimation from '../../../components/Pmanimation';
 import Pmcontents1 from '../../../components/Pmcontents1';
 import Resellerpage from '../../../components/Resellerpage';
+import { Helmet } from 'react-helmet';
 
 const ProjectManagementPage = () => {
   return (
     <div className="mt-32">
-     
+     <Helmet>
+  <title>Project Management Software Solutions | Codo Stack</title>
+</Helmet>
       <Pmheader/>
       <Resellerpage/>
       <Pmcontent/>

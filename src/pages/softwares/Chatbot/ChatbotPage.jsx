@@ -6,19 +6,23 @@ import Botanimation from '../../../components/Botanimation';
 import Botcontent from '../../../components/Botcontent';
 import Botheader from '../../../components/Botheader';
 import Resellerpage from '../../../components/Resellerpage';
+import { Helmet } from 'react-helmet';
 
-const HRMPage = () => {
+const ChatbotPage = () => {
   return (
     <div className="mt-32">
-    <Botheader/>
-    <Resellerpage/>
-      <Botcontent/>
-      <Botanimation/>
-      <Botcontents1/>
-      <Webregister/>
-    <Footer/>
+      <Helmet>
+        <title>AI Chatbot Development Services | Codo Stack</title>
+      </Helmet>
+      <Botheader />
+      <Resellerpage />
+      <Botcontent />
+      <Botanimation />
+      <Botcontents1 />
+      <Webregister />
+      <Footer />
     </div>
   );
 };
 
-export default HRMPage;
+export default ChatbotPage;

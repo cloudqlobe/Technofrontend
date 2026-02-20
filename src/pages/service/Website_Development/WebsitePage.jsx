@@ -7,6 +7,7 @@ import Webanimation from '../../../components/Webanimation';
 import Webcontnet2 from '../../../components/Webcontnet2';
 import Webregister from '../../../components/Webregister';
 import Resellerpage from '../../../components/Resellerpage';
+import { Helmet } from 'react-helmet';
 
 
 
@@ -14,6 +15,9 @@ import Resellerpage from '../../../components/Resellerpage';
 const WebsitePage = () => {
   return (
     <div className="mt-32">
+            <Helmet>
+              <title>Web Development Company in India | Codo Stack</title>
+            </Helmet>
       <Webheader/>
       <Resellerpage/>
      <Webcontents/>

@@ -38,7 +38,7 @@ const dropdownItems = {
     { icon: <FaQuinscape style={iconStyle} />, label: "ERP", url: "/software/erp" },
     { icon: <SiSitecore style={iconStyle} />, label: "Project Management", url: "/software/project-management" },
     { icon: <FaPhoenixSquadron style={iconStyle} />, label: "Billing Software", url: "/software/billing" },
-    { icon: <FaRobot style={iconStyle} />, label: "Chatbot", url: "/software/hrm" },
+    { icon: <FaRobot style={iconStyle} />, label: "Chatbot", url: "/software/chatbot" },
   ],
 };
 

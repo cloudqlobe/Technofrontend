@@ -10,6 +10,7 @@ import ResellerSection from "../../components/Card";
 import Footer from "../../components/Footer";
 import Dmodel from "../../components/Dmodel";
 import { useLocation } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const techDetails = [
   { icon: <FaCode className="text-blue-500 text-[5rem]" />, name: "Web Development", description: "Building responsive and interactive websites using React, Vue, and Next.js." },
@@ -54,6 +55,9 @@ const HomePage = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Web Development Company in India | Codo Stackk</title>
+      </Helmet>
       <div className="w-full flex flex-col items-center bg-white mt-20">
 
         {/* ===== Main Section ===== */}
@@ -88,13 +92,13 @@ const HomePage = () => {
                 Get Started
               </motion.button>
 
-<motion.button
-  whileHover={{ scale: 1.05 }}
-  whileTap={{ scale: 0.95 }}
-  className="hidden md:inline-flex border border-gray-500 text-gray-900 px-7 py-3 text-lg font-semibold hover:bg-gray-300 transition rounded-lg"
->
-  Learn More
-</motion.button>
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="hidden md:inline-flex border border-gray-500 text-gray-900 px-7 py-3 text-lg font-semibold hover:bg-gray-300 transition rounded-lg"
+              >
+                Learn More
+              </motion.button>
 
             </div>
           </div>
