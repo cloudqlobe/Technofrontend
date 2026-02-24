@@ -10,7 +10,7 @@ import {
   FaGithub
 } from "react-icons/fa";
 import { MdOutlineArrowForward } from "react-icons/md";
-import logo from "../assets/Image/logo1.jpeg";
+import logo from "../assets/Image/footerimg1.png";
 import { Link } from "react-router-dom";
 
 export default function Footer() {
@@ -185,7 +185,7 @@ export default function Footer() {
               <img
                 src={logo}
                 alt="Company Logo"
-                className="h-[80px] sm:h-[100px] md:h-[180px] w-auto max-w-full object-contain"
+                className="sm:h-[100px] md:h-[180px] w-auto max-w-full object-contain"
               />
             </div>
 

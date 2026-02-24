@@ -14,8 +14,7 @@ export default function StatsSection() {
   };
 
   return (
-    <div className="flex items-center justify-between bg-gradient-to-r from-blue-600 to-blue-800 min-h-[100vh] relative px-10 overflow-x-hidden">
-      {/* Left Text Section */}
+<div className="hidden md:flex items-center justify-between bg-gradient-to-r from-blue-600 to-blue-800 min-h-[100vh] relative px-10 overflow-x-hidden">      {/* Left Text Section */}
       <div className="flex flex-col items-start text-white max-w-xl mt-[-400px] ml-[40px] space-y-4">
         <h1 className="text-2xl font-semibold leading-snug mr-[50px]">
           Celebrating Milestones, <span className="text-yellow-400">Driving Excellence</span>
