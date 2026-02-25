@@ -1,3 +1,4 @@
+import emailjs from "emailjs-com";
 import { useState } from "react";
 import {
   FaPython,
@@ -29,7 +30,7 @@ const iconData = [
 ];
 
 const Model = () => {
-
+emailjs.init(process.env.REACT_APP_EMAILJS_PUBLIC_KEY);
   const [formData, setFormData] = useState({
   name: "",
   email: "",
@@ -45,8 +46,25 @@ const handleChange = (e) => {
 
 const handleSubmit = (e) => {
   e.preventDefault();
-  setSubmitted(true);
-  setFormData({ name: "", email: "", company: "", message: "" });
+
+  emailjs
+    .send(
+      process.env.REACT_APP_EMAILJS_SERVICE_ID,
+      process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+      {
+        name: formData.name,
+        email: formData.email,
+        company: formData.company,
+        message: formData.message,
+      }
+    )
+    .then(() => {
+      setSubmitted(true);
+      setFormData({ name: "", email: "", company: "", message: "" });
+    })
+    .catch((error) => {
+      console.error("EmailJS Error:", error.text || error);
+    });
 };
 
 
