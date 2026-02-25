@@ -89,14 +89,13 @@ const Navbar = () => {
           onMouseLeave={() => setShowIcons(false)}
         >
           {/* Logo */}
-          <div className="flex items-center gap-3">
+<div className="flex items-center gap-3">
             <img
               src={logo}
               alt="Logo"
-              className="w-[140px] lg:w-[182px] object-contain"
+              className="w-[200px] lg:w-[198px] object-contain"
             />
           </div>
-
           <AnimatePresence>
             {showIcons && (
               <motion.div
@@ -119,33 +118,62 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Nav Items */}
-        <ul className="hidden lg:flex space-x-4 text-gray-800 text-base font-semibold" ref={dropdownRef}>
-          <li className={`px-3 cursor-pointer ${isActive("/") ? "text-orange-500" : ""}`}>
-            <Link to="/">Home</Link>
-          </li>
-          <li
-            className={`relative px-3 cursor-pointer ${dropdown === "services" || location.pathname.includes("/services") ? "text-orange-500" : ""}`}
-            onClick={() => toggleDropdown("services")}
-          >
-            <span className="flex items-center gap-2">
-              Services <FaChevronDown className="text-xs" />
-            </span>
-          </li>
-          <li className={`px-3 cursor-pointer ${isActive("/about") ? "text-orange-500" : ""}`}>
-            <Link to="/about">About Us</Link>
-          </li>
-          <li
-            className={`relative px-3 cursor-pointer ${dropdown === "softwares" || location.pathname.includes("/software") ? "text-orange-500" : ""}`}
-            onClick={() => toggleDropdown("softwares")}
-          >
-            <span className="flex items-center gap-2">
-              Softwares <FaChevronDown className="text-xs" />
-            </span>
-          </li>
-          <li className={`px-3 cursor-pointer ${isActive("/careers") ? "text-orange-500" : ""}`}>
-            <Link to="/careers">Careers</Link>
-          </li>
-        </ul>
+<nav aria-label="Primary Navigation">
+  <ul
+    className="hidden lg:flex space-x-4 text-gray-800 text-base font-semibold"
+    ref={dropdownRef}
+  >
+    <li
+      className={`px-3 cursor-pointer ${isActive("/") ? "text-blue-500" : ""}`}
+    >
+      <Link to="/" className="p-name">
+        Home
+      </Link>
+    </li>
+
+    <li
+      className={`relative px-3 cursor-pointer ${
+        dropdown === "services" || location.pathname.includes("/services")
+          ? "text-blue-500"
+          : ""
+      }`}
+      onClick={() => toggleDropdown("services")}
+    >
+      <span className="flex items-center gap-2 p-name">
+        Services <FaChevronDown className="text-xs" />
+      </span>
+    </li>
+
+    <li
+      className={`px-3 cursor-pointer ${isActive("/about") ? "text-blue-500" : ""}`}
+    >
+      <Link to="/about" className="p-name">
+        About Us
+      </Link>
+    </li>
+
+    <li
+      className={`relative px-3 cursor-pointer ${
+        dropdown === "softwares" || location.pathname.includes("/software")
+          ? "text-blue-500"
+          : ""
+      }`}
+      onClick={() => toggleDropdown("softwares")}
+    >
+      <span className="flex items-center gap-2 p-name">
+        Softwares <FaChevronDown className="text-xs" />
+      </span>
+    </li>
+
+    <li
+      className={`px-3 cursor-pointer ${isActive("/careers") ? "text-blue-500" : ""}`}
+    >
+      <Link to="/careers" className="p-name">
+        Careers
+      </Link>
+    </li>
+  </ul>
+</nav>
 
         {/* Desktop Search and Contact */}
         <div className="hidden lg:flex items-center space-x-10">
@@ -153,13 +181,13 @@ const Navbar = () => {
             <input
               type="text"
               placeholder="Search..."
-              className="bg-gray-100 text-gray-800 px-4 py-2 w-full rounded-md border-2 border-orange-400 focus:outline-none focus:ring-2 focus:ring-orange-500 placeholder-gray-500 uppercase"
+              className="bg-gray-100 text-gray-800 px-4 py-2 w-full rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-gray-500 uppercase"
             />
-            <FiSearch className="absolute right-4 top-2.5 text-gray-500 text-xl cursor-pointer hover:text-orange-500" />
+            <FiSearch className="absolute right-4 top-2.5 text-gray-500 text-xl cursor-pointer hover:text-blue-500" />
           </div>
           <Link
             to="/#contact"
-            className="bg-orange-500 text-white px-5 py-2 rounded-md hover:bg-orange-600 uppercase"
+            className="bg-blue-500 text-white px-5 py-2 rounded-md hover:bg-blue-600 uppercase"
           >
             Contact Us
           </Link>
@@ -187,7 +215,7 @@ const Navbar = () => {
             <div className="w-full px-6 flex flex-col lg:flex-row gap-6">
               {/* Left Section (Wider) */}
               <div className="basis-[400px] shrink-0 p-5 bg-white rounded-md shadow-sm">
-                <h3 className="text-2xl font-bold text-orange-600 mb-4 capitalize">
+                <h3 className="text-2xl font-bold text-blue-600 mb-4 capitalize">
                   {dropdown === "services" ? "Our Services" : "Our Softwares"}
                 </h3>
                 <div className="h-px bg-gray-300 my-2"></div>
@@ -208,7 +236,7 @@ const Navbar = () => {
                     <Link
                       to={item.url}
                       key={index}
-                      className={`flex items-center gap-4 p-4 rounded-md transition-all hover:bg-gray-100 ${isActive(item.url) ? "bg-orange-100" : ""
+                      className={`flex items-center gap-4 p-4 rounded-md transition-all hover:bg-gray-100 ${isActive(item.url) ? "bg-blue-100" : ""
                         }`}
                     >
                       <div className="w-16 h-16 flex items-center justify-center border-2 border-gray-300 rounded-md">
@@ -242,14 +270,14 @@ const Navbar = () => {
                 <input
                   type="text"
                   placeholder="Search..."
-                  className="bg-gray-100 text-gray-800 px-4 py-3 w-full rounded-md border-2 border-orange-400 focus:outline-none focus:ring-2 focus:ring-orange-500 placeholder-gray-500 uppercase text-sm"
+                  className="bg-gray-100 text-gray-800 px-4 py-3 w-full rounded-md border-2 border-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-gray-500 uppercase text-sm"
                 />
                 <FiSearch className="absolute right-4 top-3.5 text-gray-500 text-xl" />
               </div>
 
               {/* Mobile Nav Items */}
               <ul className="space-y-1">
-                <li className={`${isActive("/") ? "text-orange-500" : "text-gray-800"}`}>
+                <li className={`${isActive("/") ? "text-blue-500" : "text-gray-800"}`}>
                   <Link
                     to="/"
                     className="block px-4 py-3 font-semibold hover:bg-gray-100 rounded-md"
@@ -262,7 +290,7 @@ const Navbar = () => {
                 {/* Services Dropdown */}
                 <li>
                   <div
-                    className={`px-4 py-3 font-semibold cursor-pointer hover:bg-gray-100 rounded-md flex items-center justify-between ${mobileDropdown === "services" || location.pathname.includes("/services") ? "text-orange-500" : "text-gray-800"
+                    className={`px-4 py-3 font-semibold cursor-pointer hover:bg-gray-100 rounded-md flex items-center justify-between ${mobileDropdown === "services" || location.pathname.includes("/services") ? "text-blue-500" : "text-gray-800"
                       }`}
                     onClick={() => toggleMobileDropdown("services")}
                   >
@@ -282,7 +310,7 @@ const Navbar = () => {
                             <Link
                               key={index}
                               to={item.url}
-                              className={`flex items-center gap-3 p-3 rounded-md transition-all hover:bg-gray-100 ${isActive(item.url) ? "bg-orange-100" : ""
+                              className={`flex items-center gap-3 p-3 rounded-md transition-all hover:bg-gray-100 ${isActive(item.url) ? "bg-blue-100" : ""
                                 }`}
                               onClick={closeMobileMenu}
                             >
@@ -300,7 +328,7 @@ const Navbar = () => {
                   </AnimatePresence>
                 </li>
 
-                <li className={`${isActive("/about") ? "text-orange-500" : "text-gray-800"}`}>
+                <li className={`${isActive("/about") ? "text-blue-500" : "text-gray-800"}`}>
                   <Link
                     to="/about"
                     className="block px-4 py-3 font-semibold hover:bg-gray-100 rounded-md"
@@ -313,7 +341,7 @@ const Navbar = () => {
                 {/* Softwares Dropdown */}
                 <li>
                   <div
-                    className={`px-4 py-3 font-semibold cursor-pointer hover:bg-gray-100 rounded-md flex items-center justify-between ${mobileDropdown === "softwares" || location.pathname.includes("/software") ? "text-orange-500" : "text-gray-800"
+                    className={`px-4 py-3 font-semibold cursor-pointer hover:bg-gray-100 rounded-md flex items-center justify-between ${mobileDropdown === "softwares" || location.pathname.includes("/software") ? "text-blue-500" : "text-gray-800"
                       }`}
                     onClick={() => toggleMobileDropdown("softwares")}
                   >
@@ -333,7 +361,7 @@ const Navbar = () => {
                             <Link
                               key={index}
                               to={item.url}
-                              className={`flex items-center gap-3 p-3 rounded-md transition-all hover:bg-gray-100 ${isActive(item.url) ? "bg-orange-100" : ""
+                              className={`flex items-center gap-3 p-3 rounded-md transition-all hover:bg-gray-100 ${isActive(item.url) ? "bg-blue-100" : ""
                                 }`}
                               onClick={closeMobileMenu}
                             >
@@ -351,7 +379,7 @@ const Navbar = () => {
                   </AnimatePresence>
                 </li>
 
-                <li className={`${isActive("/careers") ? "text-orange-500" : "text-gray-800"}`}>
+                <li className={`${isActive("/careers") ? "text-blue-500" : "text-gray-800"}`}>
                   <Link
                     to="/careers"
                     className="block px-4 py-3 font-semibold hover:bg-gray-100 rounded-md"
@@ -366,7 +394,7 @@ const Navbar = () => {
               <Link
                 to="/#contact"
                 onClick={closeMobileMenu}
-                className="block text-center bg-orange-500 text-white px-5 py-3 rounded-md uppercase font-semibold"
+                className="block text-center bg-blue-500 text-white px-5 py-3 rounded-md uppercase font-semibold"
               >
                 Contact Us
               </Link>

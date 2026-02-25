@@ -60,10 +60,10 @@ const ERPHeader = () => {
         <div className="max-w-screen-2xl lg:h-[536px] mx-auto flex flex-col lg:flex-row justify-between items-start gap-12">
           {/* Left Side Content */}
           <div className="center-below-1230 max-w-xl text-center md:text-left lg:mt-[50px] lg:ml-[50px] px-4 lg:px-0">
-            <h2 className="text-2xl md:text-4xl font-semibold mb-4">
+            <h1 className="text-2xl md:text-4xl font-semibold mb-4">
               <span className="text-blue-800">Optimize </span>
               <span className="text-orange-500">Your Operations with ERP</span>
-            </h2>
+            </h1>
             <p className="text-gray-700 mb-6 text-sm text-justify leading-relaxed ml-0 md:ml-[5px]">
               Integrate all business functions into a unified platform with our tailored ERP solutions. Streamline operations across finance, HR, and inventory.
               Enhance efficiency, minimize errors, and drive productivity. Get real-time insights to make smarter decisions and accelerate growth.

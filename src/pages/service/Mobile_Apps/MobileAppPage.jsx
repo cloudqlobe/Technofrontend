@@ -6,14 +6,12 @@ import Mobcontent from '../../../components/Mobcontent';
 import Mobanimation from '../../../components/Mobanimation';
 import Mobcontent1 from '../../../components/Mobcontent1';
 import Resellerpage from '../../../components/Resellerpage';
-import { Helmet } from 'react-helmet';
+import usePageTitle from '../../../hooks/usePageTitle';
 
 const MobileAppPage = () => {
+   usePageTitle("Mobile App Development Company in India | Codo Stack");
   return (
     <div className="mt-32">
-            <Helmet>
-        <title>Mobile App Development Company in India | Codo Stack</title>
-      </Helmet>
       <Mobheader/>
       <Resellerpage/>
       <Mobcontent/>

@@ -10,7 +10,7 @@ import ResellerSection from "../../components/Card";
 import Footer from "../../components/Footer";
 import Dmodel from "../../components/Dmodel";
 import { useLocation } from "react-router-dom";
-import { Helmet } from "react-helmet";
+import usePageTitle from "../../hooks/usePageTitle";
 
 const techDetails = [
   { icon: <FaCode className="text-blue-500 text-[5rem]" />, name: "Web Development", description: "Building responsive and interactive websites using React, Vue, and Next.js." },
@@ -35,8 +35,26 @@ const techServices = [
 const HomePage = () => {
   const contactRef = useRef(null);
   const [currentIndex, setCurrentIndex] = useState(0);
-
   const location = useLocation();
+ usePageTitle("Web Development Company in India | Codo Stack");
+
+  useEffect(() => {
+    document.title = "Web Development Company in India | Codo Stack";
+
+    const schema = {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      name: "Codo Stack",
+      url: "https://www.codostack.com/",
+    };
+
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.text = JSON.stringify(schema);
+    document.head.appendChild(script);
+
+    return () => script.remove();
+  }, []);
 
   useEffect(() => {
     if (location.hash === "#contact") {
@@ -55,9 +73,6 @@ const HomePage = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Web Development Company in India | Codo Stackk</title>
-      </Helmet>
       <div className="w-full flex flex-col items-center bg-white mt-20">
 
         {/* ===== Main Section ===== */}
@@ -66,12 +81,12 @@ const HomePage = () => {
           {/* Left Content */}
           <div className="w-full lg:w-1/2 mt-0 lg:mt-[-20px] text-center lg:text-left">
             <motion.h1
-              className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-700 leading-tight"
+              className="text-3xl sm:text-4xl lg:text-5xl font-default text-gray-500 leading-tight"
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1 }}
             >
-              The mastery of <span className="text-orange-500">Innovations</span>
+              The mastery of <span className="text-blue-600">Innovations</span>
             </motion.h1>
 
             <motion.p
@@ -87,7 +102,7 @@ const HomePage = () => {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-orange-500 text-white px-7 py-3 text-lg font-semibold hover:bg-orange-600 transition rounded-lg"
+                className="bg-blue-500 text-white px-7 py-3 text-lg font-semibold hover:bg-blue-600 transition squared-lg"
               >
                 Get Started
               </motion.button>
@@ -95,7 +110,7 @@ const HomePage = () => {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="hidden md:inline-flex border border-gray-500 text-gray-900 px-7 py-3 text-lg font-semibold hover:bg-gray-300 transition rounded-lg"
+                className="hidden md:inline-flex border border-gray-500 text-gray-900 px-7 py-3 text-lg font-semibold hover:bg-gray-300 transition squared-lg"
               >
                 Learn More
               </motion.button>

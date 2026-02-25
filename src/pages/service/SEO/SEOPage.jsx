@@ -6,14 +6,12 @@ import Hostinganimation from '../../../components/Hostinganimation';
 import Hostingcontent2 from '../../../components/Hostingcontent2';
 import Webregister from '../../../components/Webregister';
 import Resellerpage from '../../../components/Resellerpage';
-import { Helmet } from 'react-helmet';
+import usePageTitle from '../../../hooks/usePageTitle';
 
 const SEOPage = () => {
+   usePageTitle("SEO & Digital Marketing Services in India | Codo Stack");
   return (
     <div className="mt-32">
-                  <Helmet>
-        <title>SEO & Digital Marketing Services in India | Codo Stack</title>
-      </Helmet>
       <Hostingheader/>
       <Resellerpage/>
       <Hostingcontent/>

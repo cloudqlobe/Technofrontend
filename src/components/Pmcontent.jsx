@@ -6,12 +6,12 @@ import image6 from "../assets/Image/5397869.jpg";
 const Pmcontents = () => {
   return (
     <div className="bg-white text-gray-900 px-4 sm:px-6 md:px-12 py-8 md:py-12 space-y-12 md:space-y-24">
-      <h1 className="text-3xl md:text-4xl text-center text-black mb-10 mt-8">
+      <h2 className="text-3xl md:text-4xl text-center text-black mb-10 mt-8">
         Scalable{" "}
         <span className="text-blue-800">
           Project Management Systems & Software Solutions
         </span>
-      </h1>
+      </h2>
 
       {/* Front-End Section */}
       <div className="flex flex-col md:grid md:grid-cols-2 items-center gap-8 mb-16 max-w-7xl mx-auto text-center md:text-left">
@@ -30,7 +30,7 @@ const Pmcontents = () => {
 Efficient{" "}
             <span className="text-orange-500">Task & Workflow Management</span>          </h2>
 
-          <p className="text-gray-600 mt-3 text-sm sm:text-base md:text-lg text-justify md:mt-[30px]">
+          <p className="mt-3 text-[#4d5156] text-[15px] sm:text-[16px] md:text-[17px] leading-[1.75] tracking-[0.01em] font-normal text-justify ">
             Our project management system provides a centralized dashboard where
             users can create, assign, prioritize, and track tasks across
             customizable workflows. With drag-and-drop interfaces and visual
@@ -40,7 +40,7 @@ Efficient{" "}
             on high-impact priorities—resulting in better productivity and
             consistent output across the board.
             </p>
-          <p className="text-gray-600 mt-3 text-sm sm:text-base md:text-lg text-justify md:mt-[30px]">
+          <p className="mt-3 text-[#4d5156] text-[15px] sm:text-[16px] md:text-[17px] leading-[1.75] tracking-[0.01em] font-normal text-justify ">
           Teams can categorize and group projects by client, department, timeline, or urgency while applying industry-standard templates for agile, waterfall, or hybrid methods. Dependencies, approvals, and sub-task hierarchies allow for better control over complex deliverables. Managers can evaluate team capacity and performance through real-time insights and reassign workloads instantly to avoid burnout. This eliminates chaos, minimizes human error, and increases accountability at every organizational level.
           </p>
         </div>
@@ -54,7 +54,7 @@ Efficient{" "}
 Real-Time{" "}
             <span className="text-orange-500">Team Collaboration</span>          </h2>
 
-          <p className="text-gray-600 mt-3 text-sm sm:text-base md:text-lg text-justify">
+          <p className="mt-3 text-[#4d5156] text-[15px] sm:text-[16px] md:text-[17px] leading-[1.75] tracking-[0.01em] font-normal text-justify ">
  Our platform brings distributed teams together with integrated
             messaging, file sharing, video conferencing, and real-time
             notifications. Chat threads, @mentions, and inline comments reduce
@@ -63,7 +63,7 @@ Real-Time{" "}
             calendars, schedule virtual meetings, and coordinate deliverables
             without jumping between apps—saving time and avoiding confusion.
             </p>
-          <p className="text-gray-600 mt-3 text-sm sm:text-base md:text-lg text-justify">
+          <p className="mt-3 text-[#4d5156] text-[15px] sm:text-[16px] md:text-[17px] leading-[1.75] tracking-[0.01em] font-normal text-justify ">
             With role-based access control, sensitive information is always
             secure, and external clients or stakeholders can collaborate with
             limited visibility where needed. Shared boards and feedback threads
@@ -103,7 +103,7 @@ Real-Time{" "}
               Analytics, Custom Modules & Integrations
             </span>          </h2>
 
-          <p className="text-gray-600 mt-3 text-sm sm:text-base md:text-lg text-justify">
+          <p className="mt-3 text-[#4d5156] text-[15px] sm:text-[16px] md:text-[17px] leading-[1.75] tracking-[0.01em] font-normal text-justify ">
             Our analytics suite transforms raw project data into actionable
             insights with customizable dashboards, charts, and reports. Whether
             you’re tracking time spent, progress rates, financial metrics, or
@@ -113,7 +113,7 @@ Real-Time{" "}
             not only track current performance but also drive strategic planning
             and team optimization.
             </p>
-          <p className="text-gray-600 mt-3 text-sm sm:text-base md:text-lg text-justify">
+          <p className="mt-3 text-[#4d5156] text-[15px] sm:text-[16px] md:text-[17px] leading-[1.75] tracking-[0.01em] font-normal text-justify ">
             Our platform supports integrations with CRMs, ERPs, communication
             tools, and cloud storage systems like Google Drive, Slack, Trello,
             and more. With open APIs and customizable modules, you can build

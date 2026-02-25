@@ -39,10 +39,10 @@ const TechConsultancyHeader = () => {
 >
           {/* Left Content */}
           <div className="max-w-xl text-center desktop-1100:text-left desktop-1400:mt-[-120px] mt-0 desktop-1400:ml-[-45px] mx-auto desktop-1100:mx-0">
-            <h2 className="text-2xl sm:text-3xl desktop-1400:text-4xl font-semibold mb-4">
+            <h1 className="text-2xl sm:text-3xl desktop-1400:text-4xl font-semibold mb-4">
               <span className="text-blue-800">Transformative </span>
               <span className="text-orange-500">Tech Consultancy</span>
-            </h2>
+            </h1>
             <p className="text-sm text-gray-600 leading-relaxed text-justify mt-5 max-w-lg mx-auto desktop-1100:mx-0">
               Drive transformative business outcomes with our cutting-edge technology consulting. Our solutions, from AI-driven digital transformations to scalable, high-performance systems, are designed to empower your enterprise with the agility and innovation needed to thrive in the digital era. 
             </p>

@@ -57,10 +57,10 @@ const Webheader = () => {
     mx-auto
   "
 >
-          <h2 className="text-3xl md:text-4xl font-semibold mb-4">
+          <h1 className="text-3xl md:text-4xl font-semibold mb-4">
             <span className="text-blue-800">Powering Digital </span>
             <span className="text-orange-500">Web Excellence</span>
-          </h2>
+          </h1>
 
 
           <p className="text-sm text-gray-600 leading-relaxed text-justify mt-5 max-w-lg">

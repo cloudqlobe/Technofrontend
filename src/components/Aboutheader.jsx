@@ -12,10 +12,10 @@ export default function AboutUsSection() {
   desktop-1100:items-start desktop-1100:text-left 
   mx-auto desktop-1100:mx-0
   desktop-1500:mt-[-200px]">
-          <h2 className="text-2xl sm:text-3xl desktop-1500:text-4xl font-semibold mb-4">
+          <h1 className="text-2xl sm:text-3xl desktop-1500:text-4xl font-semibold mb-4">
             <span className="text-blue-800">One Partner, </span>
             <span className="text-orange-500">All Digital Solutions</span>
-          </h2>
+          </h1>
           <p className="text-gray-700 mb-6 text-sm text-justify leading-relaxed max-w-lg mx-auto desktop-1100:mx-0">
 Codo Stack Pvt Ltd offers secure, scalable, and intelligent digital services. From web and app development to cloud hosting, cybersecurity, UI/UX design, and chatbot solutions—we deliver everything under one roof to drive growth, enhance user experience, and protect your data.          </p>
 

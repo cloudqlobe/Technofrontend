@@ -6,9 +6,9 @@ const Pmcontents1 = () => {
   return (
     <div className="min-h-screen w-full bg-white px-4 sm:px-6 md:px-12 py-10 overflow-hidden">
       
-      <h1 className="text-2xl sm:text-3xl md:text-4xl text-center text-black mb-20 mt-10">
+      <h2 className="text-2xl sm:text-3xl md:text-4xl text-center text-black mb-20 mt-10">
         Streamlined <span className="text-blue-800">Project Management Software</span> for Every Business
-      </h1>
+      </h2>
 
       {/* Project Planning Section */}
       <div className="grid md:grid-cols-2 items-center gap-8 mb-12 max-w-7xl mx-auto">
@@ -26,11 +26,11 @@ const Pmcontents1 = () => {
             Efficient <span className="text-orange-400">Project Planning</span>
           </h2>
 
-          <p className="text-gray-600 leading-relaxing text-base sm:text-lg text-justify mt-5">
+          <p className="mt-3 text-[#4d5156] text-[15px] sm:text-[16px] md:text-[17px] leading-[1.75] tracking-[0.01em] font-normal text-justify ">
             Our project management software empowers businesses to plan smarter and execute with precision. From setting up milestones to assigning team responsibilities, every aspect of project organization becomes seamless. Visual tools like Gantt charts, task boards, and dynamic timelines provide clarity and control over project timelines, dependencies, and deliverables. You can manage resources, track workloads, and adjust project flows effortlessly as team priorities evolve.
           </p>
 
-          <p className="text-gray-600 leading-relaxing text-base sm:text-lg text-justify mt-6">
+          <p className="mt-3 text-[#4d5156] text-[15px] sm:text-[16px] md:text-[17px] leading-[1.75] tracking-[0.01em] font-normal text-justify ">
             With advanced features like automated task reminders, project templates, time estimation, and budget planning, you minimize the risks of delays and scope creep. Real-time dashboards keep stakeholders informed, and built-in analytics allow for performance tracking and post-project reviews. Whether managing internal workflows or client-facing projects, our platform offers the flexibility and structure required to ensure successful delivery, every time.
           </p>
         </div>
@@ -44,11 +44,11 @@ const Pmcontents1 = () => {
             Unified <span className="text-orange-400">Team Collaboration</span>
           </h2>
 
-          <p className="text-gray-600 leading-relaxing text-base sm:text-lg text-justify mt-6">
+          <p className="mt-3 text-[#4d5156] text-[15px] sm:text-[16px] md:text-[17px] leading-[1.75] tracking-[0.01em] font-normal text-justify ">
             Our collaboration features are designed to keep everyone in sync—no matter where they work. Built-in messaging, file sharing, mentions, and real-time comment threads eliminate communication barriers across departments. Teams can collaborate directly within tasks and projects, reducing the need for endless meetings or third-party chat tools. Everything is documented and searchable, so no context is lost, and all ideas are accessible.
           </p>
 
-          <p className="text-gray-600 leading-relaxing text-base sm:text-lg text-justify mt-6">
+          <p className="mt-3 text-[#4d5156] text-[15px] sm:text-[16px] md:text-[17px] leading-[1.75] tracking-[0.01em] font-normal text-justify ">
             The platform also includes role-based permissions, version control, and integration with popular communication and storage tools like Microsoft Teams, Google Drive, Zoom, and Slack. Project members receive timely updates and can view activity logs, ensuring transparency and accountability. From onboarding new teammates to managing remote collaboration, our software brings efficiency, clarity, and connection into every project you manage.
           </p>
         </div>

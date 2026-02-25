@@ -6,9 +6,9 @@ import image18 from "../assets/Image/5730353.jpg";
 const Hostingcontent = () => {
   return (
     <div className="min-h-screen w-full bg-white px-4 sm:px-8 lg:px-12 py-10 overflow-hidden">
-      <h1 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-center text-black mb-8 mt-[30px] px-4">
+      <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-center text-black mb-8 mt-[30px] px-4">
         Advanced Hosting <span className="text-blue-800">Solutions For Your Business</span>
-      </h1>
+      </h2>
 
       {/* Web Hosting Section */}
       <div className="grid md:grid-cols-2 items-center gap-6 lg:gap-8 mb-12 max-w-7xl mx-auto mt-4 md:mt-[-40px]">
@@ -23,10 +23,10 @@ const Hostingcontent = () => {
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-default text-grey-400 mt-4 md:mt-[30px]">
             Reliable <span className="text-orange-400">Web Hosting</span>
           </h2>
-          <p className="text-gray-600 text-base lg:text-lg text-justify mt-4 md:mt-[30px] leading-relaxed">
+          <p className="mt-3 text-[#4d5156] text-[15px] sm:text-[16px] md:text-[17px] leading-[1.75] tracking-[0.01em] font-normal text-justify ">
             Our web hosting services are designed to offer high performance and reliability for websites of all sizes. Whether you're launching a small blog or a large e-commerce platform, our hosting solutions ensure that your site operates smoothly. With unlimited bandwidth, SSD storage, and high availability, we guarantee optimal performance for your users. Our hosting infrastructure is backed by the latest technologies, ensuring lightning-fast page loading speeds and a reliable online presence.
           </p>
-          <p className="text-gray-600 text-base lg:text-lg text-justify mt-3 md:mt-[30px] leading-relaxed">
+          <p className="mt-3 text-[#4d5156] text-[15px] sm:text-[16px] md:text-[17px] leading-[1.75] tracking-[0.01em] font-normal text-justify ">
             Security is a top priority for us. We offer free SSL certificates to encrypt your site, as well as automatic backups to protect your data. Our data centers are equipped with robust security measures and monitoring systems to safeguard against threats. Additionally, our customer support team is available 24/7 to assist with any issues, ensuring that your hosting experience is seamless and worry-free. With our scalable plans, you can easily upgrade your hosting as your business grows.
           </p>
         </div>
@@ -38,10 +38,10 @@ const Hostingcontent = () => {
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-default text-grey-200 mt-4 md:mt-[30px]">
             Scalable <span className="text-orange-400">Cloud Hosting</span>
           </h2>
-          <p className="text-gray-600 text-base lg:text-lg text-justify mt-4 md:mt-[30px] leading-relaxed">
+          <p className="mt-3 text-[#4d5156] text-[15px] sm:text-[16px] md:text-[17px] leading-[1.75] tracking-[0.01em] font-normal text-justify ">
             Our cloud hosting services offer unmatched flexibility and scalability, perfect for businesses looking to expand. With our cloud infrastructure, you can scale your resources up or down in real time, ensuring that your website always has the resources it needs, no matter the traffic volume. By using multiple servers across the globe, we ensure that your website has high uptime and fast load times, regardless of where your customers are located.
           </p>
-          <p className="text-gray-600 text-base lg:text-lg text-justify mt-3 md:mt-[30px] leading-relaxed">
+          <p className="mt-3 text-[#4d5156] text-[15px] sm:text-[16px] md:text-[17px] leading-[1.75] tracking-[0.01em] font-normal text-justify ">
             We manage everything from server setup to security updates, so you can focus on growing your business without worrying about technical details. Our cloud hosting comes with a robust control panel, allowing you to monitor usage, adjust settings, and install software with ease. Additionally, we provide advanced security features such as firewalls, DDoS protection, and encryption to keep your data safe. With our global data centers, you can rest assured knowing your website is always running smoothly, no matter the time of day.
           </p>
         </div>
@@ -67,10 +67,10 @@ const Hostingcontent = () => {
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-default text-grey-200 mt-4 md:mt-[30px]">
             Powerful <span className="text-orange-400">VPS Hosting</span>
           </h2>
-          <p className="text-gray-600 text-base lg:text-lg text-justify mt-4 md:mt-[30px] leading-relaxed">
+          <p className="mt-3 text-[#4d5156] text-[15px] sm:text-[16px] md:text-[17px] leading-[1.75] tracking-[0.01em] font-normal text-justify ">
             Our Virtual Private Server (VPS) hosting is ideal for businesses that require greater control over their hosting environment. With dedicated resources and full root access, you can customize your VPS to suit your specific needs. This means you can install custom software, configure security settings, and optimize your server's performance, all while benefiting from the stability and reliability of a dedicated server at a fraction of the cost.
           </p>
-          <p className="text-gray-600 text-base lg:text-lg text-justify mt-3 md:mt-[30px] leading-relaxed">
+          <p className="mt-3 text-[#4d5156] text-[15px] sm:text-[16px] md:text-[17px] leading-[1.75] tracking-[0.01em] font-normal text-justify ">
             VPS hosting offers the perfect balance between shared and dedicated hosting. It provides more power, security, and control, making it an excellent choice for businesses with growing websites or web applications. With our VPS hosting, you also get high-level performance, secure isolated environments, and fully managed services, which allow you to focus on running your business without worrying about server maintenance. Plus, our customer support is available around the clock to assist with any technical challenges.
           </p>
         </div>

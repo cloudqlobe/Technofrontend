@@ -25,19 +25,19 @@ const features = [
 const Dmodel = () => {
   return (
     <div className="bg-[#1E3A8A] text-white py-16 px-4 sm:px-6 lg:px-32 flex flex-col items-center overflow-hidden">
-      
+
       {/* Top Section */}
       <div className="flex flex-col lg:flex-row items-center w-full gap-10">
-        
+
         {/* Left Content */}
         <div className="w-full lg:w-1/2 text-center lg:text-left lg:ml-[-45px]">
           <p className="text-orange-400 uppercase text-sm font-default mb-2">
             WHY CHOOSE US?
           </p>
 
-          <h1 className="text-2xl sm:text-3xl font-bold mb-4 leading-snug">
-            Why Choose <span className="text-orange-500">Codo Stack?</span>
-          </h1>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-4 leading-snug">
+            Why Choose Codo Stack?
+          </h2>
 
           <p className="text-white mt-6 leading-relaxed text-base sm:text-lg text-justify">
             We are Codo Stack — India’s premier IT powerhouse, delivering
@@ -60,9 +60,9 @@ const Dmodel = () => {
       </div>
 
 
-{/* Features Section */}
-{/* Features Section */}
-<div className="
+      {/* Features Section */}
+      {/* Features Section */}
+      <div className="
   w-full
   xl:w-[1350px]
   bg-[#2F4AA5]
@@ -76,22 +76,22 @@ const Dmodel = () => {
   xl:ml-[-50px]
   overflow-hidden
 ">
-  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8">
-    {features.map((feature, index) => (
-      <div
-        key={index}
-        className="bg-[#1E3A8A] text-white flex flex-col items-center p-6 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 hover:bg-[#2F4AA5]"
-      >
-        <div className="text-3xl mb-3 text-orange-400">
-          {feature.icon}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8">
+          {features.map((feature, index) => (
+            <div
+              key={index}
+              className="bg-[#1E3A8A] text-white flex flex-col items-center p-6 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 hover:bg-[#2F4AA5]"
+            >
+              <div className="text-3xl mb-3 text-orange-400">
+                {feature.icon}
+              </div>
+              <p className="text-center text-lg font-semibold">
+                {feature.title}
+              </p>
+            </div>
+          ))}
         </div>
-        <p className="text-center text-lg font-semibold">
-          {feature.title}
-        </p>
       </div>
-    ))}
-  </div>
-</div>
 
 
 

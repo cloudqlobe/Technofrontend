@@ -21,11 +21,11 @@ const Designheader = () => {
           mt-0 xl:mt-[-140px]
           flex flex-col items-center xl:items-start
         ">
-          <h2 className="text-3xl sm:text-4xl lg:text-4xl font-semibold text-gray-700 leading-tight"
+          <h1 className="text-3xl sm:text-4xl lg:text-4xl font-semibold text-gray-700 leading-tight"
           >
             <span className="text-blue-800">Pioneering </span>
             <span className="text-orange-500">Next-Gen Design Solutions</span>
-          </h2>
+          </h1>
 
           <p className="mt-4 text-gray-600 text-sm leading-relaxed text-justify max-w-xl">
             Crafting visually stunning designs that make a lasting impression. Our design solutions combine creativity, strategy, and innovation to elevate your brand and captivate your audience. We focus on delivering sleek, user-friendly designs that resonate across all platforms. Let us help you create a powerful visual identity for your business.          </p>

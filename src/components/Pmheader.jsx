@@ -53,10 +53,10 @@ const PmHeader = () => {
         <div className="max-w-7xl mx-auto grid grid-cols-1 min-[1500px]:grid-cols-2 gap-12 items-center ml-[-5px]">
           {/* Left Content */}
           <div className="max-w-xl mx-auto text-center mt-0 min-[1500px]:mx-0 min-[1500px]:text-left min-[1500px]:mt-[-78px] mb-[94px]">
-            <h2 className="text-2xl md:text-4xl font-semibold mb-4">
+            <h1 className="text-2xl md:text-4xl font-semibold mb-4">
               <span className="text-blue-800">Streamline </span>
               <span className="text-orange-500">Your Projects</span>
-            </h2>
+            </h1>
             <p className="text-gray-700 mb-6 text-sm leading-relaxed">
               Streamline your project management with our intuitive platform. Easily assign tasks, monitor progress, and track milestones. Enhance team collaboration and efficiency to meet your deadlines. Drive successful project outcomes with real-time insights.            </p>
 

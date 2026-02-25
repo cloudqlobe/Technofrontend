@@ -6,14 +6,12 @@ import Erpcontent from '../../../components/Erpcontent';
 import Erpanimation from '../../../components/Erpanimation';
 import Erpcontents1 from '../../../components/Erpcontents1';
 import Resellerpage from '../../../components/Resellerpage';
-import { Helmet } from 'react-helmet';
+import usePageTitle from '../../../hooks/usePageTitle';
 
 const ERPPage = () => {
+   usePageTitle("ERP Software Development for Businesses | Codo Stack");
   return (
     <div className="mt-32">
-      <Helmet>
-  <title>ERP Software Development for Businesses | Codo Stack</title>
-</Helmet>
       <Erpheader/>
       <Resellerpage/>
       <Erpcontent/>

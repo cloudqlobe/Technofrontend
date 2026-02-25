@@ -6,14 +6,12 @@ import Techcontent1 from '../../../components/Techcontent1';
 import Techcontent from '../../../components/Techcontent';
 import Techanimation from '../../../components/Techanimation';
 import Resellerpage from '../../../components/Resellerpage';
-import { Helmet } from 'react-helmet';
+import usePageTitle from '../../../hooks/usePageTitle';
 
 const MarketingPage = () => {
+ usePageTitle("Content Marketing Services to Grow Your Brand | Codo Stack");
   return (
     <div className="mt-32">
-      <Helmet>
-        <title>Content Marketing Services to Grow Your Brand | Codo Stack</title>
-      </Helmet>
       <Techheader />
       <Resellerpage />
       <Techcontent />

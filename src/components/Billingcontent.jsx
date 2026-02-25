@@ -7,9 +7,9 @@ const Billingcontent = () => {
   return (
     <div className="min-h-screen w-full bg-white px-4 sm:px-6 md:px-12 py-10 overflow-hidden">
       
-      <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-center text-black mb-8 mt-[30px]">
+      <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-center text-black mb-8 mt-[30px]">
         Comprehensive <span className="text-blue-800">Billing Software Solutions</span> for Your Business Needs
-      </h1>
+      </h2>
 
       {/* Section 1 */}
       <div className="grid md:grid-cols-2 items-center gap-8 mb-12 max-w-7xl mx-auto mt-[40px]">
@@ -29,11 +29,11 @@ const Billingcontent = () => {
             Interactive <span className="text-orange-400">Billing Interfaces</span> for Seamless User Experience
           </h2>
 
-          <p className="text-gray-600 leading-relaxing text-base sm:text-lg text-justify mt-[30px]">
+          <p className="mt-3 text-[#4d5156] text-[15px] sm:text-[16px] md:text-[17px] leading-[1.75] tracking-[0.01em] font-normal text-justify ">
             We specialize in crafting user-friendly, responsive billing software interfaces that cater to the needs of businesses of all sizes. Using modern frameworks like React, Vue, and Next.js, we ensure that every billing component is tailored to provide a seamless, intuitive experience across devices. From generating invoices to making payments and reviewing transaction history, every interaction within our platform is designed to be smooth and highly responsive.
           </p>
 
-          <p className="text-gray-600 leading-relaxing text-base sm:text-lg text-justify mt-[30px]">
+          <p className="mt-3 text-[#4d5156] text-[15px] sm:text-[16px] md:text-[17px] leading-[1.75] tracking-[0.01em] font-normal text-justify ">
             Our design-first approach ensures that every visual element serves a functional purpose, enhancing user experience without sacrificing performance. Whether you need to handle multiple invoices, track payment statuses, or manage billing details efficiently, we provide interfaces that make it easy to navigate. Our goal is to offer a system that reduces the complexity of financial operations while increasing user satisfaction.
           </p>
         </div>
@@ -57,11 +57,11 @@ const Billingcontent = () => {
             Robust <span className="text-orange-400">Backend Systems</span> for Secure Billing Operations
           </h2>
 
-          <p className="text-gray-600 leading-relaxing text-base sm:text-lg text-justify mt-[30px]">
+          <p className="mt-3 text-[#4d5156] text-[15px] sm:text-[16px] md:text-[17px] leading-[1.75] tracking-[0.01em] font-normal text-justify ">
             Our backend systems are engineered to handle complex billing processes seamlessly. Built with technologies like Node.js, Express, and other modern stacks, we ensure that your web applications are secure, fast, and highly reliable. From handling payments and generating invoices to offering detailed reports and transaction management, our backend services provide a robust foundation for your billing operations.
           </p>
 
-          <p className="text-gray-600 leading-relaxing text-base sm:text-lg text-justify mt-[30px]">
+          <p className="mt-3 text-[#4d5156] text-[15px] sm:text-[16px] md:text-[17px] leading-[1.75] tracking-[0.01em] font-normal text-justify ">
             We focus on building scalable, secure, and high-performing APIs that integrate with various payment gateways, making the process of accepting payments and managing subscriptions a breeze. Our backend also includes powerful features like user authentication, role-based access control, session handling, and data encryption to ensure the utmost security and confidentiality of your business and customer data.
           </p>
         </div>
@@ -85,11 +85,11 @@ const Billingcontent = () => {
             Tailored <span className="text-orange-400">Billing Software Solutions</span> for Every Business Need
           </h2>
 
-          <p className="text-gray-600 leading-relaxing text-base sm:text-lg text-justify mt-[30px]">
+          <p className="mt-3 text-[#4d5156] text-[15px] sm:text-[16px] md:text-[17px] leading-[1.75] tracking-[0.01em] font-normal text-justify ">
             Our custom billing software solutions are designed to adapt to the specific needs of your business, no matter the size or industry. Whether you need a fully integrated payment gateway, a subscription management platform, or a detailed invoicing system, we've got you covered. Using the MERN stack and other modern technologies, we create scalable, secure, and feature-rich billing applications that cater to your exact requirements, helping you automate billing and improve customer satisfaction.
           </p>
 
-          <p className="text-gray-600 leading-relaxing text-base sm:text-lg text-justify mt-[30px]">
+          <p className="mt-3 text-[#4d5156] text-[15px] sm:text-[16px] md:text-[17px] leading-[1.75] tracking-[0.01em] font-normal text-justify ">
             Our team focuses on delivering flexible, high-performance billing systems that ensure reliability, ease of use, and full scalability. From managing recurring billing cycles to offering dynamic pricing, automated invoices, and payment reminders, our solutions provide businesses with everything they need to streamline financial operations. We also prioritize data security and regulatory compliance, ensuring your software is ready for the future.
           </p>
         </div>

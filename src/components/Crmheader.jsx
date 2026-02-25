@@ -23,10 +23,10 @@ export default function CRMSection() {
           {/* LEFT SIDE - CONTENT */}
           <div className="max-w-xl mx-auto text-center xl:text-left xl:mt-[-170px] px-4 xl:px-0 flex flex-col items-center xl:items-start">
 
-            <h2 className="text-3xl md:text-4xl font-semibold mb-4">
+            <h1 className="text-3xl md:text-4xl font-semibold mb-4">
               <span className="text-blue-800">Comprehensive </span>
               <span className="text-orange-500">CRM Solutions</span>
-            </h2>
+            </h1>
             <p className="text-gray-700 mb-6 text-sm text-justify leading-relaxed ml-0 md:ml-[5px]">
               Revolutionize your business with custom CRM systems that optimize every customer interaction. Streamline sales, automate tasks, and enhance client relationships with advanced technology.
               Gain real-time insights to unlock growth opportunities tailored to your needs. Drive efficiency and improve your bottom line with seamless CRM integration.

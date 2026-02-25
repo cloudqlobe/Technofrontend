@@ -6,10 +6,10 @@ const Webcontent2 = () => {
   return (
     <div className="bg-white text-gray-900 px-4 sm:px-6 md:px-12 py-8 md:py-12 space-y-12 md:space-y-24">
       {/* Main Heading */}
-      <h1 className="text-2xl sm:text-3xl md:text-4xl text-center mb-6 md:mb-8 mt-6 md:mt-[30px]">
+      <h2 className="text-2xl sm:text-3xl md:text-4xl text-center mb-6 md:mb-8 mt-6 md:mt-[30px]">
         <span className="text-black">Reliable &</span>{" "}
         <span className="text-blue-800">Scalable Web Development Solutions</span>
-      </h1>
+      </h2>
 
       {/* Section 1: Modern Web Development */}
       <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6 md:gap-12 text-center md:text-left">
@@ -24,10 +24,10 @@ const Webcontent2 = () => {
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-default text-grey-200 mb-2 md:mt-16">
             Modern <span className="text-orange-400">Web Development</span>
           </h2>
-          <p className="text-gray-600 mt-3 text-sm sm:text-base md:text-lg text-justify md:mt-[30px]">
+          <p className="mt-3 text-[#4d5156] text-[15px] sm:text-[16px] md:text-[17px] leading-[1.75] tracking-[0.01em] font-normal text-justify ">
             In today's fast-paced digital world, having a high-performance, responsive, and user-friendly website is crucial. Our team uses cutting-edge frameworks such as React, Next.js, and Tailwind CSS to craft beautiful, interactive user interfaces that function seamlessly across all devices. From intuitive layouts to lightning-fast loading times, we prioritize the user experience at every step. We implement best practices in UI/UX design and use performance optimization techniques such as lazy loading, code splitting, and minimalistic component structure.
           </p>
-          <p className="text-gray-600 mt-3 text-sm sm:text-base md:text-lg text-justify md:mt-[30px]">
+          <p className="mt-3 text-[#4d5156] text-[15px] sm:text-[16px] md:text-[17px] leading-[1.75] tracking-[0.01em] font-normal text-justify ">
             Beyond just aesthetics, we ensure your web platform is technically sound and SEO-friendly. We integrate tools like structured data, semantic HTML, and SSR (server-side rendering) where needed to maximize discoverability. Our development process includes automated testing, continuous integration, and clean code principles to maintain long-term scalability. Whether you need a simple landing page or a full-fledged interactive platform, our web development practices ensure you're building on a solid, future-ready foundation.
           </p>
         </div>
@@ -36,14 +36,14 @@ const Webcontent2 = () => {
       {/* Section 2: Custom Web Applications */}
       <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6 md:gap-12 md:mt-[100px] text-center md:text-left">
         <div className="md:ml-[20px] order-2 md:order-1">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-default text-grey-200 mb-2 md:ml-[25px] md:mt-[-50px]">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-default text-grey-200 mb-2 md:mt-[-50px]">
             <span className="text-black"> Web Applications</span>
             <span className="text-orange-400"> & Scalable Architecture</span>
           </h2>
-          <p className="text-gray-600 mt-3 text-sm sm:text-base md:text-lg text-justify md:mt-[30px] md:ml-[30px]">
+          <p className="mt-3 text-[#4d5156] text-[15px] sm:text-[16px] md:text-[17px] leading-[1.75] tracking-[0.01em] font-normal text-justify ">
             We don't believe in one-size-fits-all solutions. Our custom web applications are engineered to align precisely with your business logic, workflow, and goals. From CRMs and booking systems to e-commerce platforms and internal dashboards, every solution is built from scratch to meet your operational needs. We focus on clean interfaces, robust functionality, and modular coding structures that allow for easy updates and future expansion.
           </p>
-          <p className="text-gray-600 mt-3 text-sm sm:text-base md:text-lg text-justify md:mt-[30px] md:ml-[30px]">
+          <p className="mt-3 text-[#4d5156] text-[15px] sm:text-[16px] md:text-[17px] leading-[1.75] tracking-[0.01em] font-normal text-justify ">
             On the backend, we architect scalable and secure infrastructures using technologies like Node.js, Express, MySQL, and MongoDB. We ensure proper API architecture, database normalization, and security protocols like JWT authentication and role-based access control. Our apps are designed for high performance under load, support cloud deployments, and are optimized for data integrity and real-time processing where needed. As your traffic grows, your app grows with it—reliably and efficiently.
           </p>
         </div>

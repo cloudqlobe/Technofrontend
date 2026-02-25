@@ -15,14 +15,16 @@ import ProjectManagementPage from "./pages/softwares/Project Management/ProjectM
 import BillingSoftwarePage from "./pages/softwares/Billing_Software/BillingSoftwarePage";
 import ScrollToTop from "./ScrollToTop";
 import ChatbotPage from "./pages/softwares/Chatbot/ChatbotPage";
+import AutoBreadcrumbSchema from "./components/AutoBreadcrumbSchema";
 
 
 
 const App = () => {
   return (
     <Router>
-      <ScrollToTop />   {/* 👈 ADD HERE */}
+      <ScrollToTop />
       <Navbar />
+                  <AutoBreadcrumbSchema />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />

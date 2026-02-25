@@ -58,10 +58,10 @@ const Billingheader = () => {
 
         {/* Left Content */}
         <div className="center-below-1024 max-w-xl text-center md:text-left lg:mt-[-210px] lg:ml-[-45px] px-4 lg:px-0">
-          <h2 className="text-3xl md:text-4xl font-semibold mb-4">
+          <h1 className="text-3xl md:text-4xl font-semibold mb-4">
             <span className="text-blue-800">Smart </span>
             <span className="text-orange-500">Billing Automation</span>
-          </h2>
+          </h1>
           <p className="text-gray-700 mb-6 text-sm text-justify leading-relaxed">
             Upgrade to intelligent billing solutions built for accuracy, speed, and scalability. Our software automates invoicing, manages recurring payments, and delivers real-time financial insights—designed to grow with your business and simplify complex accounting workflows, all while ensuring control and compliance.
           </p>

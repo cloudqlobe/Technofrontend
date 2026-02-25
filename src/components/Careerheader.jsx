@@ -15,10 +15,10 @@ const Careerheader = () => {
 
         {/* Left Side */}
         <div className="w-full max-w-xl mx-auto text-center mt-0 min-[1500px]:mx-0 min-[1500px]:text-left min-[1500px]:mt-[-200px] min-[1500px]:ml-[-50px]">
-          <h2 className="text-3xl sm:text-4xl font-semibold mb-4">
+          <h1 className="text-3xl sm:text-4xl font-semibold mb-4">
             <span className="text-blue-800">Join Our Team </span>
             <span className="text-orange-500">Shape Your Future</span>
-          </h2>
+          </h1>
           <p className="text-gray-700 mb-6 text-sm sm:text-base leading-relaxed text-justify max-w-lg mx-auto min-[1500px]:mx-0">
             Be part of a dynamic, forward-thinking team that values innovation, growth, and lasting impact. Explore diverse career paths designed to unlock your true potential and thrive in a supportive, collaborative, and empowering environment shaping the future of tech.
           </p>

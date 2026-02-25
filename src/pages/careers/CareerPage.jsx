@@ -5,14 +5,12 @@ import Careeranimation from '../../components/Careeranimation';
 import Careercontent1 from '../../components/Careercontent1';
 import Careerregister from '../../components/Careerregister';
 import Resellerpage from '../../components/Resellerpage';
-import { Helmet } from 'react-helmet';
+import usePageTitle from '../../hooks/usePageTitle';
 
 const CareerPage = () => {
+  usePageTitle("Careers at Codo Stack | Join Our Tech Team");
   return (
     <div className="mt-32">
-            <Helmet>
-              <title>Careers at Codo Stack | Join Our Tech Team</title>
-            </Helmet>
       <Careerheader />
       <Resellerpage />
       <Careercontent />

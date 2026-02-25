@@ -7,10 +7,10 @@ const Erpcontents1 = () => {
     <div className="w-full bg-white px-4 sm:px-8 lg:px-16 py-12 overflow-hidden">
 
       {/* Heading */}
-      <h1 className="text-3xl sm:text-4xl lg:text-4xl text-center text-black lg:mb-20 mb-12">
+      <h2 className="text-3xl sm:text-4xl lg:text-4xl text-center text-black lg:mb-20 mb-12">
         Innovative ERP Solutions{" "}
         <span className="text-blue-800">for Your Business</span>
-      </h1>
+      </h2>
 
       {/* ===== ERP Solutions Section ===== */}
       <div className="grid md:grid-cols-2 gap-10 items-center max-w-7xl mx-auto mb-16">
@@ -31,7 +31,7 @@ const Erpcontents1 = () => {
             <span className="text-orange-400">ERP Solutions</span>
           </h2>
 
-          <p className="text-gray-600 leading-relaxed text-base sm:text-lg text-justify mb-4">
+          <p className="mt-3 text-[#4d5156] text-[15px] sm:text-[16px] md:text-[17px] leading-[1.75] tracking-[0.01em] font-normal text-justify ">
             Our ERP solutions are designed to streamline your business processes,
             integrating various functions such as inventory management, order
             processing, accounting, and human resources. By centralizing data
@@ -42,7 +42,7 @@ const Erpcontents1 = () => {
             fast-changing market.
           </p>
 
-          <p className="text-gray-600 leading-relaxed text-base sm:text-lg text-justify">
+          <p className="mt-3 text-[#4d5156] text-[15px] sm:text-[16px] md:text-[17px] leading-[1.75] tracking-[0.01em] font-normal text-justify ">
             Our ERP system offers a range of customizable modules, so you can
             choose the features that align with your specific business needs.
             Whether you're looking to improve supply chain management, automate
@@ -66,7 +66,7 @@ const Erpcontents1 = () => {
             </span>
           </h2>
 
-          <p className="text-gray-600 leading-relaxed text-base sm:text-lg text-justify mb-4">
+          <p className="mt-3 text-[#4d5156] text-[15px] sm:text-[16px] md:text-[17px] leading-[1.75] tracking-[0.01em] font-normal text-justify ">
             Our AI-powered ERP chatbots are designed to improve the user
             experience by automating tasks, providing instant support, and
             answering user queries about ERP systems. These chatbots seamlessly
@@ -78,7 +78,7 @@ const Erpcontents1 = () => {
             support teams.
           </p>
 
-          <p className="text-gray-600 leading-relaxed text-base sm:text-lg text-justify">
+          <p className="mt-3 text-[#4d5156] text-[15px] sm:text-[16px] md:text-[17px] leading-[1.75] tracking-[0.01em] font-normal text-justify ">
             These chatbots can be customized to address specific needs,
             whether for HR management, sales tracking, or inventory management.
             With continuous learning capabilities, they evolve to provide more

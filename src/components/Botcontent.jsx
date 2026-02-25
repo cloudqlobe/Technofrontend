@@ -7,9 +7,9 @@ const Botcontent = () => {
   return (
     <div className="min-h-screen w-full bg-white px-4 sm:px-6 md:px-12 py-10 overflow-hidden">
       
-      <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-center text-black mb-8 mt-[30px]">
+      <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-center text-black mb-8 mt-[30px]">
         Intelligent <span className="text-blue-800">Chatbot Solutions</span> with <span className="text-orange-500">Conduvt</span>
-      </h1>
+      </h2>
 
       {/* Section 1 - Image left on desktop, top on mobile */}
       <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10 mb-16 max-w-7xl mx-auto">
@@ -29,11 +29,11 @@ const Botcontent = () => {
             Meet <span className="text-orange-400">Conduvt</span> – Your AI Chat Assistant
           </h2>
 
-          <p className="text-gray-600 mt-[30px] text-base sm:text-lg text-justify">
+          <p className="mt-3 text-[#4d5156] text-[15px] sm:text-[16px] md:text-[17px] leading-[1.75] tracking-[0.01em] font-normal text-justify ">
             Conduvt is our proprietary AI-powered chatbot built to transform customer interactions into seamless, intelligent conversations. More than a typical chatbot, Conduvt functions as a dynamic virtual assistant capable of understanding user intent, responding contextually, and driving engagement across platforms like websites, WhatsApp, and mobile apps. It streamlines communication, reduces support workload, and increases operational efficiency by automating repetitive tasks, capturing leads, scheduling appointments, and offering tailored product recommendations — all with a natural, human-like tone.
           </p>
 
-          <p className="text-gray-600 mt-[30px] text-base sm:text-lg text-justify">
+          <p className="mt-3 text-[#4d5156] text-[15px] sm:text-[16px] md:text-[17px] leading-[1.75] tracking-[0.01em] font-normal text-justify ">
             Designed for businesses of all sizes, Conduvt enables 24/7 support without sacrificing quality. It uses advanced NLP and contextual awareness to deliver personalized answers, escalate complex queries to human agents when needed, and constantly learn from interactions to improve accuracy. Whether you're a startup looking to scale or an enterprise seeking operational efficiency, Conduvt offers a scalable, flexible, and secure solution that bridges the gap between user needs and business outcomes, while elevating your brand's digital presence.
           </p>
         </div>
@@ -57,11 +57,11 @@ const Botcontent = () => {
             Custom Features Built <span className="text-orange-400">for You</span>
           </h2>
 
-          <p className="text-gray-600 mt-[30px] text-base sm:text-lg text-justify">
+          <p className="mt-3 text-[#4d5156] text-[15px] sm:text-[16px] md:text-[17px] leading-[1.75] tracking-[0.01em] font-normal text-justify ">
             Conduvt is packed with intelligent features tailored to diverse industries — from e-commerce and education to healthcare and enterprise SaaS. Its conversation builder allows businesses to customize interactions using condition-based logic, quick replies, action buttons, file uploads, OTP verification, and even multilingual support. With Conduvt, you can automate onboarding, appointment bookings, real-time FAQs, feedback collection, and lead qualification — all in one unified system. Each response is crafted based on user behavior, ensuring maximum relevance and personalization.
           </p>
 
-          <p className="text-gray-600 mt-[30px] text-base sm:text-lg text-justify">
+          <p className="mt-3 text-[#4d5156] text-[15px] sm:text-[16px] md:text-[17px] leading-[1.75] tracking-[0.01em] font-normal text-justify ">
             Beyond automation, Conduvt provides real-time analytics and insights to monitor performance, understand user flow, and optimize conversations. Integration is seamless with your favorite tools — CRMs, payment gateways, email marketing services, and internal dashboards. The bot can automatically route complex inquiries to human agents, escalate complaints, and sync data to your database without manual input. Whether you're managing a support desk or driving a sales funnel, Conduvt gives you full control, smart customization, and a better way to engage your audience.
           </p>
         </div>
@@ -85,11 +85,11 @@ const Botcontent = () => {
             Scalable, Secure & <span className="text-orange-400">Integration-Ready</span>
           </h2>
 
-          <p className="text-gray-600 mt-[30px] text-base sm:text-lg text-justify">
+          <p className="mt-3 text-[#4d5156] text-[15px] sm:text-[16px] md:text-[17px] leading-[1.75] tracking-[0.01em] font-normal text-justify ">
             At the core of Conduvt lies a powerful and scalable architecture built using modern technologies like Node.js, WebSockets, and secure REST APIs. Our cloud-native deployment ensures uptime, resilience, and global accessibility with minimal latency. Whether you're handling 10 or 10,000 users simultaneously, Conduvt performs with high efficiency. All user data is encrypted and handled in compliance with data privacy laws, ensuring your users' trust is never compromised. The chatbot engine is modular, enabling plug-and-play use cases tailored to your workflows.
           </p>
 
-          <p className="text-gray-600 mt-[30px] text-base sm:text-lg text-justify">
+          <p className="mt-3 text-[#4d5156] text-[15px] sm:text-[16px] md:text-[17px] leading-[1.75] tracking-[0.01em] font-normal text-justify ">
             Conduvt connects effortlessly with platforms like WhatsApp Business API, Google Sheets, Stripe for payments, Mailchimp, CRMs like Salesforce and HubSpot, and internal ERPs. Whether you're automating payment reminders, collecting survey data, or driving newsletter subscriptions, Conduvt fits right into your digital ecosystem. The bot is also fully responsive and can be deployed as a widget, modal, or full-page assistant. This means you can offer consistent, intelligent service to customers — anywhere, anytime, on any device.
           </p>
         </div>

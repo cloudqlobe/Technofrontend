@@ -6,14 +6,12 @@ import Cloudcontent from '../../../components/Cloudcontent';
 import Cloudanimation from '../../../components/Cloudanimation';
 import Cloudcontents1 from '../../../components/Cloudcontents1';
 import Resellerpage from '../../../components/Resellerpage';
-import { Helmet } from 'react-helmet';
+import usePageTitle from '../../../hooks/usePageTitle';
 
 const CloudPage = () => {
+  usePageTitle("Secure & Scalable Cloud Services for Business | Codo Stack");
   return (
     <div>
-      <Helmet>
-        <title>Secure & Scalable Cloud Services for Business | Codo Stack</title>
-      </Helmet>
       <Cloudheader />
       <Resellerpage />
       <Cloudcontent />

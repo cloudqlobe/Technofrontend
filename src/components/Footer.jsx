@@ -140,16 +140,28 @@ export default function Footer() {
 
             {/* Contact + Social Icons */}
             <div className="text-gray-300 mt-4 md:mt-8 lg:mt-0">
-              <div>
-                <h3 className="text-lg md:text-xl font-default text-white mb-3 md:mb-0">CONTACT</h3>
-                <p className="flex items-center mt-4 md:mt-6 text-base md:text-lg">
-                  <FaPhoneAlt className="mr-3 text-sm md:text-base flex-shrink-0" /> +44 7491 896532
-                </p>
-                <p className="flex items-center mt-3 md:mt-4 text-base md:text-lg">
-                  <FaEnvelope className="mr-3 text-sm md:text-base flex-shrink-0" /> business@codostack.com
-                </p>
-              </div>
+<div>
+  <h3 className="text-lg md:text-xl font-default text-white mb-3 md:mb-0">
+    CONTACT
+  </h3>
 
+  <p className="p-tel flex items-center mt-4 md:mt-6 text-base md:text-lg">
+    <FaPhoneAlt className="mr-3 text-sm md:text-base flex-shrink-0" />
+    +44 7491 896532
+  </p>
+
+  <p className="p-email flex items-center mt-3 md:mt-4 text-base md:text-lg">
+    <FaEnvelope className="mr-3 text-sm md:text-base flex-shrink-0" />
+    business@codostack.com
+  </p>
+</div>
+<div className="hidden h-card">
+  <h2 className="p-name">CodoStack Technologies</h2>
+  <p className="p-org">CodoStack</p>
+  <div className="p-adr">
+    <span className="p-country-name">India</span>
+  </div>
+</div>
 
               {/* Social Icons */}
               <div className="flex flex-wrap gap-3 md:gap-5 mt-8 md:mt-16 ml-0 md:ml-2">

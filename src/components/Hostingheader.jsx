@@ -46,10 +46,10 @@ const HostingHeader = () => {
             max-w-xl
             text-center xl:text-left
           ">
-            <h2 className="text-3xl sm:text-4xl mb-4">
+            <h1 className="text-3xl sm:text-4xl mb-4">
               <span className="text-blue-800">Reliable & Scalable </span>
               <span className="text-orange-500">Hosting Services</span>
-            </h2>
+            </h1>
 
             <p className="text-gray-700 mb-6 leading-relaxed text-sm text-center xl:text-justify">
               Experience fast, secure, and scalable hosting solutions designed for websites, web apps, and enterprise platforms. Our services ensure optimal performance with 24/7 monitoring and top-notch security. Enjoy seamless uptime and faster load speeds. Scale automatically to meet the growing demands of your digital presence.

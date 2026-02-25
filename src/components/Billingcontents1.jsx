@@ -6,9 +6,9 @@ const Billingcontents1 = () => {
   return (
     <div className="min-h-screen w-full bg-white px-4 sm:px-6 md:px-12 py-10 overflow-hidden">
       
-      <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-center text-black mb-8 mt-[30px]">
+      <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-center text-black mb-8 mt-[30px]">
         Powerful <span className="text-blue-800">Billing Software Solutions</span> for Seamless Business Operations
-      </h1>
+      </h2>
 
       {/* Section 1 - Image left on desktop, top on mobile */}
       <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 mb-12 max-w-7xl mx-auto">
@@ -28,11 +28,11 @@ const Billingcontents1 = () => {
             Smart <span className="text-orange-400">Billing Management</span>
           </h2>
 
-          <p className="text-gray-600 leading-relaxed text-base sm:text-lg text-justify mt-[30px]">
+          <p className="mt-3 text-[#4d5156] text-[15px] sm:text-[16px] md:text-[17px] leading-[1.75] tracking-[0.01em] font-normal text-justify ">
             Our advanced billing software is built to streamline your business's entire financial workflow. From generating detailed invoices to tracking real-time payments, the system is tailored to reduce manual errors and improve operational efficiency. It supports various billing formats, integrates seamlessly with inventory and CRM platforms, and ensures GST-compliance and tax automation, giving you the peace of mind to focus on scaling your business.
           </p>
 
-          <p className="text-gray-600 leading-relaxed text-base sm:text-lg text-justify mt-[30px]">
+          <p className="mt-3 text-[#4d5156] text-[15px] sm:text-[16px] md:text-[17px] leading-[1.75] tracking-[0.01em] font-normal text-justify ">
             With a user-friendly interface and customizable templates, businesses can personalize client invoices and automate recurring billing for subscriptions and long-term contracts. Real-time dashboards provide comprehensive insights into outstanding balances, revenue patterns, and financial projections. Whether you're a startup, SME, or an enterprise, our solution adapts to your business logic, making it an essential asset in modern financial management.
           </p>
         </div>
@@ -56,11 +56,11 @@ const Billingcontents1 = () => {
             Automated <span className="text-orange-400">Invoice & Payment Solutions</span>
           </h2>
 
-          <p className="text-gray-600 leading-relaxed text-base sm:text-lg text-justify mt-[30px]">
+          <p className="mt-3 text-[#4d5156] text-[15px] sm:text-[16px] md:text-[17px] leading-[1.75] tracking-[0.01em] font-normal text-justify ">
             Experience the power of automation with our invoice and payment system designed to keep your cash flow healthy and your customers informed. Automatically generate and send invoices, schedule due date reminders, and accept payments through integrated gateways such as UPI, credit cards, and net banking. Say goodbye to follow-up hassles and missed payments with our proactive notification system that keeps both you and your clients in sync.
           </p>
 
-          <p className="text-gray-600 leading-relaxed text-base sm:text-lg text-justify mt-[30px]">
+          <p className="mt-3 text-[#4d5156] text-[15px] sm:text-[16px] md:text-[17px] leading-[1.75] tracking-[0.01em] font-normal text-justify ">
             Our platform also enables detailed transaction tracking and digital receipts for complete transparency. Custom payment links and QR code generation enhance ease of use for your customers, while advanced reporting tools provide accurate forecasts and audit-ready summaries. Built with data security and compliance at its core, the software supports multi-layer encryption, user access control, and audit logs to ensure your financial data is protected and fully traceable.
           </p>
         </div>

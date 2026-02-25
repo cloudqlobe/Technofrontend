@@ -6,9 +6,9 @@ import image6 from "../assets/Image/5_communication02.jpg";
 const Crmcontent = () => {
   return (
     <div className="min-h-screen w-full bg-white px-4 sm:px-8 lg:px-12 py-10 overflow-hidden">
-      <h1 className="text-3xl sm:text-4xl font-semibold text-center text-black mb-8 mt-4 sm:mt-[30px] px-4">
+      <h2 className="text-3xl sm:text-4xl font-semibold text-center text-black mb-8 mt-4 sm:mt-[30px] px-4">
         Advanced <span className="text-blue-800">CRM Solutions</span>
-      </h1>
+      </h2>
 
       {/* CRM Front-End Development Section */}
       <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6 mb-12 max-w-7xl mx-auto md:mt-[-30px]">
@@ -23,10 +23,10 @@ const Crmcontent = () => {
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-default text-grey-400 mt-4 md:mt-[30px]">
             Intuitive <span className="text-orange-400">CRM Interfaces</span>
           </h2>
-          <p className="text-gray-600 mt-3 leading-relaxed text-base sm:text-lg text-justify">
+          <p className="mt-3 text-[#4d5156] text-[15px] sm:text-[16px] md:text-[17px] leading-[1.75] tracking-[0.01em] font-normal text-justify ">
             We design seamless, user-friendly CRM interfaces to make managing customer relationships effortless. From contact management to sales pipelines, our CRM systems provide intuitive layouts that enhance user experience across devices. Whether you're working on the go or in the office, our interfaces ensure a smooth workflow and easy access to critical data.
           </p>
-          <p className="text-gray-600 mt-3 leading-relaxed text-base sm:text-lg text-justify">
+          <p className="mt-3 text-[#4d5156] text-[15px] sm:text-[16px] md:text-[17px] leading-[1.75] tracking-[0.01em] font-normal text-justify ">
             The custom CRM dashboards we develop allow businesses to track customer interactions, analyze sales metrics, and improve team collaboration. Additionally, we incorporate flexible data entry forms, task management features, and real-time reporting tools that give your team the ability to address customer needs quickly and effectively, ultimately leading to higher conversion rates and more personalized service.
           </p>
         </div>
@@ -45,10 +45,10 @@ const Crmcontent = () => {
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-default text-grey-200 mt-4 md:mt-[30px]">
             Scalable <span className="text-orange-400">CRM Backend Systems</span>
           </h2>
-          <p className="text-gray-600 mt-3 leading-relaxed text-base sm:text-lg text-justify">
+          <p className="mt-3 text-[#4d5156] text-[15px] sm:text-[16px] md:text-[17px] leading-[1.75] tracking-[0.01em] font-normal text-justify ">
             Our CRM backend systems are designed to handle large amounts of customer data while maintaining top-tier security and performance. By leveraging technologies like Node.js and Express, we ensure that your CRM application scales with your business. Whether it's managing leads, tracking customer activities, or automating workflows, our back-end solutions provide a solid foundation for CRM systems that drive growth.
           </p>
-          <p className="text-gray-600 mt-3 leading-relaxed text-base sm:text-lg text-justify">
+          <p className="mt-3 text-[#4d5156] text-[15px] sm:text-[16px] md:text-[17px] leading-[1.75] tracking-[0.01em] font-normal text-justify ">
             We integrate crucial backend features like role-based access control, customer segmentation, and advanced analytics to give you deeper insights into your business. The architecture we use ensures that your CRM grows with your customer base, supporting everything from simple lead management to complex customer journeys. This scalable and secure framework guarantees that as your customer database expands, the system remains fast, responsive, and easy to manage.
           </p>
         </div>
@@ -67,10 +67,10 @@ const Crmcontent = () => {
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-default text-grey-200 mt-4 md:mt-[30px]">
             Tailored <span className="text-orange-400">CRM Solutions</span>
           </h2>
-          <p className="text-gray-600 mt-3 leading-relaxed text-base sm:text-lg text-justify">
+          <p className="mt-3 text-[#4d5156] text-[15px] sm:text-[16px] md:text-[17px] leading-[1.75] tracking-[0.01em] font-normal text-justify ">
             Our custom CRM systems are built to cater to your business's unique needs. Whether you require advanced reporting, custom workflow automation, or integration with third-party tools, we have the expertise to create CRM solutions that meet your specifications. Using technologies like the MERN stack, we ensure that your CRM system is not only easy to use but also flexible and extensible, capable of evolving as your business grows.
           </p>
-          <p className="text-gray-600 mt-3 leading-relaxed text-base sm:text-lg text-justify">
+          <p className="mt-3 text-[#4d5156] text-[15px] sm:text-[16px] md:text-[17px] leading-[1.75] tracking-[0.01em] font-normal text-justify ">
             We design CRM systems that integrate seamlessly with your existing business processes, whether it's for customer support, sales, or marketing. Our development approach includes detailed data tracking, real-time analytics, and custom features that align with your business goals. The result is a CRM system that helps you build long-lasting relationships with your customers, streamlining interactions, and improving retention. By combining powerful functionality with a user-friendly interface, we ensure that your CRM becomes a key asset in growing your business.
           </p>
         </div>

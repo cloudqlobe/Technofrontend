@@ -42,10 +42,10 @@ const Botheader = () => {
 
           {/* Left Content */}
           <div className="center-below-1230 max-w-xl text-center md:text-left min-[1230px]:mt-[-210px] min-[1230px]:ml-[-45px] px-4 min-[1230px]:px-0">
-            <h2 className="text-3xl md:text-4xl font-semibold mb-4 min-[1230px]:whitespace-nowrap">
+            <h1 className="text-3xl md:text-4xl font-semibold mb-4 min-[1230px]:whitespace-nowrap">
               <span className="text-blue-800">Revolutionize </span>
               <span className="text-orange-500">Your Business with AI</span>
-            </h2>
+            </h1>
 
             <p className="text-gray-700 mb-6 text-sm text-justify leading-relaxed">
               Transform your business with intelligent, scalable AI systems designed for real-world impact. From advanced machine learning to real-time data analysis, our custom solutions seamlessly streamline operations, boost overall productivity, and drive smarter, faster, and more strategic decisions.

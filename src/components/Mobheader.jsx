@@ -54,10 +54,10 @@ const Mobheader = () => {
   mt-[-240px]
   ml-0 phone-hide:ml-[5px]
 ">
-          <h2 className="text-3xl md:text-4xl font-semibold mb-4">
+          <h1 className="text-3xl md:text-4xl font-semibold mb-4">
             <span className="text-blue-800"> Build Seamless </span>
             <span className="text-orange-500">Apps for Business</span>
-          </h2>
+          </h1>
           <p className="
   text-sm text-gray-600 mb-6 leading-relaxed
   text-justify phone-hide:text-justify

@@ -6,14 +6,12 @@ import Botanimation from '../../../components/Botanimation';
 import Botcontent from '../../../components/Botcontent';
 import Botheader from '../../../components/Botheader';
 import Resellerpage from '../../../components/Resellerpage';
-import { Helmet } from 'react-helmet';
+import usePageTitle from '../../../hooks/usePageTitle';
 
 const ChatbotPage = () => {
+   usePageTitle("AI Chatbot Development Services | Codo Stack");
   return (
     <div className="mt-32">
-      <Helmet>
-        <title>AI Chatbot Development Services | Codo Stack</title>
-      </Helmet>
       <Botheader />
       <Resellerpage />
       <Botcontent />

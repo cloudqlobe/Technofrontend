@@ -7,10 +7,10 @@ const Erpcontent = () => {
   return (
     <div className="w-full bg-white px-4 sm:px-8 lg:px-16 py-12">
       {/* Heading */}
-      <h1 className="text-3xl sm:text-4xl lg:text-4xl text-center text-black lg:mb-20 mb-12">
+      <h2 className="text-3xl sm:text-4xl lg:text-4xl text-center text-black lg:mb-20 mb-12">
         <span className="text-blue-800">Transform</span> Your Business with Our{" "}
         <span className="text-orange-400">ERP Solutions</span>
-      </h1>
+      </h2>
 
       {/* ===== Section 1 ===== */}
       <div className="grid md:grid-cols-2 gap-10 items-center max-w-7xl mx-auto mb-16">
@@ -30,7 +30,7 @@ const Erpcontent = () => {
             <span className="text-orange-400">ERP User Interfaces</span>
           </h2>
 
-          <p className="text-gray-600 leading-relaxed text-base sm:text-lg mb-4 text-justify">
+          <p className="mt-3 text-[#4d5156] text-[15px] sm:text-[16px] md:text-[17px] leading-[1.75] tracking-[0.01em] font-normal text-justify ">
             We specialize in crafting user-friendly, intuitive front-end
             interfaces tailored to your ERP system. Our designs focus on
             enhancing the user experience with easy navigation, fast loading
@@ -40,7 +40,7 @@ const Erpcontent = () => {
             productivity.
           </p>
 
-          <p className="text-gray-600 leading-relaxed text-base sm:text-lg text-justify">
+          <p className="mt-3 text-[#4d5156] text-[15px] sm:text-[16px] md:text-[17px] leading-[1.75] tracking-[0.01em] font-normal text-justify ">
             We implement modern frameworks like React, Vue, and Angular to build
             dynamic ERP dashboards, inventory management screens, and real-time
             data visualizations. These tools help optimize the end-user
@@ -59,7 +59,7 @@ const Erpcontent = () => {
             <span className="text-orange-400">ERP Backend Systems</span>
           </h2>
 
-          <p className="text-gray-600 leading-relaxed text-base sm:text-lg mb-4 text-justify">
+          <p className="mt-3 text-[#4d5156] text-[15px] sm:text-[16px] md:text-[17px] leading-[1.75] tracking-[0.01em] font-normal text-justify ">
             Our ERP backend solutions are built for scalability, security, and
             performance. By leveraging powerful frameworks like Node.js and
             Express, we create robust APIs that are highly performant, ensuring
@@ -69,7 +69,7 @@ const Erpcontent = () => {
             complexity.
           </p>
 
-          <p className="text-gray-600 leading-relaxed text-base sm:text-lg text-justify">
+          <p className="mt-3 text-[#4d5156] text-[15px] sm:text-[16px] md:text-[17px] leading-[1.75] tracking-[0.01em] font-normal text-justify ">
             We prioritize the implementation of secure user authentication,
             role-based access control, and advanced data management tools. This
             ensures that your ERP system not only supports day-to-day business
@@ -107,7 +107,7 @@ const Erpcontent = () => {
             Tailored <span className="text-orange-400">ERP Applications</span>
           </h2>
 
-          <p className="text-gray-600 leading-relaxed text-base sm:text-lg mb-4 text-justify">
+          <p className="mt-3 text-[#4d5156] text-[15px] sm:text-[16px] md:text-[17px] leading-[1.75] tracking-[0.01em] font-normal text-justify ">
             We develop customized ERP systems designed specifically for your
             business. Whether you need an inventory management system, financial
             tracking, or a customer relationship management (CRM) module, we
@@ -117,7 +117,7 @@ const Erpcontent = () => {
             improving efficiency.
           </p>
 
-          <p className="text-gray-600 leading-relaxed text-base sm:text-lg text-justify">
+          <p className="mt-3 text-[#4d5156] text-[15px] sm:text-[16px] md:text-[17px] leading-[1.75] tracking-[0.01em] font-normal text-justify ">
             Utilizing a full-stack development approach, our custom ERP
             applications combine front-end and back-end technologies to provide
             a seamless user experience. By using modern stacks like the MERN

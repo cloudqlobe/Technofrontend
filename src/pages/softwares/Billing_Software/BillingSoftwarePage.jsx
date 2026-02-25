@@ -6,14 +6,12 @@ import Billingcontents1 from '../../../components/Billingcontents1';
 import Billinganimation from '../../../components/Billinganimation';
 import Billingcontent from '../../../components/Billingcontent';
 import Resellerpage from '../../../components/Resellerpage';
-import { Helmet } from 'react-helmet';
+import usePageTitle from '../../../hooks/usePageTitle';
 
 const BillingSoftwarePage = () => {
+   usePageTitle("Billing & Invoicing Software Development | Codo Stack");
   return (
     <div className="mt-32">
-      <Helmet>
-  <title>Billing & Invoicing Software Development | Codo Stack</title>
-</Helmet>
       <Billingheader/>
       <Resellerpage/>
       <Billingcontent/>

@@ -34,10 +34,10 @@ const Designheader = () => {
 
           {/* LEFT SIDE – Content */}
           <div className="max-w-xl text-center xl:text-left xl:mt-[-100px] mt-0 xl:ml-[-48px] ml-0">
-            <h2 className="text-2xl sm:text-3xl xl:text-4xl font-semibold mb-4 xl:whitespace-nowrap whitespace-normal">
+            <h1 className="text-2xl sm:text-3xl xl:text-4xl font-semibold mb-4 xl:whitespace-nowrap whitespace-normal">
               <span className="text-blue-800">Enterprise-Grade </span>
               <span className="text-orange-500">Cloud Infrastructure</span>
-            </h2>
+            </h1>
             <p className="text-gray-700 mb-6 text-sm leading-relaxed text-center sm:text-justify xl:ml-[5px] ml-0">
               Harness secure, scalable, and globally distributed cloud architecture—built for high availability and peak performance. Our solutions enable faster deployments, cost efficiency, data resilience, and real-time collaboration, all while ensuring compliance and operational reliability.
             </p>
