@@ -1,12 +1,11 @@
-import React from 'react';
 import Footer from '../../../components/Footer';
-import Webheader from '../../../components/Webheader';
-import Webcontents from '../../../components/Webcontents';
-import Webanimation from '../../../components/Webanimation';
-import Webcontnet2 from '../../../components/Webcontnet2';
-import Webregister from '../../../components/Webregister';
 import Resellerpage from '../../../components/Resellerpage';
 import usePageTitle from '../../../hooks/usePageTitle';
+import Webanimation from './Components/Webanimation';
+import Webcontents from './Components/Webcontents';
+import Webcontent2 from './Components/Webcontnet2';
+import Webheader from './Components/Webheader';
+import Webregister from './Components/Webregister';
 
 const WebsitePage = () => {
   usePageTitle("Web Development Company in India | Codo Stack");
@@ -16,7 +15,7 @@ const WebsitePage = () => {
       <Resellerpage />
       <Webcontents />
       <Webanimation />
-      <Webcontnet2 />
+      <Webcontent2 />
       <Webregister />
       <Footer />
     </div>

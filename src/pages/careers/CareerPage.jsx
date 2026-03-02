@@ -1,9 +1,9 @@
 import Footer from '../../components/Footer';
-import Careerheader from '../../components/Careerheader';
-import Careercontent from '../../components/Careercontent';
-import Careeranimation from '../../components/Careeranimation';
-import Careercontent1 from '../../components/Careercontent1';
-import Careerregister from '../../components/Careerregister';
+import Careerheader from './Components/Careerheader';
+import Careercontent from './Components/Careercontent';
+import Careeranimation from './Components/Careeranimation';
+import Careercontent1 from './Components/Careercontent1';
+import Careerregister from './Components/Careerregister';
 import Resellerpage from '../../components/Resellerpage';
 import usePageTitle from '../../hooks/usePageTitle';
 

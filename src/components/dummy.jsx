@@ -1,77 +1,77 @@
 import React from "react";
-import image4 from "../assets/Image/10625917.jpg";
-import image5 from "../assets/Image/6502435.jpg";
-import image6 from "../assets/Image/6224584.jpg";
+import image1 from "../../../assets/Image/build-robots.png";
+import image2 from "../../../assets/Image/10233603.jpg";
+import image3 from "../../../assets/Image/12643942_5024145.svg";
 
-const Techcontent = () => {
+const Workcontent = () => {
   return (
-    <div className="min-h-screen w-full bg-white px-4 sm:px-8 lg:px-12 py-10 overflow-hidden">
-      <h1 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-center text-black mb-8 mt-[30px] px-4">
-        End-to-End <span className="text-blue-800">Tech Consultancy Solutions</span>
+    <div className="min-h-screen w-full bg-white px-12 py-10 overflow-hidden">
+      <h1 className="text-4xl font-semibold text-center text-black mb-8 mt-[30px]">
+        Driving Innovation Through <span className="text-blue-800">Complete IT Solutions</span>
       </h1>
 
-      {/* Tech Strategy Section */}
-      <div className="grid md:grid-cols-2 items-center gap-6 lg:gap-8 mb-12 max-w-7xl mx-auto">
-        <div className="relative flex justify-center items-center w-full p-2 order-1 md:order-1">
+      {/* Section 1: App & Web Development */}
+      <div className="grid md:grid-cols-2 items-center gap-6 mb-8 max-w-7xl mx-auto">
+        <div className="relative flex justify-center items-center w-full p-2">
           <img
-            src={image4}
-            alt="Tech Strategy"
-            className="w-full max-w-[550px] h-auto md:h-[550px] object-cover rounded-lg mt-4 md:mt-[60px] md:ml-[-150px]"
+            src={image2}
+            alt="App & Web Development"
+            className="w-[80%] h-[450px] object-cover rounded-lg mb-2"
           />
         </div>
-        <div className="flex flex-col justify-center w-full md:w-[600px] px-4 md:px-0 md:ml-[58px] order-2 md:order-2">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-default text-grey-400 mb-2 mt-4 md:mt-[30px]">
-            Strategic <span className="text-orange-400">Technology Roadmapping</span>
+        <div className="flex flex-col justify-center w-[600px] ml-[58px]">
+          <h2 className="text-4xl font-default text-grey-400 mb-4">
+            Powerful <span className="text-orange-400">App & Web Development</span>
           </h2>
-          <p className="text-gray-600 text-base lg:text-lg text-justify mt-4 md:mt-[30px] leading-relaxed">
-            We specialize in crafting tailored technology roadmaps that align your digital assets with long-term business goals. Our strategic approach begins with a comprehensive analysis of your workflows, infrastructure, and market opportunities. We evaluate your current systems, identify gaps, and introduce future-ready technology stacks that support scalability, innovation, and efficiency. Every roadmap is customized to empower business leaders with tech-driven decision-making capabilities that foster growth and adaptability in a competitive landscape.
+          <p className="text-gray-600 leading-relaxing text-lg text-justify mt-[20px]">
+            We specialize in developing fast, responsive, and scalable mobile applications and websites using cutting-edge technologies like React, Flutter, Node.js, and more. Our team ensures every project aligns with your brand vision while delivering high-performance functionality across devices. Whether it’s a consumer-facing app or an internal management system, we prioritize code quality, intuitive design, and flawless integration.
           </p>
-          <p className="text-gray-600 text-base lg:text-lg text-justify mt-3 md:mt-[30px] leading-relaxed">
-            Our consultants blend deep technical knowledge with industry foresight to integrate transformative technologies like AI, cloud-native solutions, and automation. We ensure each milestone in the roadmap includes practical, implementable steps — from stakeholder alignment and resource planning to budget forecasting and risk mitigation. The result is a seamless strategy that transitions your business from its current digital state to an optimized, high-performing ecosystem.
+          <p className="text-gray-600 mt-3 leading-relaxing text-lg text-justify mt-[30px]">
+            From ideation and wireframing to backend infrastructure and launch, we offer end-to-end development services. Our team handles cross-platform compatibility, responsive design, and API integration to bring your ideas to life. We also ensure seamless updates and maintenance post-launch so your digital solutions remain optimized, secure, and ahead of the curve in user experience and performance.
           </p>
         </div>
       </div>
 
-      {/* Systems Architecture Section */}
-      <div className="grid md:grid-cols-2 items-center gap-6 lg:gap-8 mb-10 max-w-7xl mx-auto mt-4 md:mt-[-20px]">
-        <div className="flex flex-col justify-center w-full md:w-[600px] px-4 md:px-0 md:ml-[-40px] order-2 md:order-1">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-default text-grey-400 mt-4 md:mt-[30px]">
-            Resilient <span className="text-orange-400">System Architecture</span>
+      {/* Section 2: UI/UX, Custom Software, Cybersecurity */}
+      <div className="grid md:grid-cols-2 items-center gap-6 mb-8 max-w-7xl mx-auto mt-[-24px]">
+        <div className="flex flex-col justify-center w-full ml-[-45px]">
+          <h2 className="text-4xl font-default text-grey-200 mb-4 mt-[40px]">
+            Tailored <span className="text-orange-400">UI/UX & Software Solutions</span>
           </h2>
-          <p className="text-gray-600 text-base lg:text-lg text-justify mt-4 md:mt-[30px] leading-relaxed">
-            Robust architecture is the backbone of high-performance systems, and our consultants focus on building infrastructure that can handle scale, complexity, and change. Whether designing from scratch or optimizing an existing system, we emphasize modularity, microservices, fault-tolerance, and secure data flows. We use modern architecture patterns such as event-driven designs and containerized environments that allow systems to evolve smoothly as business demands grow.
+          <p className="text-gray-600 mt-3 leading-relaxing text-lg text-justify mt-[30px]">
+            We build intuitive, modern interfaces and robust software tailored to your business needs. Our UI/UX design team focuses on user behavior and interface logic to deliver visually appealing and highly usable experiences. From ERP systems to CRM tools and automation platforms, our custom software solutions are engineered for flexibility, scalability, and efficiency across all industries.
           </p>
-          <p className="text-gray-600 text-base lg:text-lg text-justify mt-3 md:mt-[30px] leading-relaxed">
-            We help clients move away from monolithic structures and legacy bottlenecks by introducing technologies like Kubernetes, API gateways, and hybrid cloud frameworks. Our team ensures seamless interoperability between services, disaster recovery planning, and compliance with industry standards. The result is a highly available and scalable tech stack designed for operational efficiency, cost optimization, and long-term resilience.
+          <p className="text-gray-600 mt-3 leading-relaxing text-lg text-justify mt-[30px]">
+            Security is at the heart of every solution we develop. We embed cybersecurity best practices into every layer—from secure coding and encrypted data handling to advanced threat detection and compliance protocols. Our team conducts regular audits, vulnerability assessments, and offers real-time protection mechanisms, ensuring your software remains resilient against cyber threats while delivering top performance.
           </p>
         </div>
-        <div className="relative flex justify-center items-center w-full p-2 order-1 md:order-2">
+        <div className="relative flex justify-center items-center w-full p-2">
           <img
-            src={image5}
-            alt="System Architecture"
-            className="w-full max-w-[600px] h-auto md:h-[600px] object-cover rounded-lg md:mt-[10px] md:ml-[80px]"
+            src={image1}
+            alt="UI/UX and Security"
+            className="w-[85%] h-[450px] object-cover rounded-lg"
           />
         </div>
       </div>
 
-      {/* Audits & Optimization Section */}
-      <div className="grid md:grid-cols-2 items-center gap-6 lg:gap-24 mb-12 max-w-7xl mx-auto">
-        <div className="relative flex justify-center items-center w-full p-2 order-1 md:order-1">
+      {/* Section 3: Cloud & Hosting */}
+      <div className="grid md:grid-cols-2 items-center gap-24 mb-8 max-w-7xl mx-auto mt-[-50px]">
+        <div className="relative flex justify-center items-center w-full p-2">
           <img
-            src={image6}
-            alt="Tech Audits"
-            className="w-full max-w-[600px] h-auto md:h-[750px] object-cover md:mt-[-10px] md:ml-[-70px]"
+            src={image3}
+            alt="Cloud Hosting Solutions"
+            className="w-[90%] h-[500px] object-cover mt-[10px]"
           />
         </div>
-        <div className="flex flex-col justify-center w-full md:w-[600px] px-4 md:px-0 md:ml-[22px] md:mt-[-40px] order-2 md:order-2">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-default text-grey-400 mt-4 md:mt-[40px]">
-            Comprehensive <span className="text-orange-400">Tech Audits & Optimization</span>
+        <div className="flex flex-col justify-center w-full ml-[30px]">
+          <h2 className="text-4xl font-default text-grey-200 mb-2  mt-16">
+          Cloud Infrastructure <span className="text-orange-400"> & Security</span>
           </h2>
-          <p className="text-gray-600 text-base lg:text-lg text-justify mt-4 md:mt-[30px] leading-relaxed">
-            Our tech audit services uncover performance bottlenecks, outdated practices, and hidden vulnerabilities across your technology stack. We conduct full-stack diagnostics, analyzing code health, infrastructure efficiency, cloud cost usage, and DevOps processes. By using tools like static code analysis, vulnerability scanners, and real-time monitoring frameworks, we provide a 360° view of your system's current state with prioritized recommendations for action.
+          <p className="text-gray-600 mt-3 leading-relaxing text-lg text-justify mt-[30px]">
+            Our cloud hosting and infrastructure services are designed to ensure seamless scalability, performance, and uptime. Whether you need shared hosting, VPS, or a full cloud-native deployment, we help businesses modernize infrastructure and transition securely to the cloud with minimal downtime. Our solutions also support DevOps automation and multi-region architecture for global reach and business continuity.
           </p>
-          <p className="text-gray-600 text-base lg:text-lg text-justify mt-4 md:mt-[30px] leading-relaxed">
-            Post-audit, we guide your team through tactical optimization — from performance tuning and cost control to security hardening and automation. We empower you with structured improvement plans that reduce latency, increase throughput, and enforce secure best practices. Whether refactoring legacy modules or streamlining CI/CD pipelines, our goal is to turn your existing infrastructure into a future-proof, high-efficiency digital environment.
+          <p className="text-gray-600 mt-3 leading-relaxing text-lg text-justify mt-[30px]">
+            We integrate cybersecurity into every cloud solution—offering firewalls, DDoS protection, data encryption, and compliance-ready configurations. With real-time monitoring and regular backups, your digital assets stay safe and operational. Partnering with top-tier providers, we deliver secure and cost-effective infrastructure that grows with your business while ensuring top-tier protection and support.
           </p>
         </div>
       </div>
@@ -79,4 +79,4 @@ const Techcontent = () => {
   );
 };
 
-export default Techcontent;
+export default Workcontent;

@@ -1,12 +1,11 @@
-import React from 'react';
-import Crmheader from '../../../components/Crmheader';
-import Crmcontent from '../../../components/Crmcontent';
-import Crmanimation from '../../../components/Crmanimation';
-import Crmcontent1 from '../../../components/Crmcontent1';
 import Footer from '../../../components/Footer';
-import Webregister from '../../../components/Webregister';
+import Webregister from '../../service/Website_Development/Components/Webregister';
 import Resellerpage from '../../../components/Resellerpage';
 import usePageTitle from '../../../hooks/usePageTitle';
+import Crmheader from './Components/Crmheader';
+import Crmcontent from './Components/Crmcontent';
+import Crmanimation from './Components/Crmanimation';
+import Crmcontent1 from './Components/Crmcontent1';
 
 const CRMPage = () => {
    usePageTitle("CRM Software Development Solutions | Codo Stack");

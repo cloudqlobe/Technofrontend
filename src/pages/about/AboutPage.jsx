@@ -1,12 +1,11 @@
-import React from 'react';
-import Footer from '../../components/Footer';
-import Webregister from '../../components/Webregister';
-import Aboutcontent1 from '../../components/Aboutcontent1';
-import Aboutheader from '../../components/Aboutheader';
-import Aboutcontent from '../../components/Aboutcontent';
-import Aboutanimation from '../../components/Aboutanimation';
-import Resellerpage from '../../components/Resellerpage';
-import usePageTitle from '../../hooks/usePageTitle';
+import Footer from "../../components/Footer";
+import Resellerpage from "../../components/Resellerpage";
+import Webregister from "../service/Website_Development/Components/Webregister";
+import usePageTitle from "../../hooks/usePageTitle";
+import Aboutanimation from "./Components/Aboutanimation";
+import Aboutcontent from "./Components/Aboutcontent";
+import Aboutcontent1 from "./Components/Aboutcontent1";
+import Aboutheader from "./Components/Aboutheader";
 
 const AboutPage = () => {
   usePageTitle("About Us | Codo Stack");

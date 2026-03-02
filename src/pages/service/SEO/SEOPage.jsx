@@ -1,18 +1,18 @@
 import React from 'react';
 import Footer from '../../../components/Footer';
-import Hostingheader from '../../../components/Hostingheader';
-import Hostingcontent from '../../../components/Hostingcontent';
-import Hostinganimation from '../../../components/Hostinganimation';
-import Hostingcontent2 from '../../../components/Hostingcontent2';
-import Webregister from '../../../components/Webregister';
+import Webregister from '../Website_Development/Components/Webregister';
 import Resellerpage from '../../../components/Resellerpage';
 import usePageTitle from '../../../hooks/usePageTitle';
+import HostingHeader from './Components/Hostingheader';
+import Hostingcontent from './Components/Hostingcontent';
+import Hostingcontent2 from './Components/Hostingcontent2';
+import Hostinganimation from './Components/Hostinganimation';
 
 const SEOPage = () => {
    usePageTitle("SEO & Digital Marketing Services in India | Codo Stack");
   return (
     <div className="mt-32">
-      <Hostingheader/>
+      <HostingHeader/>
       <Resellerpage/>
       <Hostingcontent/>
       <Hostinganimation/>

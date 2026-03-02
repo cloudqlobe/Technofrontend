@@ -1,10 +1,10 @@
 import React from 'react';
 import Footer from '../../../components/Footer';
-import Webregister from '../../../components/Webregister';
-import Botcontents1 from '../../../components/Botcontents1';
-import Botanimation from '../../../components/Botanimation';
-import Botcontent from '../../../components/Botcontent';
-import Botheader from '../../../components/Botheader';
+import Webregister from '../../service/Website_Development/Components/Webregister';
+import Botcontents1 from './Components/Botcontents1';
+import Botanimation from './Components/Botanimation';
+import Botcontent from './Components/Botcontent';
+import Botheader from './Components/Botheader';
 import Resellerpage from '../../../components/Resellerpage';
 import usePageTitle from '../../../hooks/usePageTitle';
 

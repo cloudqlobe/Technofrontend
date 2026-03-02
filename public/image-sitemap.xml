@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <url>
+    <loc>https://codostack.com/</loc>
+    <image:image>
+      <image:loc>https://codostack.com/assets/images/hero-banner.jpg</image:loc>
+      <image:title>Codostack Software Solutions</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://codostack.com/services</loc>
+    <image:image>
+      <image:loc>https://codostack.com/assets/images/cloud-services.jpg</image:loc>
+      <image:title>Cloud Services</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://codostack.com/software</loc>
+    <image:image>
+      <image:loc>https://codostack.com/assets/images/software-development.jpg</image:loc>
+      <image:title>Software Development</image:title>
+    </image:image>
+  </url>
+
+</urlset>

@@ -1,10 +1,10 @@
 import React from 'react';
+import Billingheader from './Components/Billingheader';
+import Billingcontents1 from './Components/Billingcontents1';
+import Billinganimation from './Components/Billinganimation';
+import Billingcontent from './Components/Billingcontent';
+import Webregister from '../../service/Website_Development/Components/Webregister';
 import Footer from '../../../components/Footer';
-import Webregister from '../../../components/Webregister';
-import Billingheader from '../../../components/Billingheader';
-import Billingcontents1 from '../../../components/Billingcontents1';
-import Billinganimation from '../../../components/Billinganimation';
-import Billingcontent from '../../../components/Billingcontent';
 import Resellerpage from '../../../components/Resellerpage';
 import usePageTitle from '../../../hooks/usePageTitle';
 

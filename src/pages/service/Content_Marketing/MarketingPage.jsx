@@ -1,12 +1,13 @@
 import React from 'react';
 import Footer from '../../../components/Footer';
-import Webregister from '../../../components/Webregister';
-import Techheader from '../../../components/Techheader';
-import Techcontent1 from '../../../components/Techcontent1';
-import Techcontent from '../../../components/Techcontent';
-import Techanimation from '../../../components/Techanimation';
+import Webregister from '../Website_Development/Components/Webregister';
+
 import Resellerpage from '../../../components/Resellerpage';
 import usePageTitle from '../../../hooks/usePageTitle';
+import Techheader from './Components/Techheader';
+import Techcontent from './Components/Techcontent';
+import Techanimation from './Components/Techanimation';
+import Techcontent1 from './Components/Techcontent1';
 
 const MarketingPage = () => {
  usePageTitle("Content Marketing Services to Grow Your Brand | Codo Stack");

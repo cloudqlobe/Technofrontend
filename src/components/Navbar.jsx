@@ -151,7 +151,13 @@ const Navbar = () => {
         About Us
       </Link>
     </li>
-
+    <li
+      className={`px-3 cursor-pointer ${isActive("/our-works") ? "text-blue-500" : ""}`}
+    >
+      <Link to="/our-works" className="p-name">
+        Our Works
+      </Link>
+    </li>
     <li
       className={`relative px-3 cursor-pointer ${
         dropdown === "softwares" || location.pathname.includes("/software")
@@ -335,6 +341,15 @@ const Navbar = () => {
                     onClick={closeMobileMenu}
                   >
                     About Us
+                  </Link>
+                </li>
+                <li className={`${isActive("/our-works") ? "text-blue-500" : "text-gray-800"}`}>
+                  <Link
+                    to="/our-works"
+                    className="block px-4 py-3 font-semibold hover:bg-gray-100 rounded-md"
+                    onClick={closeMobileMenu}
+                  >
+                    Our Works
                   </Link>
                 </li>
 

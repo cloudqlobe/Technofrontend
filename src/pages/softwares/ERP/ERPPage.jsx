@@ -1,18 +1,18 @@
 import React from 'react';
 import Footer from '../../../components/Footer';
-import Webregister from '../../../components/Webregister';
-import Erpheader from '../../../components/Erpheader';
-import Erpcontent from '../../../components/Erpcontent';
-import Erpanimation from '../../../components/Erpanimation';
-import Erpcontents1 from '../../../components/Erpcontents1';
+import Webregister from '../../service/Website_Development/Components/Webregister';
 import Resellerpage from '../../../components/Resellerpage';
 import usePageTitle from '../../../hooks/usePageTitle';
+import ERPHeader from './Components/Erpheader';
+import Erpcontent from './Components/Erpcontent';
+import Erpanimation from './Components/Erpanimation';
+import Erpcontents1 from './Components/Erpcontents1';
 
 const ERPPage = () => {
    usePageTitle("ERP Software Development for Businesses | Codo Stack");
   return (
     <div className="mt-32">
-      <Erpheader/>
+      <ERPHeader/>
       <Resellerpage/>
       <Erpcontent/>
       <Erpanimation/>

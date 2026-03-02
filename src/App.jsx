@@ -16,7 +16,8 @@ import BillingSoftwarePage from "./pages/softwares/Billing_Software/BillingSoftw
 import ScrollToTop from "./ScrollToTop";
 import ChatbotPage from "./pages/softwares/Chatbot/ChatbotPage";
 import AutoBreadcrumbSchema from "./components/AutoBreadcrumbSchema";
-
+import Sitemap from "./pages/sitemap/Sitemap";
+import WorksPage from "./pages/works/page";
 
 
 const App = () => {
@@ -24,11 +25,13 @@ const App = () => {
     <Router>
       <ScrollToTop />
       <Navbar />
-                  <AutoBreadcrumbSchema />
+      <AutoBreadcrumbSchema />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/careers" element={<CareerPage />} />
+        <Route path="/our-works" element={<WorksPage />} />
+        <Route path="/sitemap" element={<Sitemap />} />
 
         <Route path="/services/*" element={
           <Routes>

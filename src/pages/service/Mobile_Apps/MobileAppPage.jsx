@@ -1,12 +1,11 @@
-import React from 'react';
-import Mobheader from '../../../components/Mobheader';
 import Footer from '../../../components/Footer';
-import Webregister from '../../../components/Webregister';
-import Mobcontent from '../../../components/Mobcontent';
-import Mobanimation from '../../../components/Mobanimation';
-import Mobcontent1 from '../../../components/Mobcontent1';
+import Webregister from '../Website_Development/Components/Webregister';
 import Resellerpage from '../../../components/Resellerpage';
 import usePageTitle from '../../../hooks/usePageTitle';
+import Mobheader from './Components/Mobheader';
+import Mobcontent from './Components/Mobcontent';
+import Mobanimation from './Components/Mobanimation';
+import Mobcontent1 from './Components/Mobcontent1';
 
 const MobileAppPage = () => {
    usePageTitle("Mobile App Development Company in India | Codo Stack");
