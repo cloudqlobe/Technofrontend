@@ -264,8 +264,8 @@ export default function Footer() {
             <span className="hidden sm:inline">|</span>
             <a href="/contact" className="hover:underline hover:text-white transition">Contact Us</a>
           </div>
-          <p className="text-gray-400 text-xs sm:text-sm mt-3 md:mt-4 px-4">
-            Disclaimer: The information provided on this website is for general informational purposes only.
+<p className="text-gray-100 text-xs sm:text-sm mt-3 md:mt-4 px-4">
+              Disclaimer: The information provided on this website is for general informational purposes only.
           </p>
         </div>
       </div>

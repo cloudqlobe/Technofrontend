@@ -24,9 +24,9 @@ const ContentPage = () => {
 
         {/* Content */}
         <div className="order-2 md:order-2 flex flex-col justify-center text-center md:text-left">
-          <h2 className="text-3xl md:text-4xl font-default text-gray-700 mt-6 md:mt-0 mb-3">
-            Empowering <span className="text-orange-400">Tech Solutions</span>
-          </h2>
+<h2 className="text-3xl md:text-4xl font-default text-gray-800">
+  Empowering <span className="text-orange-700">Tech Solutions</span>
+</h2>
 
           <p className="mt-3 text-[#4d5156] text-[15px] sm:text-[16px] md:text-[17px] leading-[1.75] tracking-[0.01em] font-normal text-justify ">
             At Codo Stack, we empower enterprises with advanced IT services engineered for performance, security, and scalability. From proactive network oversight to resilient cloud infrastructure, our offerings are designed to meet your growth goals and long-term digital sustainability. We create intelligent, cost-efficient environments that streamline operations, minimize risks, and elevate productivity across every layer of your business ecosystem.
@@ -54,9 +54,9 @@ const ContentPage = () => {
 
         {/* Content */}
         <div className="order-2 md:order-1 text-center md:text-left">
-<h2 className="text-3xl md:text-4xl font-default text-gray-700 mt-6 md:mt-0 mb-3">
-            Smart <span className="text-orange-400">Chatbot Solutions</span>
-          </h2>
+<h2 className="text-3xl md:text-4xl font-default text-gray-800">
+  Smart <span className="text-orange-700">Chatbot Solutions</span>
+</h2>
 
           <p className="mt-3 text-[#4d5156] text-[15px] sm:text-[16px] md:text-[17px] leading-[1.75] tracking-[0.01em] font-normal text-justify ">
             At Codo Stack, we build next-gen AI chatbots that revolutionize customer interaction and automate complex workflows with unmatched accuracy. Engineered with advanced NLP, machine learning, and contextual intelligence, our proprietary chatbot framework delivers real-time, personalized communication that boosts engagement, loyalty, and conversions—empowering brands with intelligent, scalable, and efficient digital agents tailored for impactful business transformation.
@@ -84,9 +84,9 @@ const ContentPage = () => {
 
         {/* Content */}
         <div className="order-2 md:order-2 flex flex-col justify-center text-center md:text-left">
-<h2 className="text-3xl md:text-4xl font-default text-gray-700 mt-6 md:mt-0 mb-3">
-            Custom <span className="text-orange-400">Software Solutions</span>
-          </h2>
+<h2 className="text-3xl md:text-4xl font-default text-gray-800">
+  Custom <span className="text-orange-700">Software Solutions</span>
+</h2>
 
           <p className="mt-3 text-[#4d5156] text-[15px] sm:text-[16px] md:text-[17px] leading-[1.75] tracking-[0.01em] font-normal text-justify ">
             At Codo Stack, we specialize in creating high-performance, custom software solutions that drive efficiency, scalability, and innovation. Whether it’s intuitive mobile applications or complex web platforms, our technology seamlessly integrates with your existing infrastructure, enabling your team to work more efficiently while providing an exceptional user experience. We craft solutions that not only align with your long-term vision but also adapt to the evolving needs of your business, ensuring sustained growth and success.

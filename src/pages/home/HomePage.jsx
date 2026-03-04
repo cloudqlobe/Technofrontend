@@ -151,9 +151,9 @@ const HomePage = () => {
         {/* ===== Scroller Section ===== */}
         <div className="w-full py-10 mt-8 bg-[#EFEFEF]">
 
-          <h3 className="text-xl sm:text-2xl font-semibold text-center">
-            Advanced IT & <span className="text-orange-700">Networking Solutions</span>
-          </h3>
+          <h2 className="text-xl sm:text-2xl font-semibold text-center">
+            Advanced IT & <span className="text-orange-500">Networking Solutions</span>
+          </h2>
 
           <p className="text-sm sm:text-md text-gray-600 text-center mb-8 px-4">
             From AI to cloud computing, we cover all your tech needs.

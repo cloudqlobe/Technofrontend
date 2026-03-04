@@ -23,8 +23,8 @@ export default function ResellerSection() {
       <div className="w-full lg:w-[50%] flex flex-col h-full justify-center lg:px-4 lg:pl-6">
         
         {/* Main Heading */}
-        <h2 className="text-3xl sm:text-4xl font-semibold text-gray-700 mb-8 lg:ml-6 text-center lg:text-left">
-          Become a Reseller & <span className="text-orange-500">Grow with Us!</span>
+        <h2 className="text-3xl sm:text-4xl font-semibold text-gray-800 mb-8 lg:ml-6 text-center lg:text-left">
+          Become a Reseller & <span className="text-orange-700">Grow with Us!</span>
         </h2>
 
         {/* Features Grid */}
@@ -36,22 +36,22 @@ export default function ResellerSection() {
           "
         >
           <div className="bg-blue-100 p-5 h-20 flex items-center border border-blue-400 shadow-md">
-            <FaHeadset className="text-blue-500 text-3xl mr-4" />
+  <FaHeadset className="text-blue-700 text-3xl mr-4" />
             <span className="text-lg font-semibold">24/7 Support</span>
           </div>
 
           <div className="bg-green-100 p-5 h-20 flex items-center border border-green-400 shadow-md">
-            <FaUserTie className="text-green-500 text-3xl mr-4" />
+<FaUserTie className="text-green-700 text-3xl mr-4" />
             <span className="text-lg font-semibold">Dedicated Account Manager</span>
           </div>
 
           <div className="bg-yellow-100 p-5 h-20 flex items-center border border-yellow-400 shadow-md">
-            <FaShieldAlt className="text-yellow-500 text-3xl mr-4" />
+<FaShieldAlt className="text-yellow-700 text-3xl mr-4" />
             <span className="text-lg font-semibold">Secure Transactions</span>
           </div>
 
           <div className="bg-purple-100 p-5 h-20 flex items-center border border-purple-400 shadow-md">
-            <FaUsers className="text-purple-500 text-3xl mr-4" />
+<FaUsers className="text-purple-700 text-3xl mr-4" />
             <span className="text-lg font-semibold">Exclusive Partner Benefits</span>
           </div>
         </div>
@@ -67,12 +67,14 @@ export default function ResellerSection() {
           "
         >
           <h3 className="text-2xl font-bold mb-4">Become a Reseller</h3>
-          <p className="text-md mb-5 text-gray-700">
+          <p className="text-md mb-5 text-gray-800">
             Join our reseller program and start earning by offering our services to your clients.
           </p>
-          <button className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-8 text-lg rounded-md">
-            Register Now
-          </button>
+<button
+  className="bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 px-8 text-lg rounded-md"
+>
+  Register Now
+</button>
         </div>
       </div>
     </div>
