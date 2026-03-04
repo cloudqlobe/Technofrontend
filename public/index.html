@@ -96,7 +96,19 @@
           'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
     })(window, document, 'script', 'dataLayer', 'GTM-M255W4NG');</script>
   <!-- End Google Tag Manager -->
-
+   <script>
+  const loadCSS = (href) => {
+    const l = document.createElement("link");
+    l.rel = "stylesheet";
+    l.href = href;
+    document.head.appendChild(l);
+  };
+</script>
+<link
+  rel="preload"
+  href="%PUBLIC_URL%/static/css/main.css"
+  as="style"
+>
 </head>
 
 <body>

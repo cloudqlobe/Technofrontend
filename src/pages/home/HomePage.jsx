@@ -152,7 +152,7 @@ const HomePage = () => {
         <div className="w-full py-10 mt-8 bg-[#EFEFEF]">
 
           <h2 className="text-xl sm:text-2xl font-semibold text-center">
-            Advanced IT & <span className="text-orange-500">Networking Solutions</span>
+            Advanced IT & <span className="text-orange-600">Networking Solutions</span>
           </h2>
 
           <p className="text-sm sm:text-md text-gray-600 text-center mb-8 px-4">
