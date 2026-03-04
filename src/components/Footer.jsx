@@ -140,52 +140,88 @@ export default function Footer() {
 
             {/* Contact + Social Icons */}
             <div className="text-gray-300 mt-4 md:mt-8 lg:mt-0">
-<div>
-  <h3 className="text-lg md:text-xl font-default text-white mb-3 md:mb-0">
-    CONTACT
-  </h3>
+              <div>
+                <h3 className="text-lg md:text-xl font-default text-white mb-3 md:mb-0">
+                  CONTACT
+                </h3>
 
-  <p className="p-tel flex items-center mt-4 md:mt-6 text-base md:text-lg">
-    <FaPhoneAlt className="mr-3 text-sm md:text-base flex-shrink-0" />
-    +44 7491 896532
-  </p>
+                <p className="p-tel flex items-center mt-4 md:mt-6 text-base md:text-lg">
+                  <FaPhoneAlt className="mr-3 text-sm md:text-base flex-shrink-0" />
+                  +44 7491 896532
+                </p>
 
-  <p className="p-email flex items-center mt-3 md:mt-4 text-base md:text-lg">
-    <FaEnvelope className="mr-3 text-sm md:text-base flex-shrink-0" />
-    business@codostack.com
-  </p>
-</div>
-<div className="hidden h-card">
-  <h2 className="p-name">CodoStack Technologies</h2>
-  <p className="p-org">CodoStack</p>
-  <div className="p-adr">
-    <span className="p-country-name">India</span>
-  </div>
-</div>
+                <p className="p-email flex items-center mt-3 md:mt-4 text-base md:text-lg">
+                  <FaEnvelope className="mr-3 text-sm md:text-base flex-shrink-0" />
+                  business@codostack.com
+                </p>
+              </div>
+              <div className="hidden h-card">
+                <h2 className="p-name">CodoStack Technologies</h2>
+                <p className="p-org">CodoStack</p>
+                <div className="p-adr">
+                  <span className="p-country-name">India</span>
+                </div>
+              </div>
 
               {/* Social Icons */}
               <div className="flex flex-wrap gap-3 md:gap-5 mt-8 md:mt-16 ml-0 md:ml-2">
-                <a href="https://www.facebook.com/profile.php?id=61588465526083" className="bg-[#3b5998] p-2 md:p-3 text-lg md:text-xl font-bold text-white hover:scale-110 transition mt-4 md:mt-8">
+
+                <a
+                  href="https://www.facebook.com/profile.php?id=61588465526083"
+                  aria-label="Visit our Facebook page"
+                  className="bg-[#3b5998] p-2 md:p-3 text-lg md:text-xl font-bold text-white hover:scale-110 transition mt-4 md:mt-8"
+                >
                   <FaFacebookF />
                 </a>
-                <a href="/" className="bg-[#00acee] p-2 md:p-3 text-lg md:text-xl font-bold text-white hover:scale-110 transition mt-4 md:mt-8">
+
+                <a
+                  href="/"
+                  aria-label="Visit our Twitter page"
+                  className="bg-[#00acee] p-2 md:p-3 text-lg md:text-xl font-bold text-white hover:scale-110 transition mt-4 md:mt-8"
+                >
                   <FaTwitter />
                 </a>
-                <a href="https://www.instagram.com/codostack/?hl=en" className="bg-[#C13584] p-2 md:p-3 text-lg md:text-xl font-bold text-white hover:scale-110 transition mt-4 md:mt-8">
+
+                <a
+                  href="https://www.instagram.com/codostack/?hl=en"
+                  aria-label="Visit our Instagram page"
+                  className="bg-[#C13584] p-2 md:p-3 text-lg md:text-xl font-bold text-white hover:scale-110 transition mt-4 md:mt-8"
+                >
                   <FaInstagram />
                 </a>
-                <a href="https://www.linkedin.com/company/106379318/admin/dashboard/" className="bg-[#0A66C2] p-2 md:p-3 text-lg md:text-xl font-bold text-white hover:scale-110 transition mt-4 md:mt-8">
+
+                <a
+                  href="https://www.linkedin.com/company/106379318/admin/dashboard/"
+                  aria-label="Visit our LinkedIn page"
+                  className="bg-[#0A66C2] p-2 md:p-3 text-lg md:text-xl font-bold text-white hover:scale-110 transition mt-4 md:mt-8"
+                >
                   <FaLinkedinIn />
                 </a>
-                <a href="/" className="bg-[#FF0000] p-2 md:p-3 text-lg md:text-xl font-bold text-white hover:scale-110 transition mt-4 md:mt-8">
+
+                <a
+                  href="/"
+                  aria-label="Visit our YouTube channel"
+                  className="bg-[#FF0000] p-2 md:p-3 text-lg md:text-xl font-bold text-white hover:scale-110 transition mt-4 md:mt-8"
+                >
                   <FaYoutube />
                 </a>
-                <a href="/" className="bg-[#E60023] p-2 md:p-3 text-lg md:text-xl font-bold text-white hover:scale-110 transition mt-4 md:mt-8">
+
+                <a
+                  href="/"
+                  aria-label="Visit our Pinterest page"
+                  className="bg-[#E60023] p-2 md:p-3 text-lg md:text-xl font-bold text-white hover:scale-110 transition mt-4 md:mt-8"
+                >
                   <FaPinterestP />
                 </a>
-                <a href="/" className="bg-[#333] p-2 md:p-3 text-lg md:text-xl font-bold text-white hover:scale-110 transition mt-4 md:mt-8">
+
+                <a
+                  href="/"
+                  aria-label="Visit our GitHub profile"
+                  className="bg-[#333] p-2 md:p-3 text-lg md:text-xl font-bold text-white hover:scale-110 transition mt-4 md:mt-8"
+                >
                   <FaGithub />
                 </a>
+
               </div>
             </div>
           </div>

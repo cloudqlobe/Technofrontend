@@ -203,6 +203,7 @@ const Navbar = () => {
         {/* Mobile Menu Button */}
         <button
           className="lg:hidden text-gray-800 text-2xl p-2"
+  aria-label="Toggle navigation menu"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
           {mobileMenuOpen ? <FiX /> : <FiMenu />}
