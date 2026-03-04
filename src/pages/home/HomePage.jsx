@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, lazy, Suspense } from "react";
 import { motion } from "framer-motion";
 import { IoIosCloudDone } from "react-icons/io";
 import { FaCode, FaShieldAlt, FaDatabase, FaRobot, FaMobile } from "react-icons/fa";
@@ -6,11 +6,11 @@ import { FaServer, FaLock, FaCloud, FaCodeBranch, FaNetworkWired, FaTools } from
 import Model from "./Components/Model";
 import ContentPage from "./Components/Content";
 import StatsSection from "./Components/Count";
-import ResellerSection from "./Components/Card";
 import Footer from "../../components/Footer";
 import Dmodel from "./Components/Dmodel";
 import { useLocation } from "react-router-dom";
 import usePageTitle from "../../hooks/usePageTitle";
+const ResellerSection = lazy(() => import("./Components/Card"));
 
 const techDetails = [
   { icon: <FaCode className="text-blue-500 text-[5rem]" />, name: "Web Development", description: "Building responsive and interactive websites using React, Vue, and Next.js." },
@@ -196,7 +196,9 @@ const HomePage = () => {
       <Dmodel />
       <ContentPage />
       <StatsSection />
+      <Suspense fallback={null}>
       <ResellerSection />
+      </Suspense>
       <Footer />
     </>
   );
