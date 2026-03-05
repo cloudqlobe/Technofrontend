@@ -12,11 +12,36 @@ import { motion, AnimatePresence } from "framer-motion";
 import logo from "../assets/Image/logo2.png";
 
 const socialIcons = [
-  { id: 1, icon: <FaFacebookF size={14} className="text-white" />, bgColor: "bg-blue-600" },
-  { id: 2, icon: <FaLinkedinIn size={14} className="text-white" />, bgColor: "bg-blue-700" },
-  { id: 3, icon: <FaInstagram size={14} className="text-white" />, bgColor: "bg-pink-500" },
-  { id: 4, icon: <FaTwitter size={14} className="text-white" />, bgColor: "bg-blue-400" },
-  { id: 5, icon: <BsMicrosoftTeams size={14} className="text-white" />, bgColor: "bg-purple-400" },
+  {
+    id: 1,
+    icon: <FaFacebookF size={14} className="text-white" />,
+    bgColor: "bg-blue-600",
+    url: "https://www.facebook.com/profile.php?id=61588465526083"
+  },
+  {
+    id: 2,
+    icon: <FaLinkedinIn size={14} className="text-white" />,
+    bgColor: "bg-blue-700",
+    url: "https://www.linkedin.com/company/106379318/admin/dashboard/"
+  },
+  {
+    id: 3,
+    icon: <FaInstagram size={14} className="text-white" />,
+    bgColor: "bg-pink-500",
+    url: "https://www.instagram.com/codostack/?hl=en"
+  },
+  {
+    id: 4,
+    icon: <FaTwitter size={14} className="text-white" />,
+    bgColor: "bg-blue-400",
+    url: "https://x.com/codostack"
+  },
+  {
+    id: 5,
+    icon: <BsMicrosoftTeams size={14} className="text-white" />,
+    bgColor: "bg-purple-400",
+    url: "https://teams.microsoft.com"
+  }
 ];
 
 const iconStyle = {
@@ -89,7 +114,7 @@ const Navbar = () => {
           onMouseLeave={() => setShowIcons(false)}
         >
           {/* Logo */}
-<div className="flex items-center gap-3">
+          <div className="flex items-center gap-3">
             <img
               src={logo}
               alt="Logo"
@@ -105,12 +130,18 @@ const Navbar = () => {
                 exit={{ opacity: 0, y: -10 }}
               >
                 {socialIcons.map(item => (
-                  <motion.div
+                  <a
                     key={item.id}
-                    className={`p-2 ${item.bgColor} rounded-lg shadow-lg`}
+                    href={item.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    {item.icon}
-                  </motion.div>
+                    <motion.div
+                      className={`p-2 ${item.bgColor} rounded-lg shadow-lg`}
+                    >
+                      {item.icon}
+                    </motion.div>
+                  </a>
                 ))}
               </motion.div>
             )}
@@ -118,68 +149,66 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Nav Items */}
-<nav aria-label="Primary Navigation">
-  <ul
-    className="hidden lg:flex space-x-4 text-gray-800 text-base font-semibold"
-    ref={dropdownRef}
-  >
-    <li
-      className={`px-3 cursor-pointer ${isActive("/") ? "text-blue-500" : ""}`}
-    >
-      <Link to="/" className="p-name">
-        Home
-      </Link>
-    </li>
+        <nav aria-label="Primary Navigation">
+          <ul
+            className="hidden lg:flex space-x-4 text-gray-800 text-base font-semibold"
+            ref={dropdownRef}
+          >
+            <li
+              className={`px-3 cursor-pointer ${isActive("/") ? "text-blue-500" : ""}`}
+            >
+              <Link to="/" className="p-name">
+                Home
+              </Link>
+            </li>
 
-    <li
-      className={`relative px-3 cursor-pointer ${
-        dropdown === "services" || location.pathname.includes("/services")
-          ? "text-blue-500"
-          : ""
-      }`}
-      onClick={() => toggleDropdown("services")}
-    >
-      <span className="flex items-center gap-2 p-name">
-        Services <FaChevronDown className="text-xs" />
-      </span>
-    </li>
+            <li
+              className={`relative px-3 cursor-pointer ${dropdown === "services" || location.pathname.includes("/services")
+                ? "text-blue-500"
+                : ""
+                }`}
+              onClick={() => toggleDropdown("services")}
+            >
+              <span className="flex items-center gap-2 p-name">
+                Services <FaChevronDown className="text-xs" />
+              </span>
+            </li>
 
-    <li
-      className={`px-3 cursor-pointer ${isActive("/about") ? "text-blue-500" : ""}`}
-    >
-      <Link to="/about" className="p-name">
-        About Us
-      </Link>
-    </li>
-    <li
-      className={`px-3 cursor-pointer ${isActive("/our-works") ? "text-blue-500" : ""}`}
-    >
-      <Link to="/our-works" className="p-name">
-        Our Works
-      </Link>
-    </li>
-    <li
-      className={`relative px-3 cursor-pointer ${
-        dropdown === "softwares" || location.pathname.includes("/software")
-          ? "text-blue-500"
-          : ""
-      }`}
-      onClick={() => toggleDropdown("softwares")}
-    >
-      <span className="flex items-center gap-2 p-name">
-        Softwares <FaChevronDown className="text-xs" />
-      </span>
-    </li>
+            <li
+              className={`px-3 cursor-pointer ${isActive("/about") ? "text-blue-500" : ""}`}
+            >
+              <Link to="/about" className="p-name">
+                About Us
+              </Link>
+            </li>
+            <li
+              className={`px-3 cursor-pointer ${isActive("/our-works") ? "text-blue-500" : ""}`}
+            >
+              <Link to="/our-works" className="p-name">
+                Our Works
+              </Link>
+            </li>
+            <li
+              className={`relative px-3 cursor-pointer ${dropdown === "softwares" || location.pathname.includes("/software")
+                ? "text-blue-500"
+                : ""
+                }`}
+              onClick={() => toggleDropdown("softwares")}
+            >
+              <span className="flex items-center gap-2 p-name">
+                Softwares <FaChevronDown className="text-xs" />
+              </span>
+            </li>
 
-    <li
-      className={`px-3 cursor-pointer ${isActive("/careers") ? "text-blue-500" : ""}`}
-    >
-      <Link to="/careers" className="p-name">
-        Careers
-      </Link>
-    </li>
-  </ul>
-</nav>
+            <li
+              className={`px-3 cursor-pointer ${isActive("/careers") ? "text-blue-500" : ""}`}
+            >
+              <Link to="/careers" className="p-name">
+                Careers
+              </Link>
+            </li>
+          </ul>
+        </nav>
 
         {/* Desktop Search and Contact */}
         <div className="hidden lg:flex items-center space-x-10">
@@ -203,7 +232,7 @@ const Navbar = () => {
         {/* Mobile Menu Button */}
         <button
           className="lg:hidden text-gray-800 text-2xl p-2"
-  aria-label="Toggle navigation menu"
+          aria-label="Toggle navigation menu"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
           {mobileMenuOpen ? <FiX /> : <FiMenu />}
@@ -419,12 +448,18 @@ const Navbar = () => {
               {/* Mobile Social Icons */}
               <div className="flex justify-center space-x-4 mt-6 pt-6 border-t border-gray-200">
                 {socialIcons.map(item => (
-                  <div
+                  <a
                     key={item.id}
-                    className={`p-2.5 ${item.bgColor} rounded-lg shadow-lg cursor-pointer hover:opacity-80 transition-opacity`}
+                    href={item.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    {item.icon}
-                  </div>
+                    <div
+                      className={`p-2.5 ${item.bgColor} rounded-lg shadow-lg cursor-pointer hover:opacity-80 transition-opacity`}
+                    >
+                      {item.icon}
+                    </div>
+                  </a>
                 ))}
               </div>
             </div>

@@ -175,7 +175,7 @@ export default function Footer() {
                 </a>
 
                 <a
-                  href="/"
+                  href="https://x.com/codostack"
                   aria-label="Visit our Twitter page"
                   className="bg-[#00acee] p-2 md:p-3 text-lg md:text-xl font-bold text-white hover:scale-110 transition mt-4 md:mt-8"
                 >
@@ -199,7 +199,7 @@ export default function Footer() {
                 </a>
 
                 <a
-                  href="/"
+                  href="https://www.youtube.com/@Codostack"
                   aria-label="Visit our YouTube channel"
                   className="bg-[#FF0000] p-2 md:p-3 text-lg md:text-xl font-bold text-white hover:scale-110 transition mt-4 md:mt-8"
                 >
@@ -207,7 +207,7 @@ export default function Footer() {
                 </a>
 
                 <a
-                  href="/"
+                  href="https://in.pinterest.com/codostackofficial/"
                   aria-label="Visit our Pinterest page"
                   className="bg-[#E60023] p-2 md:p-3 text-lg md:text-xl font-bold text-white hover:scale-110 transition mt-4 md:mt-8"
                 >
