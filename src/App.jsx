@@ -18,6 +18,7 @@ import ChatbotPage from "./pages/softwares/Chatbot/ChatbotPage";
 import AutoBreadcrumbSchema from "./components/AutoBreadcrumbSchema";
 import Sitemap from "./pages/sitemap/Sitemap";
 import WorksPage from "./pages/works/page";
+import WhatsAppApp from "./components/WhatsAppApp";
 
 
 const App = () => {
@@ -26,6 +27,7 @@ const App = () => {
       <ScrollToTop />
       <Navbar />
       <AutoBreadcrumbSchema />
+      <WhatsAppApp/>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
